@@ -1,6 +1,6 @@
 import {Navigate, Outlet, useLocation, useNavigate} from "react-router-dom";
 import {createContext, useContext, useEffect, useState} from "react";
-import {getLocalToken, clearToken, getAllChoices, signinBackend, appRefresh} from "../utils/useAxios";
+import {clearToken, signinBackend, appRefresh} from "../utils/useAxios";
 
 let AuthContext = createContext(null);
 
@@ -13,11 +13,9 @@ function AuthProvider({children}) {
 
     const signin = async (e) => {
         e.preventDefault()
-        console.dir(e)
-        const loginDetails = await signinBackend(new FormData(e.target))
-        if (loginDetails?.token) {
-            setToken(loginDetails.token)
-            setUser(loginDetails.user)
+        const token = await signinBackend(new FormData(e.target))
+        if (token) {
+            await refresh()
             navigate("/authHome")
         } else {
             navigate("/signup")
@@ -30,14 +28,19 @@ function AuthProvider({children}) {
         navigate("/")
     };
 
+    const refresh = async () => {
+        const refreshData = await appRefresh()
+        console.log({refreshData})
+        setUser(refreshData.user)
+        setToken(refreshData.token)
+        setAllChoices(refreshData.choices)
+    }
+
     // hack to prefetch token before renders
     useEffect(() => {
-        appRefresh().then((res)=>{
-            setUser(res.user)
-            setToken(res.token)
-            setAllChoices(res.choices)
+        refresh().then(() => {
+            loading && setLoading(false)
         })
-        loading && setLoading(false)
     }, [loading])
 
     const contextData = {signin, signout, token, setToken, allChoices, user};

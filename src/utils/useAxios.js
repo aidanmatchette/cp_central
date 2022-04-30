@@ -36,22 +36,13 @@ const signup = async (formData) => {
 }
 
 const signinBackend = async (formData) => {
-    let userResponse = null
     try {
-        // const anonAxios = axios.create({baseURL});
         const response = await anonAxios.post(tokenLoginURL, formData)
         if (response.data) {
             localStorage.setItem(tokenName, response.data.access)
             localStorage.setItem(refreshName, response.data.refresh)
-            // must manually do the useAxios here because you can't circular hook with the context
-            // TODO delete
-            const authAxios = axios.create({
-                baseURL,
-                headers: {Authorization: `${headerName} ${response.data.access}`}
-            });
-            userResponse = await authAxios.get('/api/v1/user/whoami/')
         }
-        return {token: response.data.access, user: userResponse.data}
+        return response.data.access
     } catch (err) {
         console.log("login error", err)
         return null
@@ -59,39 +50,41 @@ const signinBackend = async (formData) => {
 }
 
 const appRefresh = async () => {
+    let token = getLocalToken()
+    const choicesResponse = await anonAxios.get('/api/all_choices/')
+    if (!token) {
+        return {
+            user: null,
+            token: null,
+            choices: choicesResponse.data
+        }
+    }
+
     // must manually do the useAxios here because you can't circular hook with the context
     // refresh token most likely expired so try to refresh access
+    console.log("refresh in axios", token)
     const refreshResponse = await axios.post(`${baseURL}${refreshURL}`, {
         refresh: localStorage.getItem(refreshName)
     });
-    const newToken = refreshResponse.data.access
-    localStorage.setItem(tokenName, newToken)
+    token = refreshResponse.data.access
+    localStorage.setItem(tokenName, token)
 
     const authAxios = axios.create({
         baseURL,
-        headers: {Authorization: `${headerName} ${newToken}`}
+        headers: {Authorization: `${headerName} ${token}`}
     });
     const whoamiResponse = await authAxios.get('/api/v1/user/whoami/')
-    const choicesResponse = await anonAxios.get('/api/all_choices/')
     return {
         user: whoamiResponse.data,
-        token: newToken,
+        token: token,
         choices: choicesResponse.data
     }
-}
-
-const getAllChoices = async () => {
-    // const response = await anonAxios.get('/api/all_choices/')
-    // if (response.status === 200)
-    //     return response.data
-    return null
 }
 
 const clearToken = () => {
     localStorage.removeItem(tokenName)
     localStorage.removeItem(refreshName)
 }
-
 
 // custom hook
 const useAxios = () => {
@@ -127,4 +120,4 @@ const useAxios = () => {
     return authAxios
 }
 
-export {useAxios, getLocalToken, clearToken, signup, getAllChoices, signinBackend, appRefresh};
+export {useAxios, anonAxios, getLocalToken, clearToken, signup, signinBackend, appRefresh};
