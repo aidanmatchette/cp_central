@@ -1,12 +1,12 @@
-from app.models import User
-from app.serializers import UserSerializer
+from app.models import User, UserLink, Appointment
+from app.serializers import UserSerializer, UserLinkSerializer, AppointmentSerializer, RosterSerializer
 from django.http import JsonResponse
-from rest_framework.decorators import api_view, action
+from rest_framework.decorators import api_view, action, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
 
 
-class UserViewSet(ModelViewSet):
+class UserViewSet(ModelViewSet):  # /api/v1/user/
     permission_classes = [IsAuthenticated]
     queryset = User.objects.all()
     serializer_class = UserSerializer
@@ -16,8 +16,36 @@ class UserViewSet(ModelViewSet):
         return JsonResponse(UserSerializer(request.user).data, status=200)
 
 
+class UserLinkViewSet(ModelViewSet):  # /api/v1/user_link/
+    permission_classes = [IsAuthenticated]
+    queryset = UserLink.objects.all()
+    serializer_class = UserLinkSerializer
+    # TODO override create/update/delete
+
+    def get_queryset(self):
+        return self.queryset.filter(user=self.request.user.pk)
+
+
+class AppointmentViewSet(ModelViewSet):  # /api/v1/appointment/
+    permission_classes = [IsAuthenticated]
+    queryset = Appointment.objects.all()
+    serializer_class = AppointmentSerializer
+    # TODO override create/update/delete
+
+    def get_queryset(self):
+        return self.queryset.filter(user=self.request.user.pk)
+
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def roster(request):  # /api/v1/roster/
+    # TODO implement, add filtering criteria
+    output = User.objects.all()
+    return JsonResponse(RosterSerializer(output).data, status=200)
+
+
 @api_view(['POST', 'GET'])
-def signup(request):
+def signup(request):  # /api/signup/
     try:
         # TODO add validation
         user = User()

@@ -15,3 +15,23 @@ class User(AbstractUser):
         HST = "HST", "Hawaii Standard Time"
         SST = "SST", "Samoa Standard Time"
     timezone = models.CharField(max_length=4, choices=TimeZoneChoices.choices, default=TimeZoneChoices.CST)
+
+
+class Appointment(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="appointments")
+    start_time = models.DateTimeField(auto_now=True)
+    stop_time = models.DateTimeField(auto_now=True)
+
+
+class UserLink(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="links")
+    name = models.CharField(max_length=64)
+    is_public = models.BooleanField(default=True)
+
+    class UserLinkType(models.IntegerChoices):
+        OTHER = 0
+        LINKEDIN = 1
+        GITHUB = 2
+        YOUTUBE = 3
+    link_type = models.IntegerField(choices=UserLinkType.choices, default=UserLinkType.OTHER)
+
