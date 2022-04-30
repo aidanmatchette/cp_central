@@ -21,11 +21,13 @@ def signup(request):
     try:
         # TODO add validation
         user = User()
-        user.username = request.data['username']
+        user.username = request.data['email']
         user.set_password(request.data['password'])
         user.email = request.data['email']
         user.first_name = request.data['firstName']
         user.last_name = request.data['lastName']
+        print(request.data['cohort'])
+        # TODO group assignment
         user.save()
         return JsonResponse(UserSerializer(user).data, status=200)
     except Exception as e:

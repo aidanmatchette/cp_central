@@ -1,7 +1,20 @@
 import {useContext, useState} from "react";
 import {signup} from "../utils/useAxios";
 import {useNavigate} from "react-router-dom";
-import { Button, CssBaseline, TextField, FormControl, Link, Grid, Box, Typography, InputLabel, Container, Select } from "@mui/material";
+import {
+    Button,
+    CssBaseline,
+    TextField,
+    FormControl,
+    Link,
+    Grid,
+    Box,
+    Typography,
+    InputLabel,
+    Container,
+    Select,
+    MenuItem
+} from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import {AuthContext} from "../context/AuthProvider";
 
@@ -54,7 +67,7 @@ function Signup() {
             flexDirection: 'column',
             alignItems: 'center',
           }}
-        >{console.log(allChoices)}
+        >
             <img src="https://www.codeplatoon.org/wp-content/uploads/2018/10/CP-logo-2018-abbrev-1.png" width="200" alt='cp-logo'/>
           <Typography component="h1" variant="h4">
             Sign Up
@@ -118,8 +131,8 @@ function Signup() {
               <Grid item xs={12}>
                 <FormControl fullWidth >
                 <InputLabel required id="cohort-select-label" >Select Cohort</InputLabel>
-                    <Select fullWidth label="Select Cohort" id="cohort-select">
-                        <option value={'test'} >Test Cohort(CHANGE ME)</option> 
+                    <Select fullWidth label="Select Cohort" id="cohort-select" name={"cohort"} defaultValue={""}>
+                        {allChoices.cohorts.map((item) => <MenuItem key={item.group_id} value={item.group_id} >{item.name}</MenuItem> )}
                     </Select>
                 </FormControl>  
                 
