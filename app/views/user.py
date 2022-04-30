@@ -1,9 +1,9 @@
-from django.contrib.auth.models import User
+from app.models import User
+from app.serializers import UserSerializer
 from django.http import JsonResponse
 from rest_framework.decorators import api_view, action
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
-from .serializers import UserSerializer
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -34,4 +34,3 @@ def signup(request):
     except Exception as e:
         print(e)
         return JsonResponse({"error": "error details"}, status=500)
-
