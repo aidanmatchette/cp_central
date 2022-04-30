@@ -20,41 +20,70 @@ const refreshURL = "/api/token/refresh/"
 const tokenLoginURL = "/api/token/"
 const signupURL = "/api/signup/"
 
+const anonAxios = axios.create({baseURL});
+
 const getLocalToken = () => {
     return localStorage.getItem(tokenName)
 }
 
-const getLoginToken = async (formData) => {
+const signup = async (formData) => {
     try {
-        const axiosInstance = axios.create({baseURL});
-        const response = await axiosInstance.post(tokenLoginURL, formData)
+        const response = await anonAxios.post(signupURL, formData)
+        return response.data
+    } catch (err) {
+        return err
+    }
+}
+
+const signinBackend = async (formData) => {
+    let userResponse = null
+    try {
+        // const anonAxios = axios.create({baseURL});
+        const response = await anonAxios.post(tokenLoginURL, formData)
         if (response.data) {
             localStorage.setItem(tokenName, response.data.access)
             localStorage.setItem(refreshName, response.data.refresh)
+            // must manually do the useAxios here because you can't circular hook with the context
+            // TODO delete
+            const authAxios = axios.create({
+                baseURL,
+                headers: {Authorization: `${headerName} ${response.data.access}`}
+            });
+            userResponse = await authAxios.get('/api/v1/user/whoami/')
         }
-        return response.data.access
+        return {token: response.data.access, user: userResponse.data}
     } catch (err) {
         console.log("login error", err)
         return null
     }
 }
 
+const appRefresh = async () => {
+    // must manually do the useAxios here because you can't circular hook with the context
+    // refresh token most likely expired so try to refresh access
+    const refreshResponse = await axios.post(`${baseURL}${refreshURL}`, {
+        refresh: localStorage.getItem(refreshName)
+    });
+    const newToken = refreshResponse.data.access
+    localStorage.setItem(tokenName, newToken)
 
-const signup = async (formData) => {
-    try {
-        const axiosInstance = axios.create({baseURL});
-        const response = await axiosInstance.post(signupURL, formData)
-        return response.data
-    }catch (err){
-        return err
+    const authAxios = axios.create({
+        baseURL,
+        headers: {Authorization: `${headerName} ${newToken}`}
+    });
+    const whoamiResponse = await authAxios.get('/api/v1/user/whoami/')
+    const choicesResponse = await anonAxios.get('/api/all_choices/')
+    return {
+        user: whoamiResponse.data,
+        token: newToken,
+        choices: choicesResponse.data
     }
 }
 
 const getAllChoices = async () => {
-    const axiosInstance = axios.create({baseURL});
-    const response = await axiosInstance.get('/api/all_choices/')
-    if (response.status === 200)
-        return response.data
+    // const response = await anonAxios.get('/api/all_choices/')
+    // if (response.status === 200)
+    //     return response.data
     return null
 }
 
@@ -68,13 +97,13 @@ const clearToken = () => {
 const useAxios = () => {
     const {token, setToken} = useContext(AuthContext)
 
-    const axiosInstance = axios.create({
+    const authAxios = axios.create({
         baseURL,
         headers: {Authorization: `${headerName} ${token}`}
     });
 
     // Refresh token if it has expired before sending request
-    axiosInstance.interceptors.request.use(async req => {
+    authAxios.interceptors.request.use(async req => {
         // jwt_decode is a non-depreciated version of atob()
         const decodedJWT = jwt_decode(token)
 
@@ -95,7 +124,7 @@ const useAxios = () => {
         return req
     })
 
-    return axiosInstance
+    return authAxios
 }
 
-export {useAxios, getLocalToken, getLoginToken, clearToken, signup, getAllChoices, signin};
+export {useAxios, getLocalToken, clearToken, signup, getAllChoices, signinBackend, appRefresh};
