@@ -35,3 +35,4 @@
 - timezone for students
 - avatar/pictures for student bios
 - https://github.com/remarkjs/react-markdown
+- test
