@@ -1,6 +1,6 @@
 import {Navigate, Outlet, useLocation, useNavigate} from "react-router-dom";
 import {createContext, useContext, useEffect, useState} from "react";
-import {getLoginToken, getLocalToken, clearToken} from "../utils/useAxios";
+import {getLoginToken, getLocalToken, clearToken, getAllChoices} from "../utils/useAxios";
 
 let AuthContext = createContext(null);
 
@@ -8,6 +8,7 @@ function AuthProvider({children}) {
     const navigate = useNavigate()
     const [loading, setLoading] = useState(true)
     const [token, setToken] = useState(() => getLocalToken())
+    const [allChoices, setAllChoices] = useState(null)
 
     const signin = async (e) => {
         e.preventDefault()
@@ -28,10 +29,11 @@ function AuthProvider({children}) {
 
     // hack to prefetch token before renders
     useEffect(() => {
+        getAllChoices().then(res=>setAllChoices(res))
         loading && setLoading(false)
     }, [loading])
 
-    const contextData = {signin, signout, token, setToken};
+    const contextData = {signin, signout, token, setToken, allChoices};
 
     // only render after initial load (persist token through page refresh)
     return <AuthContext.Provider value={contextData}>{loading ? null : children}</AuthContext.Provider>;

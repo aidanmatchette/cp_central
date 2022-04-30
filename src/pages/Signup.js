@@ -1,8 +1,9 @@
-import {useState} from "react";
+import {useContext, useState} from "react";
 import {signup} from "../utils/useAxios";
 import {useNavigate} from "react-router-dom";
 import { Button, CssBaseline, TextField, FormControl, Link, Grid, Box, Typography, InputLabel, Container, Select } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import {AuthContext} from "../context/AuthProvider";
 
 export const theme = createTheme  ({
   palette: {
@@ -19,6 +20,7 @@ export const theme = createTheme  ({
 
 
 function Signup() {
+    const {allChoices} = useContext(AuthContext)
     const navigate = useNavigate()
     const [errorMessage, setErrorMessage] = useState(null)
     const validRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/
@@ -52,7 +54,7 @@ function Signup() {
             flexDirection: 'column',
             alignItems: 'center',
           }}
-        >
+        >{console.log(allChoices)}
             <img src="https://www.codeplatoon.org/wp-content/uploads/2018/10/CP-logo-2018-abbrev-1.png" width="200" alt='cp-logo'/>
           <Typography component="h1" variant="h4">
             Sign Up

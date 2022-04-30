@@ -4,9 +4,6 @@ from django.http import JsonResponse
 from rest_framework.decorators import api_view, action
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
-from dotenv import load_dotenv
-
-load_dotenv()
 
 
 class UserViewSet(ModelViewSet):
@@ -19,7 +16,7 @@ class UserViewSet(ModelViewSet):
         return JsonResponse(UserSerializer(request.user).data, status=200)
 
 
-@api_view(['POST'])
+@api_view(['POST', 'GET'])
 def signup(request):
     try:
         # TODO add validation

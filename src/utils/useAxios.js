@@ -39,6 +39,7 @@ const getLoginToken = async (formData) => {
     }
 }
 
+
 const signup = async (formData) => {
     try {
         const axiosInstance = axios.create({baseURL});
@@ -47,6 +48,14 @@ const signup = async (formData) => {
     }catch (err){
         return err
     }
+}
+
+const getAllChoices = async () => {
+    const axiosInstance = axios.create({baseURL});
+    const response = await axiosInstance.get('/api/all_choices/')
+    if (response.status === 200)
+        return response.data
+    return null
 }
 
 const clearToken = () => {
@@ -89,4 +98,4 @@ const useAxios = () => {
     return axiosInstance
 }
 
-export {useAxios, getLocalToken, getLoginToken, clearToken, signup};
+export {useAxios, getLocalToken, getLoginToken, clearToken, signup, getAllChoices, signin};
