@@ -11,5 +11,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include("app.urls")),
     # will only serve react app if not in debug mode
-    path('', TemplateView.as_view(template_name='index.html')) if (os.getenv('DEBUG') == "true") else None
+    # path('', TemplateView.as_view(template_name='index.html')) if (os.getenv('DEBUG') == "true") else None
 ]
+if not (os.getenv('DEBUG') == "true"):
+    urlpatterns += [path('', TemplateView.as_view(template_name='index.html'))]
