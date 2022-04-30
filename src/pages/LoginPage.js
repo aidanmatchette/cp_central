@@ -38,8 +38,9 @@ function LoginPage() {
               <Box component="form" noValidate onSubmit={signin} sx={{ mt: 3 }}>
                 <Grid container spacing={2}>
                   <Grid item xs={12}>
+                      {/*TODO boilerplate uses username for authentication (which we can specify on signup) changing to username for now and will rewire if we want to customize the authentication*/}
                     <TextField required fullWidth id="email" label="Email Address"
-                      name="email" autoComplete="email" />
+                      name="username" autoComplete="email" />
                   </Grid>
                   <Grid item xs={12}>
                     <TextField required fullWidth name="password" label="Password"

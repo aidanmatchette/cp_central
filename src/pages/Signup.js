@@ -1,8 +1,22 @@
-import {useState} from "react";
+import {useContext, useState} from "react";
 import {signup} from "../utils/useAxios";
 import {useNavigate} from "react-router-dom";
-import { Button, CssBaseline, TextField, FormControl, Link, Grid, Box, Typography, InputLabel, Container, Select } from "@mui/material";
+import {
+    Button,
+    CssBaseline,
+    TextField,
+    FormControl,
+    Link,
+    Grid,
+    Box,
+    Typography,
+    InputLabel,
+    Container,
+    Select,
+    MenuItem
+} from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import {AuthContext} from "../context/AuthProvider";
 
 export const theme = createTheme  ({
   palette: {
@@ -19,6 +33,7 @@ export const theme = createTheme  ({
 
 
 function Signup() {
+    const {allChoices} = useContext(AuthContext)
     const navigate = useNavigate()
     const [errorMessage, setErrorMessage] = useState(null)
     const validRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/
@@ -115,8 +130,8 @@ function Signup() {
               <Grid item xs={12}>
                 <FormControl fullWidth >
                 <InputLabel required id="cohort-select-label" >Select Cohort</InputLabel>
-                    <Select fullWidth label="Select Cohort" id="cohort-select">
-                        <option value={'test'} >Test Cohort(CHANGE ME)</option> 
+                    <Select fullWidth label="Select Cohort" id="cohort-select" name={"cohort"} defaultValue={""}>
+                        {allChoices.cohorts.map((item) => <MenuItem key={item.group_id} value={item.group_id} >{item.name}</MenuItem> )}
                     </Select>
                 </FormControl>  
                 

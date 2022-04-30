@@ -32,3 +32,6 @@
 - random pair opt out function and redo 
 - stars for trouble items when polling
 - integrate friday retros
+- timezone for students
+- avatar/pictures for student bios
+- https://github.com/remarkjs/react-markdown

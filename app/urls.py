@@ -1,5 +1,5 @@
 from django.urls import path, include
-from .views import UserViewSet, signup
+from .views import UserViewSet, signup, all_choices
 from rest_framework_simplejwt.views import TokenRefreshView, TokenObtainPairView
 from rest_framework.routers import DefaultRouter
 
@@ -10,5 +10,7 @@ urlpatterns = [
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
     path('v1/', include(r.urls)),
-    path('signup/', signup, name='signup')
+
+    path('signup/', signup, name='signup'),
+    path('all_choices/', all_choices, name='all_choices'),
 ]
