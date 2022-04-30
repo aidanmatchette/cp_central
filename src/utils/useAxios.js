@@ -20,14 +20,24 @@ const refreshURL = "/api/token/refresh/"
 const tokenLoginURL = "/api/token/"
 const signupURL = "/api/signup/"
 
+const anonAxios = axios.create({baseURL});
+
 const getLocalToken = () => {
     return localStorage.getItem(tokenName)
 }
 
-const getLoginToken = async (formData) => {
+const signup = async (formData) => {
     try {
-        const axiosInstance = axios.create({baseURL});
-        const response = await axiosInstance.post(tokenLoginURL, formData)
+        const response = await anonAxios.post(signupURL, formData)
+        return response.data
+    } catch (err) {
+        return err
+    }
+}
+
+const signinBackend = async (formData) => {
+    try {
+        const response = await anonAxios.post(tokenLoginURL, formData)
         if (response.data) {
             localStorage.setItem(tokenName, response.data.access)
             localStorage.setItem(refreshName, response.data.refresh)
@@ -39,13 +49,35 @@ const getLoginToken = async (formData) => {
     }
 }
 
-const signup = async (formData) => {
-    try {
-        const axiosInstance = axios.create({baseURL});
-        const response = await axiosInstance.post(signupURL, formData)
-        return response.data
-    }catch (err){
-        return err
+const appRefresh = async () => {
+    let token = getLocalToken()
+    const choicesResponse = await anonAxios.get('/api/all_choices/')
+    if (!token) {
+        return {
+            user: null,
+            token: null,
+            choices: choicesResponse.data
+        }
+    }
+
+    // must manually do the useAxios here because you can't circular hook with the context
+    // refresh token most likely expired so try to refresh access
+    console.log("refresh in axios", token)
+    const refreshResponse = await axios.post(`${baseURL}${refreshURL}`, {
+        refresh: localStorage.getItem(refreshName)
+    });
+    token = refreshResponse.data.access
+    localStorage.setItem(tokenName, token)
+
+    const authAxios = axios.create({
+        baseURL,
+        headers: {Authorization: `${headerName} ${token}`}
+    });
+    const whoamiResponse = await authAxios.get('/api/v1/user/whoami/')
+    return {
+        user: whoamiResponse.data,
+        token: token,
+        choices: choicesResponse.data
     }
 }
 
@@ -54,18 +86,17 @@ const clearToken = () => {
     localStorage.removeItem(refreshName)
 }
 
-
 // custom hook
 const useAxios = () => {
     const {token, setToken} = useContext(AuthContext)
 
-    const axiosInstance = axios.create({
+    const authAxios = axios.create({
         baseURL,
         headers: {Authorization: `${headerName} ${token}`}
     });
 
     // Refresh token if it has expired before sending request
-    axiosInstance.interceptors.request.use(async req => {
+    authAxios.interceptors.request.use(async req => {
         // jwt_decode is a non-depreciated version of atob()
         const decodedJWT = jwt_decode(token)
 
@@ -86,7 +117,7 @@ const useAxios = () => {
         return req
     })
 
-    return axiosInstance
+    return authAxios
 }
 
-export {useAxios, getLocalToken, getLoginToken, clearToken, signup};
+export {useAxios, anonAxios, getLocalToken, clearToken, signup, signinBackend, appRefresh};
