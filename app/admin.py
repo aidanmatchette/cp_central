@@ -1,8 +1,10 @@
 from django.contrib import admin
+from django.contrib.auth.admin import UserAdmin
 from .models import User, Appointment, UserLink, TopicLink, Topic, Vote, Question, QuestionResponse, QuestionOption, \
     Lesson, Questionnaire, FilledQuestionnaire, Feedback, ActivityGroup, Activity
 
-admin.site.register(User)
+admin.site.register(User, UserAdmin)
+# admin.site.register(User)
 admin.site.register(Appointment)
 admin.site.register(UserLink)
 admin.site.register(TopicLink)
@@ -17,3 +19,4 @@ admin.site.register(FilledQuestionnaire)
 admin.site.register(Feedback)
 admin.site.register(ActivityGroup)
 admin.site.register(Activity)
+# Dragons1234!@#$
