@@ -21,7 +21,7 @@ class Lesson(models.Model):
     stop_time = models.DateTimeField(null=True, blank=True)
 
 
-class TopicLink(models.Model):
+class LessonLink(models.Model):
     topic = models.ForeignKey(Topic, on_delete=models.CASCADE, related_name="topic_links")
     url = models.URLField()
     description = models.TextField()

@@ -1,10 +1,10 @@
 from rest_framework import serializers
-from app.models import Lesson, Topic, TopicLink
+from app.models import Lesson, Topic, LessonLink
 
 
 class TopicLinkSerializer(serializers.ModelSerializer):
     class Meta:
-        model = TopicLink
+        model = LessonLink
         fields = "__all__"
 
 

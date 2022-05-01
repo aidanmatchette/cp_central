@@ -2,7 +2,7 @@ from django.http import JsonResponse
 from rest_framework.decorators import api_view, action, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
-from app.models import Lesson, Topic, TopicLink
+from app.models import Lesson, Topic, LessonLink
 from app.serializers import LessonSerializer, TopicSerializer, TopicLinkSerializer
 
 
@@ -20,5 +20,5 @@ class TopicViewSet(ModelViewSet):
 
 class TopicLinkViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
-    queryset = TopicLink.objects.all()
+    queryset = LessonLink.objects.all()
     serializer_class = TopicLinkSerializer
