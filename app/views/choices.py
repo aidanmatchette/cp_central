@@ -1,4 +1,4 @@
-from app.models import User, UserLink, Feedback, Questionnaire, Question
+from app.models import User, UserLink, Feedback, Questionnaire, Question, LessonLink
 from django.http import JsonResponse
 from rest_framework.decorators import api_view
 
@@ -12,6 +12,7 @@ def all_choices(request):
         "feedbackCategories": Feedback.FeedbackCategory.choices,
         "questionnaireTypes": Questionnaire.QuestionnaireType.choices,
         "questionResponseTypes": Question.ResponseType.choices,
+        "lessonLinkTypes": LessonLink.LessonLinkType.choices,
         "cohorts": [
             {"group_id": 1,
              "name": "QUEBEC"

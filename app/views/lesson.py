@@ -3,7 +3,7 @@ from rest_framework.decorators import api_view, action, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
 from app.models import Lesson, Topic, LessonLink
-from app.serializers import LessonSerializer, TopicSerializer, TopicLinkSerializer
+from app.serializers import LessonSerializer, TopicSerializer, LessonLinkSerializer
 
 
 class LessonViewSet(ModelViewSet):
@@ -18,7 +18,7 @@ class TopicViewSet(ModelViewSet):
     serializer_class = TopicSerializer
 
 
-class TopicLinkViewSet(ModelViewSet):
+class LessonLinkViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
     queryset = LessonLink.objects.all()
-    serializer_class = TopicLinkSerializer
+    serializer_class = LessonLinkSerializer
