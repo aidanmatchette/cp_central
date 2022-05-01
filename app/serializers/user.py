@@ -1,5 +1,12 @@
 from rest_framework import serializers
 from app.models import User, UserLink, Appointment
+from django.contrib.auth.models import Group
+
+
+class GroupSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Group
+        fields = ["id", "name"]
 
 
 class AppointmentSerializer(serializers.ModelSerializer):
@@ -17,9 +24,10 @@ class UserLinkSerializer(serializers.ModelSerializer):
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        exclude = ["password"]
+        exclude = ["password", "user_permissions"]
     links = UserLinkSerializer(many=True, read_only=True)
     appointments = AppointmentSerializer(many=True, read_only=True)
+    groups = GroupSerializer(many=True, read_only=True)
 
 
 class RosterSerializer(serializers.ModelSerializer):

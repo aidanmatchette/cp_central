@@ -20,4 +20,4 @@ admin.site.register(Feedback)
 admin.site.register(ActivityGroup)
 admin.site.register(Activity)
 # Dragons1234!@#$
-# quebec_student_3@email.com
+# papa_student_1@email.com
