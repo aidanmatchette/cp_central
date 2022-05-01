@@ -3,7 +3,7 @@ from django.db import models
 
 
 class User(AbstractUser):
-    avatar = models.ImageField()
+    avatar = models.ImageField(default='default.png', blank=True)
 
     class TimeZoneChoices(models.TextChoices):
         AST = "AST", "Atlantic Standard Time"
@@ -19,14 +19,15 @@ class User(AbstractUser):
 
 class Appointment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="appointments")
-    start_time = models.DateTimeField(auto_now=True)
-    stop_time = models.DateTimeField(auto_now=True)
+    start_time = models.DateTimeField()
+    stop_time = models.DateTimeField()
 
 
 class UserLink(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="links")
     name = models.CharField(max_length=64)
     is_public = models.BooleanField(default=True)
+    url = models.URLField()
 
     class UserLinkType(models.IntegerChoices):
         OTHER = 0

@@ -1,2 +1,5 @@
+from .activity import ActivitySerializer, ActivityGroupSerializer
+from .feedback import VoteSerializer, FeedbackSerializer
+from .lesson import TopicSerializer, TopicLinkSerializer, LessonSerializer
 from .user import UserSerializer, UserLinkSerializer, AppointmentSerializer, RosterSerializer
-from .questionnaire import QuestionnaireSerializer, FilledQuestionnaireSerializer, QuestionSerializer, QuestionResponseSerializer, QuestionOptionSerializer, QuestionResponse, Question, QuestionOption, FilledQuestionnaire, Questionnaire
+from .questionnaire import QuestionOptionSerializer, QuestionSerializer, QuestionnaireSerializer, QuestionResponseSerializer, FilledQuestionnaireSerializer

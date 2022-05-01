@@ -1,4 +1,4 @@
-from app.models import User, UserLink
+from app.models import User, UserLink, Feedback, Questionnaire, Question
 from django.http import JsonResponse
 from rest_framework.decorators import api_view
 
@@ -7,7 +7,11 @@ from rest_framework.decorators import api_view
 def all_choices(request):
     output = {
         "timeZones": User.TimeZoneChoices.choices,
-        "linkTypes": UserLink.UserLinkType.choices,
+        "userLinkTypes": UserLink.UserLinkType.choices,
+        "feedbackTopics": Feedback.FeedbackTopic.choices,
+        "feedbackCategories": Feedback.FeedbackCategory.choices,
+        "questionnaireTypes": Questionnaire.QuestionnaireType.choices,
+        "questionResponseTypes": Question.ResponseType.choices,
         "cohorts": [
             {"group_id": 1,
              "name": "QUEBEC"
