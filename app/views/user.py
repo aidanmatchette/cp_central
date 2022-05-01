@@ -55,10 +55,25 @@ def signup(request):  # /api/signup/
         user.email = request.data['email']
         user.first_name = request.data['firstName']
         user.last_name = request.data['lastName']
-        print(request.data['cohort'])
-        # TODO group assignment
+        if 'timeZone' in request.data.keys():
+            user.timezone = request.data['timeZone']
+        user.metadata = {
+            "cohort_requested": request.data['cohort']
+        }
+
         user.save()
         return JsonResponse(UserSerializer(user).data, status=200)
     except Exception as e:
         print(e)
         return JsonResponse({"error": "error details"}, status=500)
+
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def super_info(request):  # /api/v1/super_info/
+    waiting_approval = User.objects.filter(metadata__has_key='cohort_requested')
+    json_data = UserSerializer(waiting_approval, many=True).data
+    output = {
+        'awaiting_approval': json_data
+    }
+    return JsonResponse(output, status=200)

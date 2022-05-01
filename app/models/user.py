@@ -4,6 +4,7 @@ from django.db import models
 
 class User(AbstractUser):
     avatar = models.ImageField(default='default.png', blank=True)
+    metadata = models.JSONField(null=True, blank=True)
 
     class TimeZoneChoices(models.TextChoices):
         AST = "AST", "Atlantic Standard Time"

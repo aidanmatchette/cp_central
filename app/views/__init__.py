@@ -1,4 +1,4 @@
-from .user import UserViewSet, signup, AppointmentViewSet, CheckInViewSet, UserLinkViewSet, roster
+from .user import UserViewSet, signup, AppointmentViewSet, CheckInViewSet, UserLinkViewSet, roster, super_info
 from .choices import all_choices
 from .questionnaire import QuestionnaireViewSet, FilledQuestionnaireViewSet
 from .activity import ActivityViewSet, ActivityGroupViewSet
