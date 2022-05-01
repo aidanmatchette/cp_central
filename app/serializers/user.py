@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from app.models import User, UserLink, Appointment
+from app.models import User, UserLink, Appointment, CheckIn
 from django.contrib.auth.models import Group
 
 
@@ -34,3 +34,9 @@ class RosterSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ["first_name", "last_name", "id"]
+
+
+class CheckInSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CheckIn
+        fields = "__all__"
