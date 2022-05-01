@@ -34,4 +34,3 @@ class UserLink(models.Model):
         GITHUB = 2
         YOUTUBE = 3
     link_type = models.IntegerField(choices=UserLinkType.choices, default=UserLinkType.OTHER)
-
