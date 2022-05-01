@@ -1,33 +1,53 @@
 import { useContext } from "react";
-import { Container, Nav, Navbar, NavDropdown } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthProvider";
+import { AppBar, Container, MenuItem, Select, Toolbar, Typography, FormControl, InputLabel, Box, Button } from '@mui/material'
+import { ThemeProvider } from "@mui/material/styles";
+import theme from '../utils/theme.js'
 
 
-export default function NavBar() {
+function NavBar() {
   const {signout} = useContext(AuthContext)
+  const navigate = useNavigate()
+  console.log('------theme------', theme)
+  
 
   return (
-    <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="me-auto">
-            <Link to="/login">Login</Link> | 
-            <Link to="/signup">Sign up</Link>  |          
-            <Link to="/authHome">Authorized Only</Link>  |
-            <Nav.Link onClick={signout}>Logout</Nav.Link>
-            <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-              <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-              <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-            </NavDropdown>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  )
+    <ThemeProvider theme={theme}>
+      <AppBar color='transparent' position='static'>
+        <Container >
+            <Toolbar sx={{display: 'flex', justifyContent: 'space-between'}}>
+                <img src="https://www.codeplatoon.org/wp-content/uploads/2018/10/CP-logo-2018-abbrev-1.png" width="80" alt='cp-logo'/>
+                <Typography onClick={() => navigate('/')} sx={{fontWeight: 'bold', fontSize:30, cursor: 'pointer'}}>Central</Typography>
+                    <Box sx={{ justifyContent: 'flex-end', display: 'flex', marginLeft: 5 }}>
+                        <Button sx={{'hover': {backgroundColor:'secondary'}}} onClick={() => navigate('/dashboard')} size='large' >Dashboard</Button>
+                        <Button onClick={() => navigate('/portfolio')} size='large' >LECTURE</Button>
+                    </Box> 
+                    <Box sx={{flexGrow: 1, justifyContent: 'flex-end', display: 'flex', marginLeft: 5 }} >
+                        <FormControl color="secondary" size="small" sx={{ m: 1, minWidth: 120, justifyContent: 'fex-end'}}>
+                            <InputLabel color="secondary" id="select-common-links-label">Common Links</InputLabel>
+                            <Select labelId="select-common-links" id="select-standard"
+                                value={"TEST"} label="Common Links" color="secondary">
+                            <MenuItem value={'test'}>LINK 1</MenuItem>
+                            <MenuItem value={'test'}>LINK 2</MenuItem>
+                            <MenuItem value={'test'}>LINK 3</MenuItem>
+                            <MenuItem value={'test'}>LINK 4</MenuItem>
+                            <MenuItem value={'test'}>LINK 5</MenuItem> 
+
+                            </Select>
+                        </FormControl>
+                    </Box>
+                    <Box sx={{ display: 'flex', justifyContent: 'flex-end', marginRight: '5px'}}>
+                      <Button onClick={signout} variant='contained' color="secondary" size='large' 
+                        sx={{justifyContent: 'flex-end'}}>Log Out</Button>
+                    </Box> 
+            </Toolbar>
+        </Container>
+      </AppBar> 
+    </ThemeProvider>
+
+  );
+    
 }
+export default NavBar
+
