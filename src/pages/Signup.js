@@ -15,21 +15,9 @@ import {
     Select,
     MenuItem
 } from "@mui/material";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material/styles";
 import {AuthContext} from "../context/AuthProvider";
-
-export const theme = createTheme  ({
-  palette: {
-    type: 'light',
-    primary: {
-      main: '#118888',
-    },
-    secondary: {
-      main: '#ff5500',
-    },
-  },
-});
-
+import theme from '../utils/theme.js'
 
 
 function Signup() {
