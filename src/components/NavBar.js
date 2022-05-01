@@ -9,7 +9,7 @@ import theme from '../utils/theme.js'
 function NavBar() {
   const {signout} = useContext(AuthContext)
   const navigate = useNavigate()
-
+  console.log('------theme------', theme)
   
 
   return (
