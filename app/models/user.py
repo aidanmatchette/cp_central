@@ -35,3 +35,11 @@ class UserLink(models.Model):
         GITHUB = 2
         YOUTUBE = 3
     link_type = models.IntegerField(choices=UserLinkType.choices, default=UserLinkType.OTHER)
+
+    def __str__(self):
+        return f'{self.user.first_name} {self.user.last_name} - {self.name}'
+
+
+class CheckIn(models.Model):
+    date = models.DateField()
+    user = models.ManyToManyField(User, related_name="checkins")
