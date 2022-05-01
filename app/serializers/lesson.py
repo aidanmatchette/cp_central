@@ -10,7 +10,7 @@ class LessonLinkSerializer(serializers.ModelSerializer):
 
 class LessonSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Topic
+        model = Lesson
         fields = "__all__"
     lesson_links = LessonLinkSerializer(many=True)
 
@@ -23,4 +23,4 @@ class TopicSerializerBase(serializers.ModelSerializer):
 
 
 class TopicSerializer(TopicSerializerBase):
-    topics = TopicSerializerBase(many=True)
+    sub_topics = TopicSerializerBase(many=True)

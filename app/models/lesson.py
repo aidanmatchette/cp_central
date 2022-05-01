@@ -3,8 +3,8 @@ from django.contrib.auth.models import Group
 
 
 class Topic(models.Model):
-    group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name="topics")
-    parent_topic = models.ForeignKey('self', on_delete=models.CASCADE, null=True, blank=True)
+    group = models.ForeignKey(Group, on_delete=models.CASCADE, default=1, related_name="topics")
+    sub_topics = models.ManyToManyField('self', blank=True)
     title = models.CharField(max_length=64)
     description = models.TextField(null=True, blank=True)
 
@@ -31,10 +31,13 @@ class Lesson(models.Model):
 class LessonLink(models.Model):
     lesson = models.ForeignKey(Lesson, on_delete=models.CASCADE, related_name="lesson_links")
     url = models.URLField()
-    description = models.TextField()
+    description = models.TextField(null=True, blank=True)
 
     class LessonLinkType(models.IntegerChoices):
         SUPPLEMENT = 0
         CHALLENGE = 1
         ASSESSMENT = 2
     link_type = models.IntegerField(choices=LessonLinkType.choices, default=LessonLinkType.CHALLENGE)
+
+    def __str__(self):
+        return f'{self.lesson.title} - {self.url}'
