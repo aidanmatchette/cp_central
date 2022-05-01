@@ -1,20 +1,8 @@
 import { useContext } from "react";
-// import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { AuthContext } from "../context/AuthProvider";
 import { Button, CssBaseline, TextField, Link, Grid, Box, Typography, Container } from "@mui/material";
-import { createTheme, ThemeProvider } from "@mui/material/styles";
-
-export const theme = createTheme  ({
-  palette: {
-    type: 'light',
-    primary: {
-      main: '#118888',
-    },
-    secondary: {
-      main: '#ff5500',
-    },
-  },
-});
+import { ThemeProvider } from "@mui/material/styles";
+import theme from '../utils/theme.js'
 
 
 function LoginPage() {
