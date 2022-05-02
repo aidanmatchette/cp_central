@@ -38,8 +38,13 @@ function Signup() {
           return null
         }
 
-        if (e.target.firstName.value === "" || e.target.lastName.value ===""){
+        if (e.target.firstName.value === "" || e.target.lastName.value ==="") {
           alert('First name and last name fields cannot be blank.')
+          return null
+        }
+
+        if (e.target.firstName.value.match(/[^a-zA-Z ]+/) || e.target.lastName.value.match(/[^a-zA-Z ]+/)) {
+          alert("First and last names cannot contain special characters.")
           return null
         }
           
@@ -56,6 +61,7 @@ function Signup() {
         }
         if (e.target.password.value.match(validRegex)) {
             setErrorMessage(null)
+            alert("Signup successful. Please log in.")
             signup(new FormData(e.target)).then((res) => {
                 navigate("/login")
             })
