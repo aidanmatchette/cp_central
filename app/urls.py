@@ -1,7 +1,7 @@
 from django.urls import path, include
 from .views import UserViewSet, signup, all_choices, TopicViewSet, LessonLinkViewSet, VoteViewSet, LessonViewSet,\
     FeedbackViewSet, ActivityViewSet, ActivityGroupViewSet, FilledQuestionnaireViewSet, QuestionnaireViewSet, \
-    AppointmentViewSet, UserLinkViewSet, roster, super_info
+    AppointmentViewSet, UserLinkViewSet, roster, super_info, checkin
 from rest_framework_simplejwt.views import TokenRefreshView, TokenObtainPairView
 from rest_framework.routers import DefaultRouter
 
@@ -28,4 +28,5 @@ urlpatterns = [
     path('all_choices/', all_choices, name='all_choices'),
     path('roster/', roster, name='roster'),
     path('super_info/', super_info, name='super_info'),
+    path('instructor/checkin/', checkin, name='instructor_checkin')
 ]

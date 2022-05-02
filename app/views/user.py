@@ -18,6 +18,14 @@ class UserViewSet(ModelViewSet):  # /api/v1/user/
     def whoami(self, request, pk=None):  # noqa
         return JsonResponse(UserSerializer(request.user).data, status=200)
 
+    @action(methods=['GET', 'POST'], detail=True)
+    def checkin(self, request, pk=None):  # noqa
+        if request.method == 'POST':
+            pass
+        else:
+            pass
+        return JsonResponse(UserSerializer(request.user).data, status=200)
+
 
 class UserLinkViewSet(ModelViewSet):  # /api/v1/user_link/
     permission_classes = [IsAuthenticated]
