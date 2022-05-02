@@ -65,8 +65,8 @@ function SideBar() {
       <Box sx={{display: 'flex'}}>
         {/* <List style={menuSideBarContainer} sx={{justifyContent: 'center', alignItems: 'center'}}> */}
         <CentralSideBar component="nav" disablePadding>
-          <ListItemButton component="a" href="https://codeplatoon.org" target="_blank">
-            <img src="https://www.codeplatoon.org/wp-content/uploads/2018/10/CP-logo-2018-abbrev-1.png" width="60" alt='cp-logo'/>
+          <ListItemButton component="a" href="https://codeplatoon.org" target="_blank" sx={{justifyContent:'center'}}>
+            <img src="https://www.codeplatoon.org/wp-content/uploads/2018/10/CP-logo-2018-abbrev-1.png" width="80" alt='cp-logo'/>
           </ListItemButton>
           <Divider />
 
