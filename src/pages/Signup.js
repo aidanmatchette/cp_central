@@ -18,19 +18,40 @@ import {
 import { ThemeProvider } from "@mui/material/styles";
 import {AuthContext} from "../context/AuthProvider";
 import theme from '../utils/theme.js'
+import validator from 'validator'
 
 
 function Signup() {
+
     const {allChoices} = useContext(AuthContext)
     const navigate = useNavigate()
     const [errorMessage, setErrorMessage] = useState(null)
     const validRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/
-    const errorText = "password between 8 to 15 characters which contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character"
+    const errorText = "password between 8 to 15 characters which contain at least one lowercase letter, one uppercase letter, one numeric digit, contain no spaces, and one special character"
 
     const doSignUp = (e) => {
         e.preventDefault()
+        let email = e.target.email.value
+
+        if (validator.isEmail(email) === false) {
+          alert('Enter a valid email address')
+          return null
+        }
+
+        if (e.target.firstName.value === "" || e.target.lastName.value ===""){
+          alert('First name and last name fields cannot be blank.')
+          return null
+        }
+          
+
+        if (e.target.cohort.value === "") {
+          alert('Please select a cohort')
+          return null
+        }
+
         if (e.target.password.value !== e.target.password2.value) {
             setErrorMessage("Passwords must match")
+            alert(errorMessage)
             return null
         }
         if (e.target.password.value.match(validRegex)) {
@@ -40,6 +61,7 @@ function Signup() {
             })
         } else {
             setErrorMessage(errorText)
+            alert(errorMessage)
         }
     }
 

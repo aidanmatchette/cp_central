@@ -17,7 +17,7 @@ function AuthProvider({children}) {
         const token = await signinBackend(new FormData(e.target))
         if (token) {
             await refresh()
-            navigate("/authHome")
+            navigate("/")
         } else {
             navigate("/signup")
         }
