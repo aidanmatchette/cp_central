@@ -4,4 +4,5 @@ from .questionnaire import QuestionnaireViewSet, FilledQuestionnaireViewSet
 from .activity import ActivityViewSet, ActivityGroupViewSet
 from .feedback import VoteViewSet, FeedbackViewSet
 from .lesson import LessonViewSet, TopicViewSet, LessonLinkViewSet
-from .instructor import checkin
+from .instructor import instructor_checkin
+from .cohort import CohortViewSet

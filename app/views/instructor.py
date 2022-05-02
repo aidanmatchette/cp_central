@@ -1,20 +1,15 @@
 import datetime
-import json
 
-from django.db.models import OuterRef, Subquery
-
-from app.models import User, UserLink, Appointment, CheckIn
-from app.serializers import UserSerializer, RosterSerializer, CheckinStatusSerializer
 from django.http import JsonResponse
-from rest_framework.decorators import api_view, action, permission_classes
+from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
-from rest_framework.viewsets import ModelViewSet
-from django.core import serializers
+from app.models import User, CheckIn
+from app.serializers import CheckinStatusSerializer
 
 
 @api_view(['POST', 'GET'])
 @permission_classes([IsAuthenticated])
-def checkin(request):  # /api/v1/instructor/checkin/
+def instructor_checkin(request):  # /api/v1/instructor/checkin/
     date = request.data['date'] if 'date' in request.data.keys() else datetime.datetime.now()
     fdate = date.strftime("%Y-%m-%d")
     group = request.user.default_group
