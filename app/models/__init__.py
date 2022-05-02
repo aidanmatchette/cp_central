@@ -3,3 +3,4 @@ from .questionnaire import Questionnaire, FilledQuestionnaire, QuestionOption, Q
 from .lesson import Lesson, Topic, LessonLink
 from .feedback import Feedback, Vote
 from .activity import Activity, ActivityGroup
+from .cohort import Cohort

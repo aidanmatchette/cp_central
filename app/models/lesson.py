@@ -18,7 +18,7 @@ class Lesson(models.Model):
     topic = models.ForeignKey(Topic, on_delete=models.CASCADE, related_name="lessons", null=True)
     title = models.CharField(max_length=64)
     description = models.TextField(null=True, blank=True)
-    markdown_url = models.URLField(default="https://www.github.com/")  # later on this could be refactored to hold the markdown instead of a link
+    lesson_file_path = models.CharField(max_length=200, null=True, blank=True)  # later on this could be refactored to hold the markdown instead of a link
     img_url = models.URLField(null=True, blank=True)
     date = models.DateField(null=True, blank=True)
     start_time = models.DateTimeField(null=True, blank=True)
