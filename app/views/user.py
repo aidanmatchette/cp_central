@@ -1,5 +1,5 @@
-from app.models import User, UserLink, Appointment, CheckIn
-from app.serializers import UserSerializer, UserLinkSerializer, AppointmentSerializer, RosterSerializer, CheckInSerializer
+from app.models import User, UserLink, Appointment
+from app.serializers import UserSerializer, UserLinkSerializer, AppointmentSerializer, RosterSerializer
 from django.http import JsonResponse
 from rest_framework.decorators import api_view, action, permission_classes
 from rest_framework.permissions import IsAuthenticated
@@ -29,12 +29,6 @@ class AppointmentViewSet(ModelViewSet):  # /api/v1/appointment/
     permission_classes = [IsAuthenticated]
     queryset = Appointment.objects.all()
     serializer_class = AppointmentSerializer
-
-
-class CheckInViewSet(ModelViewSet):  # /api/v1/checkin/
-    permission_classes = [IsAuthenticated]
-    queryset = CheckIn.objects.all()
-    serializer_class = CheckInSerializer
 
 
 @api_view(['POST'])

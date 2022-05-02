@@ -1,7 +1,7 @@
 from django.urls import path, include
 from .views import UserViewSet, signup, all_choices, TopicViewSet, LessonLinkViewSet, VoteViewSet, LessonViewSet,\
     FeedbackViewSet, ActivityViewSet, ActivityGroupViewSet, FilledQuestionnaireViewSet, QuestionnaireViewSet, \
-    CheckInViewSet, AppointmentViewSet, UserLinkViewSet, roster, super_info
+    AppointmentViewSet, UserLinkViewSet, roster, super_info
 from rest_framework_simplejwt.views import TokenRefreshView, TokenObtainPairView
 from rest_framework.routers import DefaultRouter
 
@@ -16,7 +16,6 @@ r.register(r'activity', ActivityViewSet, basename="activity")
 r.register(r'activity_group', ActivityGroupViewSet, basename="activity_group")
 r.register(r'filled_questionnaire', FilledQuestionnaireViewSet, basename="filled_questionnaire")
 r.register(r'questionnaire', QuestionnaireViewSet, basename="questionnaire")
-r.register(r'checkin', CheckInViewSet, basename="checkin")
 r.register(r'appointment', AppointmentViewSet, basename="appointment")
 r.register(r'user_link', UserLinkViewSet, basename="user_link")
 
