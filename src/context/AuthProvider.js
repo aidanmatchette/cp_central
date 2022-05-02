@@ -10,7 +10,8 @@ function AuthProvider({children}) {
     const [token, setToken] = useState(null)
     const [allChoices, setAllChoices] = useState(null)
     const [user, setUser] = useState(null)
-
+    const [isSideBarOpen, setIsSideBarOpen] = useState(false);
+     
     const signin = async (e) => {
         e.preventDefault()
         const token = await signinBackend(new FormData(e.target))
@@ -43,7 +44,7 @@ function AuthProvider({children}) {
         })
     }, [loading])
 
-    const contextData = {signin, signout, token, setToken, allChoices, user};
+    const contextData = {signin, signout, token, setToken, allChoices, user, isSideBarOpen, setIsSideBarOpen};
 
     // only render after initial load (persist token through page refresh)
     return <AuthContext.Provider value={contextData}>{loading ? null : children}</AuthContext.Provider>;

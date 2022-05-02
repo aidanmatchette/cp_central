@@ -1,23 +1,31 @@
 import { useContext } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthProvider";
-import { AppBar, Container, MenuItem, Select, Toolbar, Typography, FormControl, InputLabel, Box, Button } from '@mui/material'
+import { AppBar, Container, Drawer, IconButton, MenuItem, Select, Toolbar, Typography, FormControl, InputLabel, Box, Button } from '@mui/material'
 import { ThemeProvider } from "@mui/material/styles";
 import theme from '../utils/theme.js'
+import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import SideBar from './SideBar.js'
 
 
 function NavBar() {
-  const {signout} = useContext(AuthContext)
+  const {signout, isSideBarOpen, setIsSideBarOpen} = useContext(AuthContext)
   const navigate = useNavigate()
-  console.log('------theme------', theme)
   
+  const toggleSideBar = () => {
+    setIsSideBarOpen(!isSideBarOpen);
+  }; 
 
   return (
     <ThemeProvider theme={theme}>
       <AppBar color='transparent' position='static'>
         <Container >
+          
             <Toolbar sx={{display: 'flex', justifyContent: 'space-between'}}>
-                <img src="https://www.codeplatoon.org/wp-content/uploads/2018/10/CP-logo-2018-abbrev-1.png" width="80" alt='cp-logo'/>
+              <IconButton onClick={toggleSideBar}>
+                <MenuRoundedIcon />
+              </IconButton>            
+              <img src="https://www.codeplatoon.org/wp-content/uploads/2018/10/CP-logo-2018-abbrev-1.png" width="80" alt='cp-logo'/>
                 <Typography onClick={() => navigate('/')} sx={{fontWeight: 'bold', fontSize:30, cursor: 'pointer'}}>Central</Typography>
                     <Box sx={{ justifyContent: 'flex-end', display: 'flex', marginLeft: 5 }}>
                         <Button sx={{'hover': {backgroundColor:'secondary'}}} onClick={() => navigate('/dashboard')} size='large' >Dashboard</Button>
@@ -41,6 +49,9 @@ function NavBar() {
                       <Button onClick={signout} variant='contained' color="secondary" size='large' 
                         sx={{justifyContent: 'flex-end'}}>Log Out</Button>
                     </Box> 
+                <Drawer open={isSideBarOpen} anchor="left" onClose={toggleSideBar}>
+                  <SideBar /> 
+                </Drawer>
             </Toolbar>
         </Container>
       </AppBar> 
