@@ -28,8 +28,9 @@ function NavBar() {
               <img src="https://www.codeplatoon.org/wp-content/uploads/2018/10/CP-logo-2018-abbrev-1.png" width="80" alt='cp-logo'/>
                 <Typography onClick={() => navigate('/')} sx={{fontWeight: 'bold', fontSize:30, cursor: 'pointer'}}>Central</Typography>
                     <Box sx={{ justifyContent: 'flex-end', display: 'flex', marginLeft: 5 }}>
-                        <Button sx={{'hover': {backgroundColor:'secondary'}}} onClick={() => navigate('/dashboard')} size='large' >Dashboard</Button>
-                        <Button onClick={() => navigate('/portfolio')} size='large' >LECTURE</Button>
+                        <Button sx={{'hover': {backgroundColor:'secondary'}}} onClick={() => navigate('/instructorPage')} size='large' >Instructor Page</Button>
+                        <Button sx={{'hover': {backgroundColor:'secondary'}}} onClick={() => navigate('/studentPage')} size='large' >Student Page</Button>
+                        <Button onClick={() => navigate('/login')} size='large' >LOG IN</Button>
                     </Box> 
                     <Box sx={{flexGrow: 1, justifyContent: 'flex-end', display: 'flex', marginLeft: 5 }} >
                         <FormControl color="secondary" size="small" sx={{ m: 1, minWidth: 120, justifyContent: 'fex-end'}}>
