@@ -1,0 +1,9 @@
+.days-topics {
+  display: inline-block;
+  height: 20rem;
+  text-align: center;
+}
+.student-landing-container {
+  display: flex;
+  justify-content: space-between;
+}

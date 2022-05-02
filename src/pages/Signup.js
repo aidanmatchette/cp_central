@@ -42,10 +42,9 @@ function Signup() {
             setErrorMessage(errorText)
         }
     }
-    // const theme = createTheme();
 
     return (
-           <ThemeProvider theme={theme}>
+      <ThemeProvider theme={theme}>
       <Container component="main" maxWidth="xs">
         <CssBaseline />
         <Box
