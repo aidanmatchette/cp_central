@@ -6,7 +6,7 @@ from django.contrib.auth.models import Group
 class User(AbstractUser):
     avatar = models.ImageField(default='default.png', blank=True)
     metadata = models.JSONField(null=True, blank=True)
-    default_group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='default_users')
+    default_group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='default_users', null=True, blank=True)
 
     class TimeZoneChoices(models.TextChoices):
         AST = "AST", "Atlantic Standard Time"

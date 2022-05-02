@@ -1,4 +1,4 @@
-from rest_framework import serializers
+from rest_framework import serializers, fields
 from app.models import User, UserLink, Appointment, CheckIn
 from django.contrib.auth.models import Group
 
@@ -30,13 +30,22 @@ class UserSerializer(serializers.ModelSerializer):
     groups = GroupSerializer(many=True, read_only=True)
 
 
+class CheckinStatusSerializer(serializers.ModelSerializer):
+    date = serializers.DateField()
+    is_checked_in = serializers.BooleanField()
+
+    class Meta:
+        model = User
+        fields = ["id", "username", "date", "is_checked_in"]
+
+
 class RosterSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ["first_name", "last_name", "id"]
 
 
-class CheckInSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = CheckIn
-        fields = "__all__"
+# class CheckInSerializer(serializers.ModelSerializer):
+#     class Meta:
+#         model = CheckIn
+#         fields = "__all__"
