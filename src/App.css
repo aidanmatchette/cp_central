@@ -3,7 +3,7 @@
   height: 20rem;
   text-align: center;
 }
-.container {
+.student-landing-container {
   display: flex;
   justify-content: space-between;
 }

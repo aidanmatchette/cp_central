@@ -4,7 +4,7 @@ function StudentPage() {
     return (
         <div>
             <h1>This is the Authenticated student landing page</h1>
-            <div className="container">
+            <div className="student-landing-container">
                 <div className="days-topics">
                     <h1>Todays topics section</h1> 
                 </div>
