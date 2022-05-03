@@ -5,7 +5,7 @@ import { AppBar, Container, Drawer, IconButton, MenuItem, Select, Toolbar, Typog
 import { ThemeProvider } from "@mui/material/styles";
 import theme from '../utils/theme.js'
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
-import SideBar from './SideBar.js'
+import SideBar from './SideBar/SideBar.js'
 
 
 function NavBar() {
