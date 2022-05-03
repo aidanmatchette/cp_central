@@ -14,7 +14,8 @@ function DayProvider({children}) {
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
     const [landingRaw, setLandingRaw] = useState(null)
     const [date, setDate] = useState(new Date())
-
+    const [dirty, setDirty] = useState(false)
+    
     useEffect(() => {
         const loadData = async () => {
             const rawParams = {
@@ -26,7 +27,8 @@ function DayProvider({children}) {
             setLandingRaw(rawLanding.data)
         }
         loadData().then()
-    }, [user, date])
+        setDirty(false)
+    }, [user, date, dirty])
 
     const contextData = {allChoices, isSideBarOpen, setIsSideBarOpen, date, setDate, landingRaw};
 

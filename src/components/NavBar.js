@@ -5,13 +5,14 @@ import { ThemeProvider } from "@mui/material/styles";
 import theme from '../utils/theme.js'
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import SideBar from './SideBar/SideBar.js'
+import InstructorSideBar from './SideBar/InstructorSideBar.js'
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import { DayContext } from "../context/DayProvider";
 
 
 function NavBar() {
-  const { signout, isSideBarOpen, setIsSideBarOpen } = useContext(AuthContext)
+  const { signout, isSideBarOpen, setIsSideBarOpen, user} = useContext(AuthContext)
   const { landingRaw, date, setDate } = useContext(DayContext)
   const navigate = useNavigate()
 
@@ -61,7 +62,8 @@ function NavBar() {
                 sx={{ justifyContent: 'flex-end' }}>Log Out</Button>
             </Box>
             <Drawer open={isSideBarOpen} anchor="left" onClose={toggleSideBar}>
-              <SideBar />
+              {user?.is_staff ? <InstructorSideBar />
+                  : <SideBar />}
             </Drawer>
           </Toolbar>
         </Container>
