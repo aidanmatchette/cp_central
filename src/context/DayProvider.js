@@ -18,11 +18,12 @@ function DayProvider({children}) {
     useEffect(()=>{
         const loadData = async () => {
             const rawParams = {
-                'date': dayjs(date).format('YYYY-MM-DD')
+                'params':{
+                    'date': dayjs(date).format('YYYY-MM-DD')
+                }
             }
             const rawLanding = await backend.get('api/student/landing/', rawParams)
-            console.log({rawLanding})
-            setLandingRaw(rawLanding)
+            setLandingRaw(rawLanding.data)
         }
         loadData().then()
     }, [user, date])
