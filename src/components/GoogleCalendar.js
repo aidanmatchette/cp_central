@@ -1,10 +1,14 @@
+import { useContext } from "react"
+import { DayContext } from "../context/DayProvider"
+import { Spinner } from 'react-bootstrap'
+
 function GoogleCalendar(props) {
 
-  let { height, width, calendarID } = props
+  let { landingRaw } = useContext(DayContext)
 
-  let nonBlankCalendarID = calendarID == ''   //ternary that default to quebec calendar if CalendarID isn't passed into props
-    ? "c_4lkirg4ugcjlpde4pm7gu4atfo%40group.calendar.google.com"
-    : calendarID
+  let { height, width } = props
+
+  let calendarID = landingRaw && landingRaw.cohort.calendar_key
 
   let calendarStyle = {
     border: "0",
@@ -14,9 +18,10 @@ function GoogleCalendar(props) {
     scrolling: "no"
   }
 
-  return (
-    <iframe src={`https://calendar.google.com/calendar/embed?src=${nonBlankCalendarID}&ctz=America%2FChicago`} style={calendarStyle}></iframe>
-  )
+  return calendarID
+    ? <iframe src={`https://calendar.google.com/calendar/embed?src=${calendarID}&ctz=America%2FChicago`} style={calendarStyle} ></iframe >
+    : <div className='d-inline-block d-flex justify-content-center align-items-center' style={calendarStyle}> <Spinner animation="border" /></div>
+
 }
 
 export default GoogleCalendar
