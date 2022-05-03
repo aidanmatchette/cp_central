@@ -1,5 +1,4 @@
 import datetime
-
 from app.models import User, UserLink, Appointment, CheckIn
 from app.serializers import UserSerializer, UserLinkSerializer, AppointmentSerializer, RosterSerializer
 from django.http import JsonResponse
