@@ -11,7 +11,7 @@ function AuthProvider({children}) {
     const [allChoices, setAllChoices] = useState(null)
     const [user, setUser] = useState(null)
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
-     
+    
     const signin = async (e) => {
         e.preventDefault()
         const token = await signinBackend(new FormData(e.target))
