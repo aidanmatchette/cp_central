@@ -15,10 +15,10 @@ function DayProvider({children}) {
     const [landingRaw, setLandingRaw] = useState(null)
     const [date, setDate] = useState(new Date())
 
-    useEffect(()=>{
+    useEffect(() => {
         const loadData = async () => {
             const rawParams = {
-                'params':{
+                'params': {
                     'date': dayjs(date).format('YYYY-MM-DD')
                 }
             }
@@ -33,7 +33,6 @@ function DayProvider({children}) {
     // only render after initial load (persist token through page refresh)
     return <DayContext.Provider value={contextData}>{children}</DayContext.Provider>;
 }
-
 
 
 export {DayProvider, DayContext}
