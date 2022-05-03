@@ -5,6 +5,7 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from app.models import User, CheckIn, Cohort, Lesson
 from app.serializers import UserSerializer, LessonSerializer, CohortSerializer
+from . import get_all_choices
 
 
 @api_view(['POST', 'GET'])
@@ -34,6 +35,7 @@ def student_landing(request):
         'activity_groups': [],  # TODO implement
         'my_feedback': [],  # TODO implement
         'curriculum': curriculum,
-        'lessons_records': LessonSerializer(lessons, many=True).data
+        'lessons_records': LessonSerializer(lessons, many=True).data,
+        'choices': get_all_choices(),
     }
     return JsonResponse(output)

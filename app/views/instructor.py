@@ -28,5 +28,6 @@ def instructor_checkin(request):  # /api/v1/instructor/checkin/
         left join app_checkin_user as C
         on C.user_id = A.id
         where B.date = %s and A.default_group_id = %s
+        group by A.username
         """, [fdate, group.pk])
         return JsonResponse(CheckinStatusSerializer(cohort, many=True).data, safe=False, status=200)
