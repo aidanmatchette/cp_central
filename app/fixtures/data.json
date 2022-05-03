@@ -3760,14 +3760,8 @@
     "pk": 1,
     "fields": {
       "github_key": "5554565dd",
-      "metadata": {
-        "course_roadmap": "https://somelink.com",
-        "youtube": "https://www.youtube.com/channel/UCASZ7zW_Egu0T4KG3YEdGfw/playlists",
-        "calendar": "https://docs.google.com/spreadsheets/d/1lOA3uPlX6tU0QvSAZmdCxPBvCpLcfm0H-0DSCMhjn5s/edit?usp=sharing",
-        "student_handbook": "https://docs.google.com/document/d/1KgNFbDhihSJv6OGYjFDhESaDJ6ljOyVoRQse7oQH1I0/edit?usp=sharing",
-        "student_wiki": "https://docs.google.com/spreadsheets/d/1nX1ylt8AOWVnwZ5v-naN7K2bfhlfZm8TRzepOuXdqWw/edit#gid=0"
-      },
-      "calendar_key": null
+      "metadata": null,
+      "calendar_key": "c_4lkirg4ugcjlpde4pm7gu4atfo%40group.calendar.google.com"
     }
   },
   {
