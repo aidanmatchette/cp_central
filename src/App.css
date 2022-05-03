@@ -3,7 +3,13 @@
   height: 20rem;
   text-align: center;
 }
+
 .student-landing-container {
   display: flex;
   justify-content: space-between;
+}
+
+.btn-custom-orange {
+  background-color: #ff500f;
+  color: white
 }
