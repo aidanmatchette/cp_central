@@ -2,32 +2,14 @@ import { useNavigate } from "react-router-dom";
 import { useEffect, useState} from "react";
 import { Collapse, Divider, ListItemButton, ListItemIcon, ListItemText, List, ListItem, Button, Box} from '@mui/material'
 import { styled, ThemeProvider } from "@mui/material/styles";
-import theme from '../utils/theme.js'
+import theme from '../../utils/theme.js'
 import ExpandLessRoundedIcon from '@mui/icons-material/ExpandLessRounded';
 import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
 import QuestionAnswerRoundedIcon from '@mui/icons-material/QuestionAnswerRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
-import EventNoteRoundedIcon from '@mui/icons-material/EventNoteRounded';
-import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
+import {listItems} from './SideBarData.js'
 
-
-
-const listItems = [
-  {
-    listIcon: <HomeRoundedIcon />,
-    listText: "Home"
-  },
-  {
-    listIcon: <EventNoteRoundedIcon />,
-    listText: "Lecture"
-  },
-  {
-    listIcon: <PeopleAltRoundedIcon />,
-    listText: "Students"
-  }
-];
-
+console.log('list items -----', listItems)
 
 
 function SideBar() {
