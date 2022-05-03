@@ -8,12 +8,13 @@ import AuthHomePage from './pages/AuthHomePage';
 import NavBar from './components/NavBar';
 import StudentPage from  './pages/StudentPage.js'
 import InstructorPage from  './pages/InstructorPage.js'
+import {DayProvider} from "./context/DayProvider";
 
 function App() {
 
     return (
         <div className="App">
-            <AuthProvider>
+            <AuthProvider><DayProvider>
                 <NavBar />
                 <Routes>
                     <Route path={"/"} element={<HomePage />} />
@@ -25,7 +26,7 @@ function App() {
                         <Route path={"/instructorPage"} element={<InstructorPage />} />
                     </Route>
                 </Routes>
-            </AuthProvider>
+            </DayProvider></AuthProvider>
         </div>
     );
 }
