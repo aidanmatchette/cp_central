@@ -6,9 +6,10 @@ import { AuthProvider, RequireAuth } from "./context/AuthProvider";
 import HomePage from "./pages/HomePage";
 import AuthHomePage from './pages/AuthHomePage';
 import NavBar from './components/NavBar';
-import StudentPage from  './pages/StudentPage.js'
-import InstructorPage from  './pages/InstructorPage.js'
-import {DayProvider} from "./context/DayProvider";
+import StudentPage from './pages/StudentPage.js'
+import InstructorPage from './pages/InstructorPage.js'
+import { DayProvider } from "./context/DayProvider";
+import StudentApprovalPage from './pages/StudentApproval/StudentApprovalPage';
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
                     <Route element={<RequireAuth />}>
                         <Route path={"/studentPage"} element={<StudentPage />} />
                         <Route path={"/instructorPage"} element={<InstructorPage />} />
+                        <Route path={"/pending-students"} element={<StudentApprovalPage />} />
                     </Route>
                 </Routes>
             </DayProvider></AuthProvider>
