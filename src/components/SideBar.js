@@ -33,8 +33,8 @@ const listItems = [
 function SideBar() {
   const navigate = useNavigate()
   
-  const [open, setOpen] = useState(false) 
-  
+  const [questionOpen, setQuestionOpen] = useState(false) 
+  const [githubOpen, setGithubOpen] = useState(false)
   const menuSideBarContainer = {
     width: 250,
     height: "100%",
@@ -56,16 +56,16 @@ function SideBar() {
     },
   });
   
-  const handleClick = () => {
-    setOpen(!open) 
-  }
+  // const handleClick = () => {
+  //   setOpen(!open) 
+  // }
 
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{display: 'flex'}}>
         {/* <List style={menuSideBarContainer} sx={{justifyContent: 'center', alignItems: 'center'}}> */}
         <CentralSideBar component="nav" disablePadding>
-          <ListItemButton component="a" href="https://codeplatoon.org" target="_blank" sx={{justifyContent:'center'}}>
+          <ListItemButton component="a" href="https://codeplatoon.org" target="_blank" sx={{justifyContent:'center', height: '35px'}}>
             <img src="https://www.codeplatoon.org/wp-content/uploads/2018/10/CP-logo-2018-abbrev-1.png" width="80" alt='cp-logo'/>
           </ListItemButton>
           <Divider />
@@ -79,15 +79,16 @@ function SideBar() {
               <ListItemText primary={listItem.listText} />
             </ListItem>
           ))}
-          <ListItem button onClick={handleClick} >
+    
+          <ListItem button onClick={() => setQuestionOpen(!questionOpen)} >
             <ListItemIcon><QuestionAnswerRoundedIcon /></ListItemIcon>
             <ListItemText primary={'Questionnaires'} />
-            {open ? <ExpandLessRoundedIcon /> : <ExpandMoreRoundedIcon />}
+            {questionOpen ? <ExpandLessRoundedIcon /> : <ExpandMoreRoundedIcon />}
           </ListItem>
           <Box sx={{
-              bgcolor: open ? '#c2c2c2' : null,
+              bgcolor: questionOpen ? '#c2c2c2' : null,
             }}>
-          <Collapse in={open} timeout="auto" unmountOnExit>
+          <Collapse in={questionOpen} timeout="auto" unmountOnExit>
             <ListItemButton >
               <ListItemText primary="Pair Programming" />
             </ListItemButton>
@@ -96,15 +97,16 @@ function SideBar() {
             </ListItemButton>
           </Collapse>
           </Box>
-          <ListItem button onClick={handleClick} >
+    
+          <ListItem button onClick={() => setGithubOpen(!githubOpen)} >
             <ListItemIcon><GitHubIcon /></ListItemIcon>
             <ListItemText primary={'GitHub'} />
-              {open ? <ExpandLessRoundedIcon /> : <ExpandMoreRoundedIcon />}
-            </ListItem>
+              {githubOpen ? <ExpandLessRoundedIcon /> : <ExpandMoreRoundedIcon />}
+          </ListItem>
           <Box sx={{
-              bgcolor: open ? '#c2c2c2' : null,
+              bgcolor: githubOpen ? '#c2c2c2' : null,
             }}>
-          <Collapse in={open} timeout="auto" unmountOnExit>
+          <Collapse in={githubOpen} timeout="auto" unmountOnExit>
             <ListItemButton >
               <ListItemText primary="Curriculum" />
             </ListItemButton>
