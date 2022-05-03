@@ -100,7 +100,6 @@ function SideBar() {
 
         {/* <List style={menuSideBarContainer}  sx={{justifyContent: 'space-between', alignItems: 'center'}}>  */}
           <Box sx={{display: 'flex', justifyContent: 'center'}}>
-            <Button variant="contained" sx={{justifyContent: 'center', width: '80%', mt: 3 }}>Daily Check-In</Button>
           </Box>
         {/* </List> */}
         {/* </List> */}
