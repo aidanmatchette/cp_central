@@ -18,7 +18,7 @@ def student_checkin(request):  # /api/v1/instructor/checkin/
 @permission_classes([IsAuthenticated])
 def student_landing(request):
     # TODO move date parsing into helper
-    date = datetime.datetime.strptime(request.data['date'], '%Y-%m-%d') if 'date' in request.data.keys() else datetime.datetime.now()
+    date = datetime.datetime.strptime(request.GET['date'], '%Y-%m-%d') if 'date' in request.GET.keys() else datetime.datetime.now()
     fdate = date.strftime("%Y-%m-%d")
     user = User.objects.get(id=request.user.id)
     cohort = Cohort.objects.get(pk=user.default_group.pk)
