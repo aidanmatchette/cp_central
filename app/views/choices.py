@@ -1,11 +1,12 @@
 from app.models import User, UserLink, Feedback, Questionnaire, Question, LessonLink
+from app.serializers import GroupSerializer
+from django.contrib.auth.models import Group
 from django.http import JsonResponse
 from rest_framework.decorators import api_view
 
 
-@api_view(['GET'])
-def all_choices(request):
-    output = {
+def get_all_choices():
+    return {
         "timeZones": User.TimeZoneChoices.choices,
         "userLinkTypes": UserLink.UserLinkType.choices,
         "feedbackTopics": Feedback.FeedbackTopic.choices,
@@ -13,14 +14,10 @@ def all_choices(request):
         "questionnaireTypes": Questionnaire.QuestionnaireType.choices,
         "questionResponseTypes": Question.ResponseType.choices,
         "lessonLinkTypes": LessonLink.LessonLinkType.choices,
-        "cohorts": [
-            {"group_id": 1,
-             "name": "QUEBEC"
-             },
-
-            {"group_id": 2,
-             "name": "PAPA"
-             },
-        ]
+        "cohorts": GroupSerializer(Group.objects.all(), many=True).data,
     }
-    return JsonResponse(output, status=200)
+
+
+@api_view(['GET'])
+def all_choices(request):
+    return JsonResponse(get_all_choices(), status=200)

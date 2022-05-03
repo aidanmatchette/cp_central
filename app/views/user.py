@@ -35,7 +35,7 @@ class UserViewSet(ModelViewSet):  # /api/v1/user/
         else:
             # TODO implement
             return JsonResponse({"error": "Not implemented yet"}, status=400)
-        
+
     @action(methods=['PATCH'], detail=True, permission_classes=[IsAdminUser])  # /api/v1/user/<user_id>/add_to_cohort/
     def add_to_cohort(self, request, pk=None):
         body = json.loads(request.body)
