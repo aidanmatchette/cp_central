@@ -59,12 +59,13 @@ class AppointmentViewSet(ModelViewSet):  # /api/v1/appointment/
     serializer_class = AppointmentSerializer
 
 
-@api_view(['POST'])
+@api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def roster(request):  # /api/v1/roster/
     # TODO implement, add filtering criteria
-    output = User.objects.all()
-    return JsonResponse(RosterSerializer(output).data, status=200)
+    group = request.user.default_group
+    output = User.objects.filter(default_group=group)
+    return JsonResponse(RosterSerializer(output, many=True).data, safe=False, status=200)
 
 
 @api_view(['POST', 'GET'])
