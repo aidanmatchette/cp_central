@@ -1,2475 +1,5 @@
 [
   {
-    "model": "admin.logentry",
-    "pk": 1,
-    "fields": {
-      "action_time": "2022-05-01T01:49:54.399Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "1",
-      "object_repr": "admin",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Avatar\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 2,
-    "fields": {
-      "action_time": "2022-05-01T01:53:59.754Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "1",
-      "object_repr": "admin",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Avatar\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 3,
-    "fields": {
-      "action_time": "2022-05-01T02:13:14.881Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "1",
-      "object_repr": "admin",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Avatar\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 4,
-    "fields": {
-      "action_time": "2022-05-01T13:16:50.848Z",
-      "user": 1,
-      "content_type": 3,
-      "object_id": "1",
-      "object_repr": "Quebec",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 5,
-    "fields": {
-      "action_time": "2022-05-01T13:16:58.941Z",
-      "user": 1,
-      "content_type": 3,
-      "object_id": "2",
-      "object_repr": "Papa",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 6,
-    "fields": {
-      "action_time": "2022-05-01T13:17:45.222Z",
-      "user": 1,
-      "content_type": 3,
-      "object_id": "3",
-      "object_repr": "November",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 7,
-    "fields": {
-      "action_time": "2022-05-01T13:29:44.766Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "2",
-      "object_repr": "ankur@codeplatoon.org",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 8,
-    "fields": {
-      "action_time": "2022-05-01T13:30:00.292Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "3",
-      "object_repr": "raphael@codeplatoon.org",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 9,
-    "fields": {
-      "action_time": "2022-05-01T13:30:30.503Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "4",
-      "object_repr": "jon@codeplatoon.org",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 10,
-    "fields": {
-      "action_time": "2022-05-01T13:30:41.140Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "5",
-      "object_repr": "rod@codeplatoon.org",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 11,
-    "fields": {
-      "action_time": "2022-05-01T14:04:11.614Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "6",
-      "object_repr": "quebec_student_1@email.com",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 12,
-    "fields": {
-      "action_time": "2022-05-01T14:04:25.159Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "7",
-      "object_repr": "quebec_student_2@email.com",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 13,
-    "fields": {
-      "action_time": "2022-05-01T14:04:48.532Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "8",
-      "object_repr": "quebec_student_3@email.com",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 14,
-    "fields": {
-      "action_time": "2022-05-01T14:05:14.541Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "9",
-      "object_repr": "quebec_student_4@email.com",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 15,
-    "fields": {
-      "action_time": "2022-05-01T14:05:26.776Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "10",
-      "object_repr": "quebec_student_5@email.com",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 16,
-    "fields": {
-      "action_time": "2022-05-01T14:05:37.759Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "11",
-      "object_repr": "quebec_student_6@email.com",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 17,
-    "fields": {
-      "action_time": "2022-05-01T14:05:56.772Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "12",
-      "object_repr": "quebec_ta_1@email.com",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 18,
-    "fields": {
-      "action_time": "2022-05-01T14:06:09.537Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "13",
-      "object_repr": "quebec_ta_2@email.com",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 19,
-    "fields": {
-      "action_time": "2022-05-01T14:11:05.059Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "14",
-      "object_repr": "papa_student_1@email.com",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 20,
-    "fields": {
-      "action_time": "2022-05-01T14:11:17.114Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "15",
-      "object_repr": "papa_student_2@email.com",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 21,
-    "fields": {
-      "action_time": "2022-05-01T14:11:34.082Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "16",
-      "object_repr": "papa_ta_1@email.com",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 22,
-    "fields": {
-      "action_time": "2022-05-01T14:12:19.289Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "5",
-      "object_repr": "rod@codeplatoon.org",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"Staff status\", \"Superuser status\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 23,
-    "fields": {
-      "action_time": "2022-05-01T14:12:41.711Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "3",
-      "object_repr": "raphael@codeplatoon.org",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"Staff status\", \"Superuser status\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 24,
-    "fields": {
-      "action_time": "2022-05-01T14:13:17.617Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "13",
-      "object_repr": "quebec_ta_2@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"Staff status\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 25,
-    "fields": {
-      "action_time": "2022-05-01T14:13:42.590Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "12",
-      "object_repr": "quebec_ta_1@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"Staff status\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 26,
-    "fields": {
-      "action_time": "2022-05-01T14:13:49.785Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "13",
-      "object_repr": "quebec_ta_2@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 27,
-    "fields": {
-      "action_time": "2022-05-01T14:14:11.773Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "11",
-      "object_repr": "quebec_student_6@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 28,
-    "fields": {
-      "action_time": "2022-05-01T14:14:25.394Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "10",
-      "object_repr": "quebec_student_5@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 29,
-    "fields": {
-      "action_time": "2022-05-01T14:14:38.588Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "9",
-      "object_repr": "quebec_student_4@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 30,
-    "fields": {
-      "action_time": "2022-05-01T14:14:50.742Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "8",
-      "object_repr": "quebec_student_3@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 31,
-    "fields": {
-      "action_time": "2022-05-01T14:15:15.356Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "7",
-      "object_repr": "quebec_student_2@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 32,
-    "fields": {
-      "action_time": "2022-05-01T14:15:23.329Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "8",
-      "object_repr": "quebec_student_3@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 33,
-    "fields": {
-      "action_time": "2022-05-01T14:15:29.167Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "9",
-      "object_repr": "quebec_student_4@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 34,
-    "fields": {
-      "action_time": "2022-05-01T14:15:35.389Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "10",
-      "object_repr": "quebec_student_5@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 35,
-    "fields": {
-      "action_time": "2022-05-01T14:15:42.876Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "11",
-      "object_repr": "quebec_student_6@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 36,
-    "fields": {
-      "action_time": "2022-05-01T14:15:56.560Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "12",
-      "object_repr": "quebec_ta_1@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 37,
-    "fields": {
-      "action_time": "2022-05-01T14:16:03.378Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "13",
-      "object_repr": "quebec_ta_2@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 38,
-    "fields": {
-      "action_time": "2022-05-01T14:16:20.009Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "6",
-      "object_repr": "quebec_student_1@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 39,
-    "fields": {
-      "action_time": "2022-05-01T14:16:39.353Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "16",
-      "object_repr": "papa_ta_1@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 40,
-    "fields": {
-      "action_time": "2022-05-01T14:16:47.114Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "16",
-      "object_repr": "papa_ta_1@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Last name\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 41,
-    "fields": {
-      "action_time": "2022-05-01T14:17:13.139Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "15",
-      "object_repr": "papa_student_2@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 42,
-    "fields": {
-      "action_time": "2022-05-01T14:17:37.790Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "14",
-      "object_repr": "papa_student_1@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 43,
-    "fields": {
-      "action_time": "2022-05-01T14:18:17.801Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "4",
-      "object_repr": "jon@codeplatoon.org",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"Staff status\", \"Superuser status\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 44,
-    "fields": {
-      "action_time": "2022-05-01T14:18:34.986Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "2",
-      "object_repr": "ankur@codeplatoon.org",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"Email address\", \"Staff status\", \"Superuser status\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 45,
-    "fields": {
-      "action_time": "2022-05-01T14:18:53.964Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "13",
-      "object_repr": "quebec_ta_2@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 46,
-    "fields": {
-      "action_time": "2022-05-01T14:19:12.676Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "3",
-      "object_repr": "raphael@codeplatoon.org",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 47,
-    "fields": {
-      "action_time": "2022-05-01T14:19:21.043Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "2",
-      "object_repr": "ankur@codeplatoon.org",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 48,
-    "fields": {
-      "action_time": "2022-05-01T14:19:33.925Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "13",
-      "object_repr": "quebec_ta_2@email.com",
-      "action_flag": 2,
-      "change_message": "[]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 49,
-    "fields": {
-      "action_time": "2022-05-01T14:19:39.736Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "12",
-      "object_repr": "quebec_ta_1@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 50,
-    "fields": {
-      "action_time": "2022-05-01T14:19:52.176Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "11",
-      "object_repr": "quebec_student_6@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 51,
-    "fields": {
-      "action_time": "2022-05-01T14:19:57.154Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "10",
-      "object_repr": "quebec_student_5@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 52,
-    "fields": {
-      "action_time": "2022-05-01T14:20:02.374Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "9",
-      "object_repr": "quebec_student_4@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 53,
-    "fields": {
-      "action_time": "2022-05-01T14:20:08.298Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "8",
-      "object_repr": "quebec_student_3@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 54,
-    "fields": {
-      "action_time": "2022-05-01T14:20:13.717Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "7",
-      "object_repr": "quebec_student_2@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 55,
-    "fields": {
-      "action_time": "2022-05-01T14:20:18.545Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "7",
-      "object_repr": "quebec_student_2@email.com",
-      "action_flag": 2,
-      "change_message": "[]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 56,
-    "fields": {
-      "action_time": "2022-05-01T14:20:22.718Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "6",
-      "object_repr": "quebec_student_1@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 57,
-    "fields": {
-      "action_time": "2022-05-01T14:20:28.922Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "16",
-      "object_repr": "papa_ta_1@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 58,
-    "fields": {
-      "action_time": "2022-05-01T14:20:34.156Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "15",
-      "object_repr": "papa_student_2@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 59,
-    "fields": {
-      "action_time": "2022-05-01T14:20:39.587Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "14",
-      "object_repr": "papa_student_1@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 60,
-    "fields": {
-      "action_time": "2022-05-01T14:20:57.326Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "15",
-      "object_repr": "papa_student_2@email.com",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Groups\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 61,
-    "fields": {
-      "action_time": "2022-05-01T14:27:00.126Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "1",
-      "object_repr": "UserLink object (1)",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 62,
-    "fields": {
-      "action_time": "2022-05-01T14:27:31.377Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "2",
-      "object_repr": "UserLink object (2)",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 63,
-    "fields": {
-      "action_time": "2022-05-01T14:28:01.087Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "3",
-      "object_repr": "UserLink object (3)",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 64,
-    "fields": {
-      "action_time": "2022-05-01T14:34:10.116Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "4",
-      "object_repr": "Jonathan Young - https://www.linkedin.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 65,
-    "fields": {
-      "action_time": "2022-05-01T14:34:24.174Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "5",
-      "object_repr": "P One Student - https://www.linkedin.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 66,
-    "fields": {
-      "action_time": "2022-05-01T14:34:35.567Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "6",
-      "object_repr": "P Two Student - https://www.linkedin.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 67,
-    "fields": {
-      "action_time": "2022-05-01T14:34:43.293Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "7",
-      "object_repr": "P TA 1 P TA 1 - https://www.linkedin.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 68,
-    "fields": {
-      "action_time": "2022-05-01T14:34:50.946Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "8",
-      "object_repr": "Q One Student - https://www.linkedin.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 69,
-    "fields": {
-      "action_time": "2022-05-01T14:34:57.304Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "9",
-      "object_repr": "Q Two Student - https://www.linkedin.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 70,
-    "fields": {
-      "action_time": "2022-05-01T14:35:03.176Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "10",
-      "object_repr": "Q TA 1 TA 1 - https://www.linkedin.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 71,
-    "fields": {
-      "action_time": "2022-05-01T14:35:09.315Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "11",
-      "object_repr": "Q TA 2 TA 2 - https://www.linkedin.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 72,
-    "fields": {
-      "action_time": "2022-05-01T14:35:15.222Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "12",
-      "object_repr": "Rodrigo Levy - https://www.linkedin.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 73,
-    "fields": {
-      "action_time": "2022-05-01T14:35:54.759Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "13",
-      "object_repr": "Ankur Shah - https://github.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 74,
-    "fields": {
-      "action_time": "2022-05-01T14:36:00.237Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "14",
-      "object_repr": "Jonathan Young - https://github.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 75,
-    "fields": {
-      "action_time": "2022-05-01T14:36:05.069Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "15",
-      "object_repr": "P One Student - https://github.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 76,
-    "fields": {
-      "action_time": "2022-05-01T14:36:10.495Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "16",
-      "object_repr": "P Two Student - https://github.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 77,
-    "fields": {
-      "action_time": "2022-05-01T14:36:15.706Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "17",
-      "object_repr": "P TA 1 P TA 1 - https://github.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 78,
-    "fields": {
-      "action_time": "2022-05-01T14:36:20.543Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "18",
-      "object_repr": "Q One Student - https://github.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 79,
-    "fields": {
-      "action_time": "2022-05-01T14:36:24.667Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "19",
-      "object_repr": "Q Two Student - https://github.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 80,
-    "fields": {
-      "action_time": "2022-05-01T14:36:29.776Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "20",
-      "object_repr": "Q Two Student - https://github.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 81,
-    "fields": {
-      "action_time": "2022-05-01T14:36:34.179Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "21",
-      "object_repr": "Q Three Student - https://github.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 82,
-    "fields": {
-      "action_time": "2022-05-01T14:36:38.927Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "22",
-      "object_repr": "Q Four Student - https://github.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 83,
-    "fields": {
-      "action_time": "2022-05-01T14:36:44.613Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "23",
-      "object_repr": "Q Five Student - https://github.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 84,
-    "fields": {
-      "action_time": "2022-05-01T14:36:48.683Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "24",
-      "object_repr": "Q Six Student - https://github.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 85,
-    "fields": {
-      "action_time": "2022-05-01T14:36:54.632Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "25",
-      "object_repr": "Q TA 1 TA 1 - https://github.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 86,
-    "fields": {
-      "action_time": "2022-05-01T14:36:58.992Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "26",
-      "object_repr": "Q TA 2 TA 2 - https://github.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 87,
-    "fields": {
-      "action_time": "2022-05-01T14:37:03.963Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "27",
-      "object_repr": "Raphael Serota - https://github.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 88,
-    "fields": {
-      "action_time": "2022-05-01T14:37:08.297Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "28",
-      "object_repr": "Rodrigo Levy - https://github.com/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 89,
-    "fields": {
-      "action_time": "2022-05-01T14:39:01.452Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "13",
-      "object_repr": "Ankur Shah - GitHub",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Name\", \"Url\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 90,
-    "fields": {
-      "action_time": "2022-05-01T14:41:27.623Z",
-      "user": 1,
-      "content_type": 17,
-      "object_id": "8",
-      "object_repr": "Q One Student - https://www.linkedin.com/",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 91,
-    "fields": {
-      "action_time": "2022-05-01T15:18:38.611Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "17",
-      "object_repr": "abc",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 92,
-    "fields": {
-      "action_time": "2022-05-01T15:28:38.487Z",
-      "user": 1,
-      "content_type": 6,
-      "object_id": "18",
-      "object_repr": "abc",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 93,
-    "fields": {
-      "action_time": "2022-05-01T15:56:36.606Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "1",
-      "object_repr": "Topic object (1)",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 94,
-    "fields": {
-      "action_time": "2022-05-01T15:56:52.916Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "2",
-      "object_repr": "Topic object (2)",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 95,
-    "fields": {
-      "action_time": "2022-05-01T15:57:40.911Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "3",
-      "object_repr": "Databases / SQL",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 96,
-    "fields": {
-      "action_time": "2022-05-01T15:59:21.454Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "4",
-      "object_repr": "Quebec Python",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 97,
-    "fields": {
-      "action_time": "2022-05-01T15:59:29.189Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "5",
-      "object_repr": "Quebec Django",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 98,
-    "fields": {
-      "action_time": "2022-05-01T15:59:37.248Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "6",
-      "object_repr": "Quebec React",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 99,
-    "fields": {
-      "action_time": "2022-05-01T16:00:13.588Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "7",
-      "object_repr": "Quebec APIs",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 100,
-    "fields": {
-      "action_time": "2022-05-01T16:01:18.992Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "8",
-      "object_repr": "Quebec OS / CLI",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 101,
-    "fields": {
-      "action_time": "2022-05-01T16:01:51.908Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "8",
-      "object_repr": "Quebec Command Line Interface",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 102,
-    "fields": {
-      "action_time": "2022-05-01T16:02:09.971Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "9",
-      "object_repr": "Quebec Linux",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 103,
-    "fields": {
-      "action_time": "2022-05-01T16:02:20.641Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "10",
-      "object_repr": "Quebec GIT",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 104,
-    "fields": {
-      "action_time": "2022-05-01T16:07:58.067Z",
-      "user": 1,
-      "content_type": 19,
-      "object_id": "1",
-      "object_repr": "Lesson object (1)",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 105,
-    "fields": {
-      "action_time": "2022-05-01T16:09:15.698Z",
-      "user": 1,
-      "content_type": 19,
-      "object_id": "2",
-      "object_repr": "Lesson object (2)",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 106,
-    "fields": {
-      "action_time": "2022-05-01T16:30:59.992Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "10",
-      "object_repr": "Quebec GIT",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 107,
-    "fields": {
-      "action_time": "2022-05-01T16:30:59.999Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "9",
-      "object_repr": "Quebec Linux",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 108,
-    "fields": {
-      "action_time": "2022-05-01T16:31:00.002Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "8",
-      "object_repr": "Quebec Command Line Interface",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 109,
-    "fields": {
-      "action_time": "2022-05-01T16:31:00.006Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "7",
-      "object_repr": "Quebec APIs",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 110,
-    "fields": {
-      "action_time": "2022-05-01T16:31:00.009Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "6",
-      "object_repr": "Quebec React",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 111,
-    "fields": {
-      "action_time": "2022-05-01T16:31:00.013Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "5",
-      "object_repr": "Quebec Django",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 112,
-    "fields": {
-      "action_time": "2022-05-01T16:31:00.017Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "4",
-      "object_repr": "Quebec Python",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 113,
-    "fields": {
-      "action_time": "2022-05-01T16:31:00.020Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "3",
-      "object_repr": "Quebec Databases / SQL",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 114,
-    "fields": {
-      "action_time": "2022-05-01T16:31:00.024Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "2",
-      "object_repr": "Quebec HTML/CSS",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 115,
-    "fields": {
-      "action_time": "2022-05-01T16:31:00.027Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "1",
-      "object_repr": "Quebec Javascript",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 116,
-    "fields": {
-      "action_time": "2022-05-01T16:34:44.535Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "1",
-      "object_repr": "Quebec Javascript",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 117,
-    "fields": {
-      "action_time": "2022-05-01T16:35:17.446Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "2",
-      "object_repr": "Quebec CLI (Command Line Interface)",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 118,
-    "fields": {
-      "action_time": "2022-05-01T16:37:09.867Z",
-      "user": 1,
-      "content_type": 19,
-      "object_id": "3",
-      "object_repr": "Javascript - Javascript Intro",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 119,
-    "fields": {
-      "action_time": "2022-05-01T16:37:47.279Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "3",
-      "object_repr": "Quebec GIT",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 120,
-    "fields": {
-      "action_time": "2022-05-01T16:38:03.944Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "4",
-      "object_repr": "Quebec Linux",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 121,
-    "fields": {
-      "action_time": "2022-05-01T16:38:20.569Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "2",
-      "object_repr": "Quebec CLI (Command Line Interface)",
-      "action_flag": 2,
-      "change_message": "[{\"changed\": {\"fields\": [\"Sub topics\"]}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 122,
-    "fields": {
-      "action_time": "2022-05-01T16:40:01.940Z",
-      "user": 1,
-      "content_type": 19,
-      "object_id": "4",
-      "object_repr": "CLI (Command Line Interface) - Intro to the command line",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 123,
-    "fields": {
-      "action_time": "2022-05-01T16:40:37.361Z",
-      "user": 1,
-      "content_type": 19,
-      "object_id": "5",
-      "object_repr": "GIT - GIT intro",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 124,
-    "fields": {
-      "action_time": "2022-05-01T16:41:05.085Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "5",
-      "object_repr": "Quebec HTML/CSS",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 125,
-    "fields": {
-      "action_time": "2022-05-01T16:41:13.116Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "6",
-      "object_repr": "Quebec Databases/SQL",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 126,
-    "fields": {
-      "action_time": "2022-05-01T16:41:20.428Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "7",
-      "object_repr": "Quebec Python",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 127,
-    "fields": {
-      "action_time": "2022-05-01T16:41:27.033Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "8",
-      "object_repr": "Quebec Django",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 128,
-    "fields": {
-      "action_time": "2022-05-01T16:41:29.772Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "9",
-      "object_repr": "Quebec React",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 129,
-    "fields": {
-      "action_time": "2022-05-01T16:41:52.350Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "10",
-      "object_repr": "Quebec APIs",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 130,
-    "fields": {
-      "action_time": "2022-05-01T16:44:09.184Z",
-      "user": 1,
-      "content_type": 16,
-      "object_id": "1",
-      "object_repr": "LessonLink object (1)",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 131,
-    "fields": {
-      "action_time": "2022-05-01T16:44:24.504Z",
-      "user": 1,
-      "content_type": 16,
-      "object_id": "2",
-      "object_repr": "LessonLink object (2)",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 132,
-    "fields": {
-      "action_time": "2022-05-01T16:44:36.074Z",
-      "user": 1,
-      "content_type": 16,
-      "object_id": "3",
-      "object_repr": "LessonLink object (3)",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 133,
-    "fields": {
-      "action_time": "2022-05-01T16:48:08.876Z",
-      "user": 1,
-      "content_type": 11,
-      "object_id": "11",
-      "object_repr": "Quebec JavaScript Fundamentals",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 134,
-    "fields": {
-      "action_time": "2022-05-01T16:49:26.723Z",
-      "user": 1,
-      "content_type": 19,
-      "object_id": "6",
-      "object_repr": "JavaScript Fundamentals - Javascript Fundamentals",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 135,
-    "fields": {
-      "action_time": "2022-05-01T16:49:44.747Z",
-      "user": 1,
-      "content_type": 16,
-      "object_id": "4",
-      "object_repr": "Javascript Fundamentals - https://github.com/quebecplatoon/curriculum/blob/master/page-resources/JSFundamentalsDay1.pdf",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 136,
-    "fields": {
-      "action_time": "2022-05-01T16:50:16.338Z",
-      "user": 1,
-      "content_type": 16,
-      "object_id": "5",
-      "object_repr": "Javascript Fundamentals - https://www.w3schools.com/jsref/jsref_obj_array.asp",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 137,
-    "fields": {
-      "action_time": "2022-05-01T16:50:33.256Z",
-      "user": 1,
-      "content_type": 16,
-      "object_id": "6",
-      "object_repr": "Javascript Fundamentals - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 138,
-    "fields": {
-      "action_time": "2022-05-01T16:51:08.774Z",
-      "user": 1,
-      "content_type": 16,
-      "object_id": "7",
-      "object_repr": "Javascript Fundamentals - https://education.github.com/git-cheat-sheet-education.pdf",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 139,
-    "fields": {
-      "action_time": "2022-05-01T16:52:21.360Z",
-      "user": 1,
-      "content_type": 16,
-      "object_id": "8",
-      "object_repr": "Javascript Fundamentals - http://algorithm.wiki/en/app/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 140,
-    "fields": {
-      "action_time": "2022-05-01T16:52:43.066Z",
-      "user": 1,
-      "content_type": 16,
-      "object_id": "9",
-      "object_repr": "Javascript Fundamentals - https://github.com/quebecplatoon/curriculum/blob/master/page-resources/keyboard-setup.png",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 141,
-    "fields": {
-      "action_time": "2022-05-01T16:53:04.766Z",
-      "user": 1,
-      "content_type": 16,
-      "object_id": "10",
-      "object_repr": "Javascript Fundamentals - https://github.com/quebecplatoon/curriculum/blob/master/page-resources/javascript_control_flow.pdf",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 142,
-    "fields": {
-      "action_time": "2022-05-01T16:53:50.414Z",
-      "user": 1,
-      "content_type": 16,
-      "object_id": "11",
-      "object_repr": "Javascript Fundamentals - https://github.com/quebecplatoon/algo-roman-numerals",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 143,
-    "fields": {
-      "action_time": "2022-05-01T16:54:01.210Z",
-      "user": 1,
-      "content_type": 16,
-      "object_id": "12",
-      "object_repr": "Javascript Fundamentals - http://learngitbranching.js.org/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 144,
-    "fields": {
-      "action_time": "2022-05-01T16:54:10.030Z",
-      "user": 1,
-      "content_type": 16,
-      "object_id": "13",
-      "object_repr": "Javascript Fundamentals - https://github.com/quebecplatoon/algo-factorial",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 145,
-    "fields": {
-      "action_time": "2022-05-01T16:54:19.237Z",
-      "user": 1,
-      "content_type": 16,
-      "object_id": "14",
-      "object_repr": "Javascript Fundamentals - https://github.com/quebecplatoon/algo-factorial",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 146,
-    "fields": {
-      "action_time": "2022-05-01T16:54:27.267Z",
-      "user": 1,
-      "content_type": 16,
-      "object_id": "15",
-      "object_repr": "Javascript Fundamentals - https://github.com/quebecplatoon/algo-fibonacci",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 147,
-    "fields": {
-      "action_time": "2022-05-01T16:54:39.177Z",
-      "user": 1,
-      "content_type": 16,
-      "object_id": "16",
-      "object_repr": "Javascript Fundamentals - https://github.com/quebecplatoon/algo-linear-search",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 148,
-    "fields": {
-      "action_time": "2022-05-02T22:50:18.901Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "6",
-      "object_repr": "JavaScript Fundamentals - Javascript Fundamentals",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 149,
-    "fields": {
-      "action_time": "2022-05-02T22:50:18.904Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "5",
-      "object_repr": "GIT - GIT intro",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 150,
-    "fields": {
-      "action_time": "2022-05-02T22:50:18.908Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "4",
-      "object_repr": "CLI (Command Line Interface) - Intro to the command line",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 151,
-    "fields": {
-      "action_time": "2022-05-02T22:50:18.911Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "3",
-      "object_repr": "Javascript - Javascript Intro",
-      "action_flag": 3,
-      "change_message": ""
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 152,
-    "fields": {
-      "action_time": "2022-05-02T22:56:57.897Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "7",
-      "object_repr": "JavaScript Fundamentals - CLI/GIT/Intro to javascript",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 153,
-    "fields": {
-      "action_time": "2022-05-02T22:58:29.168Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "8",
-      "object_repr": "JavaScript Fundamentals - JS fundamentals / libraries",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 154,
-    "fields": {
-      "action_time": "2022-05-02T22:59:01.158Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "17",
-      "object_repr": "CLI/GIT/Intro to javascript - https://github.com/quebecplatoon/algo-99-bottles",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 155,
-    "fields": {
-      "action_time": "2022-05-02T22:59:18.476Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "18",
-      "object_repr": "CLI/GIT/Intro to javascript - https://github.com/quebecplatoon/algo-deaf-grandma",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 156,
-    "fields": {
-      "action_time": "2022-05-02T22:59:37.616Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "19",
-      "object_repr": "CLI/GIT/Intro to javascript - https://github.com/quebecplatoon/misc-command-line",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 157,
-    "fields": {
-      "action_time": "2022-05-02T23:00:25.900Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "20",
-      "object_repr": "JS fundamentals / libraries - https://github.com/quebecplatoon/algo-roman-numerals",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 158,
-    "fields": {
-      "action_time": "2022-05-02T23:00:40.090Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "21",
-      "object_repr": "JS fundamentals / libraries - http://learngitbranching.js.org/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 159,
-    "fields": {
-      "action_time": "2022-05-02T23:00:54.812Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "22",
-      "object_repr": "JS fundamentals / libraries - https://github.com/quebecplatoon/algo-factorial",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 160,
-    "fields": {
-      "action_time": "2022-05-02T23:01:11.321Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "23",
-      "object_repr": "JS fundamentals / libraries - https://github.com/quebecplatoon/algo-fibonacci",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 161,
-    "fields": {
-      "action_time": "2022-05-02T23:01:24.385Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "24",
-      "object_repr": "JS fundamentals / libraries - https://github.com/quebecplatoon/algo-linear-search",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 162,
-    "fields": {
-      "action_time": "2022-05-02T23:01:39.853Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "25",
-      "object_repr": "JS fundamentals / libraries - https://education.github.com/git-cheat-sheet-education.pdf",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 163,
-    "fields": {
-      "action_time": "2022-05-02T23:01:53.499Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "26",
-      "object_repr": "JS fundamentals / libraries - https://github.com/quebecplatoon/git-resource",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 164,
-    "fields": {
-      "action_time": "2022-05-02T23:02:17.403Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "27",
-      "object_repr": "JS fundamentals / libraries - https://github.com/quebecplatoon/curriculum/blob/master/page-resources/javascript_control_flow.pdf",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 165,
-    "fields": {
-      "action_time": "2022-05-02T23:03:46.437Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "9",
-      "object_repr": "Python - Python Intro",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 166,
-    "fields": {
-      "action_time": "2022-05-02T23:04:16.440Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "28",
-      "object_repr": "Python Intro - https://github.com/quebecplatoon/curriculum/blob/master/page-resources/python_fundamentals.md",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 167,
-    "fields": {
-      "action_time": "2022-05-02T23:04:28.876Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "29",
-      "object_repr": "Python Intro - https://github.com/quebecplatoon/algo-99-Bottles",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 168,
-    "fields": {
-      "action_time": "2022-05-02T23:04:49.506Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "30",
-      "object_repr": "Python Intro - https://github.com/quebecplatoon/algo-deaf-grandma",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 169,
-    "fields": {
-      "action_time": "2022-05-02T23:05:00.596Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "31",
-      "object_repr": "Python Intro - https://github.com/quebecplatoon/algo-roman-numerals",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 170,
-    "fields": {
-      "action_time": "2022-05-02T23:05:12.759Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "32",
-      "object_repr": "Python Intro - https://github.com/quebecplatoon/algo-fibonacci",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 171,
-    "fields": {
-      "action_time": "2022-05-02T23:05:24.358Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "33",
-      "object_repr": "Python Intro - https://github.com/quebecplatoon/algo-factorial",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 172,
-    "fields": {
-      "action_time": "2022-05-02T23:05:38.612Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "34",
-      "object_repr": "Python Intro - https://github.com/quebecplatoon/algo-linear-search",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 173,
-    "fields": {
-      "action_time": "2022-05-02T23:07:31.704Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "10",
-      "object_repr": "Python - Python Fundamentals",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 174,
-    "fields": {
-      "action_time": "2022-05-02T23:08:00.805Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "35",
-      "object_repr": "Python Fundamentals - https://realpython.com/python-vs-javascript/#javascript-vs-python",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 175,
-    "fields": {
-      "action_time": "2022-05-02T23:08:12.200Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "36",
-      "object_repr": "Python Fundamentals - https://www.tutorialspoint.com/python/python_modules.htm",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 176,
-    "fields": {
-      "action_time": "2022-05-02T23:08:22.966Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "37",
-      "object_repr": "Python Fundamentals - https://github.com/quebecplatoon/algo-armstrong-numbers",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 177,
-    "fields": {
-      "action_time": "2022-05-02T23:08:36.631Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "38",
-      "object_repr": "Python Fundamentals - https://github.com/quebecplatoon/algo-sum-pairs",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 178,
-    "fields": {
-      "action_time": "2022-05-02T23:08:49.684Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "39",
-      "object_repr": "Python Fundamentals - https://github.com/quebecplatoon/algo-credit-check",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 179,
-    "fields": {
-      "action_time": "2022-05-02T23:09:12.042Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "40",
-      "object_repr": "Python Fundamentals - https://github.com/quebecplatoon/algo-anagrams-i",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 180,
-    "fields": {
-      "action_time": "2022-05-02T23:09:27.371Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "41",
-      "object_repr": "Python Fundamentals - https://github.com/quebecplatoon/algo-debugging-one",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 181,
-    "fields": {
-      "action_time": "2022-05-02T23:09:48.607Z",
-      "user": 1,
-      "content_type": 15,
-      "object_id": "12",
-      "object_repr": "Quebec Review",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 182,
-    "fields": {
-      "action_time": "2022-05-02T23:10:16.827Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "42",
-      "object_repr": "Python Fundamentals - https://pythontips.com/2013/07/30/20-python-libraries-you-cant-live-without/",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 183,
-    "fields": {
-      "action_time": "2022-05-02T23:11:34.955Z",
-      "user": 1,
-      "content_type": 10,
-      "object_id": "11",
-      "object_repr": "Review - JS/Python Review",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 184,
-    "fields": {
-      "action_time": "2022-05-02T23:12:01.451Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "43",
-      "object_repr": "JS/Python Review - https://github.com/quebecplatoon/git-pair",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 185,
-    "fields": {
-      "action_time": "2022-05-02T23:12:18.386Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "44",
-      "object_repr": "JS/Python Review - https://github.com/quebecplatoon/algo-anagrams-ii",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 186,
-    "fields": {
-      "action_time": "2022-05-02T23:12:32.673Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "45",
-      "object_repr": "JS/Python Review - https://github.com/quebecplatoon/algo-character-count",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 187,
-    "fields": {
-      "action_time": "2022-05-02T23:12:45.018Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "46",
-      "object_repr": "JS/Python Review - https://github.com/quebecplatoon/algo-palindromes",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 188,
-    "fields": {
-      "action_time": "2022-05-02T23:12:59.663Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "47",
-      "object_repr": "JS/Python Review - https://github.com/quebecplatoon/algo-calculate-mode",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 189,
-    "fields": {
-      "action_time": "2022-05-02T23:13:13.510Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "48",
-      "object_repr": "JS/Python Review - https://github.com/quebecplatoon/algo-pad-array",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
-    "model": "admin.logentry",
-    "pk": 190,
-    "fields": {
-      "action_time": "2022-05-02T23:13:30.705Z",
-      "user": 1,
-      "content_type": 18,
-      "object_id": "49",
-      "object_repr": "JS/Python Review - https://github.com/quebecplatoon/algo-balanced-parentheses",
-      "action_flag": 1,
-      "change_message": "[{\"added\": {}}]"
-    }
-  },
-  {
     "model": "auth.group",
     "pk": 1,
     "fields": {
@@ -2906,6 +436,102 @@
     }
   },
   {
+    "model": "app.user",
+    "pk": 20,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$wVbK63Es8jhxMrTOE6UISJ$pxDF7b0UY/s2f+kKfb1xPfw60m2EJxYWd58N4yzuX/Q=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "iwantin@email.com",
+      "first_name": "IWant",
+      "last_name": "In",
+      "email": "iwantin@email.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-05-04T00:03:15.429Z",
+      "avatar": "default.png",
+      "metadata": {
+        "cohort_requested": "3"
+      },
+      "default_group": null,
+      "timezone": "CST",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 21,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$fb8iwkvYbBii2yXqTJOf8R$LGR1241VD/dSFmlp5bIh0FljnPNZQzKhCCrz789Dz30=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "SuperHacker1337@ddos.me",
+      "first_name": "Super",
+      "last_name": "Hacker",
+      "email": "SuperHacker1337@ddos.me",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-05-04T00:04:03.168Z",
+      "avatar": "default.png",
+      "metadata": {
+        "cohort_requested": "1"
+      },
+      "default_group": null,
+      "timezone": "CST",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 22,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$678gJ9ObfW1En8CbHzmsiE$4PMCxbhMg2iNMneGS/uU4Qsd/7glTtJ17qjtZBA/kDo=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "itypefast@saywut.com",
+      "first_name": "Twelve",
+      "last_name": "Fingers",
+      "email": "itypefast@saywut.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-05-04T00:04:51.645Z",
+      "avatar": "default.png",
+      "metadata": {
+        "cohort_requested": "3"
+      },
+      "default_group": null,
+      "timezone": "CST",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 23,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$G8JjAAJhon7RyTUBVaM5Lb$W8BTbJmILIrXthFfv5i6FqbhnODwSCQoMVC/UfY5AWo=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "imdabomb@rock.you",
+      "first_name": "Big",
+      "last_name": "Ego",
+      "email": "imdabomb@rock.you",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-05-04T00:05:30.666Z",
+      "avatar": "default.png",
+      "metadata": {
+        "cohort_requested": "2"
+      },
+      "default_group": null,
+      "timezone": "CST",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
     "model": "app.userlink",
     "pk": 1,
     "fields": {
@@ -3225,6 +851,17 @@
     }
   },
   {
+    "model": "app.checkin",
+    "pk": 6,
+    "fields": {
+      "date": "2022-05-03",
+      "group": 1,
+      "user": [
+        6
+      ]
+    }
+  },
+  {
     "model": "app.topic",
     "pk": 1,
     "fields": {
@@ -3364,9 +1001,10 @@
       "description": "Get your local machine set up to start the course\r\nExploring your IDE (VSCode)\r\nBe able to navigate your computer using the command line\r\nCreate and manage git repositories using the command line",
       "lesson_file_path": "week-01/2022-01-31.md",
       "img_url": null,
-      "date": "2022-01-31",
-      "start_time": "2022-01-31T09:00:00Z",
-      "stop_time": "2022-01-31T12:00:00Z"
+      "date": "2022-05-02",
+      "start_time": "2022-05-02T09:00:00Z",
+      "stop_time": "2022-05-02T12:00:00Z",
+      "markdown": "# Monday, January 31, 2022\r\n\r\n## Topics Covered / Goals\r\n- Get your local machine set up to start the course\r\n- Exploring your IDE (VSCode)\r\n- Be able to navigate your computer using the command line\r\n- Create and manage git repositories using the command line\r\n\r\n## Lesson\r\n\r\n### Computer Setup (Mac, Linux, & Windows)\r\nBefore we get started, just know that this will be chaos. Your goal is to get a working environment, not to understand everything that happens. Please follow along closely!\r\n- [Slack](https://slack.com/downloads) - for all communication purposes\r\n- [Zoom](https://zoom.us/support/download)\r\n- Sign up for [Operation Code](https://operationcode.org/join)\r\n\r\n### Mac Setup\r\n- Make sure you have an Apple ID\r\n- Download XCode from the Mac App Store\r\n- Ensure that you're running the most recent operating system. You can check your version by going to \"System Preferences\" and clicking on \"Software Update\"\r\n- [Complete Installfest (MacOS)](../page-resources/installfest.md)\r\n\r\n### Ubuntu Linux Setup\r\n- [Complete Installfest (Ubuntu Linux)](../page-resources/installfest_ubuntu.md)\r\n\r\n### Windows Setup\r\n- Ensure that you're running the most recent operating system (Windows 10 and 11 are both fine). You can update to the latest Windows version by selecting `Start > Settings > **Windows Update **> Check for updates.`\r\n- Download and install [WSL](https://docs.microsoft.com/en-us/windows/wsl/install) by running `wsl --install` as an Administrator from Powershell\r\n- [Complete Installfest (Windows)](../page-resources/installfest_windows.md)\r\n\r\n### CLI Intro\r\n\r\nReview the following BASH commands:\r\n- pwd\r\n- ls, ls -a\r\n- cd, ., .., ~, / (different places to cd to)\r\n- mkdir (make ~/projects for all codeplatoon assignments)\r\n- touch\r\n- cp, cp -r\r\n- mv\r\n- rm, rm -r, rm -rf\r\n- rmdir\r\n- sudo\r\n- clear, cmd+k\r\n- less (useful by itself, also used by git diff)\r\n- vim (just learn how to quit. used by git commit)\r\n\r\n### Git Intro\r\n\r\n- `ls -a` (nothing here)\r\n- `git status` (not a repo)\r\n- `git init` \r\n- `ls -a` (see .git folder)\r\n- `git status`\r\n- `touch work.txt`\r\n- `git add .`\r\n- `git commit -m 'i did work'` (use -m to add the message inline, or you'll find yourself in vim)\r\n- `git log` (uses `less` to show the commit history)\r\n- `git remote add origin https://github.com/username/reponame` (the name is arbitrary, but origin is VERY conventional)\r\n- `git remote rm origin` (in case you messed up)\r\n- `git remote -v` (maybe you messed up, but aren't sure)\r\n- `git push origin master`\r\n- `git pull origin master`\r\n- `git clone https://github.com/username/reponame` (now you can start today's exercises)\r\n\r\n## Visual Studio Code\r\n\r\nThere are many IDEs (integrated development environments) out there that developers can use. For our class, we're going to be using Visual Studio Code, a free IDE created by Microsoft. VSCode is highly extensible and able to support many different coding languages. \r\n\r\nIt is important to use a consistent environment when collaborating so we are going to recommend a few settings and extensions that everyone should set up with VSCode. These are the recommended settings we all should be using. To set these, go to the main menu Code -> Preferences -> Settings (or Mac: Command + Shift + P > \"Settings\"), and apply these settings in the JSON file:\r\n\r\n```\r\n{\r\n  \"editor.fontSize\": 14,\r\n  \"editor.multiCursorModifier\": \"ctrlCmd\",\r\n  \"editor.renderLineHighlight\": \"gutter\",\r\n  \"editor.tabSize\": 2,\r\n  \"editor.wordWrap\": \"on\",\r\n  \"explorer.confirmDelete\": false,\r\n  \"explorer.confirmDragAndDrop\": false,\r\n  \"files.autoSave\": \"onFocusChange\",\r\n  \"window.zoomLevel\": 0,\r\n  \"workbench.colorTheme\": \"Visual Studio Dark\",\r\n  \"workbench.iconTheme\": \"vscode-icons\",\r\n  \"workbench.startupEditor\": \"newUntitledFile\",\r\n  \"[python]\": {\r\n    \"editor.insertSpaces\": true,\r\n    \"editor.tabSize\": 4\r\n  },\r\n\r\n}\r\n```\r\n\r\nAnd here are some useful extensions:\r\n  - Beautify\r\n  - VSCode Icons\r\n  - Bracket Pair Colorizer\r\n  - Path IntelliSense\r\n  - Live Server\r\n  - Python\r\n  - Live Share\r\n  - Live Share Audio\r\n  \r\n \r\n\r\n\r\n## Assignments\r\n- [99 Bottles](https://github.com/quebecplatoon/algo-99-bottles) in JS\r\n- [Deaf Grandma](https://github.com/quebecplatoon/algo-deaf-grandma) in JS\r\n- [Terminal Commands In Depth](https://github.com/quebecplatoon/misc-command-line) ...nothing to submit here but necessary reading"
     }
   },
   {
@@ -3378,9 +1016,10 @@
       "description": "Pair Programming\r\nYou will likely be pair programming at your first job in some capacity. It's an important skill to have because it helps you communicate your thought process and enables you to learn from other developers.\r\nJS Fundamentals\r\nJavascript is the language of the Web and you'll need to know it if you want to become a full stack software engineer.\r\nJavascript Libraries",
       "lesson_file_path": "week-01/2022-02-01.md",
       "img_url": null,
-      "date": "2022-02-01",
-      "start_time": "2022-02-01T09:00:00Z",
-      "stop_time": "2022-02-01T12:00:00Z"
+      "date": "2022-05-03",
+      "start_time": "2022-05-03T09:00:00Z",
+      "stop_time": "2022-05-02T12:00:00Z",
+      "markdown": "# Tuesday, February 01, 2022\r\n\r\n## Topics Covered / Goals\r\n- Pair Programming\r\n  - You will likely be pair programming at your first job in some capacity. It's an important skill to have because it helps you communicate your thought process and enables you to learn from other developers.\r\n- [JS Fundamentals](../page-resources/JSFundamentalsDay1.pdf)\r\n  - Javascript is the language of the Web and you'll need to know it if you want to become a full stack software engineer.\r\n- Javascript Libraries\r\n\r\n\r\n## Lesson\r\n\r\n**Javascript Fundamentals**\r\n- Javascript was created by Brendan Eich during his time at Netscape in 1995 that conforms to the ECMAScript specification.\r\n- JavaScript is one of the core technologies of the World Wide Web.\r\n- JavaScript is high-level language. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.\r\n- With the creation of Node.js (by Google) you can leverage Javascript to write server side code\r\n\r\n**Data Types**\r\n  - **Strings**\r\n    - Anything enclosed in single, double quotes, or back ticks\r\n    ```js\r\n      'stringOne'\r\n      \"string two is also a string with 123456789\"\r\n      `Use back ticks for string interpolation to put variables in your string ${someVariable}`\r\n    ```\r\n    - Interpolation is when you substitute a variable into a string.\r\n    ```js\r\n    let firstName = 'Tom';\r\n    console.log(`My first name is ${firstName}`)\r\n    ```\r\n\r\n    - Reference [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String) and [W3 Schools](https://www.w3schools.com/js/js_string_methods.asp) for a list of built-in String Methods\r\n  - **Numbers**\r\n    - Similar to most other languages, `integers` are whole numbers, `floats` are decimals\r\n    ```js\r\n    3.14 //-> Float number\r\n    55 //-> Integer is a whole number\r\n    ```\r\n  - **Booleans**\r\n    - Booleans are `true` or `false`\r\n    ```js\r\n    true\r\n    false\r\n    ```\r\n  - **Undefined**\r\n    - A variable that has no defined value.\r\n    ```js\r\n    let babyName = undefined;\r\n    ```\r\n  - **Null**\r\n    - A variable explicity defined as having no value\r\n    ```js\r\n    let noValue = null\r\n    ```\r\n  - **Arrays**\r\n    - Holds an ordered list of values. These values can be anything: strings, numbers, objects, even other arrays!\r\n    - Once you put something in an array, it stays at that place forever until you alter the array. You can rely on it always being there. Think of an older person's pill box - the pills for Monday are in the Monday slot. If they were to shake it or drop it or something, it wouldn't matter. Those pills are still at the same place.\r\n    - You can access the values in the array by using their `index`. We start counting from 0 and go up from there\r\n    ```js\r\n    const daysOfTheWeek = ['mon', 'tues', 'wed', 'thurs', 'fri']\r\n    // Remember, computers start counting at 0 and move up from there\r\n    daysOfTheWeek[3] // \"thurs\"\r\n    ```\r\n    - Reference [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and [W3 Schools](https://www.w3schools.com/jsref/jsref_obj_array.asp) for a list of built-in Array Methods\r\n\r\n  - **Objects**\r\n    - It's a collection of key/value pairs. You can't access it by `index` like with arrays because objects do not have an order, but you can access it by `key`\r\n    - Useful for holding many details about a single entity, like VIN numbers or social security information\r\n     \r\n    ```js\r\n    // below, we have a object called user that has a name/age key on the left and values on the right\r\n    let user = {\r\n        'name': 'Tom',\r\n        'age': 34\r\n    }\r\n\r\n    // To access a particular key's value:\r\n    console.log(user['name'])\r\n\r\n    // You can also re-assign a key's value\r\n    user['age'] = 30\r\n    ```\r\n\r\n**Variables**\r\n  - Variables are named labels/identifiers for storing values\r\n  - Remember from math class variables ΓÇ£xΓÇ¥ and ΓÇ£yΓÇ¥?\r\n  - There are three ways to declare/create a variable in Javascript\r\n  - `var`\r\n    - The most common variable. It can be reassigned but only accessed within a function. Variables defined with `var` move to the top when the code is executed. (donΓÇÖt use anymore)\r\n  - `const`\r\n    - Can not be reassigned and not accessible before they appear within the code.\r\n  - `let`\r\n    - The `let` variable can be reassigned but not re-declared.\r\n\r\n  - `var`, `let`, and `const` are reserved keywords in Javascript. You canΓÇÖt use them for anything other than declaring variables\r\n\r\n**Printing**\r\n- `console.log()`\r\n- Takes whatever you give it and prints it to the terminal/console\r\n```js\r\nlet a = 'Hello'\r\nlet b = 'World'\r\nconsole.log(`${a} ${b}`) //-> 'Hello World'\r\n```\r\n\r\n**Arithmetic Operators**\r\n- Arithmetic is pretty much the same in all languages. Below are all of the operators:\r\n\r\n|Description|Operator|Examples|\r\n|-----------|--------|--------|\r\n|Addition| `+`| `1 + 1 //-> 2`|\r\n|Subtraction|`-`| `3 - 2 //-> 1`|\r\n|Multiplication|`*`| `3 - 2 //-> 1`|\r\n|Exponent|`**`| `3 ** 2` (ΓÇÿ3 to the power of 2ΓÇÖ)|\r\n|Division|`/`| `10 / 2 //-> 5`|\r\n|Modulus (returns the remainder)|`%`| `10 % 3 //-> 1`|\r\n\r\n**Logic Operators**\r\n|Description|Operator|Examples <br>`let a = 4;`<br> `let b = 2;`<br>`let c = 8`|\r\n|-----------|--------|--------|\r\n|Equal| `==` or `===`| `a == b //-> false`|\r\n|Not equal|`!=` or `!==`| `a !== b //-> true`|\r\n|Greater than|`>`| `a > b //-> true`|\r\n|Less than|`<`| `a < b //-> false`|\r\n|Greater than or equal|`>=`| `a >= b //-> true`|\r\n|Less than or equal to|`<=`| `a <= b //-> false`|\r\n|Logical AND|`&&`| `a > b && b < c //-> true` <br> `a > c && a > b //-> false`|\r\n|Logical OR|`\\|\\|`| `a > b \\|\\| b < c //-> true` <br>`a > c \\|\\| a > b //-> true`|\r\n\r\n**Functions**\r\n- Javascript functions are resusable blocks of code that perform a specific set of instructions\r\n- Functions output a value\r\n\r\n```js\r\n// To declare a new function use the function keyword followed by the name of the function.\r\n// Pass in parameters (if needed)\r\n\r\n// Regular functions\r\nfunction name(parameter1, paramenter2) {\r\n\tlet answer = parameter1 + paramenter2\r\n\treturn answer\r\n}\r\n\r\n// OR\r\n\r\n// ΓÇÿFat arrowΓÇÖ functions\r\nconst name = (num1, num2) => {\r\n  let answer = num1 + num2\r\n  return answer\r\n}\r\n\r\n// Example\r\nlet sayHello = (firstName) => {\r\n  return `Hello! My name is ${firstName}`\r\n}\r\n\r\nsayHello('Tom')\r\n// Here we have a function called `sayHello` that takes in a single parameter/argument called `firstName`. We passed in `Tom` as the argument, so `Tom` gets saved as `firstName` when we run through the code. We can then interpolate `firstName` into the string that gets printed out.\r\n\r\n```\r\n\r\n**Conditional Logic**\r\n- When you want to control how a computer goes through your program, use control flow!\r\n- Evaluates to either true or false (boolean values)\r\n- Allows us to select different outcome depending on user input or the result of a computation\r\n\r\n```js\r\n// if statement\r\nif (a === b) {\r\n\t// do something\r\n}\r\n\r\n// if else statement\r\nif (a === b) {\r\n\t// do something\r\n} else {\r\n\t// do something\r\n}\r\n\r\n// else if statement\r\nif (a === b) {\r\n\t// do something\r\n} else if (a > b) {\r\n\t// do something else\r\n} else {\r\n\t// do something else\r\n}\r\n```\r\n- **Example**\r\n```js\r\nlet age = 18\r\nif (age >= 21) {\r\n    console.log('Welcome to the bar')\r\n} else {\r\n    console.log('Come back when you are older')\r\n}\r\n\r\n## Sometimes, you can drink if you are in another country if you're 18. Let's account for that.\r\n\r\nlet currentCountry = 'China'\r\nif (age >= 21) {\r\n    console.log('Welcome to the bar')\r\n} else if  (age >= 18 && currentCountry === 'China') {\r\n    console.log('You can drink in China starting at age 18!')\r\n} else {\r\n    console.log('Come back when you are older')\r\n}\r\n```\r\n\r\n**Iteration (Loops)**\r\n- Loops are very popular in coding. They are basically instructions for your computer to do things over and over again\r\n- As long as the condition is true, the block of code will continue to execute.\r\n- When the condition becomes false, the code after the end of the loop will be executed.\r\n```js\r\nlet age = 12\r\nwhile (age < 21) {\r\n    console.log(`You are not old enough yet - you are only ${age} years old! Come back when you are older.`)\r\n}\r\n// beware of infinite loops! What is going on above?\r\n\r\n// This would be better:\r\nlet age = 12\r\nwhile (age < 21) {\r\n    console.log(`You are not old enough yet - you are only ${age} years old! Come back when you are older.`)\r\n    age += 1\r\n}\r\n```\r\n- `for` loops are a bit different. It's a way for you to iterate over everything in an array or object\r\n\r\n```js\r\nlet age = 12\r\nfor (let i = 0; i < 21; i++) {\r\n  console.log(`You are not old enough yet - you are only ${age} years old! Come back when you are older.`)\r\n}\r\nreturn `You're now ${age}! You can come on in!`\r\n\r\n// Looping through an object\r\nlet employee = {\r\n  name: 'Tom',\r\n  title: 'Instructor'\r\n}\r\nfor (let key in employee) {\r\n\t// execute this code\r\n}\r\nreturn someValue\r\n```\r\n\r\n### Libraries\r\nLibraries used to leverage pre-written code (developed by other developers) to include functionality into our applications without having to do everything from scratch. Javascript libraries/frameworks are primarily focused on the front end. One of the most popular libraries used today is React. Instagram and Facebook are written in this framework.\r\n\r\nOne library manager is `npm`. We can use npm to easily download and \"install\" JavaScript libraries to use with our apps. \r\n\r\n### External Resources\r\n- [Cheatsheet](https://education.github.com/git-cheat-sheet-education.pdf)\r\n- [Git Resource](https://github.com/quebecplatoon/git-resource)\r\n- [Wikipedia of Algorithms](http://algorithm.wiki/en/app/)\r\n- [Keyboard Setup to match Mac](../page-resources/keyboard-setup.png)\r\n- [JS Fundamentals](../page-resources/javascript_control_flow.pdf) - control flow, if/else, loops, etc\r\n- [List of JS libraries](https://www.javascripting.com/).\r\n\r\n- Some of you may be wondering what `exports` is on the Javascript files. The Javascript folders will sometimes have prewritten spec (test) files and in order for the spec file to read the contents of the corresponding Javascript files where your code is written, it must be attached to the `export` Javascript object. To ensure that you are writing correct code, run `node WHATEVER_CHALLENGE_NAME_Spec.js` in the `js` folder. Don't run `node WHATEVER_CHALLENGE_NAME.js` as it will blow up.\r\n\r\n## Assignments\r\n- [Roman Numerals](https://github.com/quebecplatoon/algo-roman-numerals) in JS\r\n- [Git Practice](http://learngitbranching.js.org/)\r\n- [Factorial](https://github.com/quebecplatoon/algo-factorial) in JS\r\n- [Fibonacci](https://github.com/quebecplatoon/algo-fibonacci) in JS\r\n- [Linear Search](https://github.com/quebecplatoon/algo-linear-search) in JS"
     }
   },
   {
@@ -3392,9 +1031,10 @@
       "description": "Understand basic Python syntax\r\nUnderstand variable types\r\nUnderstand basic data types\r\nUnderstand data structures:\r\nlists\r\ntuples\r\ndictionaries\r\nUnderstand control flow in Python:\r\nif-statements\r\nfor-loops\r\nwhile-loops\r\nUnderstand some common built-in methods\r\nbuilt-in methods for strings, lists, dicts, etc\r\ndestructive vs non-destructive methods",
       "lesson_file_path": "week-01/2022-02-02.md",
       "img_url": null,
-      "date": "2022-02-02",
-      "start_time": "2022-02-02T09:00:00Z",
-      "stop_time": "2022-02-02T12:00:00Z"
+      "date": "2022-05-04",
+      "start_time": "2022-05-04T09:00:00Z",
+      "stop_time": "2022-05-04T12:00:00Z",
+      "markdown": "# Wednesday, February 02, 2022\r\n\r\nΓÇï\r\n## Topics Covered / Goals\r\n- Understand basic Python syntax\r\n- Understand variable types\r\n- Understand basic data types\r\n- Understand data structures:\r\n  - lists\r\n  - tuples\r\n  - dictionaries\r\n- Understand control flow in Python:\r\n  - if-statements\r\n  - for-loops\r\n  - while-loops\r\n- Understand some common built-in methods\r\n    - built-in methods for strings, lists, dicts, etc\r\n    - destructive vs non-destructive methods\r\n\r\n## Lesson\r\n\r\n> In python, like all programming languages, we will manipulate various different types of data, such as numbers and lists. If you want to understand how you can manipulate your data, and compare it to other data, the most important thing to understand is the TYPE of your data. Many of these data types are similar to the data types we use in javascript, but there are some important differences I'll point out. There are two types of types: primitive types, which are just a single value, and non-primitive types, which can contain other data.\r\n\r\n### Numbers\r\n\r\n> The first type we'll learn about are numbers. Let's create a number literal and assign it to a variable.\r\n\r\n```python\r\na_small_number = 4\r\n```\r\n\r\n> In python, unlike javascript, you don't use any keywords (e.g. `let`, `const`) for defining a variable. You simply assign a value to a variable name. When choosing a name, it's conventional in python to use 'snake_case', which consists of lowercase letters connected with underscores.\r\n> To check the type of a variable, we can use the `type()` function. We can print the result to the terminal with `print()`. We'll learn more about functions later today.\r\n\r\n```python\r\nprint(type(a_small_number))\r\n```\r\n\r\n> You can manipulate numbers in python using numeric operators, such as +, -, *, /, %, <, >, ==, etc. These work the same way they do in javascript, so we won't review them again. Python does not perform type coercion like javascript, so there are no operators like === or !==.\r\n\r\n### Strings\r\n\r\n> Strings can be created in python similarly to how you create them in javascript, using either single or double quotes.\r\n\r\n```python\r\na_string = 'hello world'\r\nanother_string = \"welcome to the internet\"\r\nprint(type(another_string))\r\n```\r\n\r\n> Python supports string interpolation, just like javascript, but the syntax is a little different\r\n\r\n```python\r\nday = 'Friday'\r\nactivity = 'bowling'\r\nprint(f\"Let's go {activity} on {day} afternoon.\") # This is sometimes called an \"f string\"\r\n```\r\n\r\n### Booleans\r\n\r\n> The last primitive type in python is boolean. There are only two boolean values, `True` and `False`. These work the same as in javascript, except that we spell them with capital letters. \r\n\r\n### Lists\r\n\r\n> The most fundamental non-primitive type in python is a list. A python list is roughly equivalent to a javascript array, but lists in python are a bit more flexible. \r\n\r\n```python\r\nberries = ['grape', 'tomato', 'cucumber', 'eggplant', 'banana', 'watermelon', 'pumpkin']\r\nprint(type(berries))\r\nprint(berries[1]) # normal indexing works how you'd expect\r\nprint(berries[-1]) # index from the back of the list\r\nprint(berries[2:4]) # slice in the middle\r\nprint(berries[:3]) # slice from the start to index 3\r\nprint(berries[2:]) # slice from index 2 to the end\r\n```\r\n\r\n### Tuples\r\n\r\n> A tuple in python is like a list, but it is defined with parentheses instead of brackets. It is used for storing mulTiPLE pieces of data in one data structure. Unlike a list, a tuple is immutable, meaning that it cannot be mutated. You cannot add, remove, or modify items in a tuple. You should use a tuple if you want to make sure that the items in your list never change. For example, you might use a tuple to store the seven days of the week, because there's no reason for that to change. You might also store geographical (lat,long) coordinates in a tuple, because the two numbers together refer to one thing, one specific place. It doesn't make sense to modify just one number in a coordinate pair. Instead, you would just create a new coordinate pair. \r\n\r\n```python\r\ndays_of_the_week = ('sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday')\r\ndays_of_the_week[6] = 'Caturday' # this throws an error! we can't assign to a tuple\r\n```\r\n\r\n### Dictionaries\r\n\r\n> A dictionary in python is like an object in javascript (though python objects are more complex than javascript objects). It's used to store pairs of data, a key with its value. For example, you might use a dictionary to store information about a person. Unlike in javascript, we must use quotation marks for defining string keys, and we must use bracket notation for accessing values in a dictionary. \r\n\r\n```python\r\njeff = {\r\n    'name': 'jeff',\r\n    'age': 44,\r\n    'job': 'influencer',\r\n}\r\nprint(jeff['age'])\r\n\r\npeople = [\r\n    {\r\n        'name': 'alice',\r\n        'age': 44,\r\n        'job': 'influencer',\r\n    },\r\n    {\r\n        'name': 'bob',\r\n        'age': 31,\r\n        'job': 'dog walker',\r\n    },\r\n    {\r\n        'name': 'carol',\r\n        'age': 65,\r\n        'job': 'life coach',\r\n    },\r\n]\r\nprint(people[1]['name'])\r\n```\r\n\r\n### functions\r\n\r\n> To define a function in python, we use the `def` keyword. The body of the function must be indented because python is whitespace-sensitive. Instead of using braces and semicolons to mark the boundaries of our code, python uses indentation and newlines. It's important that you get comfortable defining your own functions to use in your code, but you should also be aware that there are many useful functions predefined in python.\r\n\r\n```python\r\ndef gimme_five():\r\n    return 5\r\nprint(gimme_five() + 10)\r\n\r\n\r\n# if a function is defined with one parameter, it must be called with one argument\r\ndef add_one(n):\r\n    return n + 1\r\nprint(add_one(10))\r\n\r\n# order matters for positional arguments\r\ndef describe_berries(n, color):\r\n    print(f'I have {n} {color}berries.')\r\ndescribe_berries(3, 'blue')\r\ndescribe_berries('black', 4)\r\n\r\n# keyword arguments can be used in any order\r\ndef describe_berries(n=1, color=\"blue\"):\r\n    print(f'I have {n} {color}berries.')\r\ndescribe_berries(color=\"rasp\", n=3)\r\n\r\n# use * to define a function with an unspecified number of parameters\r\ndef print_them_all(*args):\r\n    print(args)\r\nprint_them_all('alice', 'bob', 'carol')\r\n\r\n# use ** to define a function with an unspecified number of keyword arguments\r\ndef who_am_i(**kwargs):\r\n    for kwarg in kwargs: # we'll talk more about loops in a minute\r\n        print(f'My {kwarg} is {kwargs[kwarg]}.')\r\nwho_am_i(name='dan', age=20, job='skydiving instructor')\r\n```\r\n\r\n\r\n### If-statements\r\n> If-statements in python work the same as in javascript, except that instead of `&&`, `||`, and `!`, we use `and`, `or`, and `not`.\r\n\r\n```python\r\ndef can_drink_beer(age, country):\r\n    if age >= 21 or age >= 18 and country == 'Canada':\r\n        return True\r\n    elif country == 'Antarctica':\r\n        return True\r\n    else:\r\n        return False\r\n\r\nprint(can_drink_beer(20, 'USA'))\r\nprint(can_drink_beer(21, 'USA'))\r\nprint(can_drink_beer(18, 'Canada'))\r\n\r\n\r\n```\r\n\r\n**for-loop**\r\n```python\r\n## looping over list elements\r\nmy_list = [\"a\", \"b\", \"c\"]\r\nfor x in my_list:\r\n    print(x)\r\n\r\n## loop over a range\r\nfor x in range(10):\r\n    print(x)\r\n\r\n\r\nfor i, x in enumerate(my_list):\r\n    print(i, x)\r\n\r\n## looping over dictionary entries\r\nmy_dict = {\r\n    \"donuts\": \"yummy!\",\r\n    \"green beans\": \"icky!\",\r\n}\r\nfor k in my_dict:\r\n    print(my_dict[k])\r\n\r\nfor v in my_dict.values():\r\n    print(v) # same output as the previous loop\r\n```\r\n\r\n**while-loop**\r\n```python\r\nx = 9\r\nwhile x > 0:\r\n    print(x)\r\n    x = x - 1\r\n\r\n## infinite loop\r\nx = 9\r\nwhile x > 0:\r\n    print(\"la la la\") \r\n```\r\n\r\n\r\n**Built-in Methods**\r\n> Most types of values in python have built-in methods that you can use to manipulate that value. a method is simply a function that belongs to an object. There are two types of methods that you should be aware of: destructive and non-destructive methods. Destructive methods are those that change the original data where non-destructive methods are those that do not change the original data. You have to be careful with the methods that you use as there isn't a clear indication in Python or JS as to which are destructive and which aren't. Let's take a look at the example below:\r\n```python\r\nfirst_name = 'jonathan'\r\nfirst_name.capitalize() # this is a string method that converts the first character to upper case\r\nfirst_name # we see that despite running the method above, my original data does not change\r\n\r\nlast_name = 'young'\r\nlast_name.replace('g', '123')\r\nlast_name # same case here - this is a non destructive method\r\n\r\nstaff = ['jon', 'rod', 'ankur', 'chad', 'alicia']\r\nstaff.append('tom')\r\nstaff # this is a destructive method because it alters the original\r\n## Let's fire tom. He sucks.\r\nstaff.pop()\r\nstaff # my original has been changed yet again!\r\n```\r\n\r\n## Resources\r\n- [Python Fundamentals](../page-resources/python_fundamentals.md)\r\nΓÇï\r\n## Assignments\r\n- [99 Bottles](https://github.com/quebecplatoon/algo-99-Bottles) in Python\r\n- [Deaf Grandma](https://github.com/quebecplatoon/algo-deaf-grandma) in Python\r\n- [Roman Numerals](https://github.com/quebecplatoon/algo-roman-numerals) in Python\r\n- [Fibonacci](https://github.com/quebecplatoon/algo-fibonacci) in Python\r\n- [Factorial](https://github.com/quebecplatoon/algo-factorial) in Python\r\n- [Linear Search](https://github.com/quebecplatoon/algo-linear-search) in Python"
     }
   },
   {
@@ -3406,9 +1046,10 @@
       "description": "Understand lambda functions\r\nUnderstand list methods map(), filter(), sort(), reduce()\r\nUnderstand ternary statements\r\nUnderstand list comprehensions\r\nUnderstand Try-Except error handling",
       "lesson_file_path": "week-01/2022-02-03.md",
       "img_url": null,
-      "date": "2022-02-03",
-      "start_time": "2022-02-03T09:00:00Z",
-      "stop_time": "2022-02-03T12:00:00Z"
+      "date": "2022-05-05",
+      "start_time": "2022-05-05T09:00:00Z",
+      "stop_time": "2022-05-05T12:00:00Z",
+      "markdown": "# Thursday, February 03, 2022\r\n\r\n## Topics Covered / Goals\r\n- Understand lambda functions\r\n- Understand list methods map(), filter(), sort(), reduce()\r\n- Understand ternary statements\r\n- Understand list comprehensions\r\n- Understand Try-Except error handling\r\n\r\n## Lesson\r\n\r\n### Lambda functions\r\n- temporary, unnamed (\"anonymous\") functions\r\n```python\r\n## typical function example\r\ndef add_one(x):\r\n    return x + 1\r\n\r\nprint(add_one(7)) # output would be 8\r\n\r\n## lambda function example\r\nadd_two = lambda x : x + 2\r\n\r\nprint(add_two(7)) # output would be 9\r\n```\r\n\r\n### List Methods\r\n**map()**\r\n- creates a new list, using a function that returns a new item\r\n```python\r\nmy_list = [1,2,3,4,5,6,7,8,9,10]\r\nnew_list = map(lambda item : item + 2, my_list)\r\nfor x in new_list:\r\n    print(x)\r\n## [3,4,5,6,7,8,9,10,11,12]\r\n```\r\n\r\n**filter()**\r\n- creates a new list, using a function that returns a bool (True => include item in new list)\r\n```python\r\nmy_list = [1,2,3,4,5,6,7,8,9,10]\r\nnew_list = filter(lambda item : item % 3 == 0, my_list)\r\nfor x in new_list:\r\n    print(x)\r\n## [3,6,9]\r\n```\r\n\r\n**reduce()**\r\n- creates a single value, using a function that aggregates values\r\n```python\r\nimport functools\r\nmy_list = [1,2,3,4,5,6,7,8,9,10]\r\nsum = functools.reduce(lambda agg, item : agg + item, my_list)\r\nprint(sum)\r\n```\r\n\r\n## Ternary Statements\r\n- inline if-statements\r\n```python\r\n## if statement\r\nx = None\r\ny = 9\r\nif y > 5:\r\n    x = \"donuts\"\r\nelse:\r\n    x = \"bagels\"\r\n\r\nprint(x)\r\n\r\n## ternary statement\r\nx = \"donuts\" if y > 5 else \"bagels\"\r\nprint(x)\r\n```\r\n\r\n### List Comprehensions\r\n```python\r\nfull_list = [a for a in range(10)]\r\nprint(full_list)\r\n\r\nevens_list = [x for x in range(10) if x % 2 == 0]\r\nprint(my_list)\r\n\r\nsome_list = [\"donuts\" if x % 2 == 0 else \"bagels\" for x in range(10) if x % 3 == 0]\r\nprint(some_list)\r\n```\r\n\r\n### Try-Except\r\n```python\r\ntry:\r\n    a = 1\r\n    b = 2\r\n    c = \"donuts\"\r\n    \r\n    d = a + b\r\n    print(d)\r\n\r\n    e = a + c # error\r\n    print(e)\r\nexcept:\r\n    # handle exception\r\n    print(\"BOO! there was an error\")\r\nelse:\r\n    # handle success\r\n    print(\"YAY! there was no error\")\r\nfinally:\r\n    # always execute regardless of exception or success\r\n    print(\"donuts are yummy!\")\r\n```\r\n\r\n## Modules, Packages, Libraries, and Frameworks\r\n\r\n- Modules, libraries, frameworks, and packages are just code that someone else wrote ahead of time to make your life as a developer easier. There is no magic here - it's just meant to make your life easier and for you to make more robust applications\r\n- There are a number of package managers to manage the different libraries we will use. The most popular package manager for Python is Pip, and the most popular (and default) package manager for Javascript is npm. \r\n- You can find some very useful libraries [here](https://pythontips.com/2013/07/30/20-python-libraries-you-cant-live-without/). We'll be using Django in the next few weeks. If you go the data science route, there are some data science heavy libraries like NumPy and Pandas\r\n\r\nYou can also write your own modules, which allows for you as the author to organize your code and group it together for ease of use. To put it very simply, a module is a file of Python code that you bring into other files. Let's take a look at an example:\r\n\r\n### Python modules\r\n\r\n```python\r\n## file1.py\r\ndef say_hello():\r\n    print('Hey there')\r\n\r\n## file2.py\r\nimport file1\r\nimport file1 as anything\r\nanything.say_hello()\r\n```\r\nWe just created two files: `file1.py` and `file2.py`. `file1.py` has a `say_hello` function. `file2.py` has nothing in it, but imports that file in as the name of the file and we can use all the methods in that file. We can also rewrite it as `import file1 as anything` and call `anything.say_hello()`. You can `import` anything into your file by providing the correct relative path to the file. More on that can be found under external resources.\r\n\r\n## Resources\r\n- [Python vs. JavaScript](https://realpython.com/python-vs-javascript/#javascript-vs-python)\r\n- [Python Modules](https://www.tutorialspoint.com/python/python_modules.htm)\r\n\r\n## Assignments\r\n\r\n- [Armstrong Numbers](https://github.com/quebecplatoon/algo-armstrong-numbers) in JS/Python\r\n- [Sum Pairs](https://github.com/quebecplatoon/algo-sum-pairs) in JS/Python\r\n- [Credit Check](https://github.com/quebecplatoon/algo-credit-check) in JS/Python\r\n- [Anagrams I](https://github.com/quebecplatoon/algo-anagrams-i) in JS/Python\r\n- [Debugging One](https://github.com/quebecplatoon/algo-debugging-one)"
     }
   },
   {
@@ -3420,9 +1061,10 @@
       "description": "JS/Python Review",
       "lesson_file_path": "week-01/2022-02-04.md",
       "img_url": null,
-      "date": "2022-02-04",
-      "start_time": "2022-02-04T09:00:00Z",
-      "stop_time": "2022-02-04T12:00:00Z"
+      "date": "2022-05-06",
+      "start_time": "2022-05-06T09:00:00Z",
+      "stop_time": "2022-05-06T12:00:00Z",
+      "markdown": "# Friday, February 04, 2022\r\n\r\n## Topics Covered / Goals\r\n- Review material from the week\r\n\r\n\r\n### Review\r\n\r\n## Assignments\r\n- [Practice with a Pair](https://github.com/quebecplatoon/git-pair)\r\n- [Anagrams II](https://github.com/quebecplatoon/algo-anagrams-ii) in JS/Python\r\n- [Character Count](https://github.com/quebecplatoon/algo-character-count) in JS/Python\r\n- [Palindromes](https://github.com/quebecplatoon/algo-palindromes) in JS/Python\r\n- [Calculate Mode](https://github.com/quebecplatoon/algo-calculate-mode) in JS/Python\r\n- [Pad an Array](https://github.com/quebecplatoon/algo-pad-array) in JS/Python\r\n- [Balanced Parentheses](https://github.com/quebecplatoon/algo-balanced-parentheses) in JS/Python"
     }
   },
   {
@@ -3760,8 +1402,44 @@
     "pk": 1,
     "fields": {
       "github_key": "5554565dd",
-      "metadata": null,
-      "calendar_key": "c_4lkirg4ugcjlpde4pm7gu4atfo%40group.calendar.google.com"
+      "metadata": {
+        "course_roadmap": "https://somelink.com",
+        "youtube": "https://www.youtube.com/channel/UCASZ7zW_Egu0T4KG3YEdGfw/playlists",
+        "calendar": "https://docs.google.com/spreadsheets/d/1lOA3uPlX6tU0QvSAZmdCxPBvCpLcfm0H-0DSCMhjn5s/edit?usp=sharing",
+        "student_handbook": "https://docs.google.com/document/d/1KgNFbDhihSJv6OGYjFDhESaDJ6ljOyVoRQse7oQH1I0/edit?usp=sharing",
+        "student_wiki": "https://docs.google.com/spreadsheets/d/1nX1ylt8AOWVnwZ5v-naN7K2bfhlfZm8TRzepOuXdqWw/edit#gid=0"
+      },
+      "calendar_key": null
+    }
+  },
+  {
+    "model": "app.cohort",
+    "pk": 2,
+    "fields": {
+      "github_key": "asdfdf33ddddfasdfasdfsdf*#H#N33",
+      "metadata": {
+        "course_roadmap": "https://somelink.com",
+        "youtube": "https://www.youtube.com/channel/UCASZ7zW_Egu0T4KG3YEdGfw/playlists",
+        "calendar": "https://docs.google.com/spreadsheets/d/1lOA3uPlX6tU0QvSAZmdCxPBvCpLcfm0H-0DSCMhjn5s/edit?usp=sharing",
+        "student_handbook": "https://docs.google.com/document/d/1KgNFbDhihSJv6OGYjFDhESaDJ6ljOyVoRQse7oQH1I0/edit?usp=sharing",
+        "student_wiki": "https://docs.google.com/spreadsheets/d/1nX1ylt8AOWVnwZ5v-naN7K2bfhlfZm8TRzepOuXdqWw/edit#gid=0"
+      },
+      "calendar_key": "ddf3333d3d"
+    }
+  },
+  {
+    "model": "app.cohort",
+    "pk": 3,
+    "fields": {
+      "github_key": "asdfdf33dd*#H#N33",
+      "metadata": {
+        "course_roadmap": "https://somelink.com",
+        "youtube": "https://www.youtube.com/channel/UCASZ7zW_Egu0T4KG3YEdGfw/playlists",
+        "calendar": "https://docs.google.com/spreadsheets/d/1lOA3uPlX6tU0QvSAZmdCxPBvCpLcfm0H-0DSCMhjn5s/edit?usp=sharing",
+        "student_handbook": "https://docs.google.com/document/d/1KgNFbDhihSJv6OGYjFDhESaDJ6ljOyVoRQse7oQH1I0/edit?usp=sharing",
+        "student_wiki": "https://docs.google.com/spreadsheets/d/1nX1ylt8AOWVnwZ5v-naN7K2bfhlfZm8TRzepOuXdqWw/edit#gid=0"
+      },
+      "calendar_key": null
     }
   },
   {
@@ -4114,6 +1792,61 @@
       "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTMwMjc4NywiaWF0IjoxNjUxNTI2Nzg3LCJqdGkiOiJlMGY1ZTI5MTE5NmY0ZWRlOThiZjhlOTNlOTQzZTMyMSIsInVzZXJfaWQiOjd9.GI6E6jqConiduBGlFvRg-PRJsxqqv8qCahKRF6RmmSk",
       "created_at": "2022-05-02T21:26:27.116Z",
       "expires_at": "2022-07-31T21:26:27Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 33,
+    "fields": {
+      "user": 1,
+      "jti": "c9bbd9439d4a4139b00296d879bcbdef",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTM2MzA4NiwiaWF0IjoxNjUxNTg3MDg2LCJqdGkiOiJjOWJiZDk0MzlkNGE0MTM5YjAwMjk2ZDg3OWJjYmRlZiIsInVzZXJfaWQiOjF9.9IFEKxtqSlY4wuJcx5t7MNpJLTqK3fKp_EgWCIFu2xM",
+      "created_at": "2022-05-03T14:11:26.462Z",
+      "expires_at": "2022-08-01T14:11:26Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 34,
+    "fields": {
+      "user": 6,
+      "jti": "71735116f55f42d88ffadd560bc3f261",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTM2NjQ1MiwiaWF0IjoxNjUxNTkwNDUyLCJqdGkiOiI3MTczNTExNmY1NWY0MmQ4OGZmYWRkNTYwYmMzZjI2MSIsInVzZXJfaWQiOjZ9.7X52T4vjMLyTmud2JEluYLHEiNNVgmxJtpdt8mXRe-c",
+      "created_at": "2022-05-03T15:07:32.973Z",
+      "expires_at": "2022-08-01T15:07:32Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 35,
+    "fields": {
+      "user": 6,
+      "jti": "0645fd7e28b042e09cf31c967cd12f67",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTM3NTIxNiwiaWF0IjoxNjUxNTk5MjE2LCJqdGkiOiIwNjQ1ZmQ3ZTI4YjA0MmUwOWNmMzFjOTY3Y2QxMmY2NyIsInVzZXJfaWQiOjZ9.-VtTHAvKQcePK6ovBOb2JBK95YK0xmO1L9chuQ9UOJI",
+      "created_at": "2022-05-03T17:33:36.234Z",
+      "expires_at": "2022-08-01T17:33:36Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 36,
+    "fields": {
+      "user": 6,
+      "jti": "f46822a0e25b48008130d06fee58d045",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTM4NzE4NCwiaWF0IjoxNjUxNjExMTg0LCJqdGkiOiJmNDY4MjJhMGUyNWI0ODAwODEzMGQwNmZlZTU4ZDA0NSIsInVzZXJfaWQiOjZ9.KOZ05tFDU8vHgOFQdb0q3uvNBJkcnk6q9TsKljs764U",
+      "created_at": "2022-05-03T20:53:04.675Z",
+      "expires_at": "2022-08-01T20:53:04Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 37,
+    "fields": {
+      "user": 1,
+      "jti": "950659e9b7e140adb69aefc879cc24c8",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTM5ODAyMCwiaWF0IjoxNjUxNjIyMDIwLCJqdGkiOiI5NTA2NTllOWI3ZTE0MGFkYjY5YWVmYzg3OWNjMjRjOCIsInVzZXJfaWQiOjF9.sCFQd7CsQu_f1RyXg3Lmz2jrkNFZvOveycSK2ozt_4A",
+      "created_at": "2022-05-03T23:53:40.762Z",
+      "expires_at": "2022-08-01T23:53:40Z"
     }
   }
 ]
