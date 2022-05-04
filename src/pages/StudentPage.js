@@ -26,27 +26,32 @@ function StudentPage() {
         <ThemeProvider theme={theme}>
             {!landingRaw?.is_checked_in && 
             <Box sx={{display: 'flex', justifyContent: 'center'}}>
-                <Button color="secondary" variant="contained" onClick={handleCheckin} sx={{width: '80%', mt: 3}}>Daily Check-In</Button>
+                <Button color="secondary" variant="contained" onClick={handleCheckin} sx={{width:"100%",mr:2, ml: 2, mt: 2}}>Daily Check-In</Button>
             </Box>}
             <div className="student-landing-container">
-                <div className="google-calander">
-                    <GoogleCalendar width={'500px'} height={'500px'} calendarID={''} /*calendarID can be dynamic to each cohort, for now defaults to quebec*/ />
-                </div>
-                <div className="todays-info">
+                <div className="smaller-flex-container">
+                    <div className="google-calander">
+                         {/* <GoogleCalendar width={'500px'} height={'500px'} calendarID={''}  */}
+                        <div className="links">
+                            <h1>LINKS</h1>
+                            <a href="https://google.com" target="_blank">Google Calendar</a>
+                        </div>
+                        <div className="links other-section">
+                            <h1>Put something here</h1> 
+                        </div>
+                    </div>
                     <div className="days-topics">
                         <div className="topics-title">
                             <h1>Today's Topics</h1>
                         </div>
                     </div>
-                    <div className="lecture-readme">
-                        <div className="readme-title">
-                            <h1>README</h1>
-                        </div>
-                        <div className="readme">
-                            {landingRaw?.curriculum[0] && <ReactMarkdown remarkPlugins={[remarkGfm]}>{landingRaw.curriculum[0]}</ReactMarkdown>}
-                        </div>
-                       
-        
+                </div>
+                <div className="lecture-readme">
+                    <div className="readme-title">
+                        <h1>README</h1>
+                    </div>
+                    <div className="readme">
+                        {landingRaw?.lessons[0].markdown && <ReactMarkdown remarkPlugins={[remarkGfm]}>{landingRaw?.lessons[0].markdown}</ReactMarkdown>}
                     </div>
                 </div>
             </div>
