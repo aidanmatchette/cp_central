@@ -1,13 +1,15 @@
 import datetime
 import json
+from random import shuffle
 
-from app.models import User, UserLink, Appointment, CheckIn
-from app.serializers import UserSerializer, UserLinkSerializer, AppointmentSerializer, RosterSerializer
+from app.models import User, UserLink, Appointment, CheckIn, Activity, ActivityGroup, Cohort
+from app.serializers import UserSerializer, UserLinkSerializer, AppointmentSerializer, RosterSerializer, ActivityGroupSerializer
 from django.http import JsonResponse
 from rest_framework.decorators import api_view, action, permission_classes
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
 from rest_framework.viewsets import ModelViewSet
 from django.contrib.auth.models import Group
+from django.db.models import Count
 
 # TODO Make this a permissions set of superusers/staff and make a separate route /
 # modelviewsets for information specific to the logged in user
@@ -100,3 +102,69 @@ def super_info(request):  # /api/v1/super_info/
         'awaiting_approval': json_data
     }
     return JsonResponse(output, status=200)
+
+@api_view(['POST'])
+@permission_classes([IsAdminUser])
+def create_random_groups(request):      # api/roster/randomize
+    
+    '''
+    variables
+    '''
+    size = int(request.data.dict()['group_size'])
+    today_date = datetime.date.today().strftime('%Y-%m-%d')
+    activity_name = f'Size {size} / {today_date}'    # example: "Size 2 / 2022-05-04"
+
+    '''
+    objects
+    '''
+    group = Group.objects.get(id=request.user.default_group_id)
+    students = User.objects.filter(is_staff=False, groups=group) # gets only students
+    activity, was_created = Activity.objects.get_or_create(name=activity_name, group=group)
+
+    '''
+    gets previously assigned groups and formats them as a list of lists of student ids 
+    [[5, 6], [1, 3], ....]
+    '''
+    prev_activity_groups = ActivityGroup.objects.annotate(group_size=Count('members')).filter(group_size=size, activity__group=group)
+    prev_activity_groups_members = [ag.members.all() for ag in prev_activity_groups]
+    prev_ag_student_ids = [[student.id for student in group ] for group in prev_activity_groups_members]
+    
+    ''' 
+    generates list of student ids 
+    '''
+    student_ids = [student.id for student in students]
+
+    ''' 
+    -   best way that I could come up with to try to minimize repeat groups
+        the less possible (previously unmatched) groups, the harder it is find those unmatched groups 
+    -   the while loop breaks when the groups are completely random, or the groups have been shuffled three times
+    -   the for loop iterates over the shuffled groups and checks if
+        each newly shuffled group has been previously created for past activities
+        -   if the group is the same as a previous activity, it'll increment the "same group counter"
+        -   if the group is the same as a previous activity, AND the same group limit has been reached (.5 or half of the current groups)
+            the loop_count will be incremented, the groups will be reshuffled, and the process will start over
+            
+    '''
+    completely_random = False
+    loop_count = 0
+    while not completely_random and loop_count < 4:  
+        same_groups_counter = 0
+        shuffle(student_ids)
+        new_rando_groups = [student_ids[i * size:(i + 1) * size] for i in range((len(student_ids) + size - 1) // size )]
+        for group in new_rando_groups:
+            group.sort()
+            if group in prev_ag_student_ids and same_groups_counter <= (.5 * len(new_rando_groups)):
+                same_groups_counter += 1
+            elif group in prev_ag_student_ids:
+                loop_count += 1
+                break
+        completely_random = True
+
+    '''creates records for each activity group'''
+    for index, new_rando_group in enumerate(new_rando_groups):
+        new_rando_groups[index] = ActivityGroup.objects.create(activity=activity)
+        new_rando_groups[index].members.set(new_rando_group)
+
+    json_data = ActivityGroupSerializer(new_rando_groups, many=True).data
+    
+    return JsonResponse({'groups': json_data}, status=201, safe=False)

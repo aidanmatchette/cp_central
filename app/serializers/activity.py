@@ -13,6 +13,14 @@ class ActivityGroupSerializer(serializers.ModelSerializer):
         fields = "__all__"
     members = SimpleUserSerializer(many=True, read_only=True)
 
+    ''' overrode this method because I wasn't able to create a group via api call '''
+    def create(self, validated_data):
+        student_data = self.__dict__['_kwargs']['data']['members'] # gets student ids
+        student_ids = student_data.split(',') if isinstance(student_data, str) else student_data  #converts string to list
+        members = User.objects.filter(pk__in=student_ids) #gets student records
+        validated_data['members'] = members
+        return super().create(validated_data)
+
 
 class ActivitySerializer(serializers.ModelSerializer):
     class Meta:
