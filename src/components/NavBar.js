@@ -47,13 +47,13 @@ function NavBar() {
               <FormControl color="secondary" size="small" sx={{ m: 1, minWidth: 120, justifyContent: 'fex-end' }}>
                 <InputLabel color="secondary" id="select-common-links-label">Common Links</InputLabel>
                 <Select labelId="select-common-links" id="select-standard"
-                  value={"TEST"} label="Common Links" color="secondary">
-                  <MenuItem value={'test'}>LINK 1</MenuItem>
-                  <MenuItem value={'test'}>LINK 2</MenuItem>
-                  <MenuItem value={'test'}>LINK 3</MenuItem>
-                  <MenuItem value={'test'}>LINK 4</MenuItem>
-                  <MenuItem value={'test'}>LINK 5</MenuItem>
-                  <MenuItem onClick={() => navigate('/pending-students')}>Pending Students</MenuItem>
+                  value={"test1"} label="Common Links" color="secondary">
+                  <MenuItem value={'test1'}>LINK 1</MenuItem>
+                  <MenuItem value={'test2'}>LINK 2</MenuItem>
+                  <MenuItem value={'test3'}>LINK 3</MenuItem>
+                  <MenuItem value={'test4'}>LINK 4</MenuItem>
+                  <MenuItem value={'test5'}>LINK 5</MenuItem>
+                  <MenuItem value={'test6'} onClick={() => navigate('/pending-students')}>Pending Students</MenuItem>
                 </Select>
               </FormControl>
             </Box>
