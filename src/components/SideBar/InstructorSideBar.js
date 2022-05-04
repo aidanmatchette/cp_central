@@ -8,9 +8,8 @@ import ExpandLessRoundedIcon from '@mui/icons-material/ExpandLessRounded';
 import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
 import QuestionAnswerRoundedIcon from '@mui/icons-material/QuestionAnswerRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import {listItems} from './SideBarData.js'
+import {instructorListItems} from './SideBarData.js'
 import { useAxios } from "../../utils/useAxios";
-
 
 function SideBar() {
   const navigate = useNavigate()
@@ -67,8 +66,8 @@ function SideBar() {
           </ListItemButton>
           <Divider />
 
-          {listItems.map((listItem, index) => (
-            <ListItem color="primary" sx={{justifyContent: 'center'}} button key={index}>
+          {instructorListItems.map((listItem, index) => (
+            <ListItem color="primary" sx={{justifyContent: 'center'}} button onClick={() => navigate(listItem.link)} key={index}>
               {/* <ListItemIcon > */}
               {/*   {listItem.listIcon} */}
               {/* </ListItemIcon> */}
