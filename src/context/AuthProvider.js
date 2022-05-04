@@ -14,6 +14,11 @@ function AuthProvider({children}) {
     
     const signin = async (e) => {
         e.preventDefault()
+
+        if (e.target.username.value === "" || e.target.password.value=== "") {
+            alert("Username and password fields cannot be blank.")
+            return null
+        }
         const token = await signinBackend(new FormData(e.target))
         if (token) {
             const user = await refresh()
@@ -23,7 +28,8 @@ function AuthProvider({children}) {
                 navigate("/studentPage")
             }
         } else {
-            navigate("/signup")
+            alert("Invalid username or password. Please try again or sign up for an account if you do not have one.")
+            return null
         }
     };
 
