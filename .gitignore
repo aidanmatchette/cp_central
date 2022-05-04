@@ -110,7 +110,7 @@ target/
 local_settings.py
 
 .env
-db2.sqlite3
+db.sqlite3
 
 .vscode
 backup/
