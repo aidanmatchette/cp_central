@@ -8,8 +8,8 @@ import logins from '../utils/loginData.json'
 
 function LoginPage() {
     let { signin } = useContext(AuthContext)
-    const [username, setUsername] = useState(null)
-    const [password, setPassword] = useState(null)
+    const [username, setUsername] = useState("")
+    const [password, setPassword] = useState("")
 
     const fillLogin = (index) =>{
         setUsername(logins[index].username)
