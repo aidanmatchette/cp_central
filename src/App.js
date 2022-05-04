@@ -14,7 +14,7 @@ import StudentApprovalPage from './pages/StudentApproval/StudentApprovalPage';
 function App() {
 
     return (
-        <div className="App">
+        <div className="App"    >
             <AuthProvider><DayProvider>
                 <NavBar />
                 <Routes>
