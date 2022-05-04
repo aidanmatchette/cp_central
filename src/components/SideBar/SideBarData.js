@@ -7,14 +7,17 @@ import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
 export const listItems = [
   {
     listIcon: <HomeRoundedIcon />,
-    listText: "Home"
+    listText: "Home",
+    link: "/StudentPage"
   },
   {
     listIcon: <EventNoteRoundedIcon />,
-    listText: "Lecture"
+    listText: "Lecture",
+    link: ""
   },
   {
     listIcon: <PeopleAltRoundedIcon />,
-    listText: "Students"
+    listText: "Class Roster",
+    link: "/class-roster"
   }
 ];
