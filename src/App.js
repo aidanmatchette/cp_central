@@ -10,6 +10,7 @@ import StudentPage from './pages/StudentPage.js'
 import InstructorPage from './pages/InstructorPage.js'
 import { DayProvider } from "./context/DayProvider";
 import StudentApprovalPage from './pages/StudentApproval/StudentApprovalPage';
+import BioPage from "./pages/BioPage";
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
                         <Route path={"/studentPage"} element={<StudentPage />} />
                         <Route path={"/instructorPage"} element={<InstructorPage />} />
                         <Route path={"/pending-students"} element={<StudentApprovalPage />} />
+                        <Route path={"/biopage/:userID"} element={<BioPage />}/>
                     </Route>
                 </Routes>
             </DayProvider></AuthProvider>

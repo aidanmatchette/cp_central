@@ -42,7 +42,7 @@ class CheckinStatusSerializer(serializers.ModelSerializer):
 class RosterSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ["first_name", "last_name", "id"]
+        fields = ["first_name", "last_name", "id", "is_staff", "is_superuser"]
 
 
 # class CheckInSerializer(serializers.ModelSerializer):
