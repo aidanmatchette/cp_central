@@ -5,6 +5,7 @@ from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from app.models import User, CheckIn, Cohort, Lesson
 from app.serializers import UserSerializer, LessonSerializer, CohortSerializer
+from . import get_all_choices
 
 
 @api_view(['POST', 'GET'])
@@ -23,7 +24,7 @@ def student_landing(request):
     user = User.objects.get(id=request.user.id)
     cohort = Cohort.objects.get(pk=user.default_group.pk)
     lessons = Lesson.objects.filter(date=fdate)
-    curriculum = [get_daily_readme_from_gh(x.lesson_file_path) for x in lessons]
+    # curriculum = [get_daily_readme_from_gh(x.lesson_file_path) for x in lessons]
     output = {
         "is_checked_in": CheckIn.objects.filter(user__in=[request.user], date=date).first() is not None,
         'date': fdate,
@@ -33,7 +34,8 @@ def student_landing(request):
         'questionnaires': [],  # TODO implement
         'activity_groups': [],  # TODO implement
         'my_feedback': [],  # TODO implement
-        'curriculum': curriculum,
-        'lessons_records': LessonSerializer(lessons, many=True).data
+        # 'curriculum': curriculum,
+        'lessons': LessonSerializer(lessons, many=True).data,
+        'choices': get_all_choices(),
     }
     return JsonResponse(output)

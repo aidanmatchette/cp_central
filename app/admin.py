@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from .models import User, Appointment, UserLink, LessonLink, Topic, Vote, Question, QuestionResponse, QuestionOption, \
-    Lesson, Questionnaire, FilledQuestionnaire, Feedback, ActivityGroup, Activity
+    Lesson, Questionnaire, FilledQuestionnaire, Feedback, ActivityGroup, Activity, Cohort, CheckIn
 
 admin.site.register(User, UserAdmin)
 # admin.site.register(User)
@@ -19,4 +19,7 @@ admin.site.register(FilledQuestionnaire)
 admin.site.register(Feedback)
 admin.site.register(ActivityGroup)
 admin.site.register(Activity)
+admin.site.register(Cohort)
+admin.site.register(CheckIn)
 # Dragons1234!@#$
+# python -Xutf8 manage.py dumpdata --exclude auth.permission --exclude contenttypes --exclude admin.logentry > data2.json

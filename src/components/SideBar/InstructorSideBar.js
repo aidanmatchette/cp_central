@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState} from "react";
+import { useEffect, useState, useContext} from "react";
+import { DayContext } from "../../context/DayProvider";
 import { Collapse, Divider, ListItemButton, ListItemIcon, ListItemText, List, ListItem, Button, Box} from '@mui/material'
 import { styled, ThemeProvider } from "@mui/material/styles";
 import theme from '../../utils/theme.js'
@@ -8,15 +9,28 @@ import ExpandMoreRoundedIcon from '@mui/icons-material/ExpandMoreRounded';
 import QuestionAnswerRoundedIcon from '@mui/icons-material/QuestionAnswerRounded';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import {listItems} from './SideBarData.js'
-
-console.log('list items -----', listItems)
+import { useAxios } from "../../utils/useAxios";
 
 
 function SideBar() {
   const navigate = useNavigate()
+  const { setDirty } = useContext(DayContext) 
+
   
   const [questionOpen, setQuestionOpen] = useState(false) 
   const [githubOpen, setGithubOpen] = useState(false)
+  
+  const backend = useAxios()
+  const handleGenerateCheckin = () => {
+      console.log('generate check-in')
+      backend.post('/api/instructor/checkin/').then(response => {
+         console.log(response)
+          setDirty(true)
+      })
+  }
+
+
+  
   const menuSideBarContainer = {
     width: 250,
     height: "100%",
@@ -49,6 +63,7 @@ function SideBar() {
         <CentralSideBar component="nav" disablePadding>
           <ListItemButton component="a" href="https://codeplatoon.org" target="_blank" sx={{justifyContent:'center', height: '35px'}}>
             <img src="https://www.codeplatoon.org/wp-content/uploads/2018/10/CP-logo-2018-abbrev-1.png" width="80" alt='cp-logo'/>
+            <h4>Instructors</h4>
           </ListItemButton>
           <Divider />
 
@@ -100,6 +115,7 @@ function SideBar() {
 
         {/* <List style={menuSideBarContainer}  sx={{justifyContent: 'space-between', alignItems: 'center'}}>  */}
           <Box sx={{display: 'flex', justifyContent: 'center'}}>
+            <Button color="secondary" variant="contained" onClick={handleGenerateCheckin} sx={{width: '80%', mt: 3}}>Generate Check-In</Button>
           </Box>
         {/* </List> */}
         {/* </List> */}

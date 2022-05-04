@@ -147,7 +147,7 @@ function Signup() {
                 <FormControl fullWidth >
                 <InputLabel required id="cohort-select-label" >Select Cohort</InputLabel>
                     <Select fullWidth label="Select Cohort" id="cohort-select" name={"cohort"} defaultValue={""}>
-                        {allChoices.cohorts.map((item) => <MenuItem key={item.group_id} value={item.group_id} >{item.name}</MenuItem> )}
+                        {allChoices.cohorts.map((item) => <MenuItem key={item.id} value={item.id} >{item.name}</MenuItem> )}
                     </Select>
                 </FormControl>  
                 

@@ -62,7 +62,7 @@ const appRefresh = async () => {
 
     // must manually do the useAxios here because you can't circular hook with the context
     // refresh token most likely expired so try to refresh access
-    console.log("refresh in axios", token)
+    // console.log("refresh in axios", token)
     const refreshResponse = await axios.post(`${baseURL}${refreshURL}`, {
         refresh: localStorage.getItem(refreshName)
     });

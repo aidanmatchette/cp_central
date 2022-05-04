@@ -1,12 +1,20 @@
-import { useContext } from "react";
+import {useContext, useRef, useState} from "react";
 import { AuthContext } from "../context/AuthProvider";
 import { Button, CssBaseline, TextField, Link, Grid, Box, Typography, Container } from "@mui/material";
 import { ThemeProvider } from "@mui/material/styles";
 import theme from '../utils/theme.js'
+import logins from '../utils/loginData.json'
 
 
 function LoginPage() {
     let { signin } = useContext(AuthContext)
+    const [username, setUsername] = useState("")
+    const [password, setPassword] = useState("")
+
+    const fillLogin = (index) =>{
+        setUsername(logins[index].username)
+        setPassword(logins[index].password)
+    }
 
     return (
      <ThemeProvider theme={theme}>
@@ -29,11 +37,11 @@ function LoginPage() {
                   <Grid item xs={12}>
                       {/*TODO boilerplate uses username for authentication (which we can specify on signup) changing to username for now and will rewire if we want to customize the authentication*/}
                     <TextField required fullWidth id="email" label="Email Address"
-                      name="username" autoComplete="email" />
+                      name="username" autoComplete="email" value={username} />
                   </Grid>
                   <Grid item xs={12}>
                     <TextField required fullWidth name="password" label="Password"
-                      type="password" id="password" autoComplete="new-password"/>
+                      type="password" id="password" autoComplete="new-password" value={password} />
                   </Grid>
                 </Grid>
                 <Button type="submit" fullWidth variant="contained" sx={{ mt: 3, mb: 2 }}>
@@ -48,6 +56,11 @@ function LoginPage() {
                 </Grid>
               </Box>
             </Box>
+            <br/>
+            <h3>Click a name below to populate login fields</h3>
+            <ul>
+                {logins.map((element, index)=><li key={index} onClick={()=>fillLogin(index)}>{element.username}</li>)}
+            </ul>
           </Container>
         </ThemeProvider>
 

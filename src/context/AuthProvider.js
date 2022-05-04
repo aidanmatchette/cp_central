@@ -11,7 +11,7 @@ function AuthProvider({children}) {
     const [allChoices, setAllChoices] = useState(null)
     const [user, setUser] = useState(null)
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
-     
+    
     const signin = async (e) => {
         e.preventDefault()
 
@@ -21,8 +21,12 @@ function AuthProvider({children}) {
         }
         const token = await signinBackend(new FormData(e.target))
         if (token) {
-            await refresh()
-            navigate("/")
+            const user = await refresh()
+            if (user.is_staff || user.is_superuser){
+                navigate('/instructorPage')
+            }else{
+                navigate("/studentPage")
+            }
         } else {
             alert("Invalid username or password. Please try again or sign up for an account if you do not have one.")
             return null
@@ -41,6 +45,7 @@ function AuthProvider({children}) {
         setUser(refreshData.user)
         setToken(refreshData.token)
         setAllChoices(refreshData.choices)
+        return await refreshData.user
     }
 
     // hack to prefetch token before renders
