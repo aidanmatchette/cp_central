@@ -2,6 +2,7 @@ import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import {useAxios} from "../utils/useAxios";
 import {Grid} from "@mui/material";
+import UserMetaData from "../components/BioPage/UserMetaData";
 
 export default function BioPage() {
     const {userID} = useParams()
@@ -19,13 +20,9 @@ export default function BioPage() {
             })
     }, [userID])
 
-    const handleSubmit = (e) =>{
-
-    }
     if (!user) return <></>
 
     return (
-        <form onSubmit={handleSubmit}>
         <Grid container>
             <Grid item xs={1}>
                 {edit ? <button onClick={() => setEdit(false)}>Save</button> :
@@ -42,13 +39,9 @@ export default function BioPage() {
                 </ul>
             </Grid>
             <Grid item xs={4}>
-                {edit ?
-                    <textarea defaultValue={JSON.stringify(user.metadata)} rows={8} cols={50} name={'metadata'}/> :
-                    <p>{JSON.stringify(user.metadata)}</p>
-                }
+                <UserMetaData />
             </Grid>
 
         </Grid>
-        </form>
     )
 }
