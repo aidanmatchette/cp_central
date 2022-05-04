@@ -22,5 +22,4 @@ admin.site.register(Activity)
 admin.site.register(Cohort)
 admin.site.register(CheckIn)
 # Dragons1234!@#$
-# python manage.py dumpdata --exclude auth.permission --exclude contenttypes  > data2.json
 # python -Xutf8 manage.py dumpdata --exclude auth.permission --exclude contenttypes --exclude admin.logentry > data2.json
