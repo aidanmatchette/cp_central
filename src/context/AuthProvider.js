@@ -16,8 +16,12 @@ function AuthProvider({children}) {
         e.preventDefault()
         const token = await signinBackend(new FormData(e.target))
         if (token) {
-            await refresh()
-            navigate("/")
+            const user = await refresh()
+            if (user.is_staff || user.is_superuser){
+                navigate('/instructorPage')
+            }else{
+                navigate("/studentPage")
+            }
         } else {
             navigate("/signup")
         }
@@ -35,6 +39,7 @@ function AuthProvider({children}) {
         setUser(refreshData.user)
         setToken(refreshData.token)
         setAllChoices(refreshData.choices)
+        return await refreshData.user
     }
 
     // hack to prefetch token before renders

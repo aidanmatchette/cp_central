@@ -32,7 +32,7 @@ function InstructorPage() {
                             <h1>README</h1>
                         </div>
                         <div className="readme">
-                            {landingRaw?.curriculum[0] && <ReactMarkdown remarkPlugins={[remarkGfm]}>{landingRaw.curriculum[0]}</ReactMarkdown>}
+                            {/*{landingRaw && landingRaw?.curriculum[0] && <ReactMarkdown remarkPlugins={[remarkGfm]}>{landingRaw.curriculum[0]}</ReactMarkdown>}*/}
                         </div>
                        
         
