@@ -1,4 +1,5 @@
-import {forwardRef, useContext} from "react"; import { useNavigate } from "react-router-dom";
+import {forwardRef, useContext} from "react"; 
+import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthProvider";
 import { AppBar, Container, Drawer, IconButton, MenuItem, Select, Toolbar, Typography, FormControl, InputLabel, Box, Button } from '@mui/material'
 import { ThemeProvider } from "@mui/material/styles";
@@ -52,7 +53,6 @@ function NavBar() {
                   <MenuItem value={'test2'}>LINK 2</MenuItem>
                   <MenuItem value={'test3'}>LINK 3</MenuItem>
                   <MenuItem value={'test4'}>LINK 4</MenuItem>
-                  <MenuItem value={'test5'}>LINK 5</MenuItem>
                   <MenuItem value={'test6'} onClick={() => navigate('/pending-students')}>Pending Students</MenuItem>
                 </Select>
               </FormControl>
