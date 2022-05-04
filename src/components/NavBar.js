@@ -1,4 +1,4 @@
-import { useContext } from "react"; import { useNavigate } from "react-router-dom";
+import {forwardRef, useContext} from "react"; import { useNavigate } from "react-router-dom";
 import { AuthContext } from "../context/AuthProvider";
 import { AppBar, Container, Drawer, IconButton, MenuItem, Select, Toolbar, Typography, FormControl, InputLabel, Box, Button } from '@mui/material'
 import { ThemeProvider } from "@mui/material/styles";
@@ -20,7 +20,7 @@ function NavBar() {
     setIsSideBarOpen(!isSideBarOpen);
   };
 
-  const DateButton = (({ value, onClick }) => (
+  const DateButton = forwardRef(({ value, onClick }, ref) => (
     <ThemeProvider theme={theme}>
       <Button color="primary" variant='contained' onClick={onClick} >{value}</Button>
     </ThemeProvider>
