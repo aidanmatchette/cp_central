@@ -38,6 +38,7 @@ class LessonLink(models.Model):
         SUPPLEMENT = 0
         CHALLENGE = 1
         ASSESSMENT = 2
+        STUDENT = 3
     link_type = models.IntegerField(choices=LessonLinkType.choices, default=LessonLinkType.CHALLENGE)
 
     def __str__(self):
