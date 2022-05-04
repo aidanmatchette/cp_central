@@ -64,8 +64,10 @@
   flex-direction: column;
   margin-left: 1rem;
 }
-
 .btn-custom-orange {
   background-color: #ff500f;
   color: white
+}
+.link-list {
+  list-style: inside;
 }
