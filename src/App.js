@@ -11,11 +11,12 @@ import InstructorPage from './pages/InstructorPage.js'
 import { DayProvider } from "./context/DayProvider";
 import StudentApprovalPage from './pages/StudentApproval/StudentApprovalPage';
 import BioPage from "./pages/BioPage";
+import ClassRosterPage from "./pages/ClassRosterPage"
 
 function App() {
 
     return (
-        <div className="App">
+        <div className="App"    >
             <AuthProvider><DayProvider>
                 <NavBar />
                 <Routes>
@@ -28,6 +29,7 @@ function App() {
                         <Route path={"/instructorPage"} element={<InstructorPage />} />
                         <Route path={"/pending-students"} element={<StudentApprovalPage />} />
                         <Route path={"/biopage/:userID"} element={<BioPage />}/>
+                        <Route path={"/class-roster"} element={<ClassRosterPage />}/>
                     </Route>
                 </Routes>
             </DayProvider></AuthProvider>

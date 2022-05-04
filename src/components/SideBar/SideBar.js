@@ -53,7 +53,7 @@ function SideBar() {
           <Divider />
 
           {listItems.map((listItem, index) => (
-            <ListItem color="primary" sx={{justifyContent: 'center'}} button key={index}>
+            <ListItem color="primary" sx={{justifyContent: 'center'}} button onClick={() => navigate(listItem.link)} key={index}>
               {/* <ListItemIcon > */}
               {/*   {listItem.listIcon} */}
               {/* </ListItemIcon> */}
