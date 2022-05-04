@@ -65,7 +65,7 @@ def roster(request):  # /api/v1/roster/
     # TODO implement, add filtering criteria
     group = request.user.default_group
     output = User.objects.filter(default_group=group)
-    return JsonResponse(RosterSerializer(output, many=True).data, safe=False, status=200)
+    return JsonResponse(UserSerializer(output, many=True).data, safe=False, status=200)
 
 
 @api_view(['POST', 'GET'])
