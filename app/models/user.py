@@ -2,11 +2,20 @@ from django.contrib.auth.models import AbstractUser
 from django.db import models
 from django.contrib.auth.models import Group
 
+default_user_metadata = {
+    "mentor": "",
+    "resume_coach": "",
+    "group_team": "",
+    "interviewer": "",
+    "interview_date": ""
+}
+
 
 class User(AbstractUser):
     avatar = models.ImageField(default='default.png', blank=True)
-    metadata = models.JSONField(null=True, blank=True)
+    metadata = models.JSONField(null=True, blank=True, default=default_user_metadata)
     default_group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='default_users', null=True, blank=True)
+    markdown = models.TextField(default="", null=True, blank=True)
 
     class TimeZoneChoices(models.TextChoices):
         AST = "AST", "Atlantic Standard Time"
