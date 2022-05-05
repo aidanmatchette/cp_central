@@ -29,6 +29,20 @@ function DayProvider({ children }) {
         loadData().then()
     }, [user, date, dirty])
 
+    const checkChange = async () => {
+        console.log("checking for changes")
+        // TODO implement
+
+    }
+
+    useEffect(() => {
+        // TODO set to true in .env file
+        if (process.env.REACT_APP_USE_POLLING) {
+            const timer = setInterval(checkChange, 2000)
+            return () => clearInterval(timer)
+        }
+    }, [])
+
     const contextData = { allChoices, isSideBarOpen, setIsSideBarOpen, date, setDate, landingRaw, setDirty, dirty };
 
     // only render after initial load (persist token through page refresh)

@@ -20,9 +20,7 @@ function NavBar() {
   const toggleSideBar = () => {
     setIsSideBarOpen(!isSideBarOpen);
   };
-  
-  // TODO: handle inputs in the search bar
-  
+
   const DateButton = forwardRef(({ value, onClick }, ref) => (
     <ThemeProvider theme={theme}>
       <Button color="primary" variant='contained' size="large" onClick={onClick} >{value}</Button>
@@ -39,16 +37,19 @@ function NavBar() {
             <img src="https://www.codeplatoon.org/wp-content/uploads/2018/10/CP-logo-2018-abbrev-1.png" width="80" alt='cp-logo' />
             <Typography onClick={() => navigate('/')} sx={{ fontWeight: 'bold', fontSize: 30, cursor: 'pointer' }}>Central</Typography>
             <Box sx={{ justifyContent: 'flex-end', display: 'flex', marginLeft: 5, flexGrow: 1}}>
-              <FormControl fullWidth sx={{ m: 1 }}>
-                <InputLabel htmlFor="cp-search">Search</InputLabel>
-                <OutlinedInput
-                  size="small"  
-                  id="outlined-adornment-amount"
-                  // value={}
-                  // onChange={handleChange('amount')}
-                  startAdornment={<InputAdornment position="start"><SearchRoundedIcon /></InputAdornment>}
-                  label="Search"/>
-              </FormControl>
+              <form onSubmit={(e)=>navigate(`/search/${e.target.keyword.value}`)}>
+                <FormControl fullWidth sx={{ m: 1 }}>
+                  <InputLabel htmlFor="cp-search">Search</InputLabel>
+                  <OutlinedInput
+                    size="small"
+                    id="outlined-adornment-amount"
+                    name="keyword"
+                    // value={}
+                    // onChange={handleChange('amount')}
+                    startAdornment={<InputAdornment position="start"><SearchRoundedIcon /></InputAdornment>}
+                    label="Search"/>
+                </FormControl>
+              </form>
             </Box>
             <Box sx={{ flexGrow: 1, justifyContent: 'center', display: 'flex'}} >
               <Box sx={{ display: 'flex' }}>
@@ -56,7 +57,7 @@ function NavBar() {
               </Box>
             </Box>
             <Box sx={{ display: 'flex', justifyContent: 'flex-end', marginRight: '5px' }}>
-              <Button onClick={() => navigate('/login')} variant="contained" size='large' >LOG IN</Button>
+              {!user && <Button onClick={() => navigate('/login')} variant="contained" size='large' >LOG IN</Button>}
             </Box>
             <Box sx={{ display: 'flex', justifyContent: 'flex-end', marginRight: '5px' }}>
               {user && <Button onClick={signout} variant='contained' color="secondary" size='large'
@@ -65,7 +66,7 @@ function NavBar() {
             <Drawer open={isSideBarOpen} anchor="left" onClose={toggleSideBar}>
               {user?.is_staff ? <InstructorSideBar />
                   : <SideBar />}
-            </Drawer>
+            </Drawer> 
           </Toolbar>
         </Container>
       </AppBar>
