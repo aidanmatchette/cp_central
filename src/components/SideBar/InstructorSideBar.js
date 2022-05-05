@@ -10,6 +10,8 @@ import QuestionAnswerRoundedIcon from '@mui/icons-material/QuestionAnswerRounded
 import GitHubIcon from '@mui/icons-material/GitHub';
 import {instructorListItems} from './SideBarData.js'
 import { useAxios } from "../../utils/useAxios";
+import RandomPersonGenerator from '../RandomPersonGenerator'
+
 
 function SideBar() {
   const navigate = useNavigate()
@@ -115,6 +117,9 @@ function SideBar() {
         {/* <List style={menuSideBarContainer}  sx={{justifyContent: 'space-between', alignItems: 'center'}}>  */}
           <Box sx={{display: 'flex', justifyContent: 'center'}}>
             <Button color="secondary" variant="contained" onClick={handleGenerateCheckin} sx={{width: '80%', mt: 3}}>Generate Check-In</Button>
+          </Box>
+          <Box sx={{display: 'flex', justifyContent: 'center'}}>
+            <RandomPersonGenerator />
           </Box>
         {/* </List> */}
         {/* </List> */}
