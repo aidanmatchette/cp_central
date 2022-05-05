@@ -9,12 +9,14 @@ default_user_metadata = {
     "interviewer": "",
     "interview_date": ""
 }
+# TODO rewire the default metadata
 
 
 class User(AbstractUser):
     avatar = models.ImageField(default='default.png', blank=True)
-    metadata = models.JSONField(null=True, blank=True, default=default_user_metadata)
-    default_group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='default_users', null=True, blank=True)
+    metadata = models.JSONField(null=True, blank=True)
+    default_group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='default_users', null=True,
+                                      blank=True)
     markdown = models.TextField(default="", null=True, blank=True)
 
     class TimeZoneChoices(models.TextChoices):
@@ -26,6 +28,7 @@ class User(AbstractUser):
         AKST = "AKST", "Alaska Standard Time"
         HST = "HST", "Hawaii Standard Time"
         SST = "SST", "Samoa Standard Time"
+
     timezone = models.CharField(max_length=4, choices=TimeZoneChoices.choices, default=TimeZoneChoices.CST)
 
 
@@ -46,6 +49,7 @@ class UserLink(models.Model):
         LINKEDIN = 1
         GITHUB = 2
         YOUTUBE = 3
+
     link_type = models.IntegerField(choices=UserLinkType.choices, default=UserLinkType.OTHER)
 
     def __str__(self):
