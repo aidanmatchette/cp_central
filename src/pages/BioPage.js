@@ -60,6 +60,8 @@ export default function BioPage() {
         }
         return (
             <div onClick={()=>setMarkdownEdit(true)}>
+
+                    <h3>User Information</h3>
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
                 {user.markdown}
             </ReactMarkdown>
@@ -95,7 +97,6 @@ export default function BioPage() {
                     </Select>
                     <Button type={"submit"}>Save</Button>
                     <hr/>
-                    <h3>User Information</h3>
                     {renderMarkdown()}
                 </form>
             </Grid>
