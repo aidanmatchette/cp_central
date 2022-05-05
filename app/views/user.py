@@ -3,7 +3,7 @@ import json
 from random import shuffle
 
 from app.models import User, UserLink, Appointment, CheckIn, Activity, ActivityGroup, Cohort
-from app.serializers import UserSerializer, UserLinkSerializer, AppointmentSerializer, RosterSerializer, ActivityGroupSerializer
+from app.serializers import UserSerializer, UserLinkSerializer, AppointmentSerializer, RosterSerializer, ActivitySerializer
 from django.http import JsonResponse
 from rest_framework.decorators import api_view, action, permission_classes
 from rest_framework.permissions import IsAuthenticated, IsAdminUser
@@ -111,15 +111,15 @@ def create_random_groups(request):      # api/roster/randomize
     variables
     '''
     size = int(request.data['group_size'])
+    name = 'Pair Programming' if size == 2 else f'Group of {size}'
     today_date = datetime.date.today().strftime('%Y-%m-%d')
-    activity_name = f'Size {size} / {today_date}'    # example: "Size 2 / 2022-05-04"
 
     '''
     objects
     '''
     group = Group.objects.get(id=request.user.default_group_id)
     students = User.objects.filter(is_staff=False, groups=group) # gets only students
-    activity, was_created = Activity.objects.get_or_create(name=activity_name, group=group)
+    activity = Activity.objects.create(name=name, group=group, size=size)
 
     '''
     gets previously assigned groups and formats them as a list of lists of student ids 
@@ -162,9 +162,11 @@ def create_random_groups(request):      # api/roster/randomize
 
     '''creates records for each activity group'''
     for index, new_rando_group in enumerate(new_rando_groups):
-        new_rando_groups[index] = ActivityGroup.objects.create(activity=activity)
+        group_num = index + 1
+        new_rando_groups[index] = ActivityGroup.objects.create(activity=activity, group_number=group_num)
         new_rando_groups[index].members.set(new_rando_group)
 
-    json_data = ActivityGroupSerializer(new_rando_groups, many=True).data
+    json_data = ActivitySerializer(activity, many=False).data
+    print(f'\n\n\n\n\n------{json_data}------\n\n\n\n\n')
     
-    return JsonResponse({'groups': json_data}, status=201, safe=False)
+    return JsonResponse({'activity': json_data}, status=201, safe=False)
