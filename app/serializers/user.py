@@ -33,10 +33,13 @@ class UserSerializer(serializers.ModelSerializer):
 class CheckinStatusSerializer(serializers.ModelSerializer):
     date = serializers.DateField()
     is_checked_in = serializers.BooleanField()
+    # added to match landing data per Aidan
+    links = UserLinkSerializer(many=True, read_only=True)
 
     class Meta:
         model = User
-        fields = ["id", "username", "date", "is_checked_in"]
+        fields = "__all__"
+        # ["id", "username", "date", "is_checked_in"]
 
 
 class RosterSerializer(serializers.ModelSerializer):

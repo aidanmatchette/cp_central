@@ -1,4 +1,5 @@
 from django.db import models
+from app.models import User
 from django.contrib.auth.models import Group
 
 
@@ -33,6 +34,7 @@ class LessonLink(models.Model):
     lesson = models.ForeignKey(Lesson, on_delete=models.CASCADE, related_name="lesson_links")
     url = models.URLField()
     description = models.TextField(null=True, blank=True)
+    originator = models.ForeignKey(User, on_delete=models.CASCADE, related_name="lesson_links", blank=True, null=True)
 
     class LessonLinkType(models.IntegerChoices):
         SUPPLEMENT = 0
