@@ -36,7 +36,8 @@ class CheckinStatusSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = User
-        fields = ["id", "username", "date", "is_checked_in"]
+        fields = "__all__"
+        # ["id", "username", "date", "is_checked_in"]
 
 
 class RosterSerializer(serializers.ModelSerializer):
