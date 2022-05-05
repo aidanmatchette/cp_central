@@ -8,8 +8,6 @@ import { ThemeProvider } from "@mui/material/styles";
 import { Button, Box } from '@mui/material'
 import { useAxios } from "../utils/useAxios";
 import ActivityGroup from "../components/StudentActivities/ActivityGroup";
-
-
 import GenerateFeedback from '../components/GenerateFeedback'
 
 function StudentPage() {
@@ -41,7 +39,6 @@ function StudentPage() {
                         </div>
                         <div className="links other-section">
                             <GenerateFeedback />
-                            <h1>Put something here</h1>
                         </div>
                     </div>
                     <div className="days-topics">
