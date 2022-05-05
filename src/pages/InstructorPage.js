@@ -34,8 +34,6 @@ function InstructorPage() {
                         <div className="readme">
                             {/*{landingRaw && landingRaw?.curriculum[0] && <ReactMarkdown remarkPlugins={[remarkGfm]}>{landingRaw.curriculum[0]}</ReactMarkdown>}*/}
                         </div>
-                       
-        
                     </div>
                 </div>
             </div>

@@ -8,13 +8,6 @@ from app.serializers import UserSerializer, LessonSerializer, CohortSerializer
 from . import get_all_choices
 
 
-@api_view(['POST', 'GET'])
-@permission_classes([IsAuthenticated])
-def student_checkin(request):  # /api/v1/instructor/checkin/
-    # TODO implement
-    pass
-
-
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def student_landing(request):
