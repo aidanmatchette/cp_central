@@ -22,7 +22,7 @@ function ActivityGroup(props) {
       </Container>
       <Container>
         <Row className='d-flex justify-content-center'>
-          {groups.length
+          {groups && groups.length
             ? groups.map((group) => {
               return (
                 <Col>
