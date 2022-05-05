@@ -8,16 +8,15 @@ function RandomGroupGenerator(props) {
   let backend = useAxios()
 
   const [groupSize, setGroupSize] = useState('');
-  const [groups, setGroups] = useState(null)
+  const [activity, setActivity] = useState(null)
   const [showModal, setShowModal] = useState(false);
 
   const handleCreateGroups = async () => {
     backend.post('api/roster/randomize/', { group_size: groupSize })
       .then((res) => {
-        setGroups(res.data.groups)
+        setActivity(res.data.activity)
         setShowModal(true)
         setGroupSize('')
-        console.log('groups generated response status', res.status)
       })
   }
 
@@ -28,7 +27,7 @@ function RandomGroupGenerator(props) {
         groupSize={groupSize}
         setGroupSize={setGroupSize}
       />
-      <SuccessfullyGeneratedGroupsModal groups={groups} showModal={showModal} setShowModal={setShowModal} />
+      <SuccessfullyGeneratedGroupsModal activity={activity} showModal={showModal} setShowModal={setShowModal} />
     </div>
   )
 }

@@ -6,16 +6,18 @@ import theme from '../utils/theme.js'
 import { ThemeProvider } from "@mui/material/styles";
 import { Button, Box } from '@mui/material'
 import { DayContext } from "../context/DayProvider";
+import RandomGroupGenerator from "../components/RandomGroupGenerator/RandomGroupGenerator";
 
-function InstructorPage() {    
-    
-    const { landingRaw } = useContext(DayContext) 
+function InstructorPage() {
+
+    const { landingRaw } = useContext(DayContext)
     console.log(landingRaw)
-    
-          
+
+
     return (
         <ThemeProvider theme={theme}>
-            <Box sx={{display: 'flex', justifyContent: 'center'}}>
+            <RandomGroupGenerator />
+            <Box sx={{ display: 'flex', justifyContent: 'center' }}>
             </Box>
             <div className="student-landing-container">
                 <div className="google-calander">
@@ -34,8 +36,8 @@ function InstructorPage() {
                         <div className="readme">
                             {/*{landingRaw && landingRaw?.curriculum[0] && <ReactMarkdown remarkPlugins={[remarkGfm]}>{landingRaw.curriculum[0]}</ReactMarkdown>}*/}
                         </div>
-                       
-        
+
+
                     </div>
                 </div>
             </div>

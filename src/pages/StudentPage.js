@@ -7,37 +7,41 @@ import theme from '../utils/theme.js'
 import { ThemeProvider } from "@mui/material/styles";
 import { Button, Box } from '@mui/material'
 import { useAxios } from "../utils/useAxios";
+import ActivityGroup from "../components/StudentActivities/ActivityGroup";
+
+
 import GenerateFeedback from '../components/GenerateFeedback'
 
-function StudentPage() {    
-    const { landingRaw, setDirty } = useContext(DayContext) 
+function StudentPage() {
+    const { landingRaw, setDirty } = useContext(DayContext)
     console.log(landingRaw)
     const backend = useAxios()
-    
+
     const handleCheckin = () => {
         console.log('check-in')
         backend.post('/api/v1/user/checkin/').then(response => {
-           console.log(response)
+            console.log(response)
             setDirty(true)
         })
     }
-           
+
     return (
         <ThemeProvider theme={theme}>
-            {!landingRaw?.is_checked_in && 
-            <Box sx={{display: 'flex', justifyContent: 'center'}}>
-                <Button color="secondary" variant="contained" onClick={handleCheckin} sx={{width:"100%",mr:2, ml: 2, mt: 2}}>Daily Check-In</Button>
-            </Box>}
+            {!landingRaw?.is_checked_in &&
+                <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+                    <Button color="secondary" variant="contained" onClick={handleCheckin} sx={{ width: "100%", mr: 2, ml: 2, mt: 2 }}>Daily Check-In</Button>
+                </Box>}
             <div className="student-landing-container">
                 <div className="smaller-flex-container">
                     <div className="google-calander">
-                         {/* <GoogleCalendar width={'500px'} height={'500px'} calendarID={''}  */}
+                        {/* <GoogleCalendar width={'500px'} height={'500px'} calendarID={''}  */}
                         <div className="links">
                             <h1>LINKS</h1>
                             <a href="https://google.com" target="_blank">Google Calendar</a>
                         </div>
                         <div className="links other-section">
                             <GenerateFeedback />
+                            <h1>Put something here</h1>
                         </div>
                     </div>
                     <div className="days-topics">
@@ -45,6 +49,13 @@ function StudentPage() {
                             <h1>Today's Topics</h1>
                         </div>
                     </div>
+                    {/* Code Chunk for 'My Groups Box' */}
+                    <div className="days-topics">
+                        <div className="topics-title">
+                            <ActivityGroup />
+                        </div>
+                    </div>
+                    {/*End Code Chunk for 'My Groups Box'*/}
                 </div>
                 <div className="lecture-readme">
                     <div className="readme-title">
