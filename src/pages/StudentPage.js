@@ -8,7 +8,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import { Button, Box } from '@mui/material'
 import { useAxios } from "../utils/useAxios";
 import ActivityGroup from "../components/StudentActivities/ActivityGroup";
-
+import GenerateFeedback from '../components/GenerateFeedback'
 
 function StudentPage() {
     const { landingRaw, setDirty } = useContext(DayContext)
@@ -38,7 +38,7 @@ function StudentPage() {
                             <a href="https://google.com" target="_blank">Google Calendar</a>
                         </div>
                         <div className="links other-section">
-                            <h1>Put something here</h1>
+                            <GenerateFeedback />
                         </div>
                     </div>
                     <div className="days-topics">

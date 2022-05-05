@@ -10,7 +10,18 @@ class FeedbackViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
     queryset = Feedback.objects.all()
     serializer_class = FeedbackSerializer
+    
+    def create(self, request, *args, **kwargs):
+        feedback = Feedback(
+            user=request.user, 
+            title=request.data["title"], 
+            description=request.data["description"], 
+            topic=request.data["topic"], 
+            category=request.data["category"],
+        )
+        feedback.save()
 
+        return JsonResponse(FeedbackSerializer(feedback).data)
 
 class VoteViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
