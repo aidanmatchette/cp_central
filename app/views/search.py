@@ -12,7 +12,7 @@ def search(request):
     search_text = request.GET['keyword']
     lessons = Lesson.objects.filter(markdown__icontains=search_text)
     lesson_links = LessonLink.objects.filter(description__icontains=search_text)
-    feedback = Feedback.objects.filter(Q(title__contains=search_text) | Q(description__icontains=search_text))
+    feedback = Feedback.objects.filter(Q(title__icontains=search_text) | Q(description__icontains=search_text))
     results = {
         "lessons": LessonSerializer(lessons, many=True).data,
         "links": LessonLinkSerializer(lesson_links, many=True).data,
