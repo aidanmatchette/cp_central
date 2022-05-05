@@ -41,7 +41,6 @@ function StudentPage() {
                             <h1>Put something here</h1>
                         </div>
                     </div>
-                    <p>here</p>
                     <div className="days-topics">
                         <div className="topics-title">
                             <h1>Today's Topics</h1>
