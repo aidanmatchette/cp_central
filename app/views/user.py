@@ -110,7 +110,7 @@ def create_random_groups(request):      # api/roster/randomize
     '''
     variables
     '''
-    size = int(request.data.dict()['group_size'])
+    size = int(request.data['group_size'])
     today_date = datetime.date.today().strftime('%Y-%m-%d')
     activity_name = f'Size {size} / {today_date}'    # example: "Size 2 / 2022-05-04"
 
