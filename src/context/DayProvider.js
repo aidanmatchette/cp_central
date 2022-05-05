@@ -30,7 +30,7 @@ function DayProvider({children}) {
         setDirty(false)
     }, [user, date, dirty])
 
-    const contextData = {allChoices, isSideBarOpen, setIsSideBarOpen, date, setDate, landingRaw};
+    const contextData = {allChoices, isSideBarOpen, setIsSideBarOpen, date, setDate, landingRaw, setDirty};
 
     // only render after initial load (persist token through page refresh)
     return <DayContext.Provider value={contextData}>{children}</DayContext.Provider>;
