@@ -57,7 +57,7 @@ function NavBar() {
               </Box>
             </Box>
             <Box sx={{ display: 'flex', justifyContent: 'flex-end', marginRight: '5px' }}>
-              <Button onClick={() => navigate('/login')} variant="contained" size='large' >LOG IN</Button>
+              {!user && <Button onClick={() => navigate('/login')} variant="contained" size='large' >LOG IN</Button>}
             </Box>
             <Box sx={{ display: 'flex', justifyContent: 'flex-end', marginRight: '5px' }}>
               {user && <Button onClick={signout} variant='contained' color="secondary" size='large'
@@ -66,7 +66,7 @@ function NavBar() {
             <Drawer open={isSideBarOpen} anchor="left" onClose={toggleSideBar}>
               {user?.is_staff ? <InstructorSideBar />
                   : <SideBar />}
-            </Drawer>
+            </Drawer> 
           </Toolbar>
         </Container>
       </AppBar>
