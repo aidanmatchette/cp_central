@@ -12,6 +12,7 @@ import { DayProvider } from "./context/DayProvider";
 import StudentApprovalPage from './pages/StudentApproval/StudentApprovalPage';
 import BioPage from "./pages/BioPage";
 import ClassRosterPage from "./pages/ClassRosterPage"
+import SearchResults from "./pages/SearchResults";
 import LessonLinksPage from './pages/LessonLinksPage';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
                         <Route path={"/pending-students"} element={<StudentApprovalPage />} />
                         <Route path={"/biopage/:userID"} element={<BioPage />}/>
                         <Route path={"/class-roster"} element={<ClassRosterPage />}/>
+                        <Route path={"/search/:keyword"} element={<SearchResults />}/>
                         <Route path={"/lesson-links"} element= {<LessonLinksPage />}/>
                     </Route>
                 </Routes>
