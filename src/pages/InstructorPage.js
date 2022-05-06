@@ -28,8 +28,12 @@ function InstructorPage() {
         <>
             <Container className="d-flex justify-content-center align-items-center" style={{ height: '92vh', width: '100vw' }}>
                 <Row style={{ height: '95%' }}>
-                    <Col style={{ width: '45vw', padding: '1rem', height: '90%', margin: 'auto', overflow: 'scroll', overflowX: 'hidden' }}>
-                        {landingRaw?.lessons[0].markdown && <ReactMarkdown remarkPlugins={[remarkGfm]}>{landingRaw?.lessons[0].markdown}</ReactMarkdown>}
+                    <Col className="shadow" style={{ width: '45vw', padding: '1rem', height: '90%', margin: 'auto', overflow: 'scroll', overflowX: 'hidden' }}>
+                        {lesson && lesson.markdown
+                            ?
+                            <ReactMarkdown remarkPlugins={[remarkGfm]}>{landingRaw?.lessons[0].markdown}</ReactMarkdown>
+                            : <p>No Markdown for this lesson :(</p>
+                        }
                     </Col>
                     <Col style={{ width: '45vw', padding: '1rem' }}>
                         <Row style={{ height: '45%', margin: '5%' }}>

@@ -34,7 +34,9 @@ function SuccessfullyGeneratedGroupsModal(props) {
         })}
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={() => setShowModal(false)}>Close</Button>
+        <Button variant='secondary' onClick={() => setShowModal(false)} style={{ color: 'white' }}>
+          Close
+        </Button>
       </Modal.Footer>
     </Modal>
   )
