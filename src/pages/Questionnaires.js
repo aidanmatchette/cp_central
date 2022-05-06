@@ -2,7 +2,18 @@ import {useContext} from "react";
 import {AuthContext} from "../context/AuthProvider";
 import {DayContext} from "../context/DayProvider";
 import {useAxios} from "../utils/useAxios";
-import {IconButton, List, ListItem} from "@mui/material";
+import {
+    Box, Button,
+    Checkbox,
+    FormControlLabel,
+    Grid,
+    IconButton,
+    Input,
+    List,
+    ListItem,
+    MenuItem,
+    Select
+} from "@mui/material";
 import {useNavigate} from "react-router-dom";
 import {Article, Edit} from "@mui/icons-material";
 
@@ -22,46 +33,46 @@ export default function Questionnaires() {
             })
     }
 
-    const CreateQuestionnaire = () =>{
+    const CreateQuestionnaire = () => {
         return (
-            <>
-            <h1>Create new</h1>
-            <form onSubmit={createQuestionnaire}>
-                <input name={'originator'} type={'hidden'} value={user.id} placeholder={"User ID"}/>
-                <input name={'name'} type={'text'} defaultValue={`Pair Programming Feedback - ${landingRaw?.date}`}
-                       placeholder={"User ID"}/>
-                <input name={'group'} type={'hidden'} value={user.id} placeholder={"User ID"}/>
-                {/*<label htmlFor={'is_viewable'}>Hidden?</label>*/}
-                <input name={'is_viewable'} type={'checkbox'}/>
-                <select defaultValue={allChoices.questionnaireTypes[0][0]} name={'type'}>
-                    {allChoices.questionnaireTypes.map((qType) => {
-                        return (
-                            <option key={qType[0]} value={qType[0]}>
-                                {qType[1]}
-                            </option>
-                        )
-                    })}
-                </select>
-                <button type={"submit"}>Create</button>
-            </form>
-            </>
+            <Box style={{textAlign:"center"}}>
+
+                <h1 >Create new</h1>
+                <form onSubmit={createQuestionnaire}>
+                    <Input name={'originator'} type={'hidden'} value={user.id} placeholder={"User ID"} />
+                    <Input name={'name'} type={'text'} defaultValue={`Pair Programming Feedback - ${landingRaw?.date}`}
+                           placeholder={"User ID"} fullWidth/>
+                    <Input name={'group'} type={'hidden'} value={user.id} placeholder={"User ID"} />
+                    <Select defaultValue={allChoices.questionnaireTypes[0][0]} name={'type'} fullWidth>
+                        {allChoices.questionnaireTypes.map((qType) => {
+                            return (
+                                <MenuItem key={qType[0]} value={qType[0]}>
+                                    {qType[1]}
+                                </MenuItem>
+                            )
+                        })}
+                    </Select>
+                    <FormControlLabel control={<Checkbox name={'is_viewable'} type={'checkbox'}/>} label={"Viewable?"} />
+                    <Button type={"submit"}>Create</Button>
+                </form>
+            </Box>
         )
     }
 
     return (
-        <div>
+        <Box sx={{marginInline: "20%", marginTop: "2rem"}}>
             {user?.is_superuser && <CreateQuestionnaire/>}
             <h2>Current Questionnaires</h2>
             <List>
-                {landingRaw?.questionnaires.map((q)=>{
-                    return(
+                {landingRaw?.questionnaires.map((q) => {
+                    return (
                         <ListItem key={q.id}>
                             {user?.is_superuser &&
                                 <IconButton onClick={() => navigate(`/questionnaireEdit/${q.id}`)}>
                                     <Edit/>
                                 </IconButton>
                             }
-                            <IconButton onClick={()=>navigate(`/questionnaireFill/${q.id}`)}>
+                            <IconButton onClick={() => navigate(`/questionnaireFill/${q.id}`)}>
                                 <Article/>
                             </IconButton>
                             {q.name}
@@ -69,6 +80,7 @@ export default function Questionnaires() {
                     )
                 })}
             </List>
-        </div>
+
+        </Box>
     )
 }

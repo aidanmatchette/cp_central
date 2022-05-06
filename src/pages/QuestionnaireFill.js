@@ -1,7 +1,7 @@
 import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import {useAxios} from "../utils/useAxios";
-import {Input} from "@mui/material";
+import {Box, Input} from "@mui/material";
 
 export default function QuestionnaireFill() {
     const {questionnaireID} = useParams()
@@ -47,9 +47,9 @@ export default function QuestionnaireFill() {
     }
 
     return (
-        <div>
+        <Box sx={{marginInline: "20%", marginTop: "2rem"}}>
             <h2>{fillQuestion?.questionnaire?.name}</h2>
             {fillQuestion?.questionnaire?.questions?.map(q => <Question key={q.id} q={q}/>)}
-        </div>
+        </Box>
     )
 }

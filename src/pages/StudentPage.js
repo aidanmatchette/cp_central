@@ -18,7 +18,7 @@ function StudentPage() {
     const handleCheckin = () => {
         console.log('check-in')
         backend.post('/api/v1/user/checkin/').then(response => {
-            console.log(response)
+            // console.log(response)
             setDirty(true)
         })
     }

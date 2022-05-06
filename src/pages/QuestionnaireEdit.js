@@ -1,5 +1,5 @@
 import {useParams} from "react-router-dom";
-import {Button, Input, Link, List} from "@mui/material";
+import {Box, Button, Input, Link, List} from "@mui/material";
 import {useAxios} from "../utils/useAxios";
 import {useEffect, useState} from "react";
 import QuestionItem from "../components/Questionnaires/QuestionItem";
@@ -26,10 +26,12 @@ export default function QuestionnaireEdit() {
     }
 
     return (
-        <div>
+        <Box sx={{marginInline: "20%", marginTop: "2rem"}}>
+            <Link href={"/#/questionnaires"}>Back</Link>
             <h1>{questionnaire?.name}</h1>
+            <hr/>
             <form onSubmit={addQuestion}>
-                <Input name={'text'} fullWidth placeholder={"Question"}/>
+                <Input name={'text'} fullWidth placeholder={"Enter your question here"}/>
                 <Input name={'questionnaire'} type={'hidden'} defaultValue={questionnaireID}/>
                 <Button type={"submit"}>Add</Button>
             </form>
@@ -38,8 +40,7 @@ export default function QuestionnaireEdit() {
                     <QuestionItem key={question.id} question={question} setParentDirty={setDirty}></QuestionItem>
                 )}
             </List>
-            <Link href={"/#/questionnaires"}>Back</Link>
-        </div>
+        </Box>
     )
 
 }

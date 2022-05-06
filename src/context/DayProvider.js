@@ -25,7 +25,7 @@ function DayProvider({ children }) {
             }
             const rawLanding = await backend.get('api/student/landing/', rawParams)
             setLandingRaw(rawLanding.data)
-            console.log({rawLanding})
+            // console.log({rawLanding})
         }
         loadData().then()
     }, [user, date, dirty])
