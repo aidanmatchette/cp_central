@@ -77,7 +77,7 @@ export default function BioPage() {
         <Grid container marginTop={4} spacing={1}>
             <Grid item xs={1}>
             </Grid>
-            <Grid item xs={4} id="gridOne">
+            <Grid item xs={4} id="gridOne" textAlign={"center"}>
                 <h3 style={{textAlign: "center"}}><strong>{userBio.first_name} {userBio.last_name}</strong></h3>
                 <img src={userBio.avatar} alt={"Avatar"} width={'100%'} style={{borderRadius: "30%", width: "300px"}}/>
                 <br/>
@@ -99,7 +99,7 @@ export default function BioPage() {
                 </div>
 
             </Grid>
-            <Grid item xs={6} id="gridTwo">
+            <Grid item xs={6} sx={{marginLeft:"2rem"}} id="gridTwo">
                 {/*too lazy to do a proper lookup on default group or change the serializer*/}
                 <div id="gridTwo-content">
                     <h3><strong>{userBio?.groups[0]?.name} Cohort</strong></h3>
