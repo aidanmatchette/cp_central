@@ -23,8 +23,7 @@ import { instructorListItems } from "./SideBarData.js";
 import { useAxios } from "../../utils/useAxios";
 import RandomPersonGenerator from "../RandomPersonGenerator";
 import RateReviewRoundedIcon from "@mui/icons-material/RateReviewRounded";
-import GenerateFeedback from '../GenerateFeedback'
-
+import GenerateFeedback from "../GenerateFeedback";
 
 function SideBar() {
   const navigate = useNavigate();
@@ -64,10 +63,6 @@ function SideBar() {
     },
   });
 
-  const openFeedback = () => {
-    setFeedbackOpen(true)
-  }
-
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ display: "flex" }}>
@@ -105,13 +100,6 @@ function SideBar() {
               <ListItemText primary={listItem.listText} />
             </ListItem>
           ))}
-          <ListItem button onClick={openFeedback}>
-            <ListItemIcon>
-              <RateReviewRoundedIcon />
-            </ListItemIcon>
-            <ListItemText primary={"Feedback"} />
-            {feedbackOpen && <GenerateFeedback feedbackOpen={feedbackOpen} setFeedbackOpen={setFeedbackOpen} />}
-          </ListItem>
 
           <ListItem button onClick={() => setQuestionOpen(!questionOpen)}>
             <ListItemIcon>

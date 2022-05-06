@@ -9,6 +9,7 @@ import { Button, Box } from '@mui/material'
 import { useAxios } from "../utils/useAxios";
 import ActivityGroup from "../components/StudentActivities/ActivityGroup";
 import GenerateFeedback from '../components/GenerateFeedback'
+import ResourceLinks from "../components/ResourceLinks";
 
 function StudentPage() {
     const { landingRaw, setDirty } = useContext(DayContext)
@@ -35,15 +36,18 @@ function StudentPage() {
                         {/* <GoogleCalendar width={'500px'} height={'500px'} calendarID={''}  */}
                         <div className="links">
                             <h1>LINKS</h1>
-                            <a href="https://google.com" target="_blank">Google Calendar</a>
+                            <Button target="_blank" href="https://google.com" variant="contained">Google Calendar</Button>
+                        <div className="feedback"> 
+                            <GenerateFeedback />
+                        </div>
                         </div>
                         <div className="links other-section">
-                            <GenerateFeedback />
                         </div>
                     </div>
                     <div className="days-topics">
                         <div className="topics-title">
                             <h1>Today's Topics</h1>
+                            <ResourceLinks />
                         </div>
                     </div>
                     {/* Code Chunk for 'My Groups Box' */}
