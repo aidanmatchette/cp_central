@@ -20,6 +20,8 @@ import QuestionAnswerRoundedIcon from "@mui/icons-material/QuestionAnswerRounded
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { listItems } from "./SideBarData.js";
 import RateReviewRoundedIcon from "@mui/icons-material/RateReviewRounded";
+import GenerateFeedback from "../GenerateFeedback";
+import GoogleCalendar from "../GoogleCalendar";
 
 console.log("list items -----", listItems);
 
@@ -143,6 +145,12 @@ function SideBar() {
           </Box>
 
           {/* <List style={menuSideBarContainer}  sx={{justifyContent: 'space-between', alignItems: 'center'}}>  */}
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <GenerateFeedback />
+          </Box>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <GoogleCalendar />
+          </Box>
           <Box sx={{ display: "flex", justifyContent: "center" }}></Box>
           {/* </List> */}
           {/* </List> */}

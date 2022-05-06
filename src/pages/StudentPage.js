@@ -37,9 +37,6 @@ function StudentPage() {
                         <div className="links">
                             <h1>LINKS</h1>
                             <Button target="_blank" href="https://google.com" variant="contained">Google Calendar</Button>
-                        <div className="feedback"> 
-                            <GenerateFeedback />
-                        </div>
                         </div>
                         <div className="links other-section">
                         </div>
@@ -51,7 +48,7 @@ function StudentPage() {
                         </div>
                     </div>
                     {/* Code Chunk for 'My Groups Box' */}
-                    <div className="days-topics">
+                    <div className="my-groups">
                         <div className="topics-title">
                             <ActivityGroup />
                         </div>
