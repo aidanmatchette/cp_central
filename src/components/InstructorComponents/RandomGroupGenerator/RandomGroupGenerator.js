@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useAxios } from '../../utils/useAxios'
+import { useAxios } from '../../../utils/useAxios'
 import GroupSizeInputWithButton from './GroupSizeInputWithButton';
 import SuccessfullyGeneratedGroupsModal from './SuccessfullyGeneratedGroupsModal';
 
