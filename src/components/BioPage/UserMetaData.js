@@ -1,5 +1,6 @@
 import {useState} from "react";
 import {useAxios} from "../../utils/useAxios";
+import {Button, TextField} from "@mui/material";
 
 export default function UserMetaData({metadata, userID, setUser}) {
     const backend = useAxios()
@@ -16,10 +17,16 @@ export default function UserMetaData({metadata, userID, setUser}) {
 
     if (edit) {
         return (
-            <form onSubmit={handleSubmit} >
-                <textarea defaultValue={JSON.stringify(metadata,undefined, 2)} rows={8} cols={50} name={'metadata'}/>
-                <button type={"submit"}>Save</button>
-                <button type={"button"} onClick={() => setEdit(false)}>Cancel</button>
+            <form onSubmit={handleSubmit}>
+                <TextField defaultValue={JSON.stringify(metadata,undefined, 2)}
+                           rows={8}
+                           cols={50}
+                           multiline
+                           fullWidth
+                           name={'metadata'}
+                />
+                <Button type={"submit"}>Save</Button>
+                <Button type={"button"} onClick={() => setEdit(false)}>Cancel</Button>
             </form>
         )
     } else {
