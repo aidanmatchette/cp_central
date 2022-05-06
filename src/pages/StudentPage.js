@@ -1,71 +1,88 @@
 import GoogleCalendar from "../components/GoogleCalendar";
 import { DayContext } from "../context/DayProvider";
 import { useContext, useEffect } from "react";
-import ReactMarkdown from 'react-markdown'
-import remarkGfm from 'remark-gfm'
-import theme from '../utils/theme.js'
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import theme from "../utils/theme.js";
 import { ThemeProvider } from "@mui/material/styles";
-import { Button, Box } from '@mui/material'
+import { Button, Box } from "@mui/material";
 import { useAxios } from "../utils/useAxios";
 import ActivityGroup from "../components/StudentActivities/ActivityGroup";
-import GenerateFeedback from '../components/GenerateFeedback'
+import GenerateFeedback from "../components/GenerateFeedback";
 import ResourceLinks from "../components/ResourceLinks";
 
 function StudentPage() {
-    const { landingRaw, setDirty } = useContext(DayContext)
-    console.log(landingRaw)
-    const backend = useAxios()
+  const { landingRaw, setDirty } = useContext(DayContext);
+  console.log(landingRaw);
+  const backend = useAxios();
 
-    const handleCheckin = () => {
-        console.log('check-in')
-        backend.post('/api/v1/user/checkin/').then(response => {
-            // console.log(response)
-            setDirty(true)
-        })
-    }
+  const handleCheckin = () => {
+    console.log("check-in");
+    backend.post("/api/v1/user/checkin/").then((response) => {
+      // console.log(response)
+      setDirty(true);
+    });
+  };
 
-    return (
-        <ThemeProvider theme={theme}>
-            {!landingRaw?.is_checked_in &&
-                <Box sx={{ display: 'flex', justifyContent: 'center' }}>
-                    <Button color="secondary" variant="contained" onClick={handleCheckin} sx={{ width: "100%", mr: 2, ml: 2, mt: 2 }}>Daily Check-In</Button>
-                </Box>}
-            <div className="student-landing-container">
-                <div className="smaller-flex-container">
-                    <div className="google-calander">
-                        {/* <GoogleCalendar width={'500px'} height={'500px'} calendarID={''}  */}
-                        <div className="links">
-                            <h1>LINKS</h1>
-                            <Button target="_blank" href="https://google.com" variant="contained">Google Calendar</Button>
-                        </div>
-                        <div className="links other-section">
-                        </div>
-                    </div>
-                    <div className="days-topics">
-                        <div className="topics-title">
-                            <h1>Today's Topics</h1>
-                            <ResourceLinks />
-                        </div>
-                    </div>
-                    {/* Code Chunk for 'My Groups Box' */}
-                    <div className="my-groups">
-                        <div className="topics-title">
-                            <ActivityGroup />
-                        </div>
-                    </div>
-                    {/*End Code Chunk for 'My Groups Box'*/}
-                </div>
-                <div className="lecture-readme">
-                    <div className="readme-title">
-                        <h1>README</h1>
-                    </div>
-                    <div className="readme">
-                        {landingRaw && landingRaw?.lessons[0].markdown && <ReactMarkdown remarkPlugins={[remarkGfm]}>{landingRaw?.lessons[0].markdown}</ReactMarkdown>}
-                    </div>
-                </div>
+  return (
+    <ThemeProvider theme={theme}>
+      {!landingRaw?.is_checked_in && (
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Button
+            color="secondary"
+            variant="contained"
+            onClick={handleCheckin}
+            sx={{ width: "100%", mr: 2, ml: 2, mt: 2 }}
+          >
+            Daily Check-In
+          </Button>
+        </Box>
+      )}
+      <div className="student-landing-container">
+        <div className="smaller-flex-container">
+          <div className="google-calander">
+            {/* <GoogleCalendar width={'500px'} height={'500px'} calendarID={''}  */}
+            <div className="links">
+              <h1>LINKS</h1>
+              <Button
+                target="_blank"
+                href="https://calendar.google.com/calendar/u/0/r?cid=c_4lkirg4ugcjlpde4pm7gu4atfo@group.calendar.google.com"
+                variant="contained"
+              >
+                Google Calendar
+              </Button>
             </div>
-        </ThemeProvider>
-    )
+            <div className="links other-section"></div>
+          </div>
+          <div className="days-topics">
+            <div className="topics-title">
+              <h1>Today's Topics</h1>
+              <ResourceLinks />
+            </div>
+          </div>
+          {/* Code Chunk for 'My Groups Box' */}
+          <div className="my-groups">
+            <div className="topics-title">
+              <ActivityGroup />
+            </div>
+          </div>
+          {/*End Code Chunk for 'My Groups Box'*/}
+        </div>
+        <div className="lecture-readme">
+          <div className="readme-title">
+            <h1>README</h1>
+          </div>
+          <div className="readme">
+            {landingRaw && landingRaw?.lessons[0].markdown && (
+              <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                {landingRaw?.lessons[0].markdown}
+              </ReactMarkdown>
+            )}
+          </div>
+        </div>
+      </div>
+    </ThemeProvider>
+  );
 }
 
-export default StudentPage
+export default StudentPage;

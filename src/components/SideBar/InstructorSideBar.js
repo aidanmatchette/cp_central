@@ -23,8 +23,7 @@ import { instructorListItems } from "./SideBarData.js";
 import { useAxios } from "../../utils/useAxios";
 import RandomPersonGenerator from "../RandomPersonGenerator";
 import GenerateFeedback from "../GenerateFeedback";
-import GoogleCalendar from '../GoogleCalendar'
-
+import GoogleCalendar from "../GoogleCalendar";
 
 function SideBar() {
   const navigate = useNavigate();
@@ -162,7 +161,7 @@ function SideBar() {
           </Box>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Button
-              color="secondary"
+              color="primary"
               variant="contained"
               onClick={handleGenerateCheckin}
               sx={{ width: "80%", mt: 3 }}
