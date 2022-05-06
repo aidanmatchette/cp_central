@@ -4,7 +4,7 @@ from .questionnaire import QuestionnaireViewSet, FilledQuestionnaireViewSet, Que
 from .activity import ActivityViewSet, ActivityGroupViewSet
 from .feedback import VoteViewSet, FeedbackViewSet
 from .lesson import LessonViewSet, TopicViewSet, LessonLinkViewSet
-from .instructor import instructor_checkin, refresh_lesson
+from .instructor import instructor_checkin
 from .cohort import CohortViewSet
 from .student import student_landing
 from .search import search
