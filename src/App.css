@@ -71,3 +71,51 @@
 .link-list {
   list-style: inside;
 }
+#gridOne {
+  background-color: rgb(203, 227, 228);
+  margin-right: 30px;
+  font-family: 'Courier New', monospace;
+  border-radius: 5%;
+  /* padding-bottom: 30px; */
+}
+.gridOne-content {
+  background-color: cadetblue;
+  margin: 15px;
+  margin-left: 5px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  display: flex;
+}
+#content-items {
+  margin-left: 10px;
+}
+#gridOne-input {
+  background-color: rgb(203, 227, 228);
+}
+#gridTwo {
+  background-color: rgb(243, 182, 160);
+  font-family: 'Courier New', monospace;
+  border-radius: 5%;
+}
+#gridTwo-form, #metadata, #markdown{
+  background-color: coral;
+}
+#connect {
+  margin-top: 10px;
+}
+#user-links {
+  margin-bottom: 10px;
+}
+#metadata, #markdown{
+  margin-right: 15px;
+}
+#gridTwo-content {
+  margin-left: 5px;
+}
+#social-links {
+  color: rgb(32, 32, 32);
+}
+#social-links:hover {
+  color: antiquewhite;
+}
+#markdown {}

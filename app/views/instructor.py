@@ -3,8 +3,9 @@ import datetime
 from django.http import JsonResponse
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
-from app.models import User, CheckIn
-from app.serializers import CheckinStatusSerializer
+from app.models import User, CheckIn, Lesson
+from app.serializers import CheckinStatusSerializer, LessonSerializer
+from app.helpers import get_daily_readme_from_gh
 
 
 @api_view(['POST', 'GET'])
@@ -31,3 +32,18 @@ def instructor_checkin(request):  # /api/v1/instructor/checkin/
         group by A.username
         """, [fdate, group.pk])
         return JsonResponse(CheckinStatusSerializer(cohort, many=True).data, safe=False, status=200)
+
+@api_view(['POST'])
+@permission_classes([IsAuthenticated])
+def refresh_lesson(request):
+    #id, search by date(future functionality)
+    try:
+        lesson = Lesson.objects.get(id=request.data["id"])
+        new_markdown = get_daily_readme_from_gh(lesson.lesson_file_path)
+        # print(new_markdown)
+        lesson.markdown = new_markdown
+        lesson.save()
+        return JsonResponse(LessonSerializer(lesson).data, safe=False)
+    except Exception as e:
+        print(e)
+        return JsonResponse({"error": "error"})
