@@ -21,6 +21,8 @@ function NavBar() {
     setIsSideBarOpen(!isSideBarOpen);
   };
 
+  let homePage = token ? user.is_staff ? '/instructorPage' : '/studentPage' : '/login'
+
   const DateButton = forwardRef(({ value, onClick }, ref) => (
     <ThemeProvider theme={theme}>
       <Button color="primary" variant='contained' size="large" onClick={onClick} >{value}</Button>
@@ -34,8 +36,8 @@ function NavBar() {
             <IconButton onClick={toggleSideBar}>
               <MenuRoundedIcon />
             </IconButton>
-            <img src="https://www.codeplatoon.org/wp-content/uploads/2018/10/CP-logo-2018-abbrev-1.png" width="80" alt='cp-logo' />
-            <Typography onClick={() => navigate('/')} sx={{ fontWeight: 'bold', fontSize: 30, cursor: 'pointer' }}>Central</Typography>
+            <img src="./LongCPCLogo.png" width="175px" alt='cp-logo' onClick={() => navigate(homePage)} />
+
             <Box sx={{ justifyContent: 'flex-end', display: 'flex', marginLeft: 5, flexGrow: 1 }}>
               <form onSubmit={(e) => navigate(`/search/${e.target.keyword.value}`)}>
                 <FormControl fullWidth sx={{ m: 1 }}>
