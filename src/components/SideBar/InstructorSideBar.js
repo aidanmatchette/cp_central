@@ -11,12 +11,14 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import {instructorListItems} from './SideBarData.js'
 import { useAxios } from "../../utils/useAxios";
 import RandomPersonGenerator from '../RandomPersonGenerator'
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import {AuthContext} from "../../context/AuthProvider";
 
 
 function SideBar() {
   const navigate = useNavigate()
   const { setDirty } = useContext(DayContext) 
-
+  const {user} = useContext(AuthContext)
   
   const [questionOpen, setQuestionOpen] = useState(false) 
   const [githubOpen, setGithubOpen] = useState(false)
@@ -77,7 +79,12 @@ function SideBar() {
               <ListItemText primary={listItem.listText} />
             </ListItem>
           ))}
-    
+
+          <ListItem button onClick={() => navigate(`/biopage/${user.id}`)} >
+            <ListItemIcon><AccountCircleIcon /></ListItemIcon>
+            <ListItemText primary={'My Bio Page'} />
+          </ListItem>
+
           <ListItem button onClick={() => setQuestionOpen(!questionOpen)} >
             <ListItemIcon><QuestionAnswerRoundedIcon /></ListItemIcon>
             <ListItemText primary={'Questionnaires'} />
