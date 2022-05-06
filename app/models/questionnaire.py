@@ -19,7 +19,7 @@ class Questionnaire(models.Model):
 class Question(models.Model):
     questionnaire = models.ForeignKey(Questionnaire, on_delete=models.CASCADE, related_name="questions")
     text = models.TextField()
-    # TODO add if required
+    is_required = models.BooleanField(default=False)
 
     class ResponseType(models.IntegerChoices):
         TEXT = 0  # Single line text

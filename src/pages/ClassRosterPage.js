@@ -76,9 +76,10 @@ function ClassRosterPage() {
         <TableCell align="center">{member.last_name}</TableCell>
         <TableCell align="center">{memberType}</TableCell> 
         <TableCell align="center">{member.timezone}</TableCell> 
-        <TableCell align="center">{member.email}</TableCell> 
-        <TableCell align="center"><a href={member.links[0].url} target="_blank"><LinkedInIcon sx={{fontSize: '30px'}} /></a></TableCell> 
-        <TableCell align="center"><a href={member.links[1]?.url} target="_blank"><GitHubIcon sx={{fontSize: '30px'}}/></a></TableCell> 
+        <TableCell align="center">{member?.email}</TableCell>
+          {/*TODO this should be a lookup instead of pulling index (they may have more than one or none)*/}
+        <TableCell align="center"><a href={member?.links[0]?.url} target="_blank"><LinkedInIcon sx={{fontSize: '30px'}} /></a></TableCell>
+        <TableCell align="center"><a href={member?.links[1]?.url} target="_blank"><GitHubIcon sx={{fontSize: '30px'}}/></a></TableCell>
       </TableRow> 
         
     )     
