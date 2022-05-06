@@ -59,12 +59,15 @@ export default function BioPage() {
             />
         }
         return (
-            <div onClick={()=>setMarkdownEdit(true)}>
+            <div onClick={()=>setMarkdownEdit(true)} >
 
-                    <h3>User Information</h3>
-            <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                {user.markdown}
+                    <h3><strong>User Information</strong></h3>
+               <div id="markdown">       
+            <ReactMarkdown remarkPlugins={[remarkGfm]} >
+              
+                   {user.markdown} 
             </ReactMarkdown>
+            </div>
             </div>
         )
     }
@@ -75,23 +78,33 @@ export default function BioPage() {
         <Grid container marginTop={4} spacing={1}>
             <Grid item xs={1}>
             </Grid>
-            <Grid item xs={4}>
-                <h3 style={{textAlign: "center"}}>{user.first_name} {user.last_name}</h3>
-                <span>{user.email}</span>
-                <img src={user.avatar} alt={"Avatar"} width={'100%'} style={{borderRadius: "30%"}}/>
-                <input accept={"image/*"}
+            <Grid item xs={4} id="gridOne">
+                <h3 style={{textAlign: "center"}}><strong>{user.first_name} {user.last_name}</strong></h3>
+                <img src={user.avatar} alt={"Avatar"} width={'100%'} style={{borderRadius: "30%", width:"300px"}}/>
+                <br/>
+                <input  accept={"image/*"}
                        type={"file"}
                        name={"avatar"}
                        onChange={imageChange}
                 />
-                <UserLinks userID={userID} links={user.links} setDirty={setDirty}/>
+                <br/>
+                <div className="gridOne-content">
+                <div id="content-items">
+                   <h5><strong>Email:</strong></h5>
+                <span>{user.email}</span>
+                <h5 id="connect"><strong> Connect with me:</strong></h5>
+                <UserLinks userID={userID} links={user.links} setDirty={setDirty} />  
+                </div>
+                </div>
+                
             </Grid>
-            <Grid item xs={6}>
+            <Grid item xs={6} id="gridTwo">
                 {/*too lazy to do a proper lookup on default group or change the serializer*/}
-                <h3>{user.groups[0].name} Cohort</h3>
+                <div id="gridTwo-content">
+                    <h3><strong>{user?.groups[0]?.name} Cohort</strong></h3>
                 <UserMetaData metadata={user.metadata} userID={userID} setUser={setUser}/>
                 <form onSubmit={saveUser}>
-                    <Select name={"timezone"} defaultValue={user.timezone} label={"Time Zone"} sx={{marginTop: "1rem"}}>
+                    <Select name={"timezone"} defaultValue={user.timezone} label={"Time Zone"} sx={{marginTop: "1rem"}} id="gridTwo-form">
                         {allChoices.timeZones.map((tz, index) =>
                             <MenuItem key={index} value={tz[0]}>{tz[0]} {tz[1]}</MenuItem>)}
                     </Select>
@@ -99,6 +112,8 @@ export default function BioPage() {
                     <hr/>
                     {renderMarkdown()}
                 </form>
+                </div>
+                
             </Grid>
             <Grid item xs={1}>
             </Grid>

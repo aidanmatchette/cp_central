@@ -24,7 +24,7 @@ export default function UserMetaData({metadata, userID, setUser}) {
         )
     } else {
         return (
-            <div>
+            <div id="metadata">
                 <h5>MetaData</h5>
                 <div onClick={() => setEdit(true)}><pre>{JSON.stringify(metadata,undefined,2)}</pre></div>
             </div>
