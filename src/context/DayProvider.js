@@ -25,6 +25,7 @@ function DayProvider({ children }) {
             }
             const rawLanding = await backend.get('api/student/landing/', rawParams)
             setLandingRaw(rawLanding.data)
+            // console.log({rawLanding})
         }
         loadData().then()
     }, [user, date, dirty])
@@ -37,7 +38,7 @@ function DayProvider({ children }) {
 
     useEffect(() => {
         // TODO set to true in .env file
-        if (process.env.REACT_APP_USE_POLLING) {
+        if (process.env.REACT_APP_USE_POLLING === 'true') {
             const timer = setInterval(checkChange, 2000)
             return () => clearInterval(timer)
         }

@@ -21,6 +21,11 @@ function NavBar() {
     setIsSideBarOpen(!isSideBarOpen);
   };
 
+  const doSearch = (e) =>{
+    e.preventDefault()
+    navigate(`/search/${e.target.keyword.value}`)
+  }
+
   let homePage = token ? user.is_staff ? '/instructorPage' : '/studentPage' : '/login'
 
   const DateButton = forwardRef(({ value, onClick }, ref) => (
@@ -39,7 +44,7 @@ function NavBar() {
             <img src="./LongCPCLogo.png" width="175px" alt='cp-logo' onClick={() => navigate(homePage)} />
 
             <Box sx={{ justifyContent: 'flex-end', display: 'flex', marginLeft: 5, flexGrow: 1 }}>
-              <form onSubmit={(e) => navigate(`/search/${e.target.keyword.value}`)}>
+              <form onSubmit={doSearch}>
                 <FormControl fullWidth sx={{ m: 1 }}>
                   <InputLabel htmlFor="cp-search">Search</InputLabel>
                   <OutlinedInput

@@ -30,6 +30,14 @@ class UserSerializer(serializers.ModelSerializer):
     groups = GroupSerializer(many=True, read_only=True)
 
 
+class CheckinSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CheckIn
+        fields = "__all__"
+    # group = GroupSerializer()
+    # user = UserSerializer(many=True)
+
+
 class CheckinStatusSerializer(serializers.ModelSerializer):
     date = serializers.DateField()
     is_checked_in = serializers.BooleanField()

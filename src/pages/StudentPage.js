@@ -18,7 +18,7 @@ function StudentPage() {
     const handleCheckin = () => {
         console.log('check-in')
         backend.post('/api/v1/user/checkin/').then(response => {
-            console.log(response)
+            // console.log(response)
             setDirty(true)
         })
     }
@@ -59,7 +59,7 @@ function StudentPage() {
                         <h1>README</h1>
                     </div>
                     <div className="readme">
-                        {landingRaw?.lessons[0].markdown && <ReactMarkdown remarkPlugins={[remarkGfm]}>{landingRaw?.lessons[0].markdown}</ReactMarkdown>}
+                        {landingRaw && landingRaw?.lessons[0].markdown && <ReactMarkdown remarkPlugins={[remarkGfm]}>{landingRaw?.lessons[0].markdown}</ReactMarkdown>}
                     </div>
                 </div>
             </div>

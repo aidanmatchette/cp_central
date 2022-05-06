@@ -3,16 +3,9 @@ from app.helpers import get_daily_readme_from_gh
 from django.http import JsonResponse
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
-from app.models import User, CheckIn, Cohort, Lesson, ActivityGroup
-from app.serializers import UserSerializer, LessonSerializer, CohortSerializer, ActivityGroupSerializer
+from app.models import User, CheckIn, Cohort, Lesson, Questionnaire, ActivityGroup
+from app.serializers import UserSerializer, LessonSerializer, CohortSerializer, QuestionnaireSerializer, ActivityGroupSerializer
 from . import get_all_choices
-
-
-@api_view(['POST', 'GET'])
-@permission_classes([IsAuthenticated])
-def student_checkin(request):  # /api/v1/instructor/checkin/
-    # TODO implement
-    pass
 
 
 @api_view(['GET'])
@@ -25,6 +18,7 @@ def student_landing(request):
     cohort = Cohort.objects.get(pk=user.default_group.pk)
     lessons = Lesson.objects.filter(date=fdate)
     activity_groups = ActivityGroup.objects.filter(members__in=[request.user], activity__date=date)
+    questionnaires = Questionnaire.objects.all()
     # curriculum = [get_daily_readme_from_gh(x.lesson_file_path) for x in lessons]
     output = {
         "is_checked_in": CheckIn.objects.filter(user__in=[request.user], date=date).first() is not None,
@@ -32,8 +26,8 @@ def student_landing(request):
         'my_info': UserSerializer(request.user).data,
         'cohort': CohortSerializer(cohort).data,
         'class_roster': UserSerializer(user.default_group.user_set.all(), many=True).data,
-        'questionnaires': [],  # TODO implement
-        'activity_groups': ActivityGroupSerializer(activity_groups, many=True).data, 
+        'activity_groups': ActivityGroupSerializer(activity_groups, many=True).data,
+        'questionnaires': QuestionnaireSerializer(questionnaires, many=True).data,
         'my_feedback': [],  # TODO implement
         # 'curriculum': curriculum,
         'lessons': LessonSerializer(lessons, many=True).data,

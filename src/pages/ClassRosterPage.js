@@ -1,10 +1,29 @@
-import { useEffect, useState } from "react"; 
+import {useContext, useEffect, useState} from "react";
 import { useAxios } from "../utils/useAxios";
-import { TableContainer, Box, Container, Switch, Table, TableBody, Paper, TableRow, TableHead, FormGroup, FormControlLabel, TableCell, Typography, Button } from '@mui/material'
+import {
+    TableContainer,
+    Box,
+    Container,
+    Switch,
+    Table,
+    TableBody,
+    Paper,
+    TableRow,
+    TableHead,
+    FormGroup,
+    FormControlLabel,
+    TableCell,
+    Typography,
+    Button,
+    Icon
+} from '@mui/material'
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../utils/theme";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import {Link} from "react-router-dom";
+import {Check} from "@mui/icons-material";
+import {DayContext} from "../context/DayProvider";
 
 
 function ClassRosterPage() {
@@ -12,26 +31,31 @@ function ClassRosterPage() {
   const backend = useAxios()
   const [roster, setRoster] = useState([])
   const [checkedIn, setCheckedIn] = useState(false)
+    const [checkedInIds, setcheckedInIds] = useState([])
+    const {landingRaw} = useContext(DayContext)
   
   useEffect(() => {
     backend.get('api/roster/').then(response => {
-      console.log('roster -response', response.data)
+      // console.log('roster -response', response.data)
       setRoster(response.data.sort((a, b) => a.first_name.toLowerCase().localeCompare(b.first_name.toLowerCase())))
     })
-  },[])
+  },[landingRaw])
   
   
   const handleSwitchClick = () => {
     setCheckedIn(!checkedIn)
     if (!checkedIn) {
-      backend.get('api/instructor/checkin/').then(response => {
+      backend.get('api/instructor/checkin/',{"params":{"date":landingRaw.date}})
+          .then(response => {
         console.log('checked in ------>',response.data)
+              setcheckedInIds(response.data?.checked_in)
         // setRoster(response.data.sort((a, b) => a.first_name.toLowerCase().localeCompare(b.first_name.toLowerCase())))
       })
+    }else{
+        setcheckedInIds([])
     }
-  }  
+  }
 
-  
   const classTable = roster?.map((member, index) => {
     let memberType = null
     if (member.is_superuser) {
@@ -45,10 +69,11 @@ function ClassRosterPage() {
       <TableRow 
         key={member.first_name} 
         sx={{ '&:last-child td, &:last-child th': { border: 0 } }} >
-        <TableCell component="th" scope="row"> 
-        {member.first_name} 
+        <TableCell component="th" scope="row">
+            {checkedInIds?.includes(member.id) && <Icon><Check/></Icon>}
+            <Link to={`/biopage/${member.id}`}>{member.first_name} </Link>
         </TableCell> 
-        <TableCell align="center">{member.last_name}</TableCell> 
+        <TableCell align="center">{member.last_name}</TableCell>
         <TableCell align="center">{memberType}</TableCell> 
         <TableCell align="center">{member.timezone}</TableCell> 
         <TableCell align="center">{member.email}</TableCell> 
@@ -59,7 +84,7 @@ function ClassRosterPage() {
     )     
   })
   
-  console.log(roster)
+  // console.log(roster)
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{margin: "auto",  width: '80%'}}>
