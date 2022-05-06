@@ -11,15 +11,16 @@ import ReactMarkdown from "react-markdown";
 export default function BioPage() {
     const {userID} = useParams()
     const backend = useAxios()
-    const {allChoices} = useContext(AuthContext)
-    const [user, setUser] = useState(null)
+    const {allChoices, user} = useContext(AuthContext)
+    const [userBio, setUserBio] = useState(null)
     const [dirty, setDirty] = useState(true)
     const [markdownEdit, setMarkdownEdit] = useState(false)
+    const canEdit = (user?.id == userBio?.id) || user?.is_superuser
 
     useEffect(() => {
         backend.get(`/api/v1/user/${userID}/`)
             .then((res) => {
-                setUser(res.data)
+                setUserBio(res.data)
             })
             .catch((err) => {
                 console.log("err", err)
@@ -50,70 +51,71 @@ export default function BioPage() {
     }
 
     const renderMarkdown = () => {
-        if (markdownEdit){
+        if (markdownEdit) {
             return <TextField multiline
                               rows={20}
-                              defaultValue={user.markdown}
+                              defaultValue={userBio.markdown}
                               fullWidth
                               name={"markdown"}
             />
         }
         return (
-            <div onClick={()=>setMarkdownEdit(true)} >
-
-                    <h3><strong>User Information</strong></h3>
-               <div id="markdown">       
-            <ReactMarkdown remarkPlugins={[remarkGfm]} >
-              
-                   {user.markdown} 
-            </ReactMarkdown>
-            </div>
+            <div onClick={() => setMarkdownEdit(canEdit && true)}>
+                <h3><strong>User Information</strong></h3>
+                <div id="markdown">
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                        {userBio.markdown}
+                    </ReactMarkdown>
+                </div>
             </div>
         )
     }
 
-    if (!user) return <></>
+    if (!userBio) return <></>
 
     return (
         <Grid container marginTop={4} spacing={1}>
             <Grid item xs={1}>
             </Grid>
-            <Grid item xs={4} id="gridOne">
-                <h3 style={{textAlign: "center"}}><strong>{user.first_name} {user.last_name}</strong></h3>
-                <img src={user.avatar} alt={"Avatar"} width={'100%'} style={{borderRadius: "30%", width:"300px"}}/>
+            <Grid item xs={4} id="gridOne" textAlign={"center"}>
+                <h3 style={{textAlign: "center"}}><strong>{userBio.first_name} {userBio.last_name}</strong></h3>
+                <img src={userBio.avatar} alt={"Avatar"} width={'100%'} style={{borderRadius: "30%", width: "300px"}}/>
                 <br/>
-                <input  accept={"image/*"}
-                       type={"file"}
-                       name={"avatar"}
-                       onChange={imageChange}
-                />
+                {canEdit &&
+                    <input accept={"image/*"}
+                           type={"file"}
+                           name={"avatar"}
+                           onChange={imageChange}
+                    />
+                }
                 <br/>
                 <div className="gridOne-content">
-                <div id="content-items">
-                   <h5><strong>Email:</strong></h5>
-                <span>{user.email}</span>
-                <h5 id="connect"><strong> Connect with me:</strong></h5>
-                <UserLinks userID={userID} links={user.links} setDirty={setDirty} />  
+                    <div id="content-items">
+                        <h5><strong>Email:</strong></h5>
+                        <span>{userBio.email}</span>
+                        <h5 id="connect"><strong> Connect with me:</strong></h5>
+                        <UserLinks userID={userID} links={userBio.links} setDirty={setDirty} canEdit={canEdit}/>
+                    </div>
                 </div>
-                </div>
-                
+
             </Grid>
-            <Grid item xs={6} id="gridTwo">
+            <Grid item xs={6} sx={{marginLeft:"2rem"}} id="gridTwo">
                 {/*too lazy to do a proper lookup on default group or change the serializer*/}
                 <div id="gridTwo-content">
-                    <h3><strong>{user?.groups[0]?.name} Cohort</strong></h3>
-                <UserMetaData metadata={user.metadata} userID={userID} setUser={setUser}/>
-                <form onSubmit={saveUser}>
-                    <Select name={"timezone"} defaultValue={user.timezone} label={"Time Zone"} sx={{marginTop: "1rem"}} id="gridTwo-form">
-                        {allChoices.timeZones.map((tz, index) =>
-                            <MenuItem key={index} value={tz[0]}>{tz[0]} {tz[1]}</MenuItem>)}
-                    </Select>
-                    <Button type={"submit"}>Save</Button>
-                    <hr/>
-                    {renderMarkdown()}
-                </form>
+                    <h3><strong>{userBio?.groups[0]?.name} Cohort</strong></h3>
+                    <UserMetaData metadata={userBio.metadata} userID={userID} setUser={setUserBio}/>
+                    <form onSubmit={saveUser}>
+                        <Select name={"timezone"} defaultValue={userBio.timezone} label={"Time Zone"}
+                                sx={{marginTop: "1rem"}} id="gridTwo-form">
+                            {allChoices.timeZones.map((tz, index) =>
+                                <MenuItem key={index} value={tz[0]}>{tz[0]} {tz[1]}</MenuItem>)}
+                        </Select>
+                        {canEdit && <Button type={"submit"}>Save</Button>}
+                        <hr/>
+                        {renderMarkdown()}
+                    </form>
                 </div>
-                
+
             </Grid>
             <Grid item xs={1}>
             </Grid>

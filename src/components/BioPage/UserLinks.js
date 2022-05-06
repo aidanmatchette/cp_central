@@ -14,7 +14,7 @@ import {
 import {Add, Edit} from "@mui/icons-material";
 import {useAxios} from "../../utils/useAxios";
 
-export default function UserLinks({links, setDirty, userID}) {
+export default function UserLinks({links, setDirty, userID, canEdit}) {
     const {allChoices} = useContext(AuthContext)
     const backend = useAxios()
     const [showAdd, setShowAdd] = useState(false)
@@ -134,7 +134,7 @@ export default function UserLinks({links, setDirty, userID}) {
             {links.map((link) => <UserLink key={link.id} link={link}/>)}
                 <AddDialog />
             <IconButton onClick={()=>setShowAdd(true)}>
-                <Add/>
+                {canEdit && <Add/>}
             </IconButton>
         </List>
     )
