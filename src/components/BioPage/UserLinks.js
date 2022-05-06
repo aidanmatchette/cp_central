@@ -124,13 +124,13 @@ export default function UserLinks({links, setDirty, userID}) {
                 <IconButton edge={false} aria-label={"edit"} onClick={() => setDialogOpen(true)}>
                     <Edit/>
                 </IconButton>
-                <Link href={link.url}>{link.name}</Link>
+                <Link id="social-links" href={link.url}><strong>{link.name}</strong></Link>
             </ListItem>
         )
     }
 
     return (
-        <List>
+        <List id="user-links">
             {links.map((link) => <UserLink key={link.id} link={link}/>)}
                 <AddDialog />
             <IconButton onClick={()=>setShowAdd(true)}>
