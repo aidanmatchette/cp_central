@@ -91,7 +91,7 @@ export default function QuestionItem({question, setParentDirty}) {
             <Dialog open={isEditAnswers} onClose={() => setIsEditAnswers(false)} sx={{height:"75vh"}}>
                 <DialogContent>
                     <form onSubmit={addResponse}>
-                        <Input name={'text'} type={'text'} placeholder={"Enter response"}/>
+                        <Input name={'question_text'} type={'text'} placeholder={"Enter response"}/>
                         <Input name={'question'} type={'hidden'} defaultValue={question.id}/>
                         <Button type={"submit"}>Add</Button>
                     </form>
@@ -103,7 +103,7 @@ export default function QuestionItem({question, setParentDirty}) {
                                         <Delete/>
                                     </IconButton>
                                 }>
-                                    <ListItemText>{opt.text}</ListItemText>
+                                    <ListItemText>{opt.question_text}</ListItemText>
 
                                 </ListItem>
                             )

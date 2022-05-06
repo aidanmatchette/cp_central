@@ -32,7 +32,7 @@ class Question(models.Model):
 
 class QuestionOption(models.Model):
     question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name="question_options")
-    text = models.TextField()
+    question_text = models.TextField()
     is_correct = models.BooleanField(default=False)
 
 
@@ -49,5 +49,5 @@ class FilledQuestionnaire(models.Model):
 class QuestionResponse(models.Model):
     filled_questionnaire = models.ForeignKey(FilledQuestionnaire, on_delete=models.CASCADE, related_name="question_responses")
     question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name="question_responses")
-    question_option = models.ForeignKey(QuestionOption, on_delete=models.CASCADE, related_name="question_responses")
-    text = models.TextField(null=True, blank=True)
+    question_option = models.ForeignKey(QuestionOption, on_delete=models.CASCADE, related_name="question_responses", null=True, blank=True)
+    response_text = models.TextField(null=True, blank=True)

@@ -2,8 +2,9 @@ import {useContext} from "react";
 import {AuthContext} from "../context/AuthProvider";
 import {DayContext} from "../context/DayProvider";
 import {useAxios} from "../utils/useAxios";
-import {List, ListItem} from "@mui/material";
+import {IconButton, List, ListItem} from "@mui/material";
 import {useNavigate} from "react-router-dom";
+import {Article, Edit} from "@mui/icons-material";
 
 export default function Questionnaires() {
     const {user, allChoices} = useContext(AuthContext)
@@ -21,8 +22,9 @@ export default function Questionnaires() {
             })
     }
 
-    return (
-        <div>
+    const CreateQuestionnaire = () =>{
+        return (
+            <>
             <h1>Create new</h1>
             <form onSubmit={createQuestionnaire}>
                 <input name={'originator'} type={'hidden'} value={user.id} placeholder={"User ID"}/>
@@ -42,11 +44,28 @@ export default function Questionnaires() {
                 </select>
                 <button type={"submit"}>Create</button>
             </form>
+            </>
+        )
+    }
+
+    return (
+        <div>
+            {user?.is_superuser && <CreateQuestionnaire/>}
             <h2>Current Questionnaires</h2>
             <List>
                 {landingRaw?.questionnaires.map((q)=>{
                     return(
-                        <ListItem key={q.id} onClick={()=>navigate(`/questionnaireEdit/${q.id}`)}>{q.name}</ListItem>
+                        <ListItem key={q.id}>
+                            {user?.is_superuser &&
+                                <IconButton onClick={() => navigate(`/questionnaireEdit/${q.id}`)}>
+                                    <Edit/>
+                                </IconButton>
+                            }
+                            <IconButton onClick={()=>navigate(`/questionnaireFill/${q.id}`)}>
+                                <Article/>
+                            </IconButton>
+                            {q.name}
+                        </ListItem>
                     )
                 })}
             </List>

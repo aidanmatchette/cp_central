@@ -3,7 +3,7 @@ from rest_framework.decorators import api_view, action, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
 from django.contrib.auth.models import Group
-from app.models import Questionnaire, FilledQuestionnaire, Question, QuestionOption
+from app.models import Questionnaire, FilledQuestionnaire, Question, QuestionOption, QuestionResponse
 from app.serializers import QuestionnaireSerializer, FilledQuestionnaireSerializer, QuestionSerializerBase, QuestionOptionSerializer, QuestionSerializer
 
 
@@ -44,8 +44,29 @@ class QuestionOptionViewSet(ModelViewSet):
     queryset = QuestionOption.objects.all()
     serializer_class = QuestionOptionSerializer
 
+    @action(methods=['POST'], detail=False)
+    def save_answer(self, request, pk=None):  # noqa
+        qr, is_new = QuestionResponse.objects.get_or_create(
+            filled_questionnaire_id=request.data['fquestionnaireID'],
+            question_id=request.data['questionID'])
+        qr.response_text = request.data['response_text']
+        qr.save()
+        output = FilledQuestionnaire.objects.get(pk=request.data['fquestionnaireID'])
+        return JsonResponse(FilledQuestionnaireSerializer(output).data)
+
 
 class FilledQuestionnaireViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
     queryset = FilledQuestionnaire.objects.all()
     serializer_class = FilledQuestionnaireSerializer
+
+    @action(methods=['POST'], detail=False)
+    def start(self, request, pk=None):  # noqa
+        """Start point for student beginning to fill out a new questionnaire or resume and old one"""
+        questionnaire = Questionnaire.objects.get(pk=request.data['questionnaireID'])
+        exists = FilledQuestionnaire.objects.filter(questionnaire=questionnaire, user=request.user).first()
+        if exists:
+            return JsonResponse(FilledQuestionnaireSerializer(exists).data)
+        new_quest = FilledQuestionnaire(questionnaire=questionnaire, user=request.user)
+        new_quest.save()
+        return JsonResponse(FilledQuestionnaireSerializer(new_quest).data)

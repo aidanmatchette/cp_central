@@ -23,7 +23,7 @@ const listItems = [
   },
   {
     listIcon: <QuestionAnswerRoundedIcon />,
-    listText: "Questionnaires",
+    listText: "View Questionnaires",
     link: "/questionnaires"
   }
 ];
@@ -50,7 +50,7 @@ const instructorListItems = [
   },
   {
     listIcon: <QuestionAnswerRoundedIcon />,
-    listText: "Questionnaires",
+    listText: "Edit Questionnaires",
     link: "/questionnaires"
   }
 ];
