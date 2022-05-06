@@ -35,10 +35,12 @@ function StudentPage() {
                         {/* <GoogleCalendar width={'500px'} height={'500px'} calendarID={''}  */}
                         <div className="links">
                             <h1>LINKS</h1>
-                            <a href="https://google.com" target="_blank">Google Calendar</a>
+                            <Button target="_blank" href="https://google.com" variant="contained">Google Calendar</Button>
+                        <div className="feedback"> 
+                            <GenerateFeedback />
+                        </div>
                         </div>
                         <div className="links other-section">
-                            <GenerateFeedback />
                         </div>
                     </div>
                     <div className="days-topics">
