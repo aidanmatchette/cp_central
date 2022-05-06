@@ -3,6 +3,9 @@ import { DayContext } from "../context/DayProvider"
 import { Container, Spinner } from 'react-bootstrap'
 import { Button, Dialog, DialogActions } from "@mui/material";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "../utils/theme.js";
+
 
 function GoogleCalendar(props) {
 
@@ -21,8 +24,8 @@ function GoogleCalendar(props) {
   }
 
   return (
-    <div>
-      <Button onClick={() => setVis(true)}><CalendarMonthIcon fontSize={"large"} /> Calendar</Button>
+    <ThemeProvider theme={theme}>
+      <Button sx={{ width: "80%", mt: 3 }} color="secondary" variant="outlined" onClick={() => setVis(true)}><CalendarMonthIcon fontSize={"large"} /> Calendar</Button>
       <Dialog open={vis} onClose={() => setVis(false)} fullWidth>
         <Container className="d-flex justify-content-center mt-3">
           {calendarID
@@ -37,7 +40,7 @@ function GoogleCalendar(props) {
           <Button onClick={() => setVis(false)}>Close</Button>
         </DialogActions>
       </Dialog>
-    </div>
+    </ThemeProvider>
   )
 }
 
