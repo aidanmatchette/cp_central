@@ -101,7 +101,7 @@ export default function BioPage() {
             <Grid item xs={6} id="gridTwo">
                 {/*too lazy to do a proper lookup on default group or change the serializer*/}
                 <div id="gridTwo-content">
-                    <h3><strong>{user.groups[0].name} Cohort</strong></h3>
+                    <h3><strong>{user?.groups[0]?.name} Cohort</strong></h3>
                 <UserMetaData metadata={user.metadata} userID={userID} setUser={setUser}/>
                 <form onSubmit={saveUser}>
                     <Select name={"timezone"} defaultValue={user.timezone} label={"Time Zone"} sx={{marginTop: "1rem"}} id="gridTwo-form">
