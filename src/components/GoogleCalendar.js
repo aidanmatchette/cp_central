@@ -22,7 +22,7 @@ function GoogleCalendar(props) {
 
   return (
     <div>
-      <Button onClick={() => setVis(true)}><CalendarMonthIcon /></Button>
+      <Button onClick={() => setVis(true)}><CalendarMonthIcon fontSize={"large"} /> Calendar</Button>
       <Dialog open={vis} onClose={() => setVis(false)} fullWidth>
         <Container className="d-flex justify-content-center mt-3">
           {calendarID
