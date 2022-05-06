@@ -100,18 +100,6 @@ function SideBar() {
               <ListItemText primary={listItem.listText} />
             </ListItem>
           ))}
-          <ListItem button onClick={() => setFeedbackOpen(true)}>
-            <ListItemIcon>
-              <RateReviewRoundedIcon />
-            </ListItemIcon>
-            <ListItemText primary={"Feedback"} />
-            {feedbackOpen && (
-              <GenerateFeedback
-                feedbackOpen={feedbackOpen}
-                setFeedbackOpen={setFeedbackOpen}
-              />
-            )}
-          </ListItem>
 
           <ListItem button onClick={() => setQuestionOpen(!questionOpen)}>
             <ListItemIcon>

@@ -20,10 +20,10 @@ import { ThemeProvider } from "@mui/material/styles";
 import theme from "../utils/theme.js";
 import { useAxios } from "../utils/useAxios";
 
-function GenerateFeedback({ feedbackOpen, setFeedbackOpen }) {
+function GenerateFeedback() {
   const backend = useAxios();
 
-  //const [modalOpen, setModalOpen] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
 
   const topicChoices = [
     { topic: "Lesson Content", value: 0 },
@@ -46,17 +46,18 @@ function GenerateFeedback({ feedbackOpen, setFeedbackOpen }) {
     let feedbackForm = new FormData(event.target);
     console.log(feedbackForm);
     backend.post("/api/v1/feedback/", feedbackForm).then((response) => {
-      setFeedbackOpen(false);
+      setModalOpen(false);
       console.log(response);
     });
   };
   const handleClose = () => {
-    setFeedbackOpen(false);
+    setModalOpen(false);
   };
 
   return (
     <ThemeProvider theme={theme}>
-      <Dialog open={feedbackOpen} onClose={handleClose}>
+      <Button color="secondary" variant="contained" onClick={() => setModalOpen(true)}>New Feedback</Button>
+      <Dialog open={modalOpen} onClose={handleClose}>
         <DialogTitle>Feedback</DialogTitle>
         <DialogContent>
           <Box
