@@ -23,6 +23,8 @@ import { useAxios } from "../utils/useAxios";
 function GenerateFeedback({ feedbackOpen, setFeedbackOpen }) {
   const backend = useAxios();
 
+  //const [modalOpen, setModalOpen] = useState(false);
+
   const topicChoices = [
     { topic: "Lesson Content", value: 0 },
     { topic: "Lesson Delivery", value: 1 },
@@ -48,11 +50,13 @@ function GenerateFeedback({ feedbackOpen, setFeedbackOpen }) {
       console.log(response);
     });
   };
+  const handleClose = () => {
+    setFeedbackOpen(false);
+  };
 
-    
   return (
     <ThemeProvider theme={theme}>
-      <Dialog open={feedbackOpen} onClose={() => setFeedbackOpen(false)}>
+      <Dialog open={feedbackOpen} onClose={handleClose}>
         <DialogTitle>Feedback</DialogTitle>
         <DialogContent>
           <Box
@@ -143,11 +147,11 @@ function GenerateFeedback({ feedbackOpen, setFeedbackOpen }) {
               color="primary"
               variant="contained"
               sx={{ mt: 3 }}
-              onClick={()=> setFeedbackOpen(!feedbackOpen)}
+              onClick={handleClose}
             >
-                Close 
+              Close
             </Button>
-        </DialogActions>
+          </DialogActions>
         </DialogContent>
       </Dialog>
     </ThemeProvider>
