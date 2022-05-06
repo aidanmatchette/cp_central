@@ -5,6 +5,7 @@ import { ThemeProvider } from "@mui/material/styles";
 import theme from "../utils/theme";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import {Link} from "react-router-dom";
 
 
 function ClassRosterPage() {
@@ -46,9 +47,9 @@ function ClassRosterPage() {
         key={member.first_name} 
         sx={{ '&:last-child td, &:last-child th': { border: 0 } }} >
         <TableCell component="th" scope="row"> 
-        {member.first_name} 
+            <Link to={`/biopage/${member.id}`}>{member.first_name} </Link>
         </TableCell> 
-        <TableCell align="center">{member.last_name}</TableCell> 
+        <TableCell align="center">{member.last_name}</TableCell>
         <TableCell align="center">{memberType}</TableCell> 
         <TableCell align="center">{member.timezone}</TableCell> 
         <TableCell align="center">{member.email}</TableCell> 
