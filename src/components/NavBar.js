@@ -38,9 +38,11 @@ function NavBar() {
       <AppBar color='transparent' position='static'>
         <Container >
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-            <IconButton onClick={toggleSideBar}>
-              <MenuRoundedIcon />
-            </IconButton>
+            {user &&
+                <IconButton onClick={toggleSideBar}>
+                <MenuRoundedIcon />
+              </IconButton>
+            }
             <img src="./LongCPCLogo.png" width="175px" alt='cp-logo' onClick={() => navigate(homePage)} />
 
             <Box sx={{ justifyContent: 'flex-end', display: 'flex', marginLeft: 5, flexGrow: 1 }}>

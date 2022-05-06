@@ -30,6 +30,8 @@ export default function Questionnaires() {
             .then((res) => {
                 console.log({res})
                 setDirty(true)
+                // TODO not page refreshing on custom questionnaires (works for regular)
+                // Need to pull directly
             })
     }
 
