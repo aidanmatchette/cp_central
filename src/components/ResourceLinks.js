@@ -17,9 +17,9 @@ function ResourceLinks(props) {
        <div>
          <h3> Topic: {info.title}</h3>
          {/* <p>{info.description}</p> */}
-         <ul className="link-list">
+         <ul >
            {info.lesson_links.map((link, index) => {
-             return <li key={index}><a href={link.url}>{link.description}</a></li>
+             return <li key={index} className="topic-links"><a className="link-list" href={link.url}>{link.description}</a></li>
            })}
          </ul>
           <p>View more resources <Link to={"/lesson-links"}>here</Link></p> 
