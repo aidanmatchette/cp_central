@@ -25,10 +25,10 @@
   },
   {
     "model": "sessions.session",
-    "pk": "ozxi963skn6p18bs2k4l5gmvuglg5n0y",
+    "pk": "2q9f06jykugnpvc8qu04qgv14w09q9gv",
     "fields": {
-      "session_data": ".eJxVjDsOwyAQBe9CHSG-S0iZ3mdAmF2CkwgkY1dR7m5bcpG0b2beh4W4LiWsneYwIbsxyS6_2xjTi-oB8Bnro_HU6jJPIz8UftLOh4b0vp_u30GJvew1gbTZoSYgiSiVQQtGCYMOSNlkck4RtPfgtUNpQTsnhEDlr5C19Zl9N9S9Nv4:1nkX9F:i5gcYBIao0ka0RVHwFMv9wR3gXxeFNq3IZ6Jr8Z-2CU",
-      "expire_date": "2022-05-13T20:23:29.506Z"
+      "session_data": ".eJxVjMsOwiAQRf-FtSE8hocu3fcbCDCDVA0kpV0Z_12bdKHbe865LxbittawDVrCjOzCFLDT75hiflDbCd5ju3Wee1uXOfFd4QcdfOpIz-vh_h3UOOq31tG6IpOynpC0soQgAEtBkNlkp4QyuiQhjDWlJHUGEF44GT0BkUbL3h8NAjf_:1nmxuD:hzl0CHRwRkYQIQcPlpoRex_qG8MyQnvYvwswrKnI4g0",
+      "expire_date": "2022-05-20T13:22:01.706Z"
     }
   },
   {
@@ -47,10 +47,15 @@
       "date_joined": "2022-05-01T13:29:44Z",
       "avatar": "me.png",
       "metadata": {
-        "favorite_food": "donuts"
+        "mentor": "",
+        "donut_count": "infinity",
+        "resume_coach": "",
+        "group_team": "",
+        "interviewer": "",
+        "interview_date": ""
       },
       "default_group": 1,
-      "markdown": "# hello\r\n\r\n## hi\r\n\r\n~~~\r\nhhh\r\n~~~",
+      "markdown": "# Donuts are life\r\n\r\nI'm a software developer with a mantra of \"How can we do better?\". I don't settle for acceptable, but rather always am on the look out for design improvements... whether it be implementing optimizations, restructuring code, or even designing an elegant user interface. Code design and UI/UX are in my heart and soul, and I seek to use my talents to develop mind-tingling and eye-catching applications!\r\n\r\nMy areas of expertise lie with object-oriented programming (C++), web development (Python, JavaScript), and front-end design (ReactJS).",
       "timezone": "CST",
       "groups": [
         1,
@@ -73,10 +78,16 @@
       "is_staff": true,
       "is_active": true,
       "date_joined": "2022-05-01T13:30:00Z",
-      "avatar": "default.png",
-      "metadata": null,
-      "default_group": 1,
-      "markdown": "",
+      "avatar": "Raphael.jfif",
+      "metadata": {
+        "mentor": "",
+        "resume_coach": "",
+        "group_team": "",
+        "interviewer": "",
+        "interview_date": ""
+      },
+      "default_group": 2,
+      "markdown": "# Bagels are better",
       "timezone": "CST",
       "groups": [
         1,
@@ -146,7 +157,13 @@
       "is_active": true,
       "date_joined": "2022-05-01T14:04:11Z",
       "avatar": "default.png",
-      "metadata": null,
+      "metadata": {
+        "mentor": "",
+        "resume_coach": "",
+        "group_team": "",
+        "interviewer": "",
+        "interview_date": ""
+      },
       "default_group": 1,
       "markdown": "",
       "timezone": "CST",
@@ -171,7 +188,13 @@
       "is_active": true,
       "date_joined": "2022-05-01T14:04:25Z",
       "avatar": "default.png",
-      "metadata": null,
+      "metadata": {
+        "mentor": "",
+        "resume_coach": "",
+        "group_team": "",
+        "interviewer": "",
+        "interview_date": ""
+      },
       "default_group": 1,
       "markdown": "",
       "timezone": "CST",
@@ -202,7 +225,7 @@
         "see": "thdree"
       },
       "default_group": 1,
-      "markdown": "# asdft\r\n\r\n## Hello.",
+      "markdown": "# I am student 3\r\n\r\n## Hello.",
       "timezone": "CST",
       "groups": [
         1
@@ -225,7 +248,13 @@
       "is_active": true,
       "date_joined": "2022-05-01T14:05:14Z",
       "avatar": "default.png",
-      "metadata": null,
+      "metadata": {
+        "mentor": "",
+        "resume_coach": "",
+        "group_team": "",
+        "interviewer": "",
+        "interview_date": ""
+      },
       "default_group": 1,
       "markdown": "",
       "timezone": "CST",
@@ -250,7 +279,13 @@
       "is_active": true,
       "date_joined": "2022-05-01T14:05:26Z",
       "avatar": "default.png",
-      "metadata": null,
+      "metadata": {
+        "mentor": "",
+        "resume_coach": "",
+        "group_team": "",
+        "interviewer": "",
+        "interview_date": ""
+      },
       "default_group": 1,
       "markdown": "",
       "timezone": "CST",
@@ -275,7 +310,13 @@
       "is_active": true,
       "date_joined": "2022-05-01T14:05:37Z",
       "avatar": "default.png",
-      "metadata": null,
+      "metadata": {
+        "mentor": "",
+        "resume_coach": "",
+        "group_team": "",
+        "interviewer": "",
+        "interview_date": ""
+      },
       "default_group": 1,
       "markdown": "",
       "timezone": "CST",
@@ -350,7 +391,13 @@
       "is_active": true,
       "date_joined": "2022-05-01T14:11:04Z",
       "avatar": "default.png",
-      "metadata": null,
+      "metadata": {
+        "mentor": "",
+        "resume_coach": "",
+        "group_team": "",
+        "interviewer": "",
+        "interview_date": ""
+      },
       "default_group": 2,
       "markdown": "",
       "timezone": "CST",
@@ -375,7 +422,13 @@
       "is_active": true,
       "date_joined": "2022-05-01T14:11:16Z",
       "avatar": "default.png",
-      "metadata": null,
+      "metadata": {
+        "mentor": "",
+        "resume_coach": "",
+        "group_team": "",
+        "interviewer": "",
+        "interview_date": ""
+      },
       "default_group": 2,
       "markdown": "",
       "timezone": "CST",
@@ -400,7 +453,13 @@
       "is_active": true,
       "date_joined": "2022-05-01T14:11:33Z",
       "avatar": "default.png",
-      "metadata": null,
+      "metadata": {
+        "mentor": "",
+        "resume_coach": "",
+        "group_team": "",
+        "interviewer": "",
+        "interview_date": ""
+      },
       "default_group": 2,
       "markdown": "",
       "timezone": "CST",
@@ -532,6 +591,151 @@
       "markdown": "",
       "timezone": "CST",
       "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 24,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$HVhmzaModF4Oy0pX5WMqYJ$3TiuO69x7oizT/8KRm7OZu8X2nWF3BnQYVH0hc6pXd8=",
+      "last_login": "2022-05-06T13:22:01.701Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2022-05-06T13:21:58.104Z",
+      "avatar": "default.png",
+      "metadata": null,
+      "default_group": null,
+      "markdown": "",
+      "timezone": "CST",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 25,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$rK1tuDj4quK6EJJYnsTPCF$yx5vPjAW/tGhyUK4JsOY09uUVWk9m79p6eTHnLIE2OQ=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "aidan@email.com",
+      "first_name": "Aidan",
+      "last_name": "Matchette",
+      "email": "aidan@email.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-05-06T13:27:14Z",
+      "avatar": "Aidan.jfif",
+      "metadata": {
+        "mentor": "",
+        "resume_coach": "",
+        "group_team": "",
+        "interviewer": "",
+        "interview_date": ""
+      },
+      "default_group": 1,
+      "markdown": "# Go Devil Dogs\r\n\r\nI am transitioning out of the military after having spent 5 years in the United States Marine Corps as an Aerial Delivery Specialist. Ever since I decided to depart the military, my love for Software Development has taken over my life. I enjoy spending my free time learning new skills, solving problems, and teaching others what I know. I am excited to be a part of a high-functioning team and continue to hone and develop new skills.",
+      "timezone": "CST",
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 26,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$YwoDKXP1A9mSFpJowEeAZJ$DCG7bnG7motgSQmzOlK0skHpXXXGKpQlynNRu2qKycE=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "megan@email.com",
+      "first_name": "Megan",
+      "last_name": "Genualdi",
+      "email": "megan@email.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-05-06T13:27:32Z",
+      "avatar": "Megan.jfif",
+      "metadata": {
+        "mentor": "",
+        "resume_coach": "",
+        "group_team": "",
+        "interviewer": "",
+        "interview_date": ""
+      },
+      "default_group": 1,
+      "markdown": "# Go Navy\r\n\r\nHello, I am a Navy veteran with six years of service as an Electronics Technician. I originally joined the military wanting a job in the IT field but ended up working on the hardware of systems instead of the software. Throughout my time in the Navy, I knew I still wanted to have a career in software development and pursuing this dream has led me to a career that I can truly say I am passionate about. I am driven individual, who is always looking to learn something new and software development offers that. I love problem solving and navigating the challenges presented to me and I am looking forward to taking my career in software to new heights.",
+      "timezone": "CST",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 27,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$6pKQE925R8srG1YoM6qolx$CFDrHJch5SegdzO7zbUhDXnSfeEJz5z60fnbXF46ddY=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "markos@email.com",
+      "first_name": "Markos",
+      "last_name": "Sankey",
+      "email": "markos@email.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-05-06T13:27:47Z",
+      "avatar": "Markos.jfif",
+      "metadata": {
+        "mentor": "",
+        "resume_coach": "",
+        "group_team": "",
+        "interviewer": "",
+        "interview_date": ""
+      },
+      "default_group": 1,
+      "markdown": "# Go Navy\r\n\r\nAfter 5 years of experience in problem solving and process improvement in the Navy, I'm making the career transition to become a Software Developer. IΓÇÖm currently enrolled in a coding bootcamp, with a concentration in: Javascript, Python, HTML, CSS, Django, React, Postgres, SQL and building RESTful APIs. Looking to develop and improve products with clients and teams alike.",
+      "timezone": "CST",
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "app.user",
+    "pk": 28,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$XN7obMfLx3j6AxfRI9X5KX$Jew0MRG2KlrK1cw6tPDRiiJItadJteSbfpucZIACh7g=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "john@email.com",
+      "first_name": "John",
+      "last_name": "Winko",
+      "email": "john@email.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-05-06T13:28:16Z",
+      "avatar": "me_wekdowh.jfif",
+      "metadata": {
+        "mentor": "",
+        "resume_coach": "",
+        "group_team": "",
+        "interviewer": "",
+        "interview_date": ""
+      },
+      "default_group": 1,
+      "markdown": "## Is he a leader though?\r\n\r\nHello, I am a Navy veteran turning a passion into a career breaking into the software development field. Highly trainable with a B.S. in information technology and graduating from MERN full stack coding bootcamp in May 2022. I have a very diverse background from both the people I have served with to the roles that I have fulfilled the past 20 years. Team player with a penchant for process improvement and hunger for knowledge looking to network with people and companies in the technology sector.",
+      "timezone": "CST",
+      "groups": [
+        1
+      ],
       "user_permissions": []
     }
   },
@@ -844,45 +1048,451 @@
     }
   },
   {
-    "model": "app.checkin",
-    "pk": 1,
+    "model": "app.userlink",
+    "pk": 31,
     "fields": {
-      "date": "2022-05-01",
-      "group": 1,
-      "user": [
-        6
+      "user": 25,
+      "name": "Linked In",
+      "is_public": false,
+      "url": "https://www.linkedin.com/in/aidanmatchette/",
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.questionnaire",
+    "pk": 11,
+    "fields": {
+      "originator": 3,
+      "name": "Pair Programming Feedback - 2022-05-06",
+      "is_viewable": true,
+      "type": 1,
+      "group": [
+        3
       ]
     }
   },
   {
-    "model": "app.checkin",
-    "pk": 5,
+    "model": "app.questionnaire",
+    "pk": 12,
     "fields": {
-      "date": "2022-05-02",
-      "group": 1,
-      "user": [
-        6
+      "originator": 3,
+      "name": "Curriculum Feedback - 2022-05-06",
+      "is_viewable": true,
+      "type": 0,
+      "group": [
+        3
       ]
     }
   },
   {
-    "model": "app.checkin",
+    "model": "app.questionnaire",
+    "pk": 13,
+    "fields": {
+      "originator": 3,
+      "name": "Apprenticeship Questionnaire",
+      "is_viewable": true,
+      "type": 0,
+      "group": [
+        3
+      ]
+    }
+  },
+  {
+    "model": "app.question",
     "pk": 6,
     "fields": {
-      "date": "2022-05-03",
-      "group": 1,
-      "user": [
-        6
-      ]
+      "questionnaire": 12,
+      "text": "How confident are you feeling about yesterday's curriculum?",
+      "is_required": false,
+      "response_type": 2
     }
   },
   {
-    "model": "app.checkin",
+    "model": "app.question",
     "pk": 7,
     "fields": {
-      "date": "2022-05-04",
-      "group": 1,
-      "user": []
+      "questionnaire": 12,
+      "text": "How did yesterday's lecture go? Please provide feedback.",
+      "is_required": false,
+      "response_type": 0
+    }
+  },
+  {
+    "model": "app.question",
+    "pk": 8,
+    "fields": {
+      "questionnaire": 12,
+      "text": "How are you feeling right now about your progress?",
+      "is_required": false,
+      "response_type": 2
+    }
+  },
+  {
+    "model": "app.question",
+    "pk": 9,
+    "fields": {
+      "questionnaire": 12,
+      "text": "How are you feeling overall?",
+      "is_required": false,
+      "response_type": 2
+    }
+  },
+  {
+    "model": "app.question",
+    "pk": 10,
+    "fields": {
+      "questionnaire": 11,
+      "text": "Yesterday's pairing partner",
+      "is_required": false,
+      "response_type": 0
+    }
+  },
+  {
+    "model": "app.question",
+    "pk": 11,
+    "fields": {
+      "questionnaire": 11,
+      "text": "How did pairing session go?",
+      "is_required": false,
+      "response_type": 0
+    }
+  },
+  {
+    "model": "app.question",
+    "pk": 12,
+    "fields": {
+      "questionnaire": 11,
+      "text": "How well did you and your partner communicate",
+      "is_required": false,
+      "response_type": 0
+    }
+  },
+  {
+    "model": "app.question",
+    "pk": 13,
+    "fields": {
+      "questionnaire": 11,
+      "text": "Any feedback for your pairing partner? (feedback is anonymous)",
+      "is_required": false,
+      "response_type": 0
+    }
+  },
+  {
+    "model": "app.question",
+    "pk": 14,
+    "fields": {
+      "questionnaire": 13,
+      "text": "Which group would you want to participate in?",
+      "is_required": false,
+      "response_type": 0
+    }
+  },
+  {
+    "model": "app.question",
+    "pk": 15,
+    "fields": {
+      "questionnaire": 13,
+      "text": "Additional Notes",
+      "is_required": false,
+      "response_type": 0
+    }
+  },
+  {
+    "model": "app.question",
+    "pk": 16,
+    "fields": {
+      "questionnaire": 13,
+      "text": "I acknowledge that if I agree to participate in the Apprenticeship Program, I will accept wherever I am placed (if at all), and not look for or accept other roles until placements are made. Sign below",
+      "is_required": false,
+      "response_type": 0
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 26,
+    "fields": {
+      "question": 6,
+      "question_text": "Very Confident",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 27,
+    "fields": {
+      "question": 6,
+      "question_text": "Mostly Confident",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 28,
+    "fields": {
+      "question": 6,
+      "question_text": "Somewhat Confident",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 29,
+    "fields": {
+      "question": 6,
+      "question_text": "Not Very Confident",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 30,
+    "fields": {
+      "question": 6,
+      "question_text": "Not Confident At All",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 31,
+    "fields": {
+      "question": 8,
+      "question_text": "Great",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 32,
+    "fields": {
+      "question": 8,
+      "question_text": "Okay",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 33,
+    "fields": {
+      "question": 8,
+      "question_text": "Meh",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 34,
+    "fields": {
+      "question": 8,
+      "question_text": "Need Help",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 35,
+    "fields": {
+      "question": 8,
+      "question_text": "Not Good",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 36,
+    "fields": {
+      "question": 9,
+      "question_text": "Great",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 37,
+    "fields": {
+      "question": 9,
+      "question_text": "Okay",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 38,
+    "fields": {
+      "question": 9,
+      "question_text": "Meh",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 39,
+    "fields": {
+      "question": 9,
+      "question_text": "Need help",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 40,
+    "fields": {
+      "question": 9,
+      "question_text": "Not good",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 41,
+    "fields": {
+      "question": 11,
+      "question_text": "Fantastic",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 42,
+    "fields": {
+      "question": 11,
+      "question_text": "Well",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 43,
+    "fields": {
+      "question": 11,
+      "question_text": "Okay",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 44,
+    "fields": {
+      "question": 11,
+      "question_text": "Not Great",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 45,
+    "fields": {
+      "question": 11,
+      "question_text": "Not Good At All",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 46,
+    "fields": {
+      "question": 12,
+      "question_text": "Really Well",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 47,
+    "fields": {
+      "question": 12,
+      "question_text": "Good",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 48,
+    "fields": {
+      "question": 12,
+      "question_text": "Okay",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 49,
+    "fields": {
+      "question": 12,
+      "question_text": "Not Bad",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 50,
+    "fields": {
+      "question": 12,
+      "question_text": "Not So Well",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 51,
+    "fields": {
+      "question": 14,
+      "question_text": "Remote",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 52,
+    "fields": {
+      "question": 14,
+      "question_text": "In-Person",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 53,
+    "fields": {
+      "question": 14,
+      "question_text": "No-Preference (whichever is less popular)",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.questionoption",
+    "pk": 54,
+    "fields": {
+      "question": 14,
+      "question_text": "Do not wish to participate",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "app.filledquestionnaire",
+    "pk": 5,
+    "fields": {
+      "questionnaire": 12,
+      "user": 3,
+      "is_complete": false
+    }
+  },
+  {
+    "model": "app.filledquestionnaire",
+    "pk": 6,
+    "fields": {
+      "questionnaire": 11,
+      "user": 3,
+      "is_complete": false
+    }
+  },
+  {
+    "model": "app.filledquestionnaire",
+    "pk": 7,
+    "fields": {
+      "questionnaire": 13,
+      "user": 3,
+      "is_complete": false
     }
   },
   {
@@ -1089,6 +1699,126 @@
       "start_time": "2022-05-06T09:00:00Z",
       "stop_time": "2022-05-06T12:00:00Z",
       "markdown": "# Friday, February 04, 2022\r\n\r\n## Topics Covered / Goals\r\n- Review material from the week\r\n\r\n\r\n### Review\r\n\r\n## Assignments\r\n- [Practice with a Pair](https://github.com/quebecplatoon/git-pair)\r\n- [Anagrams II](https://github.com/quebecplatoon/algo-anagrams-ii) in JS/Python\r\n- [Character Count](https://github.com/quebecplatoon/algo-character-count) in JS/Python\r\n- [Palindromes](https://github.com/quebecplatoon/algo-palindromes) in JS/Python\r\n- [Calculate Mode](https://github.com/quebecplatoon/algo-calculate-mode) in JS/Python\r\n- [Pad an Array](https://github.com/quebecplatoon/algo-pad-array) in JS/Python\r\n- [Balanced Parentheses](https://github.com/quebecplatoon/algo-balanced-parentheses) in JS/Python"
+    }
+  },
+  {
+    "model": "app.lesson",
+    "pk": 12,
+    "fields": {
+      "topic": 7,
+      "title": "Object Oriented Programming in Python",
+      "description": "Intro to Object Oriented Programming\r\nObject Oriented Programming (OOP) is a commonly used design paradigm. Python is an object oriented language, and so OOP is an essential piece of understanding Python.\r\nClasses\r\nClasses are structures in code that allow for developers to create more elaborate data types that can better reflect real-world objects\r\nInstantiating objects with init and self\r\nEvery class in Python should have an init method, which tells python how to construct instances of that class. The instance to be created is referred to as self.\r\nInstance methods and self\r\nClasses can define methods to be called by instances of that class, which can refer to themselves using the self keyword.\r\nDunder Methods\r\nThese are special methods that are built-in to use within classes, in Python.",
+      "lesson_file_path": "week-02/2022-02-07.md",
+      "img_url": null,
+      "date": "2022-05-07",
+      "start_time": "2022-05-07T09:00:00Z",
+      "stop_time": "2022-05-07T12:00:00Z",
+      "markdown": "# Monday, February 07, 2022\r\n\r\n## Topics Covered / Goals\r\n- **Intro to Object Oriented Programming**\r\n  - Object Oriented Programming (OOP) is a commonly used design paradigm. Python is an object oriented language, and so OOP is an essential piece of understanding Python.\r\n- **Classes**\r\n  - Classes are structures in code that allow for developers to create more elaborate data types that can better reflect real-world objects\r\n- **Instantiating objects with __init__ and self**\r\n  - Every class in Python should have an __init__ method, which tells python how to construct instances of that class. The instance to be created is referred to as `self`. \r\n- **Instance methods and self**\r\n  - Classes can define methods to be called by instances of that class, which can refer to themselves using the `self` keyword. \r\n- **Dunder Methods**\r\n  - These are special methods that are built-in to use within classes, in Python. \r\n\r\n\r\n## Lesson\r\n**Object Oriented Programming in Python**\r\n- Python is an object-oriented programming language where everything is an object (i.e., booleans, strings, hashes, arrays, integers, everything)\r\n- Objects are data structures that have *attributes* and *methods*. Think of objects as nouns. Most nouns have attributes (adjectives) and methods that it can do (verbs)\r\n  - For example, imagine you have a dog. Every dog has attributes such as breed or color. Every dog also has methods that it can do such as: speack, fetch, or roll over\r\n- Objects are organized by `class`-es. Classes are used to combine how data is represented and methods to manipulate that data\r\n\r\n- Features of OOP:\r\n  - Encapsulation = Data access can be restricted based on needs (covered today)\r\n  - Abstraction = Logic/Complexity is hidden, for simplicity (covered today)\r\n  - Inheritance = Sharing of similar features and attributes (covered Thursday)\r\n  - Polymorphism = Objects can take different forms depending on needs/situation (covered Thursday)\r\n\r\n### Classes Introduction\r\nCreating a class in Python is as simple as the adding the following code:\r\n```python\r\nclass Dog: # this is our class definition\r\n    pass\r\n\r\nfido = Dog() # this is how we create an instance of our Dog class\r\n```\r\n\r\nA class can be viewed as a concept, or blueprint, for some idea. When we turn that concept into reality, we create instances (or objects) of the class. It is important to understand this distinction, and become familiar with the terminology being used: A class definition -vs- an instance of a class. \r\n\r\n### __init__() method\r\nThe first thing we'll talk about is how to initialize a class with some data. Let's add on to our Dog class:\r\n\r\n```python\r\nclass Dog:\r\n\r\n    def __init__(self, name): # this method will be used to intialize our Dog instance\r\n        self.name = name\r\n\r\nfido = Dog(\"Fido\")\r\nprint(fido.name)\r\n```\r\n\r\nYou can add an ```__init__()``` method to your class to allow data to be passed in upon creation of your instance. In our Dog example, we are passing in a ```name``` value and storing it in the instance. We can access the data we've stored in the instance by calling *[instance].[attribute]*, or for our example: ```fido.name```\r\n\r\nThe ```__init__()``` method also allows us to initialize anything else we may need to for our instance. Keep in mind that Python automatically calls our ```__init__()``` method when we create our instance. You should never be calling the ```__init__()``` method yourself! Also, you MUST name your initialization method \"\\_\\_init\\_\\_\" (two leading underscores, \"init\", and two trailing underscores) because Python is looking for this method when our object is being initialized. \r\n\r\nWhat's up with that `self` parameter though? That's a good question... we'll cover that in a moment. \r\n\r\n### Instance Attributes\r\nIn nthe example above, `self.name` is what we call an instance attribute (or instance variable). This is data is belongs to the instance of Dog that is created, and is unique to each instance. In other words, every Dog instance that we create will get it's own name. Let's add a few more instance attributes to our Dog class:\r\n\r\n```python\r\nclass Dog:\r\n\r\n    def __init__(self, name, breed, sound):\r\n        self.name = name\r\n        self.breed = breed\r\n        self.color = color\r\n        self.sound = sound\r\n        \r\n        \r\nfido = Dog(\"Fido\", \"Pointer\", \"white\", \"woof!\")\r\n```\r\n\r\n### Instance Methods\r\nOur Dog class isn't too intersting right now. It currently just stores data for us, allowing us to bundle attributes together in a single object, which is great... but let's make our Dog class a little more exciting by adding in some instance methods.\r\n\r\nKeep in mind our terminology for classes:\r\n- **attributes** are variables specific to a instance\r\n- **methods** are functions that act upon the instance attributes\r\n\r\n```python\r\nclass Dog:\r\n\r\n    def __init__(self, name, breed, color, sound):\r\n        self.name = name\r\n        self.breed = breed\r\n        self.color = color\r\n        self.sound = sound\r\n\r\n    def speak(self): # example of an *instance method*\r\n        print(f\">> {self.sound}\")\r\n        \r\n    def fetch(self, item):\r\n        print(f\">> {self.name} fetched the {item}\")\r\n\r\nfido = Dog(\"Fido\", \"Pointer\", \"white\", \"woof!\")\r\nfido.speak()\r\nfido.fetch(\"ball\")\r\n```\r\n\r\nSome important things to observe about the instance methods we added in the code above:\r\n1. Notice that every instance method (including ```__init__()```) takes in a parameter named \"self\". This parameter is a reference to the instance calling the instance method. Note that we can name this parameter anything that we want to, but by naming standards, always name it \"self\". \r\n2, Notice that we do not (and should not) pass in anything for the value of \"self\" when we call our instance methods (e.g. ```fido.speak()```). Python automatically will pass a reference to the instance for us, and that is why we must provide a \"self\" parameter to all instance methods\r\n3. Notice that we are able to make use of instance attributes (and even other instance methods) via the ```self``` object. \r\n\r\n### Other Dunder methods\r\n\r\nPython classes come with a bunch of built-in methods that we can leverage for our needs. These methods are called \"dunder methods\". The reason they are called dunder methods, is because of the naming syntax that we use, which consists of leading and trailing **d**ouble **under**scores. We already introduced the ```__init__()``` method earlier, which is one (and most often used) dunder method. We won't be covering every dunder method that exists (because there are many!), but you can read up on more of them here: [here](https://www.python-course.eu/python3_magic_methods.php)\r\n\r\nWhat happens if we choose to print out our instance to the terminal?\r\n\r\n```python\r\nfido = Dog(\"Fido\", \"Pointer\", \"woof!\")\r\nprint(fido)\r\n```\r\n\r\nThe output of this shows the type of our object and the memory location where it's being stored on our computer. That's great, but this output isn't really telling us much about our instance. To control what is outputted, we can make use of the ```__str__()``` dunder method:\r\n\r\n```python\r\nclass Dog:\r\n    def __init__(self, name, breed, color, sound):\r\n        self.name = name\r\n        self.breed = breed\r\n        self.color = color\r\n        self.sound = sound\r\n\r\n    def __str__(self):\r\n        return f\"I am a {self.color} {self.breed} dog named {self.name} and I say {self.sound}!\"\r\n\r\n    def speak(self):\r\n        print(f\">> {self.sound}\")\r\n        \r\n    def fetch(self, item):\r\n        print(f\">> {self.name} fetched the {item}\")\r\n\r\nfido = Dog(\"Fido\", \"Pointer\", \"white\", \"woof!\")\r\nprint(fido) # this is a much more descriptive output! This text comes from the __str__() instance method\r\n\r\nlassie = Dog(\"Lassie\", \"Collie\", \"golden\", \"ruff!\")\r\nprint(lassie)\r\n```\r\n\r\nDunder methods are not generally meant to be called directly by our code. Python automatically will call the appropriate dunder methods for us, depending on the operation being performed.\r\n\r\n\r\n## Assignments\r\n- [Contact List](https://github.com/quebecplatoon/oop-contact-list) in Python\r\n- [App Users I](https://github.com/quebecplatoon/oop-app-users-i) in Python\r\n- [Guessing Game](https://github.com/quebecplatoon/oop-guessing-game) in Python"
+    }
+  },
+  {
+    "model": "app.lesson",
+    "pk": 13,
+    "fields": {
+      "topic": 1,
+      "title": "Javascript Prototypes vs Classes",
+      "description": "Few programmers truly embrace prototype-based programming, and neither will we. We will use JS prototypes to recreate OOP.\r\nThe this keyword in javascript\r\nthe global object (window in the browser vs global in node)\r\nUsing the function keyword vs arrow functions\r\nCall/apply/bind (Very brief explanation)\r\nObject Oriented Programming in Javascript\r\nThe new keyword and constructor functions\r\nAdding instance methods to the prototpye\r\nThe classkeyword (syntactic sugar)",
+      "lesson_file_path": "week-02/2022-02-08.md",
+      "img_url": null,
+      "date": "2022-05-08",
+      "start_time": "2022-05-08T09:00:00Z",
+      "stop_time": "2022-05-08T12:00:00Z",
+      "markdown": "# Tuesday, February 08, 2022\r\n\r\n## Topics Covered / Goals\r\n- Few programmers truly embrace prototype-based programming, and neither will we. We will use JS prototypes to recreate OOP.\r\n- The `this` keyword in javascript\r\n    - the global object (`window` in the browser vs `global` in node)\r\n    - Using the `function` keyword vs arrow functions\r\n    - Call/apply/bind (Very brief explanation)\r\n- Object Oriented Programming in Javascript\r\n    - The `new` keyword and constructor functions\r\n    - Adding instance methods to the prototpye\r\n    - The `class`keyword (syntactic sugar)\r\n\r\n\r\n## Lesson\r\n\r\n### Prototypes vs Classes\r\n> In javascript, we don't actually have proper OOP classes like in most programming languages. Instead of classes, javascript has PROTOTYPES, which can be used to define the shared behavior of a group of objects, similarly to classes. Prototypes in javascript have some unique benefits when compared with classes in other languages, but we will not be exploring the ways that prototypes are better than or different from classes. Instead, we will learn how to recreate OOP in javascript using the tools that are available to use. \r\n\r\n### The `this` keyword\r\n> Before learning about OOP or prototypes in javascript, first we need to understand how the `this` keyword works in javascript. It's mostly the same as using `self` in python, but `this` in javascript actually has uses outside of OOP, so let's see that first. In general, when you see `this` inside of a `function(){}`, `this` refers to the object that the function is attached to. Note that fat-arrow functions `()=>{}` do not rebind the value of `this`. Only regular functions defined with the `function` keyword will affect the value of `this`. This is the primary difference between traditional functions and fat-arrow functions. \r\n\r\n```javascript\r\n// `this` is not attached to any object, so it refers to the window in browser js, or {} in node. either way, it's not what you want\r\nconsole.log(this)\r\n\r\n// This is the simplest way to use `this`. `this` appears in the function `sayHello`, which is attached to the `alice` object, so the value of `this.name` in this case would be alice.name === 'alice'\r\nconst alice = {\r\n    name: 'alice',\r\n    sayHello: function(){\r\n        console.log(`Hello, my name is ${this.name}`)\r\n    }\r\n}\r\n\r\nalice.sayHello()\r\n\r\n// arrow functions do not rebind `this`.\r\n// `this` in this function still refers to the window. not very useful. \r\nconst bob = {\r\n    name: 'bob',\r\n    sayHello: ()=>{\r\n        console.log(`My name is ${this.name}`)\r\n    }\r\n}\r\n\r\nbob.sayHello()\r\n\r\n// `this` appears in a setTimeout callback, which is not attached to any object,\r\n// so `this` will refer to the window. \r\n// It doesn't matter that `sayHello` is attached to the carol object, \r\n// because the actual function that contains `this` is not attached to any object\r\nconst carol = {\r\n    name: 'carol',\r\n    sayHello: function(){\r\n        setTimeout(function(){\r\n            console.log(`My name is ${this.name}`)\r\n        })\r\n    }\r\n}\r\n\r\ncarol.sayHello()\r\n\r\n// `this` appears in a ()=>{} function, which doesn't affect `this`.\r\n// We'll have to look for the closest function(){} that contains `this`, which is `sayHello`\r\n// `sayHello` is attached to the dan object, so `this.name` refers to dan.name. \r\nconst dan = {\r\n    name: 'dan',\r\n    sayHello: function(){\r\n        setTimeout(()=>{\r\n            console.log(`My name is ${this.name}`)\r\n       }, 100)\r\n    }\r\n}\r\n\r\ndan.sayHello()\r\n\r\n// the value of `this` depends on how the function is CALLED, not how it is DEFINED\r\nconst sayHello = function(){\r\n    console.log(this.name)\r\n}\r\n\r\n// this.name is undefined or empty string, depending on the environment\r\nsayHello()\r\n\r\nconst eve = {\r\n    name: 'eve',\r\n    sayHello: sayHello,\r\n}\r\n\r\n// in this case, `this` refers to the eve object, so `this.name` is 'eve', \r\neve.sayHello()\r\n```\r\n\r\n### Controlling the value of `this` with `call`, `apply`, and `bind`\r\n> We just saw the normal, default behavior of `this` in javascript. However, there are some ways that you can force `this` to have a specific value. All functions in javascript have three methods that affect the value of `this` (functions in javascript are also objects, and therefore can have other functions attached to them). You likely won't be using these methods often, so we'll cover them briefly, but it's important that you're aware that this is possible in javascript.\r\n\r\n> `Call()` and `apply()` are similar. They let you CALL a function with a specific value for `this`. `call` takes the same arguments as the original function, except that the first argument must be the new value for `this`, and all of the normal arguments are passed after it, offset by 1. \r\n\r\n```javascript\r\nconst greet = function(otherPerson){\r\n    console.log(`Hello, ${otherPerson}, I'm ${this.name}.`)\r\n}\r\n\r\n// `this.name` is not defined, because our function is not attached to any object when we call it\r\ngreet('Alice')\r\n\r\nconst bob = { name: 'bob' }\r\n\r\n// instead of calling `greet` normally, we call the `call` method on it. \r\n// first we pass in `bob` as our new `this`, and then we pass in other arguments afterwards.\r\n// normally 'otherPerson' would be the first argument, but all the arguments get pushed back one space, because the first argument is now our new `this` value.\r\ngreet.call(bob, 'Alice')\r\n\r\n// apply is almost the same as call, but the original arguments are passed as a single array,  instead of multiple comma separated items\r\ngreet.apply(bob, ['Alice'])\r\n\r\nconst numbers = [1,5,9,11,17,9]\r\n// Math.max is a bit awkward because it requires a comma separated list, instead of an array.\r\n// we can use Math.max.apply to make it work with an array, which is generally more useful.\r\n// the value of `this` doesn't matter in this case, so we just pass null.\r\nMath.max.apply(null, numbers)\r\n\r\n// using modern javascript, this same problem can be solved using the spread syntax\r\nMath.max(...numbers)\r\n```\r\n\r\n> `bind()` is a little different from `call()` and `apply()`. `bind()` does not immediately call your function, but instead it creates a new function, in which the value of `this` has been permanently set.\r\n\r\n```javascript\r\n// creates a new function in which `this` permanently has the value of `bob`, no matter how the function is called\r\nconst greetingFromBob = greet.bind(bob)\r\ngreetingFromBob('Alice')\r\n```\r\n\r\n> It's unlikely that you'll need to use call, apply, or bind in your own code. However, you will often have to write functions that use `this` in order to use a larger framework, like react. It's important to understand that the framework might use call, apply, or bind to change the value of `this` in your function when it is called, so you need to read the documentation for your framework to know what `this` is supposed to refer to. \r\n\r\n\r\n### The `new` keyword\r\n> In javascript, we don't use a `class` keyword for creating classes. Instead, we just use normal functions. However, if we want to use a function as a constructor for an OOP class, we call it differently, by adding the `new` keyword. This slightly changes how the function executes. \r\n\r\n```javascript\r\n// we're pretending this is a class, so we named it with a capital letter\r\nconst Person = function(name){\r\n    // const this = {}\r\n    this.name = name\r\n\r\n    // return this\r\n}\r\n\r\nconst alice = new Person('Alice')\r\n```\r\n\r\n> When we use the `new` keyword, `this` inside the function refers to a new object, which is automatically returned at the end of the function. We can define instance attributes by adding properties to `this`. We can also add methods this way, but that's not the most efficient option. If we had 1,000 objects, they would all have a copy of the same method. Instead, we will use prototypes to define methods that all instances of this class have access to. If you try to call a method that does not exist on an object, javascript will check that object's constructor's prototype, and see if the method exists there. \r\n\r\n```javascript\r\nPerson.prototype.sayHello = function(){\r\n    console.log(`Hello, my name is ${this.name}.`)\r\n}\r\n\r\nalice.sayHello()\r\n```\r\n\r\n### The `class` keyword\r\n> In modern javascript, we have the option of using the `class` keyword to set up our prototypes. This is not an entirely new feature, it's simply a cleaner, more elegant way of writing constructor functions. This is sometimes called 'syntactic sugar' because it provides us a new syntax that is enjoyable to use, but doesn't actually provide any new features. Let's recreate the above `Person` class using javascript's class keyword. \r\n\r\n```javascript\r\nclass Person {\r\n    constructor(name){\r\n        this.name = name\r\n    }\r\n    sayHello(){\r\n        console.log(`Hello, my name is ${this.name}.`)\r\n    }\r\n}\r\n\r\n// using the class keyword has no effect on how we instantiate objects from our constructor,\r\n// or how we call methods from our instances. \r\nconst bob = new Person('Bob')\r\nbob.sayHello()\r\n```\r\n\r\n> When writing modern javascript, there are several reasons to prefer using the `class` keyword instead of explicitly modifying prototypes. Using the `class` keyword lets you write OOP code that is similar to what you would write in most other languages, and it more accurately describes our intentions: we want a class, with a constructor function, and instance methods. Also, using prototypes is a little ugly because your class is defined across multiple code blocks, for the constructor function and also the prototype methods, whereas when you use the `class` keyword, the entire class is stored in the `class` block. HOWEVER, you still need to understand how prototypes work. If you write an object-oriented javascript program, and it's not behaving how you expect it to, there will be no classes for you to inspect. You'll need to debug your prototypes.\r\n\r\n## Assignments\r\n- [App Users II](https://github.com/quebecplatoon/oop-app-users-ii) in Python\r\n- [Stock Picker](https://github.com/quebecplatoon/algo-stock-picker) in JS/Python\r\n- [Pig Latin](https://github.com/quebecplatoon/algo-pig-latin) in JS/Python"
+    }
+  },
+  {
+    "model": "app.lesson",
+    "pk": 14,
+    "fields": {
+      "topic": 7,
+      "title": "Intermediate Object Oriented Programming",
+      "description": "Intermediate Object Oriented Programming\r\nMuch of the value of OOP comes from calling instance methods on an object, which can refer to that object's specific data using self or this. However, there are other aspects of OOP that can be useful as well, such as, class methods, getters and setters.\r\nDecorators in Python\r\nDecorators are functions in Python that are used to modify how another function behaves. They aren't inherently related to OOP, but we'll start seeing them as we dive deeper into Python, so now is a good time to learn about them.\r\nInstance Attributes -vs- Class Attributes\r\nUnderstanding the different types of variables to use with Classes is important for encapsulating your data, so that data is available only where it needs to be.\r\nInstance Methods -vs- Class Methods -vs- Static Methods\r\nUnderstanding the different types of methods to use with Classes is important for encapsulating your data, so that data is available only where it needs to be.\r\nGetters and Setters\r\nProvide encapsulation for data in instances of our class, by separating the interface to our data from its internal representation.",
+      "lesson_file_path": "week-02/2022-02-09.md",
+      "img_url": null,
+      "date": "2022-05-09",
+      "start_time": "2022-05-09T09:00:00Z",
+      "stop_time": "2022-05-09T12:00:00Z",
+      "markdown": "# Wednesday, February 09, 2022\r\n\r\n## Topics Covered / Goals\r\n- **Intermediate Object Oriented Programming**\r\n  - Much of the value of OOP comes from calling instance methods on an object, which can refer to that object's specific data using `self` or `this`. However, there are other aspects of OOP that can be useful as well, such as, class methods, getters and setters. \r\n- **Decorators in Python**\r\n  - Decorators are functions in Python that are used to modify how another function behaves. They aren't inherently related to OOP, but we'll start seeing them as we dive deeper into Python, so now is a good time to learn about them. \r\n- **Instance Attributes -vs- Class Attributes**\r\n  - Understanding the different types of variables to use with Classes is important for encapsulating your data, so that data is available only where it needs to be.\r\n- **Instance Methods -vs- Class Methods -vs- Static Methods**\r\n  - Understanding the different types of methods to use with Classes is important for encapsulating your data, so that data is available only where it needs to be.\r\n- **Getters and Setters**\r\n  - Provide encapsulation for data in instances of our class, by separating the interface to our data from its internal representation.\r\n\r\n\r\n## Lesson\r\n\r\n\r\n### Decorators\r\nPython decorators are functions that allow us to modify the behavior of another function when that function is defined. It's not essential that you use decorators in your own code, but many python libraries and frameworks use decorators, so it's good to understand how they work.\r\n\r\nLike many programming languages, Python has first-class functions. This means that functions in Python can accept other functions as inputs, and return functions as output.\r\n\r\n```python\r\n# this function does not make widgets. it makes functions that create widgets\r\ndef WidgetMakerMaker(widget_color):\r\n\r\n    # this function actually makes widgets\r\n    def WidgetMaker():\r\n        return {\r\n            'type': 'widget',\r\n            'color': widget_color,\r\n        }\r\n    \r\n    # return the function we just created, so it can be used outside of WidgetMakerMaker\r\n    return WidgetMaker\r\n\r\nRedWidgetMaker = WidgetMakerMaker('red')\r\nred_widget = RedWidgetMaker()\r\nanother_red_widget = RedWidgetMaker()\r\n\r\nBlueWidgetMaker = WidgetMakerMaker('blue')\r\nblue_widget = BlueWidgetMaker()\r\nanother_blue_widget = BlueWidgetMaker()\r\n```\r\n\r\nA function that defines other functions can be useful if you have some logic that is repeated in many functions, but you don't want to write redundant code. For example, let's say we're trying to improve the performance of a slow application, so we want to print the time when every function is called to better understand what's taking so long.\r\n\r\n```python\r\nfrom datetime import datetime\r\n\r\ndef AddOne(num):\r\n    return num + 1\r\n\r\ndef MultiplyByTwo(num):\r\n    return num * 2\r\n\r\n# This function accepts a function as input, then returns a new function that behaves similarly to the one that is passed in\r\ndef PrintCurrentTimeAndAlso(func):\r\n\r\n    # this function accepts any number of positional arguments (*args) and any number of named arguments (**kwargs)\r\n    def WrapperFunction(*args, **kwargs):\r\n        print(f'Calling {func.__name__} at {datetime.now()}')\r\n        return func(*args, **kwargs)\r\n\r\n    return WrapperFunction\r\n\r\n# This creates a new, decorated function\r\nPrintCurrentTimeAndAlsoAddOne = PrintCurrentTimeAndAlso(AddOne)\r\none_plus_one = PrintCurrentTimeAndAlsoAddOne(1)\r\n\r\n\r\n# This creates a new, decorated function\r\nPrintCurrentTimeAndAlsoMultiplyByTwo = PrintCurrentTimeAndAlso(MultiplyByTwo)\r\ntwo_times_two = PrintCurrentTimeAndAlsoMultiplyByTwo(2)\r\n\r\n# Using the decorator syntax (@) allows us to create a decorated function all at once,\r\n# instead of creating an undecorated function, and then passing it into the decorator\r\n@PrintCurrentTimeAndAlso\r\ndef SubtractThree(num):\r\n    return num - 3\r\n\r\nnine_minus_three = SubtractThree(9)\r\n```\r\n\r\n\r\n### Instance Attributes -vs- Class Attributes\r\n- Instance attributes are variables that are unique to each instance of a class that is created (e.g. name)\r\n- Class attributes are variables that are shared between EVERY instance of a class that are created (e.g. dog species)\r\n\r\nLet's add some class attributes to our previous Dog class example: \r\n\r\n```python\r\nclass Dog:\r\n    species = \"Canis Lupus Familiaris\" # all dogs have the same species type => *class attribute*\r\n    legs = 4\r\n\r\n    def __init__(self, name, breed, color, sound):\r\n        self.name = name # each dog has a unique name => *instance attribute*\r\n        self.breed = breed\r\n        self.color = color\r\n        self.sound = sound\r\n\r\nfido = Dog(\"Fido\", \"Pointer\", \"white\", \"woof!\")\r\nprint(fido.name)\r\nprint(fido.species)\r\n\r\nlassie = Dog(\"Scooby\", \"Mutt\", \"Scooby-Dooby-Doo!\")\r\nprint(lassie.name)\r\nprint(lassie.species)\r\n```\r\n\r\n### Instance Methods -vs- Class Methods -vs- Static Methods\r\n\r\nTODO: add content here\r\n\r\n### Getters and Setters\r\n\r\nTODO: add content here\r\n\r\n## External Resources\r\n\r\n## Assignments\r\n- [App Users III](https://github.com/quebecplatoon/oop-app-users-iii) in Python\r\n- [Apple Trees](https://github.com/quebecplatoon/oop-apple-trees)\r\n- [Caesar Cipher](https://github.com/quebecplatoon/algo-caesar-cipher) in JS/Python"
+    }
+  },
+  {
+    "model": "app.lesson",
+    "pk": 15,
+    "fields": {
+      "topic": 7,
+      "title": "Inheritance in Python",
+      "description": "Understand when and why to use inheritance in your code\r\nUnderstand the relationship between child classes and parent classes\r\nInherit classes successfully\r\nUnderstand the use of super in OOP and when to use it\r\nUnderstand different types of multiple inheritance:\r\none parent with multiple children\r\none child with multiple parents",
+      "lesson_file_path": "week-02/2022-02-10.md",
+      "img_url": null,
+      "date": "2022-05-10",
+      "start_time": "2022-05-10T09:00:00Z",
+      "stop_time": "2022-05-10T12:00:00Z",
+      "markdown": "# Thursday, February 10, 2022\r\n\r\n## Topics Covered / Goals\r\n- Understand when and why to use inheritance in your code\r\n- Understand the relationship between child classes and parent classes\r\n- Inherit classes successfully\r\n- Understand the use of `super` in OOP and when to use it\r\n- Understand different types of multiple inheritance:\r\n    - one parent with multiple children\r\n    - one child with multiple parents\r\n\r\n## Lesson\r\n\r\n### Inheritance in Python\r\n> Inheritance is a relationship between two classes, a parent class and a child class (or a superclass and a subclass). Specifically, inheritance helps us model relationships where one class is a subtype of another class. For example, 'a dog is an animal. All dogs are animals, but not all animals are dogs.'\r\n\r\n\r\n```python\r\nclass Dog:\r\n    def __init__(self, name):\r\n        self.name = name\r\n\r\n    def eat(self, food):\r\n        print(f\"{self.name} eats a {food}.\")\r\n    \r\n    def bark(self):\r\n        print(\"BARK BARK!\")\r\n\r\nspot = Dog('Spot')\r\nspot.eat()\r\n```\r\n\r\n> In the example above, we say that every dog has an attribute called `name`. Every dog also has the ability to `eat` and `bark`.\r\n\r\n```python\r\nclass Cat:\r\n    def __init__(self, name):\r\n        self.name = name\r\n\r\n    def eat(self, food):\r\n        print(f\"{self.name} eats a {food}.\")\r\n    \r\n    def meow(self):\r\n        print(\"meow meow!\")\r\n\r\ngarfield = Cat('Spot')\r\ngarfield.eat()\r\n```\r\n> In the example above, we say that every cat has an attribute called `name`. Every cat also has the ability to `eat` and `meow`. This `Cat` class is pretty similar to our previous `Dog`. This isn't just a coincidence, like how a table and a horse both have four legs. Cats and dogs are both able to eat because they are both types of animals. Using inheritance, we can rewrite the above classes to avoid repeating code.\r\n\r\n```python\r\nclass Animal:\r\n    def __init__(self,name):\r\n        self.name = name\r\n    def eat(self, food):\r\n        print(f\"{self.name} eats a {food}.\")\r\n    def speak(self):\r\n        print(\"I'm an animal!\")\r\n\r\nclass Dog(Animal):\r\n    def speak(self):\r\n        print(\"BARK BARK!\")\r\n\r\n\r\nclass Cat(Animal):\r\n    def speak(self):\r\n        print(\"meow meow!\")\r\n\r\nlucky = Cat('lucky')\r\n# the name attribute and eat method aren't defined on the Cat class, but this works because Cat inherits them from Animal\r\nlucky.eat('chicken nugget') \r\n\r\n```\r\n> Notice how we passed the `Animal` class to the `Cat` and `Dog` classes. This indicates that `Animal` is a parent class of both `Cat` and `Dog`. As such, `Cat` and `Dog` have access to all of the methods from animal, even `__init__`. This might seem a little unintuitive because the child class is always 'bigger' than the parent. The child class has access to everything in the parent class(`__init__`, `eat`), and then also has its own method `speak`, which overrides `speak` from the parent class.\r\n\r\n> Sometimes, we'll want to define a child class that doesn't use the exact same methods as its parent, but we don't want to override it entirely, like we just did with `speak`. We can use the `super()` method to access an instance of the parent class, call any of its methods from the child class, and then add more custom logic afterwards. This is commonly used to repeat the `__init__` method from the parent class, and then add an extra property at the end. For example, a difference between dogs and cats is that a dog can be a registered service animal, whereas a cat cannot.\r\n\r\n```python\r\nclass Animal:\r\n    def __init__(self,name):\r\n        self.name = name\r\n    def eat(self, food):\r\n        print(f\"{self.name} eats a {food}.\")\r\n    def speak(self):\r\n        print(\"I'm an animal!\")\r\n\r\nclass Dog(Animal):\r\n    def __init__(self, name, is_service_animal):\r\n        # use the logic from the parent Animal class without duplicating code\r\n        parent_instance = super()\r\n        parent_instance.__init__(name)\r\n\r\n        # add some Dog-specific setup\r\n        self.is_service_animal = is_service_animal\r\n\r\n    def speak(self):\r\n        print(\"BARK BARK!\")\r\n\r\n\r\nclass Cat(Animal):\r\n    def speak(self):\r\n        print(\"meow meow!\")\r\n\r\nsparky = Dog('sparky', True)\r\n```\r\n> The example above demontrates a common use for inheritance, where you have multiple child classes that share code from a common parent class. Inheritance can also work the other way, where one child class inherits from multiple parent classes. \r\n\r\n```python\r\nimport math\r\n\r\nclass Person:\r\n    def __init__(self, name, job):\r\n        self.name = name\r\n        self.job = job\r\n    def work(self):\r\n        print(f\"{self.name} is working hard as a {self.job}.\")\r\n    \r\nclass Computer:\r\n    def __init__(self, number_of_cores):\r\n        self.number_of_cores = number_of_cores\r\n\r\n    def compute(self):\r\n        print(round(math.pi, self.number_of_cores))\r\n\r\ntoaster = Computer(1)\r\ntoaster.compute()\r\n\r\ncompy386 = Computer(4)\r\ncompy386.compute()\r\n\r\nclass Cyborg(Person, Computer):\r\n    def __init__(self, name, job, number_of_cores):\r\n        Person.__init__(self, name, job)\r\n        Computer.__init__(self, number_of_cores)\r\n\r\n    def work(self):\r\n        for n in range(self.number_of_cores):\r\n            Person.work(self)\r\n\r\nterminator = Cyborg('Arnold', 'terminator', 8)\r\nterminator.work()\r\n```\r\n\r\n### Inheritance in Javascript\r\n> Inheritance in javascript is pretty similar to how it works in Python. Let's recreate one of our previous examples, just so you can see the syntax.\r\n\r\n```javascript\r\nclass Animal {\r\n    constructor(name){\r\n        this.name = name\r\n    }\r\n    eat(food){\r\n        console.log(`${this.name} eats a ${food}.`)\r\n    }\r\n    speak(){\r\n        console.log(\"I am an animal!\")\r\n    }\r\n}\r\n\r\nclass Dog extends Animal {\r\n    constructor(name, is_service_animal){\r\n        super(name)\r\n        this.is_service_animal = is_service_animal\r\n    }\r\n    speak(){\r\n        if ( this.is_service_animal ) {\r\n            console.log(`My name is ${this.name}, and I'm here to help!`)\r\n        }\r\n    }\r\n}\r\n\r\nconst fido = new Dog('fido', true)\r\nfido.eat('beef')\r\nfido.speak()\r\n```\r\n\r\n**When to use inheritance**\r\nUse inheritance to write less code. If you are writing an object oriented program with many classes, check if there are many similarities between your classes that have caused you to write redundant code. If you have two classes that are related (e.g. Animal, Dog), but they don't actually share any redundant code, you don't need inheritance. Verify that those similarities are due to inherent is-a relationships that are unlikely to change. For example, a table and a dog both have four legs, but this is not due to an inherent relationship, and as your program becomes more complex, there will be more differences between tables and dogs, and it will make less sense for them to inherit from a common ancestor (4-legged). If you have multiple classes that share code with each other, where one is inherently a type of the other, or both of them are inherently types of a third thing, consider using inheritance in your program so that you can write less code. \r\n\r\n## External Resources\r\n- [Python super() method](https://realpython.com/python-super/)\r\n- [Method Resolution Order(MRO)](https://www.educative.io/edpresso/what-is-mro-in-python)\r\n\r\n## Assignments\r\n- [School Interface I](https://github.com/quebecplatoon/oop-school-interface-i)\r\n- [Word Guess CSV](https://github.com/quebecplatoon/algo-word-guess)\r\n- [Boggle I](https://github.com/quebecplatoon/oop-boggle-i)\r\n- Stretch challenge: [Boggle II](https://github.com/quebecplatoon/oop-boggle-ii)"
+    }
+  },
+  {
+    "model": "app.lesson",
+    "pk": 16,
+    "fields": {
+      "topic": 12,
+      "title": "Review Object Oriented Programming in Python",
+      "description": "Review Object Oriented Programming in Python\r\nUnderstand Class Objects, Instance Variables, and Instance Methods",
+      "lesson_file_path": "week-02/2022-02-11.md",
+      "img_url": null,
+      "date": "2022-05-11",
+      "start_time": "2022-05-11T09:00:00Z",
+      "stop_time": "2022-05-11T12:00:00Z",
+      "markdown": "# Friday, February 11, 2022\r\n\r\n## Topics Covered / Goals\r\n- Review Object Oriented Programming in Python\r\n    - Understand Class Objects, Instance Variables, and Instance Methods\r\n\r\n### Lesson\r\n\r\n- Class Objects\r\n\r\n```python\r\nclass Person:\r\n    def __init__(self, first_name, last_name, age):\r\n        self.first_name = first_name\r\n        self.last_name = last_name\r\n        self.age = age\r\n\r\n    def say_hello(self):\r\n        return f\"Hello my name is {self.first_name} {self.last_name} and I'm {self.age} years old.\"\r\n\r\n    def celebrate_birthday(self):\r\n        self.age = self.age + 1\r\n        return f\"Wooo! It's my birthday today! I'm {self.age}!\"\r\n\r\n    def my_age(self):\r\n        return f\"My age is {self.age}.\"\r\n```\r\n\r\n## Assessment\r\n- [Assessment #1](https://github.com/quebecplatoon/assessment-1)\r\n\r\n## Assignments\r\n- [School Interface II](https://github.com/quebecplatoon/oop-school-interface-ii)\r\n- [Budget](https://github.com/quebecplatoon/oop-budget)\r\n- [Bowling](https://github.com/quebecplatoon/oop-bowling)"
+    }
+  },
+  {
+    "model": "app.lesson",
+    "pk": 17,
+    "fields": {
+      "topic": 7,
+      "title": "Call stack & recursion",
+      "description": "Understand what the call stack is and how it operates\r\nUnderstand the difference between a recursive function and an iterative function\r\nImplement recursive solutions to challenges",
+      "lesson_file_path": "week-03/2022-02-14.md",
+      "img_url": null,
+      "date": "2022-05-12",
+      "start_time": "2022-05-12T06:00:00Z",
+      "stop_time": "2022-05-12T12:00:00Z",
+      "markdown": "# Monday, February 14, 2022\r\n\r\n\r\n## Topics Covered / Goals\r\n- Understand what the call stack is and how it operates\r\n- Understand the difference between a recursive function and an iterative function\r\n- Implement recursive solutions to challenges\r\n\r\n## Lesson\r\n\r\n### The Call Stack\r\n- [The Call Stack](https://docs.google.com/presentation/d/123b2TsW6k0OfvBOH4fmVkKUq7xT3WZ1SEWEUBpfnrqc/edit?usp=sharing)\r\n- A stack is a type of data structure, similar to a Python list. The difference is, a stack follows a Last In First Out (LIFO) model.\r\n  - Think of a deck of playing cards. The first card you're able to pick up is the last card added to the top of the deck.\r\n- The Call Stack is what keeps track of functions that are executing. When a function is invoked, it's added to the top of the stack, and removed once it's resolved.\r\n- If another function is beneath the latest one on the Call Stack, it cannot resolve until the top function has finished resolving\r\n```python\r\ndef first():\r\n    print('(PUSH) first function executing...')\r\n    second()\r\n    print('(POP)  first function resolving...')\r\n    return\r\n\r\ndef second():\r\n    print('(PUSH) second function executing...')\r\n    third()\r\n    print('(POP)  second function resolving...')\r\n    return\r\n\r\ndef third():\r\n    print('(PUSH) third function executing...')\r\n    print('Hello World!')\r\n    print('(POP)  third function resolving...')\r\n    return\r\n\r\nfirst()\r\n```\r\n\r\n- The output of this will be...\r\n```\r\n(PUSH) first function executing...\r\n(PUSH) second function executing...\r\n(PUSH) third function executing...\r\nHello World!\r\n(POP)  third function resolving...\r\n(POP)  second function resolving...\r\n(POP)  first function resolving...    \r\n```\r\n...because the first function can't resolve fully until the second function is done executing, and the second function can't fully resolve until the third function is done executing.\r\n\r\n### Recursion\r\n\r\n- [Recursion](../page-resources/recursion.pdf)\r\n- Recursion is what happens when a function invokes itself. Like an iterative loop, it'll keep invoking itself until a certain condition is met\r\n  - The finishing condition for a recursive solution is called a \"base case\", a condition where the function no longer returns itself. Without a base case, a recursive function will run until the Call Stack is completely full. In other words, a Stack Overflow.\r\n- Let's consider a simple linear search function. An iterative solution would use a for loop, like this:\r\n```python\r\ndef linear_search_iterative(my_list, search_item):\r\n    for i in range(len(my_list)_:\r\n        if my_list[i] == search_item:\r\n            return True\r\n\r\n    return False\r\n```\r\n- A recursive solution would need one or more base cases. One of them is obvious: we find the item we're looking for.\r\n  - The other one has to be something that one of our recursions will eventually hit. Perhaps this?\r\n```python\r\ndef linear_search_recursive(my_list, search_item):\r\n    if len(my_list) == 0:\r\n        return False\r\n\r\n    last_item = my_list.pop()\r\n    if last_item == search_item:\r\n        return True\r\n    else:\r\n        return linear_search_recursive(my_list)\r\n\r\n```\r\n- In this solution, `.pop()` removes the last item from the array and returns it. If the last item is a match for our `search_item`, then we can return true. If not, we invoke the function again with the shortened array. Our second base case comes when we empty the array entirely. If the array is empty, the `search_item` is not present at all, so we return false.\r\n- Any problem that can be solved with a loop can also be solved with recursion (and vice versa):\r\n```python\r\n## ------ITERATION\r\ndef space_x_countdown_iterative(num):\r\n    for i in range(num, 0, -1):\r\n        print(i)\r\n    \r\n    return console.log(\"LIFTOFF!\")\r\n\r\n## ------RECURSION\r\ndef space_x_countdown_recursive(num):\r\n    # BASE CASE\r\n    if num == 0:\r\n        return console.log(\"LIFTOFF!\")\r\n\r\n    print(num)\r\n    \r\n    # RECURSIVE CASE\r\n    return space_x_countdown_recursive(num-1)\r\n```\r\n\r\n## External Resources\r\n- [Python Tutor](http://www.pythontutor.com/visualize.html#mode=edit)\r\n  - This tool breaks down code step by step, allowing you to see the Call Stack in real-time.\r\n\r\n## Assignments\r\n- [School Interface III](https://github.com/quebecplatoon/oop-school-interface-iii)\r\n- [Recursion](https://github.com/quebecplatoon/algo-recursion)\r\n- [Binary Search](https://github.com/quebecplatoon/algo-binary-search) in JS/Python"
+    }
+  },
+  {
+    "model": "app.lesson",
+    "pk": 18,
+    "fields": {
+      "topic": 7,
+      "title": "Regular Expressions (Regex)",
+      "description": "Implement Regex methods in Python",
+      "lesson_file_path": "week-03/2022-02-15.md",
+      "img_url": null,
+      "date": "2022-05-13",
+      "start_time": "2022-05-13T06:00:00Z",
+      "stop_time": "2022-05-13T12:00:00Z",
+      "markdown": "# Tuesday, February 15, 2022\r\n\r\n## Topics Covered / Goals\r\n\r\n- Implement Regex methods in Python\r\n\r\n## Lesson\r\n\r\n### Regular Expressions (Regex)\r\n- Regular Expressions, or regex, is the ability to use patterns to match character combinations. While every language has slightly different patterns to match these combinations, they fundamentally work the same\r\n- It basically works like this:\r\n  - A user inputs some text\r\n  - Your compiler, using whatever language you decide, reads that input and pattern-matches it.\r\n  - If it passes, do one thing. If it does not, do something else\r\n- This is useful for something like phone number inputs or social security methods because people are terrible at putting their information into a form\r\n  - For phone numbers, some people use parenthesis, others use periods, others use dashes, and others don't have any delimeters\r\n  - Regex helps with this because they look for consistent patterns. In our case, we just want the numbers associated with a phone number input and to ignore the rest of the characters\r\n- It's recommended for you to use `raw strings` instead of regular Python strings by prepending your string with `r` (e.g., `r(\"Hello\\n\\n\")`). These raw strings will interpret the escaped characters as literally escaped characters, rather than Python's usual treatment of them as new line characters. **Let's get started on this**:\r\n\r\n### Common usecases\r\n- match a literal string\r\n- require at least a certain number of characters (password length)\r\n- validate SSN is valid (may or may not have dashes)\r\n- validate a date is in the correct format\r\n\r\n```python\r\nimport re # stands for Regular Expressions and brings in the Python re library into this file\r\n## re.search() will search a string you pass in to see if it matches the regex pattern you have\r\nstring = 'June 24'\r\nregex_pattern = r\"([a-zA-Z]+) (\\d+)\" # any combination of letters, capital or not, followed by a space, followed by a digit of any length\r\nprint(re.search(regex_pattern, string)) # returns a `match` object with the thing that's matched up. This matches anywhere in the string\r\nprint(re.match(regex_pattern, string)) # same as above, but this matches the string starting from the beginning. only returns the first match\r\nprint(re.findall(regex_pattern, 'June 24 August 1 December 22')) # this returns a list of all matches\r\n```\r\n- Another example:\r\n```python\r\nimport re\r\nregex = r\"[a-zA-Z]+ \\d+\"\r\nmatches = re.findall(regex, \"June 24, August 9, Dec 12\")\r\nfor match in matches:\r\n    print(f\"Full match: {match}\")\r\n\r\n## Find and replace\r\n## replaced_string = re.sub(pattern, replacement_pattern, input_str, count, flags=0)\r\nregex = r\"([a-zA-Z]+) (\\d+)\"\r\n\r\nprint(re.sub(regex, r\"\\2 of \\1\", \"June 24, August 9, Dec 12\")) # 24 of June, 9 of August, 12 of Dec\r\n```\r\n\r\n## External Resources\r\n- [Great Tutorial](https://www.datacamp.com/community/tutorials/python-regular-expression-tutorial)\r\n- [Pythex](https://pythex.org/) Test your Python regex with this online tool.\r\n- [Regex101](https://regex101.com)\r\n- [Oldie but a goodie](https://blog.codinghorror.com/regular-expressions-now-you-have-two-problems/)\r\n- [JS Regex](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions)\r\n- [Data Camp Python Regex](https://www.datacamp.com/community/tutorials/python-regular-expression-tutorial) and [Learn Python](https://www.learnpython.org/en/Regular_Expressions)\r\n- [Machine Learning Plus Python Regex](https://www.machinelearningplus.com/python/python-regex-tutorial-examples/)\r\n- [Google's writeup on Python Regex](https://developers.google.com/edu/python/regular-expressions)\r\n\r\n## Assignments\r\n- [School Interface IV](https://github.com/quebecplatoon/oop-school-interface-iv)\r\n- [RegexOne](https://regexone.com/python)\r\n- [Phone Numbers](https://github.com/quebecplatoon/algo-validate-phone) in Python Regular Expressions"
+    }
+  },
+  {
+    "model": "app.lesson",
+    "pk": 19,
+    "fields": {
+      "topic": 7,
+      "title": "Algorithmic efficiency",
+      "description": "Understand algorithmic efficiency\r\nKnow how to read and write notation for runtime complexity\r\nTake some simple steps to avoid writing inefficient code",
+      "lesson_file_path": "week-03/2022-02-16.md",
+      "img_url": null,
+      "date": "2022-05-14",
+      "start_time": "2022-05-14T12:00:00Z",
+      "stop_time": "2022-05-14T12:00:00Z",
+      "markdown": "# Wednesday, February 16, 2022\r\n\r\n\r\n## Topics Covered / Goals\r\n- Understand algorithmic efficiency\r\n- Know how to read and write notation for runtime complexity\r\n- Take some simple steps to avoid writing inefficient code\r\n\r\n## Lesson\r\nBig-O (\"big O\") notation is used in programming to describe the relative performance of a given algorithm. Note that it is not used to describe how much time a algorithm or program will take to run, but rather how it'll be affected by the change in input size. Programmers are generally are concerned with how much time an algorithm takes to run based on the input size, as well as how much memory it might require to utilize. However, time efficiency is usually what we are focused on improving. \r\n\r\n\r\n### Time Complexities\r\nHere are some common complexities that you'll encounter:\r\n\r\n| Notation | Complexity | Summary | Description |\r\n| -------- | ---------- | ------- | ----------- |\r\n| O(1) | Constant Time | Instant | The relative runtime does not change relative to the input size increasing |\r\n| O(log N) | Logarithmic Time | Quick | The relative runtime increases slowly relative to the input size increasing |\r\n| O(N) | Linear Time | Proportional | The relative runtime increases proportionally relative to the input size increasing |\r\n| O(N log N) | Log-Linear Time | Slow | The relative runtime increases quickly relative to the input size increasing |\r\n| O(N^2) | Quadratic Time | Very Slow | The relative runtime increases quadratically relative to the input size increasing |\r\n| O(2^N) | Exponential Time | Ridiculously Slow | The relative runtime increases exponentially relative to the input size increasing |\r\n\r\nLet's take a look at some simple examples below:\r\n\r\nO(1): Constant Time\r\n```python\r\nsmall_list = [4, 9, 5, 12, 2] # 5 items\r\nlarge_list = [6, 10, 9, 7, 1, 8, 17, 3, 13] # 10 items\r\n\r\ndef append_to_list(my_list, new_item):\r\n    my_list.append(new_item)\r\n\r\nappend_to_list(small_list, 77) # just adds on to end, not impacted by size of list\r\nappend_to_list(large_list, 77) # just adds on to end, not impacted by size of list\r\n```\r\n\r\nO(log N): Logarithmic Time\r\n[Binary Search](https://github.com/quebecplatoon/algo-binary-search)\r\n\r\nO(N): Linear Time\r\n```python\r\nsmall_list = [4, 9, 5, 12, 2] # 5 items\r\nlarge_list = [6, 10, 9, 7, 1, 8, 17, 3, 13] # 10 items\r\n\r\ndef find_item_greater_exists(my_list, value):\r\n    for item in my_list: # ...factor of N\r\n        if item > value:\r\n            return True\r\n\r\n    return False\r\n\r\nfind_item_greater_exists(small_list, 10) # may take up to 5 iterations\r\nfind_item_greater_exists(large_list, 10) # may take up to 10 iterations\r\n```\r\n\r\nO(N^2): Quadratic Time\r\n```python\r\nsmall_list = [4, 9, 5, 12, 2] # 5 items\r\nlarge_list = [6, 10, 9, 7, 1, 8, 17, 3, 13] # 10 items\r\n\r\ndef find_double_exists(my_list):\r\n    for x in my_list: # ...factor of N\r\n        for y in my_list: # ...factor of N => N * N\r\n            if x * 2 == y:\r\n                return True\r\n\r\n    return True\r\n\r\nfind_double_exists(small_list) # may take up to 25 (5*5) iterations\r\nfind_double_exists(large_list) # may take up to 100 (10*10) iterations\r\n```\r\n\r\nO(2^N): Exponential Time\r\n```python\r\ncalls = 0\r\ndef fibonacci_recursive(N):\r\n    global calls\r\n    calls += 1\r\n\r\n    if N == 0:\r\n        return 0\r\n    elif N == 1:\r\n        return 1\r\n\r\n    return fibonacci_recursive(N - 1) + fibonacci_recursive(N - 2)\r\n    \r\n# 0, 1, 1, 2, 3, 5, 8, 13 ...\r\nf_index = 6\r\nprint(\"fib index:\", f_index)\r\nprint(\"fib value:\", fibonacci_recursive(f_index))\r\nprint(\"total calls:\", calls, \"\\n\") \r\n\r\nf_index = 12\r\nprint(\"fib index:\", f_index)\r\nprint(\"fib value:\", fibonacci_recursive(f_index))\r\nprint(\"total calls:\", calls, \"\\n\") # the number of calls grows very quick as the f_index gets larger\r\n```\r\n\r\nHere's a great site to reference (with a useful chart) for algorithmic complexities: https://www.bigocheatsheet.com/\r\n\r\n### Making Improvements\r\n\r\nAnything that is O(N^2) or worse, is considered a bad algorithm in terms of time complexity. Sometimes, there's nothing that we can do about this, because we must solve a problem based on what it requires. Oftentimes though, we can make improvements/optimizations, that might not change our overall complexity, but improve our performance:\r\n\r\n```python\r\ndef find_double_exists(my_list):\r\n    for x in my_list: # ...factor of N\r\n        for y in my_list: # ...factor of N => N * N\r\n            if x * 2 == y or x == y * 2: # an improvement, but this algo is still O(N^2)\r\n                return True\r\n\r\n    return True\r\n```\r\n\r\nOther times, we may be able to refactor our algorithm entirely to improve our time complexity:\r\n```python\r\n# a better (more efficient) fibonacci function (non-recursive) ... O(N)!\r\ndef fibonacci(N):\r\n    f = 0\r\n    a = 0\r\n    b = 1\r\n\r\n    for _ in range(N-1):\r\n        f = a + b\r\n        a = b\r\n        b = f\r\n\r\n    return f\r\n```\r\n\r\nGoing from our naive recursive solution to an iterative one for Fibanacci, we've changed our time complexity from O(2^N) (i.e. \"terrible\") to be O(N)!\r\n\r\n### More Examples\r\n\r\nCan you analyze the code snippets below and determine what their relative time complexities are?\r\n\r\nExample 1:\r\n```python\r\ndef example_1(my_list):\r\n    total = 0\r\n    for x in my_list:\r\n        value = x ** 2\r\n        if value > 20:\r\n            for y in my_list:\r\n                if y > 0:\r\n                    total += y + value\r\n    return total\r\n```\r\n\r\nExample 2:\r\n```python\r\ndef example_2(my_list):\r\n    for item in my_list:\r\n        counter = my_list.count(item)\r\n        if counter > 2:\r\n            return True\r\n\r\n    return False\r\n```\r\n\r\nExample 3:\r\n```python\r\ndef example_3(my_list):\r\n    yummy_list = [\"donut\", \"cake\", \"pie\", \"muffin\"]\r\n\r\n    food_list = []\r\n    for item in my_list:\r\n        if isinstance(item, str):\r\n            food_list.append(item)\r\n\r\n    yummy_count = 0\r\n    for food in food_list:\r\n        for yummy in yummy_list:\r\n            if food == yummy:\r\n                yummy_count += 1\r\n\r\n    return yummy_count\r\n```\r\n\r\n## Resources\r\n**Big O Notation**\r\n- [Big O Slides](https://docs.google.com/presentation/d/1RNYAhAkNF3-UR9rzlBOaWJ0fyYundS0TAGXEYRv-Ybo/edit#slide=id.g22ef87eb09_0_23)\r\n- [More Big O Slides](../page-resources/Big_O_Notation.pdf)\r\n\r\n## Assignments\r\n- [Big O Problems 1](https://github.com/quebecplatoon/algo-big-o-i)\r\n- [Big O Problems 2](https://github.com/quebecplatoon/algo-big-o-ii)\r\n- [Bubble Sort](https://github.com/quebecplatoon/algo-bubble-sort) in JS/python"
     }
   },
   {
@@ -1466,6 +2196,369 @@
     }
   },
   {
+    "model": "app.lessonlink",
+    "pk": 51,
+    "fields": {
+      "lesson": 12,
+      "url": "https://github.com/quebecplatoon/oop-contact-list",
+      "description": "Contact List in Python",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 52,
+    "fields": {
+      "lesson": 12,
+      "url": "https://github.com/quebecplatoon/oop-app-users-i",
+      "description": "App Users I in Python",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 53,
+    "fields": {
+      "lesson": 12,
+      "url": "https://github.com/quebecplatoon/oop-guessing-game",
+      "description": "Guessing Game in Python",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 54,
+    "fields": {
+      "lesson": 13,
+      "url": "https://github.com/quebecplatoon/oop-app-users-ii",
+      "description": "App Users II in Python",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 55,
+    "fields": {
+      "lesson": 13,
+      "url": "https://github.com/quebecplatoon/algo-stock-picker",
+      "description": "Stock Picker in JS/Python",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 56,
+    "fields": {
+      "lesson": 13,
+      "url": "https://github.com/quebecplatoon/algo-pig-latin",
+      "description": "Pig Latin in JS/Python",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 57,
+    "fields": {
+      "lesson": 14,
+      "url": "https://github.com/quebecplatoon/oop-app-users-iii",
+      "description": "App Users III in Python",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 58,
+    "fields": {
+      "lesson": 14,
+      "url": "https://github.com/quebecplatoon/oop-apple-trees",
+      "description": "Apple Trees",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 59,
+    "fields": {
+      "lesson": 14,
+      "url": "https://github.com/quebecplatoon/algo-caesar-cipher",
+      "description": "Caesar Cipher in JS/Python",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 60,
+    "fields": {
+      "lesson": 15,
+      "url": "https://realpython.com/python-super/",
+      "description": "Python super() method",
+      "originator": null,
+      "link_type": 0
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 61,
+    "fields": {
+      "lesson": 15,
+      "url": "https://www.educative.io/edpresso/what-is-mro-in-python",
+      "description": "Method Resolution Order(MRO)",
+      "originator": null,
+      "link_type": 0
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 62,
+    "fields": {
+      "lesson": 15,
+      "url": "https://github.com/quebecplatoon/oop-school-interface-i",
+      "description": "School Interface I",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 63,
+    "fields": {
+      "lesson": 15,
+      "url": "https://github.com/quebecplatoon/algo-word-guess",
+      "description": "Word Guess CSV",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 64,
+    "fields": {
+      "lesson": 15,
+      "url": "https://github.com/quebecplatoon/oop-boggle-i",
+      "description": "Boggle I",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 65,
+    "fields": {
+      "lesson": 15,
+      "url": "https://github.com/quebecplatoon/oop-boggle-ii",
+      "description": "Stretch challenge: Boggle II",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 66,
+    "fields": {
+      "lesson": 16,
+      "url": "https://github.com/quebecplatoon/assessment-1",
+      "description": "Assessment #1",
+      "originator": null,
+      "link_type": 2
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 67,
+    "fields": {
+      "lesson": 16,
+      "url": "https://github.com/quebecplatoon/oop-school-interface-ii",
+      "description": "School Interface II",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 68,
+    "fields": {
+      "lesson": 16,
+      "url": "https://github.com/quebecplatoon/oop-budget",
+      "description": "Budget",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 69,
+    "fields": {
+      "lesson": 16,
+      "url": "https://github.com/quebecplatoon/oop-bowling",
+      "description": "Bowling",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 70,
+    "fields": {
+      "lesson": 17,
+      "url": "http://www.pythontutor.com/visualize.html#mode=edit",
+      "description": "Python Tutor\r\nThis tool breaks down code step by step, allowing you to see the Call Stack in real-time.",
+      "originator": null,
+      "link_type": 0
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 71,
+    "fields": {
+      "lesson": 17,
+      "url": "https://github.com/quebecplatoon/oop-school-interface-iii",
+      "description": "School Interface III",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 72,
+    "fields": {
+      "lesson": 17,
+      "url": "https://github.com/quebecplatoon/algo-recursion",
+      "description": "Recursion",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 73,
+    "fields": {
+      "lesson": 17,
+      "url": "https://github.com/quebecplatoon/algo-binary-search",
+      "description": "Binary Search in JS/Python",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 74,
+    "fields": {
+      "lesson": 18,
+      "url": "https://pythex.org/",
+      "description": "Pythex Test your Python regex with this online tool.",
+      "originator": null,
+      "link_type": 0
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 75,
+    "fields": {
+      "lesson": 18,
+      "url": "https://www.datacamp.com/community/tutorials/python-regular-expression-tutorial",
+      "description": "Great Tutorial",
+      "originator": null,
+      "link_type": 0
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 76,
+    "fields": {
+      "lesson": 18,
+      "url": "https://github.com/quebecplatoon/oop-school-interface-iv",
+      "description": "School Interface IV",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 77,
+    "fields": {
+      "lesson": 18,
+      "url": "https://regexone.com/python",
+      "description": "RegexOne",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 78,
+    "fields": {
+      "lesson": 18,
+      "url": "https://github.com/quebecplatoon/algo-validate-phone",
+      "description": "Phone Numbers in Python Regular Expressions",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 79,
+    "fields": {
+      "lesson": 19,
+      "url": "https://docs.google.com/presentation/d/1RNYAhAkNF3-UR9rzlBOaWJ0fyYundS0TAGXEYRv-Ybo/edit#slide=id.g22ef87eb09_0_23",
+      "description": "Big O Slides",
+      "originator": null,
+      "link_type": 0
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 80,
+    "fields": {
+      "lesson": 19,
+      "url": "https://github.com/quebecplatoon/curriculum/blob/master/page-resources/Big_O_Notation.pdf",
+      "description": "More Big O Slides",
+      "originator": null,
+      "link_type": 0
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 81,
+    "fields": {
+      "lesson": 19,
+      "url": "https://github.com/quebecplatoon/algo-big-o-i",
+      "description": "Big O Problems 1",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 82,
+    "fields": {
+      "lesson": 19,
+      "url": "https://github.com/quebecplatoon/algo-big-o-ii",
+      "description": "Big O Problems 2",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.lessonlink",
+    "pk": 83,
+    "fields": {
+      "lesson": 19,
+      "url": "https://github.com/quebecplatoon/algo-bubble-sort",
+      "description": "Bubble Sort in JS/python",
+      "originator": null,
+      "link_type": 1
+    }
+  },
+  {
     "model": "app.cohort",
     "pk": 1,
     "fields": {
@@ -1552,6 +2645,424 @@
       "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU0NTQ4MSwiaWF0IjoxNjUxNzY5NDgxLCJqdGkiOiJhNzEzNjk0YWE5YmM0ODE1YjNhMGFhZTQ2MGMyN2NlNCIsInVzZXJfaWQiOjZ9.IN1afLG4jwGZYfVjYOSNKPBxutWe0PdVnaGHq9YyN2Y",
       "created_at": "2022-05-05T16:51:21.396Z",
       "expires_at": "2022-08-03T16:51:21Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 5,
+    "fields": {
+      "user": 2,
+      "jti": "e89bb66834594d818229b5c24f182eca",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU0NzE4MSwiaWF0IjoxNjUxNzcxMTgxLCJqdGkiOiJlODliYjY2ODM0NTk0ZDgxODIyOWI1YzI0ZjE4MmVjYSIsInVzZXJfaWQiOjJ9.x3oVDoOdOoe3k81_0X7CCYLmEunK1bEiNhDg-d1RJhE",
+      "created_at": "2022-05-05T17:19:41.498Z",
+      "expires_at": "2022-08-03T17:19:41Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 6,
+    "fields": {
+      "user": 11,
+      "jti": "fd1fe8f944474cdfa61b0656689d942a",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU1MzM1NiwiaWF0IjoxNjUxNzc3MzU2LCJqdGkiOiJmZDFmZThmOTQ0NDc0Y2RmYTYxYjA2NTY2ODlkOTQyYSIsInVzZXJfaWQiOjExfQ.kq_MBaE4p4-CKhrPsaDx39mf_K2CGXMy9dc-kOjSaMQ",
+      "created_at": "2022-05-05T19:02:36.237Z",
+      "expires_at": "2022-08-03T19:02:36Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 7,
+    "fields": {
+      "user": 8,
+      "jti": "b2243627b613404d91337d7fb2fcc782",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU1MzQzMiwiaWF0IjoxNjUxNzc3NDMyLCJqdGkiOiJiMjI0MzYyN2I2MTM0MDRkOTEzMzdkN2ZiMmZjYzc4MiIsInVzZXJfaWQiOjh9.wMKdOFc27WZHiwMfG_DKvbirf2H_D4o4UhnXjMP7A34",
+      "created_at": "2022-05-05T19:03:52.345Z",
+      "expires_at": "2022-08-03T19:03:52Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 8,
+    "fields": {
+      "user": 6,
+      "jti": "765dd63752e8440b96f5f64220de1845",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU1MzQ1MiwiaWF0IjoxNjUxNzc3NDUyLCJqdGkiOiI3NjVkZDYzNzUyZTg0NDBiOTZmNWY2NDIyMGRlMTg0NSIsInVzZXJfaWQiOjZ9.dIPcz4Pzyo6IxKSZBiDMTmlBpP_3BpJ5HQp40e0B31I",
+      "created_at": "2022-05-05T19:04:12.501Z",
+      "expires_at": "2022-08-03T19:04:12Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 9,
+    "fields": {
+      "user": 15,
+      "jti": "eacb39af2a834c45808255667703e7f9",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU1MzQ3NSwiaWF0IjoxNjUxNzc3NDc1LCJqdGkiOiJlYWNiMzlhZjJhODM0YzQ1ODA4MjU1NjY3NzAzZTdmOSIsInVzZXJfaWQiOjE1fQ.qdT5Owqp3wvUaPbadH3dNCQvoK377WEwpS82MWD0lWE",
+      "created_at": "2022-05-05T19:04:35.072Z",
+      "expires_at": "2022-08-03T19:04:35Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 10,
+    "fields": {
+      "user": 6,
+      "jti": "2b283620ae434a269e2247fd8e5d6dd7",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU1NDAxMCwiaWF0IjoxNjUxNzc4MDEwLCJqdGkiOiIyYjI4MzYyMGFlNDM0YTI2OWUyMjQ3ZmQ4ZTVkNmRkNyIsInVzZXJfaWQiOjZ9.DowAuKD-RkMSnG4fclHoVSKdnVBJSQROD_Mnj2Nat0s",
+      "created_at": "2022-05-05T19:13:30.635Z",
+      "expires_at": "2022-08-03T19:13:30Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 11,
+    "fields": {
+      "user": 2,
+      "jti": "74f5b76f788048cc80c7955b17dac726",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU1NDY5MSwiaWF0IjoxNjUxNzc4NjkxLCJqdGkiOiI3NGY1Yjc2Zjc4ODA0OGNjODBjNzk1NWIxN2RhYzcyNiIsInVzZXJfaWQiOjJ9.WBfwniMMsrrcmYeD6Ktcnh0Hq4ZdJxT668lnoVdcGwQ",
+      "created_at": "2022-05-05T19:24:51.588Z",
+      "expires_at": "2022-08-03T19:24:51Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 12,
+    "fields": {
+      "user": 2,
+      "jti": "f5ca69404ac64f74b02ac6ea5eef28e7",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU1OTc0NywiaWF0IjoxNjUxNzgzNzQ3LCJqdGkiOiJmNWNhNjk0MDRhYzY0Zjc0YjAyYWM2ZWE1ZWVmMjhlNyIsInVzZXJfaWQiOjJ9.2NytdKsfRm2a15F_mlm-Rs_hySTmXtoojlGKOVwJCV8",
+      "created_at": "2022-05-05T20:49:07.804Z",
+      "expires_at": "2022-08-03T20:49:07Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 13,
+    "fields": {
+      "user": 2,
+      "jti": "5461fa3b7839436c9179c0b69e735511",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU1OTgwMSwiaWF0IjoxNjUxNzgzODAxLCJqdGkiOiI1NDYxZmEzYjc4Mzk0MzZjOTE3OWMwYjY5ZTczNTUxMSIsInVzZXJfaWQiOjJ9.0DzrAnJ9zsIaSRlJsUe6jEavdI_eAxcPBGwTN9KbvJQ",
+      "created_at": "2022-05-05T20:50:01.586Z",
+      "expires_at": "2022-08-03T20:50:01Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 14,
+    "fields": {
+      "user": 2,
+      "jti": "0dabad9b19f54733b10d85e8ac69b2df",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU1OTg1MCwiaWF0IjoxNjUxNzgzODUwLCJqdGkiOiIwZGFiYWQ5YjE5ZjU0NzMzYjEwZDg1ZThhYzY5YjJkZiIsInVzZXJfaWQiOjJ9.j8rAAvc6yQXlY7kzNsByXORO-loMzBMMPeENE_uFVo8",
+      "created_at": "2022-05-05T20:50:50.248Z",
+      "expires_at": "2022-08-03T20:50:50Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 15,
+    "fields": {
+      "user": 6,
+      "jti": "773f9cda63224535b6ea5a47b467f3bd",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU1OTg5MSwiaWF0IjoxNjUxNzgzODkxLCJqdGkiOiI3NzNmOWNkYTYzMjI0NTM1YjZlYTVhNDdiNDY3ZjNiZCIsInVzZXJfaWQiOjZ9.TmTGP4GqsIRmSQmYlCKUTnwSOOZOtvk_hGV3a-FmUvU",
+      "created_at": "2022-05-05T20:51:31.265Z",
+      "expires_at": "2022-08-03T20:51:31Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 16,
+    "fields": {
+      "user": 2,
+      "jti": "f2cc888693a64ab6b2d5ce007d33058a",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU2MTY0NywiaWF0IjoxNjUxNzg1NjQ3LCJqdGkiOiJmMmNjODg4NjkzYTY0YWI2YjJkNWNlMDA3ZDMzMDU4YSIsInVzZXJfaWQiOjJ9.3HpECg4dLCdM5olq_jwpr-jDHPMkjXKrE3RmLEEY8sA",
+      "created_at": "2022-05-05T21:20:47.365Z",
+      "expires_at": "2022-08-03T21:20:47Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 17,
+    "fields": {
+      "user": 6,
+      "jti": "543de48cfa01474080cc2baaa189352c",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU3NDk3NSwiaWF0IjoxNjUxNzk4OTc1LCJqdGkiOiI1NDNkZTQ4Y2ZhMDE0NzQwODBjYzJiYWFhMTg5MzUyYyIsInVzZXJfaWQiOjZ9.QJthR-9SpgzCFxg_Ccqt5116IgvvRNMv0N7F2qSnWnE",
+      "created_at": "2022-05-06T01:02:55.851Z",
+      "expires_at": "2022-08-04T01:02:55Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 18,
+    "fields": {
+      "user": 2,
+      "jti": "45a505379a8f4fa8873bd70e84131c0c",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU3NTQ4MCwiaWF0IjoxNjUxNzk5NDgwLCJqdGkiOiI0NWE1MDUzNzlhOGY0ZmE4ODczYmQ3MGU4NDEzMWMwYyIsInVzZXJfaWQiOjJ9.bqci6_E2dcNkYf8LqEQbnE_fEuypX6DMVab8U9bNcgY",
+      "created_at": "2022-05-06T01:11:20.875Z",
+      "expires_at": "2022-08-04T01:11:20Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 19,
+    "fields": {
+      "user": 6,
+      "jti": "8843313ec07a4a35bfbefe5fce826cc7",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU4Mzc4NywiaWF0IjoxNjUxODA3Nzg3LCJqdGkiOiI4ODQzMzEzZWMwN2E0YTM1YmZiZWZlNWZjZTgyNmNjNyIsInVzZXJfaWQiOjZ9.uet597LFn-2UIAWZyfIDvR682ulFT4QQfWoMyJBJl_k",
+      "created_at": "2022-05-06T03:29:47.982Z",
+      "expires_at": "2022-08-04T03:29:47Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 20,
+    "fields": {
+      "user": 2,
+      "jti": "0b9e15a430e140389ade74b7862fd772",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU4MzgxNSwiaWF0IjoxNjUxODA3ODE1LCJqdGkiOiIwYjllMTVhNDMwZTE0MDM4OWFkZTc0Yjc4NjJmZDc3MiIsInVzZXJfaWQiOjJ9.vcECPWNujueRh2f4adFYgYvjFVRmRd9XFHd-wjHBKl8",
+      "created_at": "2022-05-06T03:30:15.143Z",
+      "expires_at": "2022-08-04T03:30:15Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 21,
+    "fields": {
+      "user": 6,
+      "jti": "7312c1c6418c457eb17387dd90d7ccb2",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU4MzgyNSwiaWF0IjoxNjUxODA3ODI1LCJqdGkiOiI3MzEyYzFjNjQxOGM0NTdlYjE3Mzg3ZGQ5MGQ3Y2NiMiIsInVzZXJfaWQiOjZ9.BvGhPD0D6TATmUi6t4YjTQfEZo27aMYGg2VFHdqo0EQ",
+      "created_at": "2022-05-06T03:30:25.382Z",
+      "expires_at": "2022-08-04T03:30:25Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 22,
+    "fields": {
+      "user": 2,
+      "jti": "2ca8ed10bb08481e9b261b2482374af6",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU4NTExNywiaWF0IjoxNjUxODA5MTE3LCJqdGkiOiIyY2E4ZWQxMGJiMDg0ODFlOWIyNjFiMjQ4MjM3NGFmNiIsInVzZXJfaWQiOjJ9.sH7u237EzrOg3VSb3P6VEgNYieaz6kAJSXHunQgEbY8",
+      "created_at": "2022-05-06T03:51:57.443Z",
+      "expires_at": "2022-08-04T03:51:57Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 23,
+    "fields": {
+      "user": 2,
+      "jti": "c66234fb56794550b08e7107815ef978",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU4NTIwMSwiaWF0IjoxNjUxODA5MjAxLCJqdGkiOiJjNjYyMzRmYjU2Nzk0NTUwYjA4ZTcxMDc4MTVlZjk3OCIsInVzZXJfaWQiOjJ9.ZiSEppX4nnlDYa07o_B56Iw47OqtsNBTdeVgVSad_VU",
+      "created_at": "2022-05-06T03:53:21.588Z",
+      "expires_at": "2022-08-04T03:53:21Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 24,
+    "fields": {
+      "user": 6,
+      "jti": "011906484d1b474b9f3da4db733f86a3",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU4NjYxMCwiaWF0IjoxNjUxODEwNjEwLCJqdGkiOiIwMTE5MDY0ODRkMWI0NzRiOWYzZGE0ZGI3MzNmODZhMyIsInVzZXJfaWQiOjZ9.YNdBMhzCbNxBDQvUIPq5Ya2K40r3_hnfuCd1n9sH790",
+      "created_at": "2022-05-06T04:16:50.534Z",
+      "expires_at": "2022-08-04T04:16:50Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 25,
+    "fields": {
+      "user": 7,
+      "jti": "869fb4b6442a4fa2a5d0459acc6f8f56",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU4NjY1OCwiaWF0IjoxNjUxODEwNjU4LCJqdGkiOiI4NjlmYjRiNjQ0MmE0ZmEyYTVkMDQ1OWFjYzZmOGY1NiIsInVzZXJfaWQiOjd9.05WKgpV9IF71VID-WUIO8O53VyPYXY8WEaR98k8jGnA",
+      "created_at": "2022-05-06T04:17:38.696Z",
+      "expires_at": "2022-08-04T04:17:38Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 26,
+    "fields": {
+      "user": 10,
+      "jti": "737aaf39d86541efb85148c73fb0b9bb",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU4Njg3MiwiaWF0IjoxNjUxODEwODcyLCJqdGkiOiI3MzdhYWYzOWQ4NjU0MWVmYjg1MTQ4YzczZmIwYjliYiIsInVzZXJfaWQiOjEwfQ.ZW8bF5IFRjPoBR_ioImD5iVWDCbAig2Qtfx9UX-HfPg",
+      "created_at": "2022-05-06T04:21:12.390Z",
+      "expires_at": "2022-08-04T04:21:12Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 27,
+    "fields": {
+      "user": 2,
+      "jti": "0c7720b0a204480a82c232e6ce3dd8d7",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU4Njg4MywiaWF0IjoxNjUxODEwODgzLCJqdGkiOiIwYzc3MjBiMGEyMDQ0ODBhODJjMjMyZTZjZTNkZDhkNyIsInVzZXJfaWQiOjJ9.gDaFxAoXYHujf6cZRnzGgItyKW_27cDvplMsdD6nVt0",
+      "created_at": "2022-05-06T04:21:23.901Z",
+      "expires_at": "2022-08-04T04:21:23Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 28,
+    "fields": {
+      "user": 8,
+      "jti": "d8cff3e11cdb4f90bb3c3dfdb6604ccd",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU4NzU4MCwiaWF0IjoxNjUxODExNTgwLCJqdGkiOiJkOGNmZjNlMTFjZGI0ZjkwYmIzYzNkZmRiNjYwNGNjZCIsInVzZXJfaWQiOjh9.xapnj48ebEjHuVee9WPChsSBsKwPmWYcbbNWZLNRoI8",
+      "created_at": "2022-05-06T04:33:00.569Z",
+      "expires_at": "2022-08-04T04:33:00Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 29,
+    "fields": {
+      "user": 6,
+      "jti": "430a92377ef14c2eb9402bd84dfacd1c",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTU4NzgxOSwiaWF0IjoxNjUxODExODE5LCJqdGkiOiI0MzBhOTIzNzdlZjE0YzJlYjk0MDJiZDg0ZGZhY2QxYyIsInVzZXJfaWQiOjZ9.8VxxuxD6Ti89mMEiElKPuqDz6sTMB4KhICJEiYKnXfU",
+      "created_at": "2022-05-06T04:36:59.928Z",
+      "expires_at": "2022-08-04T04:36:59Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 30,
+    "fields": {
+      "user": 6,
+      "jti": "68b2d8345a4d4ca88da437798c05c089",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTYxNzcwMSwiaWF0IjoxNjUxODQxNzAxLCJqdGkiOiI2OGIyZDgzNDVhNGQ0Y2E4OGRhNDM3Nzk4YzA1YzA4OSIsInVzZXJfaWQiOjZ9.twdjb1KRSjzhSkuuTvlXbZ2twVHPw90ZaLlsmE9bo_4",
+      "created_at": "2022-05-06T12:55:01.138Z",
+      "expires_at": "2022-08-04T12:55:01Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 31,
+    "fields": {
+      "user": 2,
+      "jti": "191c8735176b4d2cb96dc8a1e0f67d14",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTYxNzcyMiwiaWF0IjoxNjUxODQxNzIyLCJqdGkiOiIxOTFjODczNTE3NmI0ZDJjYjk2ZGM4YTFlMGY2N2QxNCIsInVzZXJfaWQiOjJ9.Qlk-8VfQdu6SK9DVomGaVnsEITqiPvqLV4kMkDW_ErY",
+      "created_at": "2022-05-06T12:55:22.673Z",
+      "expires_at": "2022-08-04T12:55:22Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 32,
+    "fields": {
+      "user": 6,
+      "jti": "d59f85e6babb481fb81bef00db8326da",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTYxNzgyNCwiaWF0IjoxNjUxODQxODI0LCJqdGkiOiJkNTlmODVlNmJhYmI0ODFmYjgxYmVmMDBkYjgzMjZkYSIsInVzZXJfaWQiOjZ9.R0EYQRbAsSK4CjLJr4sv_4bP6NeOap9zq2Thoq5O-RA",
+      "created_at": "2022-05-06T12:57:04.347Z",
+      "expires_at": "2022-08-04T12:57:04Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 33,
+    "fields": {
+      "user": 6,
+      "jti": "7356f304c90e401d8074f4d9ad682c31",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTYxODI0NSwiaWF0IjoxNjUxODQyMjQ1LCJqdGkiOiI3MzU2ZjMwNGM5MGU0MDFkODA3NGY0ZDlhZDY4MmMzMSIsInVzZXJfaWQiOjZ9.WMspn-4sRyYcXu77m7FC8L4BuPfk5GMpPhKr1Otpnik",
+      "created_at": "2022-05-06T13:04:05.291Z",
+      "expires_at": "2022-08-04T13:04:05Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 34,
+    "fields": {
+      "user": 6,
+      "jti": "7df125a021a24088a7e721af4d2f6c62",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTYxODU4NywiaWF0IjoxNjUxODQyNTg3LCJqdGkiOiI3ZGYxMjVhMDIxYTI0MDg4YTdlNzIxYWY0ZDJmNmM2MiIsInVzZXJfaWQiOjZ9.vycQO0gGKz_r1VdC3fuXERQ6HrFcpnMs4HEWjvhJGQw",
+      "created_at": "2022-05-06T13:09:47.619Z",
+      "expires_at": "2022-08-04T13:09:47Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 35,
+    "fields": {
+      "user": 6,
+      "jti": "1dad609271564d36823554c346622cef",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTYxOTA5MCwiaWF0IjoxNjUxODQzMDkwLCJqdGkiOiIxZGFkNjA5MjcxNTY0ZDM2ODIzNTU0YzM0NjYyMmNlZiIsInVzZXJfaWQiOjZ9.Rfama4AQphSLIrVdLGI6KYCSCfauHQz0RB5naGBq3eo",
+      "created_at": "2022-05-06T13:18:10.548Z",
+      "expires_at": "2022-08-04T13:18:10Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 36,
+    "fields": {
+      "user": 6,
+      "jti": "c196b3512c1e4fdb99bc45da088a96f1",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTYxOTEwNSwiaWF0IjoxNjUxODQzMTA1LCJqdGkiOiJjMTk2YjM1MTJjMWU0ZmRiOTliYzQ1ZGEwODhhOTZmMSIsInVzZXJfaWQiOjZ9.tIjDItepmInlLOXKcsC8JG0bUY-CLQ0UnZamW7QbFFA",
+      "created_at": "2022-05-06T13:18:25.148Z",
+      "expires_at": "2022-08-04T13:18:25Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 37,
+    "fields": {
+      "user": 28,
+      "jti": "dd78ccc92aee48db86b849be68a608c2",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTYyMDcwNCwiaWF0IjoxNjUxODQ0NzA0LCJqdGkiOiJkZDc4Y2NjOTJhZWU0OGRiODZiODQ5YmU2OGE2MDhjMiIsInVzZXJfaWQiOjI4fQ.gO1slD8fqNxx6VxsTIiT781evPEJrp8e3YB_XnZ7UQ4",
+      "created_at": "2022-05-06T13:45:04.829Z",
+      "expires_at": "2022-08-04T13:45:04Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 38,
+    "fields": {
+      "user": 28,
+      "jti": "64a7c4cb1a6e4486a576dfb04b5ca6ab",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTYyMDg0OCwiaWF0IjoxNjUxODQ0ODQ4LCJqdGkiOiI2NGE3YzRjYjFhNmU0NDg2YTU3NmRmYjA0YjVjYTZhYiIsInVzZXJfaWQiOjI4fQ.hs_c7DIJHjfp1f4J0ZxlE647olPoKi3mFPU8O18SjGA",
+      "created_at": "2022-05-06T13:47:28.621Z",
+      "expires_at": "2022-08-04T13:47:28Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 39,
+    "fields": {
+      "user": 28,
+      "jti": "ab404bdaf216423ab217c85427523ebb",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTYyMDkwMCwiaWF0IjoxNjUxODQ0OTAwLCJqdGkiOiJhYjQwNGJkYWYyMTY0MjNhYjIxN2M4NTQyNzUyM2ViYiIsInVzZXJfaWQiOjI4fQ.F3AZT8qrN8jaGo2nTtP5xFRqqNe43LyiGeupgewe5QM",
+      "created_at": "2022-05-06T13:48:20.590Z",
+      "expires_at": "2022-08-04T13:48:20Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 40,
+    "fields": {
+      "user": 2,
+      "jti": "ee997388d3b0474cbcbd5dc6f4a750c2",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTYyMzM5NSwiaWF0IjoxNjUxODQ3Mzk1LCJqdGkiOiJlZTk5NzM4OGQzYjA0NzRjYmNiZDVkYzZmNGE3NTBjMiIsInVzZXJfaWQiOjJ9.Aom6v5GKI2jMam6hFCifbu3HmFmLOt49tM-Ao_3IliQ",
+      "created_at": "2022-05-06T14:29:55.600Z",
+      "expires_at": "2022-08-04T14:29:55Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 41,
+    "fields": {
+      "user": 3,
+      "jti": "c6d342cd9321434eb87b915b3b77d9a0",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTYyMzQxMCwiaWF0IjoxNjUxODQ3NDEwLCJqdGkiOiJjNmQzNDJjZDkzMjE0MzRlYjg3YjkxNWIzYjc3ZDlhMCIsInVzZXJfaWQiOjN9.2Pe-nvRzTgMMS2Anlz9cAG-9OTLXHn49hfoBBKj_JgQ",
+      "created_at": "2022-05-06T14:30:10.311Z",
+      "expires_at": "2022-08-04T14:30:10Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 42,
+    "fields": {
+      "user": 3,
+      "jti": "75887524111c45168b67570aa1426c8d",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTYyMzQ0MSwiaWF0IjoxNjUxODQ3NDQxLCJqdGkiOiI3NTg4NzUyNDExMWM0NTE2OGI2NzU3MGFhMTQyNmM4ZCIsInVzZXJfaWQiOjN9.Kb_tgUMvLVO7f7GPjYfGA-z-kBQDU_zjevpJblhPALI",
+      "created_at": "2022-05-06T14:30:41.043Z",
+      "expires_at": "2022-08-04T14:30:41Z"
     }
   }
 ]

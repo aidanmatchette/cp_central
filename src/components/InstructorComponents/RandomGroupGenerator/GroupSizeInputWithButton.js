@@ -6,23 +6,25 @@ function GroupSizeInputWithButton(props) {
 
 
   return (
-    <div style={{ width: "20rem" }}>
+    <div style={{ width: "12rem" }}>
       <InputGroup className="m-3">
         <FormControl
-          className='form-floating'
-          placeholder='Group size'
-          aria-label="Group size"
+          className='form-floating border-secondary'
+          placeholder='SZ'
+          aria-label="SZ"
           aria-describedby="basic-addon1"
           type="number"
           onChange={(e) => setGroupSize(e.target.value)}
           value={groupSize}
+
         />
         <Button
           variant="secondary"
           id="button-addon1"
           onClick={handleCreateGroups}
+          style={{ color: "white" }}
         >
-          Create Random Groups
+          Create Groups
         </Button>
       </InputGroup>
     </div>

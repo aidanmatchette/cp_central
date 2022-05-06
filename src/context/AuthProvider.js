@@ -35,7 +35,8 @@ function AuthProvider({children}) {
 
     const signout = async () => {
         clearToken()
-        setToken(null);
+        setToken(null)
+        setUser(null)
         navigate("/")
     };
 

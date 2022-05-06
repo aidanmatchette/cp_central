@@ -1,15 +1,15 @@
-import {useNavigate} from "react-router-dom";
-import {createContext, useContext, useEffect, useState} from "react";
-import {AuthContext} from "./AuthProvider";
+import { useNavigate } from "react-router-dom";
+import { createContext, useContext, useEffect, useState } from "react";
+import { AuthContext } from "./AuthProvider";
 import dayjs from "dayjs";
-import {useAxios} from "../utils/useAxios";
+import { useAxios } from "../utils/useAxios";
 
 let DayContext = createContext(null);
 
-function DayProvider({children}) {
+function DayProvider({ children }) {
     const navigate = useNavigate()
     const backend = useAxios()
-    const {user} = useContext(AuthContext)
+    const { user } = useContext(AuthContext)
     const [allChoices, setAllChoices] = useState(null)
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
     const [landingRaw, setLandingRaw] = useState(null)
@@ -25,9 +25,9 @@ function DayProvider({children}) {
             }
             const rawLanding = await backend.get('api/student/landing/', rawParams)
             setLandingRaw(rawLanding.data)
+            // console.log({rawLanding})
         }
         loadData().then()
-        setDirty(false)
     }, [user, date, dirty])
 
     const checkChange = async () => {
@@ -38,17 +38,17 @@ function DayProvider({children}) {
 
     useEffect(() => {
         // TODO set to true in .env file
-        if (process.env.REACT_APP_USE_POLLING) {
+        if (process.env.REACT_APP_USE_POLLING === 'true') {
             const timer = setInterval(checkChange, 2000)
             return () => clearInterval(timer)
         }
     }, [])
 
-    const contextData = {allChoices, isSideBarOpen, setIsSideBarOpen, date, setDate, landingRaw, setDirty};
+    const contextData = { allChoices, isSideBarOpen, setIsSideBarOpen, date, setDate, landingRaw, setDirty, dirty };
 
     // only render after initial load (persist token through page refresh)
     return <DayContext.Provider value={contextData}>{children}</DayContext.Provider>;
 }
 
 
-export {DayProvider, DayContext}
+export { DayProvider, DayContext }

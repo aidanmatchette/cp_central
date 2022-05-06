@@ -26,4 +26,7 @@ class ActivitySerializer(serializers.ModelSerializer):
     class Meta:
         model = Activity
         fields = "__all__"
+        read_only_fields = ['date']
+        depth = 1
     activity_groups = ActivityGroupSerializer(many=True)
+    

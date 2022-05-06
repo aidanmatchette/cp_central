@@ -2,6 +2,7 @@ import HomeRoundedIcon from '@mui/icons-material/HomeRounded';
 import EventNoteRoundedIcon from '@mui/icons-material/EventNoteRounded';
 import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
 import PendingActionsRoundedIcon from '@mui/icons-material/PendingActionsRounded';
+import QuestionAnswerRoundedIcon from '@mui/icons-material/QuestionAnswerRounded';
 
 
 const listItems = [
@@ -19,6 +20,11 @@ const listItems = [
     listIcon: <PeopleAltRoundedIcon />,
     listText: "Class Roster",
     link: "/class-roster"
+  },
+  {
+    listIcon: <QuestionAnswerRoundedIcon />,
+    listText: "View Questionnaires",
+    link: "/questionnaires"
   }
 ];
 const instructorListItems = [
@@ -41,6 +47,11 @@ const instructorListItems = [
     listIcon: <PeopleAltRoundedIcon />,
     listText: "Class Roster",
     link: "/class-roster"
+  },
+  {
+    listIcon: <QuestionAnswerRoundedIcon />,
+    listText: "Edit Questionnaires",
+    link: "/questionnaires"
   }
 ];
 export {listItems, instructorListItems}

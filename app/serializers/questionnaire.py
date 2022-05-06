@@ -8,6 +8,12 @@ class QuestionOptionSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class QuestionSerializerBase(serializers.ModelSerializer):
+    class Meta:
+        model = Question
+        fields = "__all__"
+
+
 class QuestionSerializer(serializers.ModelSerializer):
     class Meta:
         model = Question

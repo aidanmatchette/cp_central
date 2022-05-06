@@ -119,3 +119,12 @@
   color: antiquewhite;
 }
 #markdown {}
+.other-section {
+  overflow-y: auto;
+  background-color: rgba(255, 85, 0, .3);
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.other-section::-webkit-scrollbar { 
+    display: none;
+}

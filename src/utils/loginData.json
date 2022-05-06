@@ -1,5 +1,21 @@
 [
   {
+    "username": "john@email.com",
+    "password": "Dragons1234!@#$"
+  },
+  {
+    "username": "aidan@email.com",
+    "password": "Dragons1234!@#$"
+  },
+  {
+    "username": "megan@email.com",
+    "password": "Dragons1234!@#$"
+  },
+  {
+    "username": "markos@email.com",
+    "password": "Dragons1234!@#$"
+  },
+  {
     "username": "quebec_student_1@email.com",
     "password": "Dragons1234!@#$"
   },
@@ -51,11 +67,11 @@
     "username": "raphael@codeplatoon.org",
     "password": "Dragons1234!@#$"
   },
-    {
+  {
     "username": "rod@codeplatoon.org",
     "password": "Dragons1234!@#$"
   },
-    {
+  {
     "username": "jon@codeplatoon.org",
     "password": "Dragons1234!@#$"
   }

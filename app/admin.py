@@ -3,8 +3,8 @@ from django.contrib.auth.admin import UserAdmin
 from .models import User, Appointment, UserLink, LessonLink, Topic, Vote, Question, QuestionResponse, QuestionOption, \
     Lesson, Questionnaire, FilledQuestionnaire, Feedback, ActivityGroup, Activity, Cohort, CheckIn
 
-admin.site.register(User, UserAdmin)
-# admin.site.register(User)
+# admin.site.register(User, UserAdmin)
+admin.site.register(User)
 admin.site.register(Appointment)
 admin.site.register(UserLink)
 admin.site.register(LessonLink)
