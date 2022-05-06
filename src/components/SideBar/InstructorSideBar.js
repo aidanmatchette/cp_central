@@ -22,6 +22,9 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import { instructorListItems } from "./SideBarData.js";
 import { useAxios } from "../../utils/useAxios";
 import RandomPersonGenerator from "../RandomPersonGenerator";
+import RateReviewRoundedIcon from "@mui/icons-material/RateReviewRounded";
+import GenerateFeedback from '../GenerateFeedback'
+
 
 function SideBar() {
   const navigate = useNavigate();
@@ -29,6 +32,7 @@ function SideBar() {
 
   const [questionOpen, setQuestionOpen] = useState(false);
   const [githubOpen, setGithubOpen] = useState(false);
+  const [feedbackOpen, setFeedbackOpen] = useState(false);
 
   const backend = useAxios();
   const handleGenerateCheckin = () => {
@@ -60,9 +64,9 @@ function SideBar() {
     },
   });
 
-  // const handleClick = () => {
-  //   setOpen(!open)
-  // }
+  const openFeedback = () => {
+    setFeedbackOpen(true)
+  }
 
   return (
     <ThemeProvider theme={theme}>
@@ -101,6 +105,13 @@ function SideBar() {
               <ListItemText primary={listItem.listText} />
             </ListItem>
           ))}
+          <ListItem button onClick={openFeedback}>
+            <ListItemIcon>
+              <RateReviewRoundedIcon />
+            </ListItemIcon>
+            <ListItemText primary={"Feedback"} />
+            {feedbackOpen && <GenerateFeedback feedbackOpen={feedbackOpen} setFeedbackOpen={setFeedbackOpen} />}
+          </ListItem>
 
           <ListItem button onClick={() => setQuestionOpen(!questionOpen)}>
             <ListItemIcon>
