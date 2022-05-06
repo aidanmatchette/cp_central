@@ -22,8 +22,8 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import { instructorListItems } from "./SideBarData.js";
 import { useAxios } from "../../utils/useAxios";
 import RandomPersonGenerator from "../RandomPersonGenerator";
-import RateReviewRoundedIcon from "@mui/icons-material/RateReviewRounded";
 import GenerateFeedback from "../GenerateFeedback";
+import GoogleCalendar from "../GoogleCalendar";
 
 function SideBar() {
   const navigate = useNavigate();
@@ -140,7 +140,10 @@ function SideBar() {
             }}
           >
             <Collapse in={githubOpen} timeout="auto" unmountOnExit>
-              <ListItemButton>
+              <ListItemButton
+                href="https://github.com/quebecplatoon/curriculum"
+                target="_blank"
+              >
                 <ListItemText primary="Curriculum" />
               </ListItemButton>
               <ListItemButton>
@@ -151,8 +154,14 @@ function SideBar() {
 
           {/* <List style={menuSideBarContainer}  sx={{justifyContent: 'space-between', alignItems: 'center'}}>  */}
           <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <GenerateFeedback />
+          </Box>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <GoogleCalendar />
+          </Box>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Button
-              color="secondary"
+              color="primary"
               variant="contained"
               onClick={handleGenerateCheckin}
               sx={{ width: "80%", mt: 3 }}
