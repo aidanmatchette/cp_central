@@ -19,6 +19,7 @@ import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
 import QuestionAnswerRoundedIcon from "@mui/icons-material/QuestionAnswerRounded";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { listItems } from "./SideBarData.js";
+import RateReviewRoundedIcon from "@mui/icons-material/RateReviewRounded";
 
 console.log("list items -----", listItems);
 
@@ -27,6 +28,8 @@ function SideBar() {
 
   const [questionOpen, setQuestionOpen] = useState(false);
   const [githubOpen, setGithubOpen] = useState(false);
+  const [feedbackOpen, setFeedbackOpen] = useState(false);
+
   const menuSideBarContainer = {
     width: 250,
     height: "100%",
@@ -48,9 +51,7 @@ function SideBar() {
     },
   });
 
-  // const handleClick = () => {
-  //   setOpen(!open)
-  // }
+  const openFeedback = () => {};
 
   return (
     <ThemeProvider theme={theme}>
@@ -87,7 +88,12 @@ function SideBar() {
               <ListItemText primary={listItem.listText} />
             </ListItem>
           ))}
-
+          <ListItem button onClick={openFeedback}>
+            <ListItemIcon>
+              <RateReviewRoundedIcon />
+            </ListItemIcon>
+            <ListItemText primary={"Feedback"} />
+          </ListItem>
           <ListItem button onClick={() => setQuestionOpen(!questionOpen)}>
             <ListItemIcon>
               <QuestionAnswerRoundedIcon />
