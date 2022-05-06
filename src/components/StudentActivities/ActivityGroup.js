@@ -1,6 +1,11 @@
 import { useContext } from 'react'
 import { DayContext } from '../../context/DayProvider'
 import { Container, Row, Col } from 'react-bootstrap'
+import { Button, Alert } from "@mui/material";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "../../utils/theme.js";
+
+
 
 function ActivityGroup(props) {
 
@@ -15,10 +20,9 @@ function ActivityGroup(props) {
   const handleRefresh = () => setDirty(!dirty)
 
   return (
-    <>
+    <ThemeProvider theme={theme}>
       <Container className='d-flex justify-content-center align-items-center'>
-        <h1 className="d-inline-block">My groups</h1>
-        <button onClick={handleRefresh}>Refresh</button>
+        <Button color="secondary" variant='contained' sx={{mt:3, width: '90%', display: 'flex', justifyContent: 'center'}} onClick={handleRefresh}>Refresh Groups</Button>
       </Container>
       <Container>
         <Row className='d-flex justify-content-center'>
@@ -31,11 +35,11 @@ function ActivityGroup(props) {
                 </Col>
               )
             })
-            : <h4>No groups for this day</h4>
+            : <Alert sx={{backgroundColor: 'rgba(0, 0, 0, 0.31)', color: 'rgba(255, 173, 0, 0.97)'}} severity="warning">There are currently no groups created!</Alert>
           }
         </Row>
       </Container>
-    </>
+    </ThemeProvider>
   )
 }
 

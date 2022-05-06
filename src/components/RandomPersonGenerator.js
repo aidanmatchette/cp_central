@@ -37,7 +37,6 @@ function RandomPersonGenerator() {
       <Button
         onClick={handleRandomPerson}
         variant="contained"
-        color="primary"
         sx={{ width: "80%", mt: 3 }}
       >
         Random Person
