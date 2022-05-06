@@ -12,7 +12,6 @@
 .smaller-flex-container {
   display: flex;
   justify-content: center;
-  
 }
 .student-landing-container {
   display: flex;
@@ -25,7 +24,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.links{
+.links {
   width: 25rem;
   background-color: blue;
   height: 9.5rem;
@@ -40,24 +39,24 @@
   background-color: rgba(17, 136, 136, 0.59);
   border-radius: 1rem;
   margin-top: 1rem;
-  padding: .5rem;
+  padding: 0.5rem;
   margin-right: 1rem;
   margin-left: 1rem;
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
   -ms-overflow-style: none;
-  scrollbar-width: none; 
+  scrollbar-width: none;
 }
 .readme-title {
   font-weight: 500;
   text-align: center;
-  background-color:rgba(17, 136, 136, 0.80);
+  background-color: rgba(17, 136, 136, 0.8);
   border-radius: 1rem;
 }
 
-.lecture-readme::-webkit-scrollbar { 
-    display: none;
+.lecture-readme::-webkit-scrollbar {
+  display: none;
 }
 .todays-info {
   display: flex;
@@ -66,7 +65,7 @@
 }
 .btn-custom-orange {
   background-color: #ff500f;
-  color: white
+  color: white;
 }
 .link-list {
   list-style: inside;
@@ -118,13 +117,16 @@
 #social-links:hover {
   color: antiquewhite;
 }
-#markdown {}
+#markdown {
+  border-bottom-left-radius: 21px;
+  border-bottom-right-radius: 25px;
+}
 .other-section {
   overflow-y: auto;
-  background-color: rgba(255, 85, 0, .3);
+  background-color: rgba(255, 85, 0, 0.3);
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.other-section::-webkit-scrollbar { 
-    display: none;
+.other-section::-webkit-scrollbar {
+  display: none;
 }

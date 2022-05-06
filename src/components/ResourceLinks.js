@@ -1,5 +1,7 @@
 import { useContext, useState } from "react";
 import { DayContext } from "../context/DayProvider";
+import LinkList from "../components/LinkList"
+import { Link } from "react-router-dom"
 
 function ResourceLinks(props) {
   
@@ -7,19 +9,20 @@ function ResourceLinks(props) {
   const { landingRaw } = useContext(DayContext)
 
   const renderLessons = () => {
-    console.log(landingRaw.lessons_records[0])
+    console.log(landingRaw.lessons[0])
   
     try {
-       return landingRaw.lessons_records.map((info, index) => {
+       return landingRaw.lessons.map((info, index) => {
       return (
        <div>
          <h3> Topic: {info.title}</h3>
-         <p>{info.description}</p>
+         {/* <p>{info.description}</p> */}
          <ul className="link-list">
            {info.lesson_links.map((link, index) => {
              return <li key={index}><a href={link.url}>{link.description}</a></li>
            })}
          </ul>
+          <p>View more resources <Link to={"/lesson-links"}>here</Link></p> 
        </div>
       )
     })
