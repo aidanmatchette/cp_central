@@ -17,8 +17,9 @@ function GoogleCalendar(props) {
 
   let calendarStyle = {
     border: "0",
-    width: width,
-    height: height,
+    // TODO add back height and width
+    width: "500px",
+    height: "500px",
     frameBorder: "0",
     scrolling: "no"
   }
