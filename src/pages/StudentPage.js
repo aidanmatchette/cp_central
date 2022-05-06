@@ -9,6 +9,7 @@ import { Button, Box } from '@mui/material'
 import { useAxios } from "../utils/useAxios";
 import ActivityGroup from "../components/StudentActivities/ActivityGroup";
 import GenerateFeedback from '../components/GenerateFeedback'
+import ResourceLinks from "../components/ResourceLinks";
 
 function StudentPage() {
     const { landingRaw, setDirty } = useContext(DayContext)
@@ -44,6 +45,7 @@ function StudentPage() {
                     <div className="days-topics">
                         <div className="topics-title">
                             <h1>Today's Topics</h1>
+                            <ResourceLinks />
                         </div>
                     </div>
                     {/* Code Chunk for 'My Groups Box' */}

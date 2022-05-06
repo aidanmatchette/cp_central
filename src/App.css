@@ -118,7 +118,10 @@
 #social-links:hover {
   color: antiquewhite;
 }
-#markdown {}
+#markdown {
+  border-bottom-left-radius: 21px;
+  border-bottom-right-radius: 25px;
+}
 .other-section {
   overflow-y: auto;
   background-color: rgba(255, 85, 0, .3);
