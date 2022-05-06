@@ -1,7 +1,8 @@
 from django.urls import path, include
 from .views import UserViewSet, signup, all_choices, TopicViewSet, LessonLinkViewSet, VoteViewSet, LessonViewSet,\
     FeedbackViewSet, ActivityViewSet, ActivityGroupViewSet, FilledQuestionnaireViewSet, QuestionnaireViewSet, \
-    AppointmentViewSet, UserLinkViewSet, roster, super_info, instructor_checkin, CohortViewSet, student_landing, search, create_random_groups
+    AppointmentViewSet, UserLinkViewSet, roster, super_info, instructor_checkin, CohortViewSet, student_landing, \
+    search, create_random_groups, QuestionViewSet, QuestionOptionViewSet
 from rest_framework_simplejwt.views import TokenRefreshView, TokenObtainPairView
 from rest_framework.routers import DefaultRouter
 
@@ -19,6 +20,8 @@ r.register(r'questionnaire', QuestionnaireViewSet, basename="questionnaire")
 r.register(r'appointment', AppointmentViewSet, basename="appointment")
 r.register(r'user_link', UserLinkViewSet, basename="user_link")
 r.register(r'cohort', CohortViewSet, basename="cohort")
+r.register(r'question', QuestionViewSet, basename="question")
+r.register(r'question_option', QuestionOptionViewSet, basename="question_option")
 
 urlpatterns = [
     path('token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),

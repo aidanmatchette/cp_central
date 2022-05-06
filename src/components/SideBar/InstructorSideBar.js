@@ -90,8 +90,8 @@ function SideBar() {
             <ListItemButton >
               <ListItemText primary="Pair Programming" />
             </ListItemButton>
-            <ListItemButton >
-              <ListItemText primary="All Questionnaires" />
+            <ListItemButton  >
+              <ListItemText primary="All Questionnaires" onClick={()=>console.log("click")}/>
             </ListItemButton>
           </Collapse>
           </Box>

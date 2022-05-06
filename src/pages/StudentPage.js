@@ -51,7 +51,7 @@ function StudentPage() {
                         <h1>README</h1>
                     </div>
                     <div className="readme">
-                        {landingRaw?.lessons[0].markdown && <ReactMarkdown remarkPlugins={[remarkGfm]}>{landingRaw?.lessons[0].markdown}</ReactMarkdown>}
+                        {landingRaw && landingRaw?.lessons[0].markdown && <ReactMarkdown remarkPlugins={[remarkGfm]}>{landingRaw?.lessons[0].markdown}</ReactMarkdown>}
                     </div>
                 </div>
             </div>

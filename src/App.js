@@ -14,6 +14,8 @@ import BioPage from "./pages/BioPage";
 import ClassRosterPage from "./pages/ClassRosterPage"
 import SearchResults from "./pages/SearchResults";
 import LessonLinksPage from './pages/LessonLinksPage';
+import Questionnaires from "./pages/Questionnaires";
+import QuestionnaireEdit from "./pages/QuestionnaireEdit";
 
 function App() {
 
@@ -34,6 +36,9 @@ function App() {
                         <Route path={"/class-roster"} element={<ClassRosterPage />}/>
                         <Route path={"/search/:keyword"} element={<SearchResults />}/>
                         <Route path={"/lesson-links"} element= {<LessonLinksPage />}/>
+                        <Route path={"/questionnaires"} element= {<Questionnaires />}/>
+
+                        <Route path={"/questionnaireEdit/:questionnaireID"} element= {<QuestionnaireEdit />}/>
                     </Route>
                 </Routes>
             </DayProvider></AuthProvider>
