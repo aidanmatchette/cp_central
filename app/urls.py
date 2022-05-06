@@ -2,10 +2,9 @@ from django.urls import path, include
 from .views import UserViewSet, signup, all_choices, TopicViewSet, LessonLinkViewSet, VoteViewSet, LessonViewSet,\
     FeedbackViewSet, ActivityViewSet, ActivityGroupViewSet, FilledQuestionnaireViewSet, QuestionnaireViewSet, \
     AppointmentViewSet, UserLinkViewSet, roster, super_info, instructor_checkin, CohortViewSet, student_landing, search, create_random_groups, \
-    search, create_random_groups, QuestionViewSet, QuestionOptionViewSet
+    search, create_random_groups, QuestionViewSet, QuestionOptionViewSet, refresh_lesson
 from rest_framework_simplejwt.views import TokenRefreshView, TokenObtainPairView
 from rest_framework.routers import DefaultRouter
-
 
 r = DefaultRouter()
 r.register(r'user', UserViewSet, basename="user")
@@ -37,5 +36,5 @@ urlpatterns = [
     path('instructor/checkin/', instructor_checkin, name='instructor_checkin'),
     path('student/landing/', student_landing, name='student_landing'),
     path('search/', search, name='search'),
-    # path('refresh_lesson/', refresh_lesson, name="refresh_lesson")
+    path('refresh_lesson/', refresh_lesson, name="refresh_lesson")
 ]
