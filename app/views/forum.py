@@ -17,6 +17,18 @@ class ForumViewSet(ModelViewSet):
         forums = Forum.objects.get(pk=pk)
         return JsonResponse(ForumSerializer(forums).data)
 
+    @action(methods=['POST'], detail=True)
+    def add_post(self, request, pk=None):  # noqa
+        my_forum = Forum.objects.get(pk=pk)
+        post = ForumPost(
+            forum=my_forum,
+            title=request.data['title'],
+            body=request.data['body'],
+            originator=request.user
+        )
+        post.save()
+        return JsonResponse(ForumSerializer(my_forum).data)
+
 
 class ForumPostViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]

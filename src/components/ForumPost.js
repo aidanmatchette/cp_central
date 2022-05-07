@@ -12,36 +12,36 @@ export default function ForumPost({post}) {
 
     const addComment = async (e) => {
         e.preventDefault()
-        // let temp = e.target.body.value
         let result = await backend.post(`/api/v1/forum_post/${forumPost.id}/add_comment/`, new FormData(e.target))
-        console.log("commend add", result.data)
         setForumPost(result.data)
     }
 
     return (
-        <form onSubmit={addComment} className={'highlight-teal p-3'}>
-            <Row>
-                <Col xs={3}>{forumPost?.originator?.first_name} {forumPost?.originator?.last_name}</Col>
-                <Col xs={9}><strong>{forumPost?.title}</strong></Col>
-                <Col className={'mt-3'} xs={12}>{forumPost?.body}</Col>
-            </Row>
-            <Row>
-                <Col xs={1}></Col>
-                <Col xs={7}>
-                    <Input name={"body"} fullWidth defaultValue={""}/>
-                </Col>
-                <Col xs={2}>
-                    <Button type={"submit"}>Add Comment</Button>
-                </Col>
-                <Col xs={2}>
-                    <IconButton onClick={() => setExpanded(!expanded)}>
-                        {expanded ? <ExpandLess/> : <ExpandMore/>}
-                        {forumPost?.forum_comments.length}
-                    </IconButton>
-                </Col>
-                {expanded && forumPost?.forum_comments.map((comment) =>
-                    <PostComment key={comment.id} data={comment}/>)}
-            </Row>
-        </form>
+        <Row>
+            <form onSubmit={addComment} className={'highlight-teal'}>
+                <Row>
+                    <Col xs={3}>{forumPost?.originator?.first_name} {forumPost?.originator?.last_name}</Col>
+                    <Col xs={9}><strong>{forumPost?.title}</strong></Col>
+                    <Col className={'mt-3'} xs={12}>{forumPost?.body}</Col>
+                </Row>
+                <Row>
+                    <Col xs={1}></Col>
+                    <Col xs={7}>
+                        <Input name={"body"} fullWidth defaultValue={""}/>
+                    </Col>
+                    <Col xs={2}>
+                        <Button type={"submit"}>Add Comment</Button>
+                    </Col>
+                    <Col xs={2}>
+                        <IconButton onClick={() => setExpanded(!expanded)}>
+                            {expanded ? <ExpandLess/> : <ExpandMore/>}
+                            {forumPost?.forum_comments.length}
+                        </IconButton>
+                    </Col>
+                    {expanded && forumPost?.forum_comments.map((comment) =>
+                        <PostComment key={comment.id} data={comment}/>)}
+                </Row>
+            </form>
+        </Row>
     )
 }

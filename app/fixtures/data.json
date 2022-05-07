@@ -3308,124 +3308,6 @@
     }
   },
   {
-    "model": "app.activity",
-    "pk": 5,
-    "fields": {
-      "group": 1,
-      "name": "Pair Programming",
-      "date": "2022-05-06",
-      "size": 2
-    }
-  },
-  {
-    "model": "app.activity",
-    "pk": 6,
-    "fields": {
-      "group": 1,
-      "name": "Group of 3",
-      "date": "2022-05-06",
-      "size": 3
-    }
-  },
-  {
-    "model": "app.activitygroup",
-    "pk": 20,
-    "fields": {
-      "activity": 5,
-      "group_number": 1,
-      "members": [
-        7,
-        10
-      ]
-    }
-  },
-  {
-    "model": "app.activitygroup",
-    "pk": 21,
-    "fields": {
-      "activity": 5,
-      "group_number": 2,
-      "members": [
-        25,
-        28
-      ]
-    }
-  },
-  {
-    "model": "app.activitygroup",
-    "pk": 22,
-    "fields": {
-      "activity": 5,
-      "group_number": 3,
-      "members": [
-        8,
-        27
-      ]
-    }
-  },
-  {
-    "model": "app.activitygroup",
-    "pk": 23,
-    "fields": {
-      "activity": 5,
-      "group_number": 4,
-      "members": [
-        6,
-        9
-      ]
-    }
-  },
-  {
-    "model": "app.activitygroup",
-    "pk": 24,
-    "fields": {
-      "activity": 5,
-      "group_number": 5,
-      "members": [
-        11
-      ]
-    }
-  },
-  {
-    "model": "app.activitygroup",
-    "pk": 25,
-    "fields": {
-      "activity": 6,
-      "group_number": 1,
-      "members": [
-        9,
-        25,
-        28
-      ]
-    }
-  },
-  {
-    "model": "app.activitygroup",
-    "pk": 26,
-    "fields": {
-      "activity": 6,
-      "group_number": 2,
-      "members": [
-        7,
-        11,
-        27
-      ]
-    }
-  },
-  {
-    "model": "app.activitygroup",
-    "pk": 27,
-    "fields": {
-      "activity": 6,
-      "group_number": 3,
-      "members": [
-        6,
-        8,
-        10
-      ]
-    }
-  },
-  {
     "model": "app.cohort",
     "pk": 1,
     "fields": {
@@ -3468,6 +3350,227 @@
         "student_wiki": "https://docs.google.com/spreadsheets/d/1nX1ylt8AOWVnwZ5v-naN7K2bfhlfZm8TRzepOuXdqWw/edit#gid=0"
       },
       "calendar_key": null
+    }
+  },
+  {
+    "model": "app.forum",
+    "pk": 1,
+    "fields": {
+      "name": "Logic/Algo"
+    }
+  },
+  {
+    "model": "app.forum",
+    "pk": 2,
+    "fields": {
+      "name": "IDE"
+    }
+  },
+  {
+    "model": "app.forum",
+    "pk": 3,
+    "fields": {
+      "name": "Javascript/React"
+    }
+  },
+  {
+    "model": "app.forum",
+    "pk": 4,
+    "fields": {
+      "name": "Python/Django"
+    }
+  },
+  {
+    "model": "app.forum",
+    "pk": 5,
+    "fields": {
+      "name": "Networking/API"
+    }
+  },
+  {
+    "model": "app.forum",
+    "pk": 6,
+    "fields": {
+      "name": "Database/ERD"
+    }
+  },
+  {
+    "model": "app.forum",
+    "pk": 7,
+    "fields": {
+      "name": "Scheduling/Calendar"
+    }
+  },
+  {
+    "model": "app.forum",
+    "pk": 8,
+    "fields": {
+      "name": "Styling/CSS"
+    }
+  },
+  {
+    "model": "app.forumpost",
+    "pk": 1,
+    "fields": {
+      "forum": 7,
+      "title": "March Break",
+      "body": "This was probably already discussed at some point, but did we ever find out definitively what the break/assessment schedule was for march? I recall that we have March 17/18 and March 24/25 off of class, but I thought that there was mention of an assessment over one of those weekends? Do we know which weekend if (True)?",
+      "originator": 6,
+      "images": []
+    }
+  },
+  {
+    "model": "app.forumpost",
+    "pk": 2,
+    "fields": {
+      "forum": 8,
+      "title": "CSS File load",
+      "body": "IΓÇÖm trying to troubleshoot why I canΓÇÖt get a CSS file to load in a certain Django project (returns a 404 in the browser console despite Bootstrap working as intended from a different file) and am coming up blank.  Read a lot of documentation and looked at other peopleΓÇÖs code and still canΓÇÖt figure it out, if someone might be able to assist that would be cool.",
+      "originator": 7,
+      "images": []
+    }
+  },
+  {
+    "model": "app.forumpost",
+    "pk": 3,
+    "fields": {
+      "forum": 5,
+      "title": "Bootstrap CDN",
+      "body": "IΓÇÖm a little confused for how we go about using Bootstrap.  Are we using the CDN, and if so IΓÇÖm not really sure how to go about that since we canΓÇÖt add the file to the Static folder.  Would anyone be willing to provide some clarification?  I donΓÇÖt think IΓÇÖm searching the right things on Google.  TIA",
+      "originator": 8,
+      "images": []
+    }
+  },
+  {
+    "model": "app.forumpost",
+    "pk": 4,
+    "fields": {
+      "forum": 8,
+      "title": "CSS styling",
+      "body": "trying to figure out css styling an included block of html. link the stylesheet in the main file that has the include statement or to the file that has the included file block....or something else?",
+      "originator": 8,
+      "images": []
+    }
+  },
+  {
+    "model": "app.forumpost",
+    "pk": 5,
+    "fields": {
+      "forum": 8,
+      "title": "Navbar",
+      "body": "I am trying to get my bootstrap navbar to show in each of my templates using {$ extends 'layout.html'} but I cant seem to  get the navbar to display. Any tips?",
+      "originator": 25,
+      "images": []
+    }
+  },
+  {
+    "model": "app.forumpost",
+    "pk": 6,
+    "fields": {
+      "forum": 4,
+      "title": "see code",
+      "body": "def staff_detail(request, employee_id):\r\n    employee = School.find_staff_by_id(employee_id)\r\n    return render(request, 'pages/staff_detail.html', {'staff_detail': employee})",
+      "originator": 9,
+      "images": []
+    }
+  },
+  {
+    "model": "app.forumcomment",
+    "pk": 1,
+    "fields": {
+      "post": 4,
+      "originator": 12,
+      "body": "I think it would be best to have the css in the main file/layout file.",
+      "accepted_answer": true,
+      "images": []
+    }
+  },
+  {
+    "model": "app.forumcomment",
+    "pk": 2,
+    "fields": {
+      "post": 4,
+      "originator": 9,
+      "body": "I believe that it would be linked in the file that is being included, though extends would be more applicable since its intended for the layout of every page.",
+      "accepted_answer": false,
+      "images": []
+    }
+  },
+  {
+    "model": "app.forumcomment",
+    "pk": 3,
+    "fields": {
+      "post": 5,
+      "originator": 2,
+      "body": "try extends (plural)",
+      "accepted_answer": false,
+      "images": []
+    }
+  },
+  {
+    "model": "app.forumcomment",
+    "pk": 4,
+    "fields": {
+      "post": 5,
+      "originator": 25,
+      "body": "sorry had a typo, I do have extends in my code.",
+      "accepted_answer": false,
+      "images": []
+    }
+  },
+  {
+    "model": "app.forumcomment",
+    "pk": 5,
+    "fields": {
+      "post": 5,
+      "originator": 8,
+      "body": "Could your layout.html be nested within a pages folder? for mines I had to put pages/layout.html",
+      "accepted_answer": false,
+      "images": []
+    }
+  },
+  {
+    "model": "app.forumcomment",
+    "pk": 6,
+    "fields": {
+      "post": 5,
+      "originator": 8,
+      "body": "also, the formatting should be  {% extends \"page\" %}",
+      "accepted_answer": false,
+      "images": []
+    }
+  },
+  {
+    "model": "app.forumcomment",
+    "pk": 7,
+    "fields": {
+      "post": 5,
+      "originator": 25,
+      "body": "I added {% extends 'online_store/layout.html'%}, still cannot get the nav bar to display",
+      "accepted_answer": false,
+      "images": []
+    }
+  },
+  {
+    "model": "app.forumcomment",
+    "pk": 8,
+    "fields": {
+      "post": 5,
+      "originator": 2,
+      "body": "Problem: I had my navbar.html extending from layout.html. This caused the layout to never display the navbar.\r\nSolution: I put {% include 'navbar.htm' %} in the body of the layout.html. This makes it so every page that uses the \"main\" markup in layout.html will include the navbar.\r\n(just for reference, his layout.html item here is his \"base template\" ...i.e. the template that all other pages will use)",
+      "accepted_answer": true,
+      "images": []
+    }
+  },
+  {
+    "model": "app.forumcomment",
+    "pk": 9,
+    "fields": {
+      "post": 6,
+      "originator": 2,
+      "body": "I'm unavailable to drop in at the moment but question for you.... is find_staff_by_id() a class method or instance method?",
+      "accepted_answer": true,
+      "images": []
     }
   },
   {
@@ -4568,6 +4671,17 @@
       "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTcxMjExMywiaWF0IjoxNjUxOTM2MTEzLCJqdGkiOiI3YjBmOTE2MGJkMjQ0OTdhOTQ3YzMyMDViMDMxYTgyYSIsInVzZXJfaWQiOjExfQ.c3aeLnFLBGNmDhY0i2pyttynVq8ynLp7Kip8ZnCm1tc",
       "created_at": "2022-05-07T15:08:33.424Z",
       "expires_at": "2022-08-05T15:08:33Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 101,
+    "fields": {
+      "user": 28,
+      "jti": "26f04f9909754bea8672c737184b69c1",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTczMTQwNSwiaWF0IjoxNjUxOTU1NDA1LCJqdGkiOiIyNmYwNGY5OTA5NzU0YmVhODY3MmM3MzcxODRiNjljMSIsInVzZXJfaWQiOjI4fQ.7oLvrQNwizU1bj_c6idxuVytLjH0M9n1EGqvGJwPYYg",
+      "created_at": "2022-05-07T20:30:05.060Z",
+      "expires_at": "2022-08-05T20:30:05Z"
     }
   }
 ]
