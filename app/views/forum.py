@@ -12,11 +12,20 @@ class ForumViewSet(ModelViewSet):
     queryset = Forum.objects.all()
     serializer_class = ForumSerializerBase
 
+    @action(methods=['GET'], detail=True)
+    def posts(self, request, pk=None):  # noqa
+        forums = Forum.objects.get(pk=pk)
+        return JsonResponse(ForumSerializer(forums).data)
+
 
 class ForumPostViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
     queryset = ForumPost.objects.all()
     serializer_class = ForumPostSerializerBase
+
+    @action(methods=['POST'], detail=True)
+    def add_comment(self, request, pk=None):  # noqa
+        return JsonResponse()
 
 
 class ForumCommentViewSet(ModelViewSet):

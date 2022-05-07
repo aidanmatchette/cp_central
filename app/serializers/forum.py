@@ -27,16 +27,16 @@ class ForumSerializerBase(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class ForumCommentSerializer(ForumCommentSerializerBase):
+    originator = UserSerializer()
+    images = ForumImageSerializer(many=True)
+
+
 class ForumPostSerializer(ForumPostSerializerBase):
     forum = ForumSerializerBase()
     originator = UserSerializer()
     images = ForumImageSerializer(many=True)
-
-
-class ForumCommentSerializer(ForumCommentSerializerBase):
-    post = ForumPostSerializer()
-    originator = UserSerializer()
-    images = ForumImageSerializer(many=True)
+    forum_comments = ForumCommentSerializer(many=True)
 
 
 class ForumSerializer(ForumSerializerBase):

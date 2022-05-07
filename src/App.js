@@ -19,6 +19,7 @@ import QuestionnaireEdit from "./pages/QuestionnaireEdit";
 import QuestionnaireFill from "./pages/QuestionnaireFill";
 import Retro from "./pages/Retro";
 import Forum from "./pages/Forum";
+import ForumTopic from "./pages/ForumTopic";
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
                         <Route path={"/lesson-links"} element={<LessonLinksPage/>}/>
                         <Route path={"/questionnaires"} element={<Questionnaires/>}/>
                         <Route path={"/forum"} element={<Forum/>}/>
+                        <Route path={"/forumTopic/:topicID"} element={<ForumTopic/>}/>
                         <Route path={"/retro"} element={<Retro/>}/>
                         <Route path={"/questionnaireFill/:questionnaireID"} element={<QuestionnaireFill/>}/>
                         <Route path={"/questionnaireEdit/:questionnaireID"} element={<QuestionnaireEdit/>}/>
