@@ -1,11 +1,11 @@
-import GoogleCalendar from "../components/GoogleCalendar";
 import { useContext, useEffect, useState } from "react";
 import { DayContext } from "../context/DayProvider";
-import RandomGroupGenerator from "../components/InstructorComponents/RandomGroupGenerator/RandomGroupGenerator";
+import GroupsCard from "../components/InstructorComponents/RandomGroupGenerator/GroupsCard";
 import { Container, Row, Col, Card } from 'react-bootstrap'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { useAxios } from "../utils/useAxios";
+import LessonLinksCard from "../components/InstructorComponents/LessonLinksCard";
 
 function InstructorPage() {
 
@@ -15,8 +15,6 @@ function InstructorPage() {
 
     let lesson = landingRaw ? landingRaw.lessons[0] : null
     let topicID = lesson ? lesson.topic : null
-
-    console.log(landingRaw)
 
     useEffect(() => {
         backend.get(`api/v1/topic/${topicID}`)
@@ -46,25 +44,12 @@ function InstructorPage() {
                                 </Card>
                             </Col>
                             <Col>
-                                <Card className="shadow" border="primary" style={{ height: '100%' }}>
-                                    <h4 className="text-center mt-1">Links</h4>
-                                    <ul>
-                                        {lesson?.lesson_links?.map((link, index) => {
-                                            return (
-                                                <li key={index}><a href={link.url}>{link.description ? link.description : 'No Description'}</a></li>
-                                            )
-                                        })}
-                                    </ul>
-                                </Card>
+                                <LessonLinksCard links={lesson?.lesson_links} />
                             </Col>
                         </Row>
                         <Row style={{ height: '45%', margin: '5%' }}>
                             <Col>
-                                <Card className="shadow" border="primary" style={{ height: '100%' }}>
-                                    <h4 className="text-center mt-1">Widgets</h4>
-                                    <RandomGroupGenerator />
-                                    <GoogleCalendar width={'500px'} height={'500px'} calendarID={''} />
-                                </Card>
+                                <GroupsCard />
                             </Col>
                         </Row>
                     </Col>
@@ -75,6 +60,3 @@ function InstructorPage() {
 }
 
 export default InstructorPage
-
-
-// {landingRaw?.lessons[0].markdown && <ReactMarkdown remarkPlugins={[remarkGfm]}>{landingRaw?.lessons[0].markdown}</ReactMarkdown>}

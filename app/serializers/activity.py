@@ -6,12 +6,17 @@ class SimpleUserSerializer(serializers.ModelSerializer):
         model = User
         fields = ['first_name', 'last_name']
 
+class SimpleActivitySerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Activity
+        fields = ['name']
 
 class ActivityGroupSerializer(serializers.ModelSerializer):
     class Meta:
         model = ActivityGroup
         fields = "__all__"
     members = SimpleUserSerializer(many=True, read_only=True)
+    activity = SimpleActivitySerializer()
 
     ''' overrode this method because I wasn't able to create a group via api call '''
     def create(self, validated_data):

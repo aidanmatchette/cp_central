@@ -1,16 +1,28 @@
 import { FormControl, Button, InputGroup } from 'react-bootstrap'
 
-function GroupSizeInputWithButton(props) {
+function GroupsCreator(props) {
 
-  const { setGroupSize, handleCreateGroups, groupSize } = props
+  const { setGroupSize, handleCreateGroups, groupSize, name, setName } = props
 
 
   return (
-    <div style={{ width: "12rem" }}>
+    <div style={{ width: "90%", display: 'inline-block' }}>
+
       <InputGroup className="m-3">
         <FormControl
           className='form-floating border-secondary'
-          placeholder='SZ'
+          placeholder='Name'
+          aria-label="Name"
+          aria-describedby="basic-addon1"
+          type="text"
+          onChange={(e) => setName(e.target.value)}
+          value={name}
+          style={{ width: '45%' }}
+
+        />
+        <FormControl
+          className='form-floating border-secondary'
+          placeholder='Size'
           aria-label="SZ"
           aria-describedby="basic-addon1"
           type="number"
@@ -31,4 +43,4 @@ function GroupSizeInputWithButton(props) {
   )
 }
 
-export default GroupSizeInputWithButton
+export default GroupsCreator
