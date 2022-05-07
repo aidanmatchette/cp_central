@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from app.models import Feedback, Vote
+from .user import UserSerializer
 
 
 class VoteSerializer(serializers.ModelSerializer):
@@ -13,3 +14,4 @@ class FeedbackSerializer(serializers.ModelSerializer):
         model = Feedback
         fields = "__all__"
     votes = VoteSerializer(many=True)
+    user = UserSerializer()

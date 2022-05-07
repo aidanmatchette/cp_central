@@ -163,3 +163,15 @@
 .other-section::-webkit-scrollbar {
   display: none;
 }
+
+/*Start John's Styling*/
+/***********************************************/
+.highlight-teal {
+  border-radius: 1rem;
+  box-shadow: 5px 5px 5px teal;
+  background-color: lightgrey;
+  margin-top: 1rem!important;
+  padding-inline: 1rem;
+}
+/*End John's Styling*/
+/***********************************************/

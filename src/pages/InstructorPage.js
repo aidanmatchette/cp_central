@@ -49,7 +49,7 @@ function InstructorPage() {
                                 <Card className="shadow" border="primary" style={{ height: '100%' }}>
                                     <h4 className="text-center mt-1">Links</h4>
                                     <ul>
-                                        {lesson.lesson_links.map((link, index) => {
+                                        {lesson?.lesson_links?.map((link, index) => {
                                             return (
                                                 <li key={index}><a href={link.url}>{link.description ? link.description : 'No Description'}</a></li>
                                             )
