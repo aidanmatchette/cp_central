@@ -13,8 +13,9 @@ export default function ForumPost({post}) {
     const addComment = async (e) => {
         e.preventDefault()
         // let temp = e.target.body.value
-        let result = await backend.post(`/api/v1/forum_post/${forumPost.id}/add_comment`, new FormData(e.target))
-        console.log({result})
+        let result = await backend.post(`/api/v1/forum_post/${forumPost.id}/add_comment/`, new FormData(e.target))
+        console.log("commend add", result.data)
+        setForumPost(result.data)
     }
 
     return (

@@ -25,7 +25,14 @@ class ForumPostViewSet(ModelViewSet):
 
     @action(methods=['POST'], detail=True)
     def add_comment(self, request, pk=None):  # noqa
-        return JsonResponse()
+        post = ForumPost.objects.get(pk=pk)
+        comment = ForumComment(
+            post=post,
+            originator=request.user,
+            body=request.data['body']
+        )
+        comment.save()
+        return JsonResponse(ForumPostSerializer(post).data)
 
 
 class ForumCommentViewSet(ModelViewSet):
