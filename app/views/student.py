@@ -25,7 +25,7 @@ def student_landing(request):
         'date': fdate,
         'my_info': UserSerializer(request.user).data,
         'cohort': CohortSerializer(cohort).data,
-        'class_roster': UserSerializer(user.default_group.user_set.all(), many=True).data,
+        'class_roster': UserSerializer(User.objects.filter(default_group=cohort.pk), many=True).data,
         'activity_groups': ActivityGroupSerializer(activity_groups, many=True).data,
         'questionnaires': QuestionnaireSerializer(questionnaires, many=True).data,
         'my_feedback': [],  # TODO implement

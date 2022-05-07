@@ -19,6 +19,7 @@ import {
 import { ThemeProvider } from "@mui/material/styles";
 import theme from "../utils/theme.js";
 import { useAxios } from "../utils/useAxios";
+import RateReviewRoundedIcon from "@mui/icons-material/RateReviewRounded";
 
 function GenerateFeedback() {
   const backend = useAxios();
@@ -56,7 +57,11 @@ function GenerateFeedback() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Button color="secondary" variant="contained" onClick={() => setModalOpen(true)}>New Feedback</Button>
+      <Button variant="outlined" color="secondary" sx={{ width: "80%", mt: 3 }} onClick={() => setModalOpen(true)}>
+        <RateReviewRoundedIcon
+          color="secondary"/>
+        Feedback   
+      </Button>
       <Dialog open={modalOpen} onClose={handleClose}>
         <DialogTitle>Feedback</DialogTitle>
         <DialogContent>
