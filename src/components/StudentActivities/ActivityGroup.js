@@ -15,7 +15,8 @@ function ActivityGroup(props) {
   Only grabs the two most recent groups in the off chance that more than 1 activity is generated in a day
   then filters out null values for if there are 0 or 1 groups 
   */
-  let groups = landingRaw && [landingRaw.activity_groups.pop(), landingRaw.activity_groups.pop()].filter((group) => group)
+  let allGroups = landingRaw ? [...landingRaw.activity_groups] : null
+  let groups = allGroups && [allGroups.pop(), allGroups.pop()].filter((group) => group)
 
   const handleRefresh = () => setDirty(!dirty)
 
@@ -30,7 +31,7 @@ function ActivityGroup(props) {
             ? groups.map((group) => {
               return (
                 <Col>
-                  <h4>Group {group && group.group_number}</h4>
+                  <p><strong>{group.activity.name} / Group {group && group.group_number}</strong></p>
                   {group.members.map((member) => <p>{member.first_name} {member.last_name}</p>)}
                 </Col>
               )
