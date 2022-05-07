@@ -111,15 +111,15 @@ def create_random_groups(request):      # api/roster/randomize
     variables
     '''
     size = int(request.data['group_size'])
-    name = 'Pair Programming' if size == 2 else f'Group of {size}'
-    today_date = datetime.date.today().strftime('%Y-%m-%d')
-
+    name = request.data['name']
+    date = request.data['date']
+    
     '''
     objects
     '''
     group = Group.objects.get(id=request.user.default_group_id)
     students = User.objects.filter(is_staff=False, groups=group) # gets only students
-    activity = Activity.objects.create(name=name, group=group, size=size)
+    activity = Activity.objects.create(name=name, group=group, size=size, date=date)
 
     '''
     gets previously assigned groups and formats them as a list of lists of student ids 
@@ -167,6 +167,5 @@ def create_random_groups(request):      # api/roster/randomize
         new_rando_groups[index].members.set(new_rando_group)
 
     json_data = ActivitySerializer(activity, many=False).data
-    print(f'\n\n\n\n\n------{json_data}------\n\n\n\n\n')
     
     return JsonResponse({'activity': json_data}, status=201, safe=False)
