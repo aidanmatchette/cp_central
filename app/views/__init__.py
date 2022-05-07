@@ -8,5 +8,6 @@ from .instructor import instructor_checkin, refresh_lesson
 from .cohort import CohortViewSet
 from .student import student_landing
 from .search import search
+from .forum import ForumPostViewSet, ForumViewSet, ForumCommentViewSet
 
 

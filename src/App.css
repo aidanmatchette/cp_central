@@ -167,11 +167,17 @@
 /*Start John's Styling*/
 /***********************************************/
 .highlight-teal {
-  border-radius: 1rem;
+  border-radius: 1rem!important;
   box-shadow: 5px 5px 5px teal;
   background-color: lightgrey;
   margin-top: 1rem!important;
   padding-inline: 1rem;
+}
+.comment-top {
+  border-top: solid coral;
+}
+.comment-bottom {
+  border-top: solid coral;
 }
 /*End John's Styling*/
 /***********************************************/

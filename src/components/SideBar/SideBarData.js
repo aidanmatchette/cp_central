@@ -4,7 +4,7 @@ import PeopleAltRoundedIcon from '@mui/icons-material/PeopleAltRounded';
 import PendingActionsRoundedIcon from '@mui/icons-material/PendingActionsRounded';
 import QuestionAnswerRoundedIcon from '@mui/icons-material/QuestionAnswerRounded';
 import ThumbsUpDownIcon from '@mui/icons-material/ThumbsUpDown';
-
+import ForumIcon from '@mui/icons-material/Forum';
 
 const listItems = [
   {
@@ -31,6 +31,11 @@ const listItems = [
     listIcon: <ThumbsUpDownIcon />,
     listText: "Retro Feedback",
     link: "/retro"
+  },
+  {
+    listIcon: <ForumIcon />,
+    listText: "Forums",
+    link: "/forum"
   }
 ];
 const instructorListItems = [
@@ -63,6 +68,11 @@ const instructorListItems = [
     listIcon: <ThumbsUpDownIcon />,
     listText: "Retro Feedback",
     link: "/retro"
+  },
+  {
+    listIcon: <ForumIcon />,
+    listText: "Forums",
+    link: "/forum"
   }
 ];
 export {listItems, instructorListItems}
