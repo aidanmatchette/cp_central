@@ -45,9 +45,11 @@ class UserViewSet(ModelViewSet):  # /api/v1/user/
         student = User.objects.get(pk=self.kwargs['pk'])
         group.user_set.add(student)
         student.metadata = None
+        student.default_group = group
         student.save()
         serializedStudent = UserSerializer(student).data
         return JsonResponse(data={'student' : serializedStudent}, status=204)
+
 
 class UserLinkViewSet(ModelViewSet):  # /api/v1/user_link/
     permission_classes = [IsAuthenticated]

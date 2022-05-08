@@ -4,7 +4,6 @@ import LoginPage from "./pages/LoginPage.js";
 import Signup from "./pages/Signup";
 import { AuthProvider, RequireAuth } from "./context/AuthProvider";
 import HomePage from "./pages/HomePage";
-import AuthHomePage from "./pages/AuthHomePage";
 import NavBar from "./components/NavBar";
 import StudentPage from "./pages/StudentPage.js";
 import InstructorPage from "./pages/InstructorPage.js";
@@ -40,6 +39,8 @@ function App() {
                 path={"/pending-students"}
                 element={<StudentApprovalPage />}
               />
+
+              <Route path={"/biopage"} element={<BioPage />} />
               <Route path={"/biopage/:userID"} element={<BioPage />} />
               <Route path={"/class-roster"} element={<ClassRosterPage />} />
               <Route path={"/search/:keyword"} element={<SearchResults />} />

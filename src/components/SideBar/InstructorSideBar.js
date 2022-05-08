@@ -101,7 +101,7 @@ function SideBar() {
               <ListItemText primary={listItem.listText} />
             </ListItem>
           ))}
-          <ListItem button onClick={() => navigate("/instructorPage")}>
+          <ListItem button onClick={() => navigate("/instructor-dashboard")}>
             <ListItemIcon>
               <AdminPanelSettingsIcon />
             </ListItemIcon>
