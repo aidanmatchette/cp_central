@@ -10,7 +10,7 @@ const listItems = [
   {
     listIcon: <HomeRoundedIcon />,
     listText: "Home",
-    link: "/studentPage"
+    link: "/student-dashboard"
   },
   {
     listIcon: <EventNoteRoundedIcon />,
