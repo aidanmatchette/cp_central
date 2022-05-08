@@ -72,6 +72,7 @@ def roster(request):  # /api/v1/roster/
     return JsonResponse(UserSerializer(output, many=True).data, safe=False, status=200)
 
 
+
 @api_view(['POST', 'GET'])
 def signup(request):  # /api/signup/
     try:
