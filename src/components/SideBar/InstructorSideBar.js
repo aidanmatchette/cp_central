@@ -24,6 +24,7 @@ import { useAxios } from "../../utils/useAxios";
 import RandomPersonGenerator from "../RandomPersonGenerator";
 import GenerateFeedback from "../GenerateFeedback";
 import GoogleCalendar from "../GoogleCalendar";
+import AdminPanelSettingsIcon from "@mui/icons-material/AdminPanelSettings";
 
 function SideBar() {
   const navigate = useNavigate();
@@ -100,7 +101,12 @@ function SideBar() {
               <ListItemText primary={listItem.listText} />
             </ListItem>
           ))}
-
+          <ListItem button onClick={() => navigate("/instructorPage")}>
+            <ListItemIcon>
+              <AdminPanelSettingsIcon />
+            </ListItemIcon>
+            <ListItemText primary={"Instructor Page"} />
+          </ListItem>
           <ListItem button onClick={() => setQuestionOpen(!questionOpen)}>
             <ListItemIcon>
               <QuestionAnswerRoundedIcon />

@@ -7,10 +7,8 @@ import { useAxios } from "../utils/useAxios";
 let DayContext = createContext(null);
 
 function DayProvider({ children }) {
-    const navigate = useNavigate()
     const backend = useAxios()
     const { user } = useContext(AuthContext)
-    const [allChoices, setAllChoices] = useState(null)
     const [isSideBarOpen, setIsSideBarOpen] = useState(false);
     const [landingRaw, setLandingRaw] = useState(null)
     const [date, setDate] = useState(new Date())
@@ -30,21 +28,7 @@ function DayProvider({ children }) {
         loadData().then()
     }, [user, date, dirty])
 
-    const checkChange = async () => {
-        console.log("checking for changes")
-        // TODO implement
-
-    }
-
-    useEffect(() => {
-        // TODO set to true in .env file
-        if (process.env.REACT_APP_USE_POLLING === 'true') {
-            const timer = setInterval(checkChange, 2000)
-            return () => clearInterval(timer)
-        }
-    }, [])
-
-    const contextData = { allChoices, isSideBarOpen, setIsSideBarOpen, date, setDate, landingRaw, setDirty, dirty };
+    const contextData = { isSideBarOpen, setIsSideBarOpen, date, setDate, landingRaw, setDirty, dirty };
 
     // only render after initial load (persist token through page refresh)
     return <DayContext.Provider value={contextData}>{children}</DayContext.Provider>;

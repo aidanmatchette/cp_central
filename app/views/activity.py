@@ -11,6 +11,11 @@ class ActivityViewSet(ModelViewSet):
     queryset = Activity.objects.all()
     serializer_class = ActivitySerializer
 
+    def get_queryset(self):
+        date = self.request.GET["date"] if 'date' in self.request.GET else None
+        if date is not None:
+            return Activity.objects.filter(date=date)
+        return super().get_queryset()
 
 class ActivityGroupViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]

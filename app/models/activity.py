@@ -5,7 +5,7 @@ from app.models import User
 class Activity(models.Model):
     group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name="activities")
     name = models.CharField(max_length=64)
-    date = models.DateField(auto_now_add=True)
+    date = models.DateField()
     size = models.IntegerField()
 
     def __str__(self):

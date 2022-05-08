@@ -6,6 +6,7 @@ class Feedback(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="feedbacks")
     title = models.CharField(max_length=64)
     description = models.TextField()
+    date = models.DateField(auto_now_add=True)
 
     class FeedbackTopic(models.IntegerChoices):
         LESSON_CONTENT = 0
