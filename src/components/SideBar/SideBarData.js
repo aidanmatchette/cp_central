@@ -36,6 +36,11 @@ const listItems = [
     listIcon: <ForumIcon />,
     listText: "Forums",
     link: "/forum"
+  },
+  {
+    listIcon: <ForumIcon />,
+    listText: "My Profile",
+    link: "/biopage"
   }
 ];
 const instructorListItems = [
@@ -73,6 +78,11 @@ const instructorListItems = [
     listIcon: <ForumIcon />,
     listText: "Forums",
     link: "/forum"
+  },
+  {
+    listIcon: <ForumIcon />,
+    listText: "My Profile",
+    link: "/biopage"
   }
 ];
 export { listItems, instructorListItems }
