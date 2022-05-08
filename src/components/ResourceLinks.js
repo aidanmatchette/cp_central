@@ -12,7 +12,7 @@ function ResourceLinks(props) {
     console.log(landingRaw.lessons[0])
   
     try {
-       return landingRaw.lessons.map((info, index) => {
+       return landingRaw.lessons[0].map((info, index) => {
       return (
        <div>
          <h3> Topic: {info.title}</h3>
