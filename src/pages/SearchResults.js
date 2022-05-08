@@ -1,25 +1,25 @@
-import {useNavigate, useParams} from "react-router-dom";
-import {useAxios} from "../utils/useAxios";
-import {useContext, useEffect, useState} from "react";
-import {DayContext} from "../context/DayProvider";
-import {AuthContext} from "../context/AuthProvider";
+import { useNavigate, useParams } from "react-router-dom";
+import { useAxios } from "../utils/useAxios";
+import { useContext, useEffect, useState } from "react";
+import { DayContext } from "../context/DayProvider";
+import { AuthContext } from "../context/AuthProvider";
 
 export default function SearchResults() {
-    const {keyword} = useParams()
-    const {setDate} = useContext(DayContext)
-    const {user} = useContext(AuthContext)
+    const { keyword } = useParams()
+    const { setDate } = useContext(DayContext)
+    const { user } = useContext(AuthContext)
     const [results, setResults] = useState()
     const backend = useAxios()
     const navigate = useNavigate()
 
     useEffect(() => {
-        backend.get('/api/search/', {params: {keyword: keyword}})
+        backend.get('/api/search/', { params: { keyword: keyword } })
             .then((res) => setResults(res.data))
     }, [])
 
     const navigateToLesson = (lesson) => {
         setDate(new Date(lesson.date))
-        navigate('/studentPage')
+        navigate('/student-dashboard')
     }
 
     if (!results) return <h1>no results</h1>
