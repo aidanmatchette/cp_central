@@ -18,6 +18,7 @@ function GroupsCard(props) {
   const [name, setName] = useState('')
 
   let formattedDate = date ? dayjs(date).format('YYYY-MM-DD') : null
+  let { cardStyle } = props
 
   useEffect(() => {
     console.log('formatted ---->', formattedDate)
@@ -48,7 +49,7 @@ function GroupsCard(props) {
 
 
   return (
-    <Card className="shadow" border="primary" style={{ height: '100%' }}>
+    <Card className="shadow" border="primary" style={cardStyle}>
       <h4 className="text-center mt-1">Todays Groups</h4>
       <GroupsCreator
         handleCreateGroups={handleCreateGroups}
