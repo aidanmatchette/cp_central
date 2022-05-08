@@ -15,7 +15,7 @@ const listItems = [
   {
     listIcon: <EventNoteRoundedIcon />,
     listText: "Lecture",
-    link: ""
+    link: "/lecture"
   },
   {
     listIcon: <PeopleAltRoundedIcon />,
@@ -47,7 +47,7 @@ const instructorListItems = [
   {
     listIcon: <EventNoteRoundedIcon />,
     listText: "Lecture",
-    link: ""
+    link: "/lecture"
   },
   {
     listIcon: <PendingActionsRoundedIcon />,
