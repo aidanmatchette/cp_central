@@ -18,7 +18,6 @@ import theme from "../../utils/theme.js";
 import ExpandLessRoundedIcon from "@mui/icons-material/ExpandLessRounded";
 import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
 import QuestionAnswerRoundedIcon from "@mui/icons-material/QuestionAnswerRounded";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import { instructorListItems } from "./SideBarData.js";
 import { useAxios } from "../../utils/useAxios";
 import RandomPersonGenerator from "../RandomPersonGenerator";
@@ -107,31 +106,6 @@ function SideBar() {
             </ListItemIcon>
             <ListItemText primary={"Instructor Page"} />
           </ListItem>
-          <ListItem button onClick={() => setQuestionOpen(!questionOpen)}>
-            <ListItemIcon>
-              <QuestionAnswerRoundedIcon />
-            </ListItemIcon>
-            <ListItemText primary={"Questionnaires"} />
-            {questionOpen ? (
-              <ExpandLessRoundedIcon />
-            ) : (
-              <ExpandMoreRoundedIcon />
-            )}
-          </ListItem>
-          <Box
-            sx={{
-              bgcolor: questionOpen ? "#c2c2c2" : null,
-            }}
-          >
-            <Collapse in={questionOpen} timeout="auto" unmountOnExit>
-              <ListItemButton>
-                <ListItemText primary="Pair Programming" />
-              </ListItemButton>
-              <ListItemButton>
-                <ListItemText primary="All Questionnaires" />
-              </ListItemButton>
-            </Collapse>
-          </Box>
           {/* <List style={menuSideBarContainer}  sx={{justifyContent: 'space-between', alignItems: 'center'}}>  */}
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <GenerateFeedback />
