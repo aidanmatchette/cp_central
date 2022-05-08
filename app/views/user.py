@@ -50,6 +50,7 @@ class UserViewSet(ModelViewSet):  # /api/v1/user/
         serializedStudent = UserSerializer(student).data
         return JsonResponse(data={'student' : serializedStudent}, status=204)
 
+
 class UserLinkViewSet(ModelViewSet):  # /api/v1/user_link/
     permission_classes = [IsAuthenticated]
     queryset = UserLink.objects.all()

@@ -4,7 +4,6 @@ import LoginPage from "./pages/LoginPage.js";
 import Signup from "./pages/Signup";
 import { AuthProvider, RequireAuth } from "./context/AuthProvider";
 import HomePage from "./pages/HomePage";
-import AuthHomePage from "./pages/AuthHomePage";
 import NavBar from "./components/NavBar";
 import StudentPage from "./pages/StudentPage.js";
 import InstructorPage from "./pages/InstructorPage.js";
@@ -34,12 +33,14 @@ function App() {
             <Route path={"/signup"} element={<Signup />} />
             {/* Will redirect to login page if trying to reach any of these pages w/o being authenticated */}
             <Route element={<RequireAuth />}>
-              <Route path={"/student-dashboard"} element={<StudentPage />} />
-              <Route path={"/instructor-dashboard"} element={<InstructorPage />} />
+              <Route path={"/studentPage"} element={<StudentPage />} />
+              <Route path={"/instructorPage"} element={<InstructorPage />} />
               <Route
                 path={"/pending-students"}
                 element={<StudentApprovalPage />}
               />
+
+              <Route path={"/biopage"} element={<BioPage />} />
               <Route path={"/biopage/:userID"} element={<BioPage />} />
               <Route path={"/class-roster"} element={<ClassRosterPage />} />
               <Route path={"/search/:keyword"} element={<SearchResults />} />
