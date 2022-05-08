@@ -25,7 +25,7 @@ function AuthProvider({ children }) {
             if (user.is_staff || user.is_superuser) {
                 navigate('/instructor-dashboard')
             } else {
-                navigate("/student-dashbaord")
+                navigate("/student-dashboard")
             }
         } else {
             alert("Invalid username or password. Please try again or sign up for an account if you do not have one.")
