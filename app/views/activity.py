@@ -26,8 +26,8 @@ class ActivityViewSet(ModelViewSet):
         activity = Activity(
             group=request.user.default_group,
             name=request.data['name'],
-            date=date,
-            size=group_size
+            size=group_size,
+            date=date if date != '' else None
         )
         activity.save()
 

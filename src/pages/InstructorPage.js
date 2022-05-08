@@ -7,6 +7,7 @@ import remarkGfm from 'remark-gfm'
 import { useAxios } from "../utils/useAxios";
 import LessonLinksCard from "../components/InstructorComponents/LessonLinksCard";
 import CohortLinks from "../components/InstructorComponents/CohortLinks";
+import CreateGroup from "../components/InstructorComponents/CreateGroup";
 
 function InstructorPage() {
 
@@ -50,7 +51,8 @@ function InstructorPage() {
                         </Row>
                         <Row style={{ height: '45%', margin: '1%' }}>
                             <Col className="mx-0 p-1">
-                                <GroupsCard cardStyle={{ height: '100%', margin: '1%' }} />
+                                <CreateGroup/>
+                                {/*<GroupsCard cardStyle={{ height: '100%', margin: '1%' }} />*/}
                             </Col>
                         </Row>
                         <Row style={{ margin: '2%' }}>

@@ -179,5 +179,16 @@
 .comment-bottom {
   border-top: solid coral;
 }
+.btn-orange {
+  color: coral!important;
+  background: linear-gradient(90deg, rgba(185,231,255,0.5) 0%, rgba(193,255,197,0.5) 100%);
+  box-shadow: 4px 4px 4px grey;
+  border: 1px solid coral!important;
+}
+.btn-orange:hover{
+  background-color: coral!important;
+  box-shadow: 11px 11px 11px grey;
+  color: black!important;
+}
 /*End John's Styling*/
 /***********************************************/

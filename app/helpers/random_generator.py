@@ -1,13 +1,11 @@
 from django.db.models import Q
 from app.models import ActivityGroup, CheckIn, User
 
-falsy = ['f', 'F', 'false', 'False', "no", "No"]
-
 
 def random_generator(request, date, group_size):
-    only_checked_in = (request.data['only_checked_in'] not in falsy) if 'only_checked_in' in request.data else True
+    only_checked_in = True if 'only_checked_in' in request.data else False
     group_id = request.user.default_group
-    include_staff = (request.data['include_staff'] not in falsy) if 'include_staff' in request.data else False
+    include_staff = True if 'include_staff' in request.data else False
 
     q_group = Q(group_id=group_id)
     q_dgroup = Q(default_group=request.user.default_group)
@@ -41,7 +39,7 @@ def random_generator(request, date, group_size):
             for i in range(group_size - 1):
                 if unmatched:
                     person = unmatched.first()
-                    unmatched.exclude(pk=person.pk)
+                    unmatched = unmatched.exclude(pk=person.pk)
                 else:
                     # TODO/Stretch filter on fewest matches
                     person = queue.order_by("?").first()
