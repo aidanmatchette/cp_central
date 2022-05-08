@@ -1,9 +1,12 @@
+import datetime
+
 from django.http import JsonResponse
 from rest_framework.decorators import action
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.viewsets import ModelViewSet
 from app.helpers import random_generator
 from app.models import Activity, ActivityGroup
+from django.db.models import Q
 from app.serializers import ActivitySerializer, ActivityGroupSerializer
 
 
@@ -13,13 +16,13 @@ class ActivityViewSet(ModelViewSet):
     serializer_class = ActivitySerializer
 
     def get_queryset(self):
-        date = self.request.GET["date"] if 'date' in self.request.GET else None
-        if date is not None:
-            return Activity.objects.filter(date=date)
-        return super().get_queryset()
+        q_group = Q(group=self.request.user.default_group)
+        date = self.request.GET["date"] if 'date' in self.request.GET else datetime.datetime.now().strftime("%Y-%m-%d")
+        q_date = Q(date__isnull=True) | Q(date=date)
+        return Activity.objects.filter(q_group & q_date)
 
     @action(methods=['POST'], detail=False)
-    def random_group(self, request, pk=None):
+    def random_group(self, request, pk=None):  # noqa
         date = request.data['date'] if 'date' in request.data else None
         group_size = int(request.data['group_size']) if 'group_size' in request.data else 2
         final_groups = random_generator(request, date, group_size)

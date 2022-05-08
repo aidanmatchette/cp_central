@@ -190,5 +190,10 @@
   box-shadow: 11px 11px 11px grey;
   color: black!important;
 }
+.list-box {
+  border: 1px solid black;
+  margin-top: 1rem!important;
+}
+
 /*End John's Styling*/
 /***********************************************/
