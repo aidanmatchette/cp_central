@@ -7,7 +7,7 @@ function LecturePage() {
   const { landingRaw } = useContext(DayContext);
 
   return (
-    <div className="readme">
+    <div className="lecture">
       {landingRaw && landingRaw?.lessons[0].markdown && (
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {landingRaw?.lessons[0].markdown}
