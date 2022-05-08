@@ -34,8 +34,8 @@ function App() {
             <Route path={"/signup"} element={<Signup />} />
             {/* Will redirect to login page if trying to reach any of these pages w/o being authenticated */}
             <Route element={<RequireAuth />}>
-              <Route path={"/studentPage"} element={<StudentPage />} />
-              <Route path={"/instructorPage"} element={<InstructorPage />} />
+              <Route path={"/student-dashboard"} element={<StudentPage />} />
+              <Route path={"/instructor-dashboard"} element={<InstructorPage />} />
               <Route
                 path={"/pending-students"}
                 element={<StudentApprovalPage />}

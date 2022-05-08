@@ -10,7 +10,7 @@ const listItems = [
   {
     listIcon: <HomeRoundedIcon />,
     listText: "Home",
-    link: "/StudentPage"
+    link: "/student-dashboard"
   },
   {
     listIcon: <EventNoteRoundedIcon />,
@@ -42,7 +42,7 @@ const instructorListItems = [
   {
     listIcon: <HomeRoundedIcon />,
     listText: "Home",
-    link: "/StudentPage"
+    link: "/instructor-dashboard"
   },
   {
     listIcon: <EventNoteRoundedIcon />,
@@ -75,4 +75,4 @@ const instructorListItems = [
     link: "/forum"
   }
 ];
-export {listItems, instructorListItems}
+export { listItems, instructorListItems }
