@@ -1,12 +1,19 @@
-import GoogleCalendar from "../components/GoogleCalendar";
-import {Button} from "@mui/material";
-import FeedbackIcon from "@mui/icons-material/Feedback";
+import LoginPage from "./LoginPage"
+import { Container, Row, Col, Card } from 'react-bootstrap'
 
 export default function HomePage() {
 
     return (
-        <div>
-            <h1>Put amazing stuff here</h1>
-        </div>
+        <Container>
+            <Row className="align-items-center" style={{ height: '80vh' }}>
+                <Col xs={6} >
+                    <h2>Welcome to <span >Code Platoon Central</span></h2>
+                    <h4 style={{ textAlign: 'right', color: '#11888896' }}>An app built by <em>students</em>, <em>for students</em></h4>
+                </Col>
+                <Col xs={6}>
+                    <LoginPage isOnHomePage={true} />
+                </Col>
+            </Row>
+        </Container >
     )
 } 
