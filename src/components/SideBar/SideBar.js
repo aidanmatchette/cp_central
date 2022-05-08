@@ -121,29 +121,6 @@ function SideBar() {
               </ListItemButton>
             </Collapse>
           </Box>
-
-          <ListItem button onClick={() => setGithubOpen(!githubOpen)}>
-            <ListItemIcon>
-              <GitHubIcon />
-            </ListItemIcon>
-            <ListItemText primary={"GitHub"} />
-            {githubOpen ? <ExpandLessRoundedIcon /> : <ExpandMoreRoundedIcon />}
-          </ListItem>
-          <Box
-            sx={{
-              bgcolor: githubOpen ? "#c2c2c2" : null,
-            }}
-          >
-            <Collapse in={githubOpen} timeout="auto" unmountOnExit>
-              <ListItemButton>
-                <ListItemText primary="Curriculum" />
-              </ListItemButton>
-              <ListItemButton>
-                <ListItemText primary="All Questionnaires" />
-              </ListItemButton>
-            </Collapse>
-          </Box>
-
           {/* <List style={menuSideBarContainer}  sx={{justifyContent: 'space-between', alignItems: 'center'}}>  */}
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <GenerateFeedback />
