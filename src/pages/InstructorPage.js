@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
 import { useAxios } from "../utils/useAxios";
 import LessonLinksCard from "../components/InstructorComponents/LessonLinksCard";
-import CohortLinks from "../components/CohortLinks";
+import CohortLinks from "../components/InstructorComponents/CohortLinks";
 
 function InstructorPage() {
 

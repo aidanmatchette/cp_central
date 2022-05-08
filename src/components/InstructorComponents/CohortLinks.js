@@ -1,7 +1,7 @@
 import { useContext, useState, useEffect } from 'react'
 import { Button, Card, Col, Container, Row, Form, Modal } from 'react-bootstrap'
-import { DayContext } from '../context/DayProvider'
-import { useAxios } from '../utils/useAxios'
+import { DayContext } from '../../context/DayProvider'
+import { useAxios } from '../../utils/useAxios'
 
 function CohortLinks(props) {
 
@@ -61,7 +61,7 @@ function CohortLinks(props) {
                   }
                 </Card.Title>
                 <Card.Body className="px-5">
-                  {links && Object.keys(links).map((name, index) => {
+                  {links ? Object.keys(links).map((name, index) => {
                     let formattedName = name.charAt(0).toUpperCase() + name.replace('_', ' ').slice(1)
                     return (
                       <div key={name + index} className="mb-3">
@@ -72,7 +72,9 @@ function CohortLinks(props) {
                         }
                       </div>
                     )
-                  })}
+                  })
+                    : <p>No links to show</p>
+                  }
                 </Card.Body>
               </Card>
             </Col>

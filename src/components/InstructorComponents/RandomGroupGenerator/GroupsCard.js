@@ -21,10 +21,8 @@ function GroupsCard(props) {
   let { cardStyle } = props
 
   useEffect(() => {
-    console.log('formatted ---->', formattedDate)
     backend.get('api/v1/activity/', { params: { 'date': formattedDate } })
       .then((res) => {
-        console.log(res.data)
         setActivites(res.data)
       })
   }, [formattedDate, dirty])
