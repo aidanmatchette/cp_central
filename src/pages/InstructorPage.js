@@ -25,7 +25,7 @@ function InstructorPage() {
 
     return (
         <>
-            <Container className="d-flex justify-content-center align-items-center" style={{ height: '92vh', width: '100vw' }}>
+            <Container className="d-flex justify-content-center align-items-center" style={{ height: '90vh', width: '100vw' }}>
                 <Row style={{ height: '95%' }}>
                     <Col className="shadow" style={{ width: '45vw', padding: '.5rem', height: '95%', margin: 'auto', overflow: 'scroll', overflowX: 'hidden' }}>
                         {lesson && lesson.markdown
@@ -53,7 +53,7 @@ function InstructorPage() {
                                 <GroupsCard cardStyle={{ height: '100%', margin: '1%' }} />
                             </Col>
                         </Row>
-                        <Row style={{ height: '45%', margin: '2%' }}>
+                        <Row style={{ margin: '2%' }}>
                             <Col className="mx-0 p-1">
                                 <CohortLinks buttonStyle={{ width: '100%' }} />
                             </Col>
