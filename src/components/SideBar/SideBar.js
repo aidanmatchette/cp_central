@@ -96,54 +96,7 @@ function SideBar() {
             </ListItemIcon>
             <ListItemText primary={"Feedback"} />
           </ListItem>
-          <ListItem button onClick={() => setQuestionOpen(!questionOpen)}>
-            <ListItemIcon>
-              <QuestionAnswerRoundedIcon />
-            </ListItemIcon>
-            <ListItemText primary={"Questionnaires"} />
-            {questionOpen ? (
-              <ExpandLessRoundedIcon />
-            ) : (
-              <ExpandMoreRoundedIcon />
-            )}
-          </ListItem>
-          <Box
-            sx={{
-              bgcolor: questionOpen ? "#c2c2c2" : null,
-            }}
-          >
-            <Collapse in={questionOpen} timeout="auto" unmountOnExit>
-              <ListItemButton>
-                <ListItemText primary="Pair Programming" />
-              </ListItemButton>
-              <ListItemButton>
-                <ListItemText primary="All Questionnaires" />
-              </ListItemButton>
-            </Collapse>
-          </Box>
-
-          <ListItem button onClick={() => setGithubOpen(!githubOpen)}>
-            <ListItemIcon>
-              <GitHubIcon />
-            </ListItemIcon>
-            <ListItemText primary={"GitHub"} />
-            {githubOpen ? <ExpandLessRoundedIcon /> : <ExpandMoreRoundedIcon />}
-          </ListItem>
-          <Box
-            sx={{
-              bgcolor: githubOpen ? "#c2c2c2" : null,
-            }}
-          >
-            <Collapse in={githubOpen} timeout="auto" unmountOnExit>
-              <ListItemButton>
-                <ListItemText primary="Curriculum" />
-              </ListItemButton>
-              <ListItemButton>
-                <ListItemText primary="All Questionnaires" />
-              </ListItemButton>
-            </Collapse>
-          </Box>
-
+          
           {/* <List style={menuSideBarContainer}  sx={{justifyContent: 'space-between', alignItems: 'center'}}>  */}
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <GenerateFeedback />

@@ -10,6 +10,7 @@ import { useAxios } from "../utils/useAxios";
 import ActivityGroup from "../components/StudentActivities/ActivityGroup";
 import GenerateFeedback from "../components/GenerateFeedback";
 import ResourceLinks from "../components/ResourceLinks";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 function StudentPage() {
   const { landingRaw, setDirty } = useContext(DayContext);
@@ -44,6 +45,13 @@ function StudentPage() {
             {/* <GoogleCalendar width={'500px'} height={'500px'} calendarID={''}  */}
             <div className="links">
               <h1>LINKS</h1>
+              <Button
+                target="_blank"
+                href="https://github.com/quebecplatoon/curriculum"
+                variant="contained"
+              >
+                {<GitHubIcon sx={{ mr: 1 }} />}Curriculum
+              </Button>
               <Button
                 target="_blank"
                 href="https://calendar.google.com/calendar/u/0/r?cid=c_4lkirg4ugcjlpde4pm7gu4atfo@group.calendar.google.com"
