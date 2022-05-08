@@ -2,10 +2,11 @@ import { Card } from 'react-bootstrap'
 
 function LessonLinksCard(props) {
 
-  let { links } = props
+
+  let { links, cardStyle } = props
 
   return (
-    <Card className="shadow" border="primary" style={{ height: '100%' }}>
+    <Card className="shadow" border="primary" style={cardStyle}>
       <h4 className="text-center mt-1">Links</h4>
       <ul>
         {links

@@ -42,8 +42,8 @@ function NavBar() {
 
   let homePage = token
     ? user.is_staff
-      ? "/instructorPage"
-      : "/studentPage"
+      ? "/instructor-dashboard"
+      : "/student-dashboard"
     : "/login";
 
   const DateButton = forwardRef(({ value, onClick }, ref) => (

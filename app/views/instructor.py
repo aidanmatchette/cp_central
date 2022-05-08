@@ -11,18 +11,18 @@ from app.helpers import get_daily_readme_from_gh
 @api_view(['POST', 'GET'])
 @permission_classes([IsAuthenticated])
 def instructor_checkin(request):  # /api/v1/instructor/checkin/
-    date = request.data['date'] if 'date' in request.data.keys() else datetime.datetime.now()
-    fdate = date.strftime("%Y-%m-%d")
+    date = request.data['date'] if 'date' in request.data.keys() else datetime.datetime.now().strftime("%Y-%m-%d")
+    # fdate = date
     group = request.user.default_group
     prev = CheckIn.objects.filter(date=date, group=group).first()
     if request.method == 'POST':
         if prev:
             return JsonResponse({"status": "Record not created, already exists for date"}, status=200)
-        new_checkin = CheckIn(date=fdate, group=group)
+        new_checkin = CheckIn(date=date, group=group)
         new_checkin.save()
         return JsonResponse({"status": "Checkin created"}, status=200)
     else:
-        checked_in = CheckIn.objects.filter(group=group, date=request.GET['date'])
+        checked_in = CheckIn.objects.filter(group=group, date=date)
         if not checked_in.first():
             return JsonResponse({"checked_in": []})
         ids = CheckinSerializer(checked_in, many=True).data[0]['user']
