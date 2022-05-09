@@ -146,10 +146,11 @@
 #gridTwo-content {
   margin-left: 5px;
 }
-#social-links, .link-list{
+#social-links,
+.link-list {
   color: rgb(32, 32, 32);
 }
-#social-links:hover{
+#social-links:hover {
   color: antiquewhite;
 }
 #markdown {
@@ -170,10 +171,10 @@
 /*Start John's Styling*/
 /***********************************************/
 .highlight-teal {
-  border-radius: 1rem!important;
+  border-radius: 1rem !important;
   box-shadow: 5px 5px 5px teal;
   background-color: lightgrey;
-  margin-top: 1rem!important;
+  margin-top: 1rem !important;
   padding-inline: 1rem;
 }
 .comment-top {
@@ -182,22 +183,37 @@
 .comment-bottom {
   border-top: solid coral;
 }
-.btn-action {
-  color: teal!important;
-  /*background: linear-gradient(90deg, rgba(185,231,255,0.5) 0%, rgba(193,255,197,0.5) 100%);*/
-  background: coral!important;
+.btn-orange {
+  color: coral !important;
+  background: linear-gradient(
+    90deg,
+    rgba(185, 231, 255, 0.5) 0%,
+    rgba(193, 255, 197, 0.5) 100%
+  );
   box-shadow: 4px 4px 4px grey;
-  border: 1px solid teal!important;
+  border: 1px solid coral !important;
 }
-.btn-action:hover{
+.btn-orange:hover {
+  background-color: coral !important;
+  box-shadow: 11px 11px 11px grey;
+  color: black !important;
+}
+.btn-action {
+  color: teal !important;
+  /*background: linear-gradient(90deg, rgba(185,231,255,0.5) 0%, rgba(193,255,197,0.5) 100%);*/
+  background: coral !important;
+  box-shadow: 4px 4px 4px grey;
+  border: 1px solid teal !important;
+}
+.btn-action:hover {
   background-color: #99dc83 !important;
   box-shadow: 11px 11px 11px grey;
-  color: black!important;
+  color: black !important;
   font-weight: bolder;
 }
 .list-box {
   border: 1px solid black;
-  margin-top: 1rem!important;
+  margin-top: 1rem !important;
 }
 .tall-content {
   height: 90vh;
@@ -205,17 +221,20 @@
   overflow: auto;
   padding: 1rem;
 }
-.side-content{
+.side-content {
   margin-left: 2rem;
 }
 .side-content > div > div {
-  border-radius: 20px!important;
+  border-radius: 20px !important;
   width: 90%;
   background-color: #ffd5a4;
   border: 1px solid blue;
-    box-shadow: 4px 4px 4px grey;
-  margin-block: .5rem;
-  padding: .5rem;
+  box-shadow: 4px 4px 4px grey;
+  margin-block: 0.5rem;
+  padding: 3px;
+  box-shadow: 4px 4px 4px grey;
+  margin-block: 0.5rem;
+  padding: 0.5rem;
 }
 .lesson {
   background-color: #a8ccff;
