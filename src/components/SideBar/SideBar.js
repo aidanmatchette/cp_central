@@ -14,10 +14,6 @@ import {
 } from "@mui/material";
 import { styled, ThemeProvider } from "@mui/material/styles";
 import theme from "../../utils/theme.js";
-import ExpandLessRoundedIcon from "@mui/icons-material/ExpandLessRounded";
-import ExpandMoreRoundedIcon from "@mui/icons-material/ExpandMoreRounded";
-import QuestionAnswerRoundedIcon from "@mui/icons-material/QuestionAnswerRounded";
-import GitHubIcon from "@mui/icons-material/GitHub";
 import { listItems } from "./SideBarData.js";
 import RateReviewRoundedIcon from "@mui/icons-material/RateReviewRounded";
 import GenerateFeedback from "../GenerateFeedback";
@@ -96,7 +92,6 @@ function SideBar() {
             </ListItemIcon>
             <ListItemText primary={"Feedback"} />
           </ListItem>
-          
           {/* <List style={menuSideBarContainer}  sx={{justifyContent: 'space-between', alignItems: 'center'}}>  */}
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <GenerateFeedback />
