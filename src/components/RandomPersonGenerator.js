@@ -39,7 +39,7 @@ function RandomPersonGenerator() {
                 setIsModalOpen(true);
             });
     };
-    console.log(randUser);
+    // console.log(randUser);
     return (
         <ThemeProvider theme={theme}>
             <Button

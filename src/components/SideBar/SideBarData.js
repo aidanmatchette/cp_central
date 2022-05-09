@@ -47,7 +47,7 @@ const instructorListItems = [
   {
     listIcon: <HomeRoundedIcon />,
     listText: "Home",
-    link: "/instructorPage"
+    link: "/instructor-dashboard"
   },
   {
     listIcon: <EventNoteRoundedIcon />,

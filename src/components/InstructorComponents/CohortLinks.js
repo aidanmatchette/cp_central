@@ -12,7 +12,7 @@ export default function CohortLinks() {
         const rawLanding = await backend.get('api/student/landing/')
         setLinks(rawLanding.data?.cohort?.metadata)
         setCohort(rawLanding.data?.cohort)
-        console.log("cohort log", rawLanding)
+        // console.log("cohort log", rawLanding)
     }
 
     useEffect(() => {
@@ -21,7 +21,7 @@ export default function CohortLinks() {
 
     const handleSave = async (e) => {
         e.preventDefault()
-        console.log("id", cohort.group.id)
+        // console.log("id", cohort.group.id)
         await backend.patch(`api/v1/cohort/${cohort.group.id}/`, new FormData(e.target))
         await refreshData()
         setShow(false)

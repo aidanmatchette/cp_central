@@ -35,10 +35,14 @@ export default function CreateGroup() {
 
     const addGroup = async (e) => {
         e.preventDefault()
-        let formData = new FormData(e.target)
-        await backend.post('/api/v1/activity/random_group/', formData)
-        await refreshData()
-        setOpenAdd(false)
+        const result = await backend.post('/api/v1/activity/random_group/', new FormData(e.target))
+        if (result.status === 200) {
+            await refreshData()
+            setOpenAdd(false)
+        } else {
+            // TODO make this more user friendly
+            alert("Did you create a group for today and have people checked in?")
+        }
     }
 
     return (<>

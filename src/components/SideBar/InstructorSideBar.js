@@ -11,7 +11,7 @@ import {
   ListItem,
   Button,
   Box,
-  Typography,
+  Typography, Snackbar,
 } from "@mui/material";
 import { styled, ThemeProvider } from "@mui/material/styles";
 import theme from "../../utils/theme.js";
@@ -32,6 +32,8 @@ function SideBar() {
   const [questionOpen, setQuestionOpen] = useState(false);
   const [githubOpen, setGithubOpen] = useState(false);
   const [feedbackOpen, setFeedbackOpen] = useState(false);
+  const [snackBarOpen, setSnackBarOpen] = useState(false)
+  const [snackBarMessage, setSnackBarMessage] = useState("")
 
   const backend = useAxios();
   const handleGenerateCheckin = () => {
@@ -39,6 +41,8 @@ function SideBar() {
     backend.post("/api/instructor/checkin/").then((response) => {
       console.log(response);
       setDirty(true);
+      setSnackBarMessage(response.data.status)
+      setSnackBarOpen(true)
     });
   };
 
@@ -122,6 +126,8 @@ function SideBar() {
             >
               Create Check-In
             </Button>
+
+            <Snackbar open={snackBarOpen} autoHideDuration={3000} message={snackBarMessage}/>
           </Box>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <RandomPersonGenerator />
