@@ -183,34 +183,7 @@
 .comment-bottom {
   border-top: solid coral;
 }
-.btn-orange {
-  color: coral !important;
-  background: linear-gradient(
-    90deg,
-    rgba(185, 231, 255, 0.5) 0%,
-    rgba(193, 255, 197, 0.5) 100%
-  );
-  box-shadow: 4px 4px 4px grey;
-  border: 1px solid coral !important;
-}
-.btn-orange:hover {
-  background-color: coral !important;
-  box-shadow: 11px 11px 11px grey;
-  color: black !important;
-}
-.btn-action {
-  color: teal !important;
-  /*background: linear-gradient(90deg, rgba(185,231,255,0.5) 0%, rgba(193,255,197,0.5) 100%);*/
-  background: coral !important;
-  box-shadow: 4px 4px 4px grey;
-  border: 1px solid teal !important;
-}
-.btn-action:hover {
-  background-color: #99dc83 !important;
-  box-shadow: 11px 11px 11px grey;
-  color: black !important;
-  font-weight: bolder;
-}
+
 .list-box {
   border: 1px solid black;
   margin-top: 1rem !important;
@@ -227,12 +200,13 @@
 .side-content > div > div {
   border-radius: 20px !important;
   width: 90%;
-  background-color: #ffd5a4;
-  border: 1px solid blue;
-  box-shadow: 4px 4px 4px grey;
+  /* background-color: #ffd5a4; */
+  /* background-color: rgba(106, 206, 193, 0.61); */
+  border: 1px solid grey;
+  /* box-shadow: 1px 1px 1px grey; */
   margin-block: 0.5rem;
   padding: 3px;
-  box-shadow: 4px 4px 4px grey;
+  /* box-shadow: 4px 4px 4px grey; */
   margin-block: 0.5rem;
   padding: 0.5rem;
 }
