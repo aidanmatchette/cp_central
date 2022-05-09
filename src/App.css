@@ -226,5 +226,20 @@
 .lesson::-webkit-scrollbar {
   display: none;
 }
+/************ Search Results ***********************************/
+.search-results{
+  margin-inline: 20%;
+  margin-top: 2rem;
+}
+.search-results h2 {
+  background-color: #c8d4f5;
+  text-align: center;
+  border-radius: 1rem;
+  border: 2px solid #8f8f8f;
+}
+h1 {
+  margin-top: 1rem!important;
+  text-align: center;
+}
 /*End John's Styling*/
 /***********************************************/
