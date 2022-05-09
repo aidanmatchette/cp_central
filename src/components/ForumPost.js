@@ -1,14 +1,19 @@
-import {useState} from "react";
+import {useState, useContext} from "react";
 import {Col, Row} from "react-bootstrap";
-import {Button, IconButton, Input} from "@mui/material";
-import {ExpandLess, ExpandMore} from "@mui/icons-material";
+import {Button, IconButton, Input, TextField} from "@mui/material";
+import {ExpandLess, ExpandMore, Edit, Clear, Save} from "@mui/icons-material";
 import PostComment from "./PostComment";
 import {useAxios} from "../utils/useAxios";
+import {AuthContext} from "../context/AuthProvider";
+import {DayProvider} from "../context/DayProvider";
 
-export default function ForumPost({post}) {
+export default function ForumPost({post, dirty, setDirty}) {
+    const {user} = useContext(AuthContext)
     const [expanded, setExpanded] = useState(false)
     const [forumPost, setForumPost] = useState(post)
     const backend = useAxios()
+    const canEdit = (user?.id == forumPost?.originator?.id) || user?.is_superuser
+    const [editField, setEditField] = useState(false)
 
     const addComment = async (e) => {
         e.preventDefault()
@@ -16,14 +21,65 @@ export default function ForumPost({post}) {
         setForumPost(result.data)
     }
 
+    const saveEditPost = (e) => {
+        e.preventDefault()
+        console.log(e)
+        backend.patch(`/api/v1/forum_post/${forumPost.id}/`, new FormData(e.target)).then((res) => {
+            console.log(res)
+            setEditField(false)
+            window.location.reload()
+        })
+    }
+
+    const deletePost = () => {
+        backend.delete(`/api/v1/forum_post/${forumPost.id}/`).then((res) => {
+            console.log(res)
+            window.location.reload()
+        })
+    }
+
+    const renderBody = () => {
+        if (editField) {
+            return (
+                <form onSubmit={ saveEditPost }>
+                    <TextField 
+                        name="body"
+                        multiline
+                        defaultValue={forumPost?.body}
+                        style = {{width: 750}}
+                    />
+                    <IconButton type="submit">
+                        <Save/>
+                    </IconButton>
+                </form>
+                )
+        }
+        return `${forumPost?.body}`
+    }
+
+    const editButtons = () => {
+        return <>
+            <IconButton onClick={() => setEditField(true)}>
+                <Edit/>
+            </IconButton>
+            <IconButton onClick={() => deletePost()}>
+                <Clear/>
+            </IconButton>
+        </>
+    }
+
     return (
-        <Row>
-            <form onSubmit={addComment} className={'highlight-teal'}>
+        <Row className={'highlight-teal'}>
+            
                 <Row>
                     <Col xs={3}>{forumPost?.originator?.first_name} {forumPost?.originator?.last_name}</Col>
-                    <Col xs={9}><strong>{forumPost?.title}</strong></Col>
-                    <Col className={'mt-3'} xs={12}>{forumPost?.body}</Col>
+                    <Col xs={7}><strong>{forumPost?.title}</strong></Col>
+                    <Col xs={2}>
+                        {canEdit && editButtons() }
+                    </Col>
+                    <Col className={'mt-3'} xs={12}>{ renderBody() }</Col>
                 </Row>
+            <form onSubmit={addComment}>
                 <Row>
                     <Col xs={1}></Col>
                     <Col xs={7}>

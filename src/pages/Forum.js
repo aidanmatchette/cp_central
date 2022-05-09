@@ -36,8 +36,8 @@ export default function Forum() {
         <>
             <h1>Forums</h1>
             <List>
-                {forums?.map((forum) =>
-                    <ForumListItem forum={forum}/>
+                {forums?.map((forum, index) =>
+                    <ForumListItem key={index} forum={forum}/>
                 )}
             </List>
         </>

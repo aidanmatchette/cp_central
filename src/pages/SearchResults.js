@@ -47,6 +47,14 @@ export default function SearchResults() {
                     )
                 })}
             </ul>
+                        <h2>Forums</h2>
+            <ul>
+                {results.posts.map((result) => {
+                    return (
+                        <li key={result.id}><a href={result.url}>{result.url}</a></li>
+                    )
+                })}
+            </ul>
         </div>
     )
 }

@@ -35,16 +35,20 @@ export default function CreateGroup() {
 
     const addGroup = async (e) => {
         e.preventDefault()
-        let formData = new FormData(e.target)
-        await backend.post('/api/v1/activity/random_group/', formData)
-        await refreshData()
-        setOpenAdd(false)
+        const result = await backend.post('/api/v1/activity/random_group/', new FormData(e.target))
+        if (result.status === 200) {
+            await refreshData()
+            setOpenAdd(false)
+        } else {
+            // TODO make this more user friendly
+            alert("Did you create a group for today and have people checked in?")
+        }
     }
 
     return (<>
         <Row className="justify-content-end">
-            <Col xs={3}><Button className={'btn-orange'} onClick={() => setOpenAdd(true)}>Add</Button></Col>
-            <Col xs={7}><h4>Groups</h4></Col>
+            <Col xs={12}><h4 className={'text-center'}>Groups</h4></Col>
+            <Col xs={12}><Button fullWidth className={'btn-action'} onClick={() => setOpenAdd(true)}>Add</Button></Col>
         </Row>
 
         <Dialog open={openAdd} onClose={() => setOpenAdd(!openAdd)}>
