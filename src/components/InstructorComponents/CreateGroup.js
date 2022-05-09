@@ -1,30 +1,30 @@
 import {
-    Button,
-    Checkbox,
-    Dialog,
-    DialogActions,
-    DialogContent,
-    FormControlLabel,
-    List,
-    MenuItem,
-    Stack,
-    TextField
+  Button,
+  Checkbox,
+  Dialog,
+  DialogActions,
+  DialogContent,
+  FormControlLabel,
+  List,
+  MenuItem,
+  Stack,
+  TextField,
 } from "@mui/material";
-import {useContext, useEffect, useState} from "react";
+import { useContext, useEffect, useState } from "react";
 import dayjs from "dayjs";
-import {useAxios} from "../../utils/useAxios";
-import {DayContext} from "../../context/DayProvider";
+import { useAxios } from "../../utils/useAxios";
+import { DayContext } from "../../context/DayProvider";
 import ActivityGroupItem from "./ActivityGroupItem";
 import {Col, Row} from "react-bootstrap";
 import {ThemeProvider} from "@mui/material/styles";
 import theme from "../../utils/theme";
 
 export default function CreateGroup() {
-    const [openAdd, setOpenAdd] = useState(false)
-    const {date} = useContext(DayContext)
-    const [activities, setActivities] = useState()
-    const backend = useAxios()
-    const currentDate = dayjs().format("YYYY-MM-DD")
+  const [openAdd, setOpenAdd] = useState(false);
+  const { date } = useContext(DayContext);
+  const [activities, setActivities] = useState();
+  const backend = useAxios();
+  const currentDate = dayjs().format("YYYY-MM-DD");
 
     const refreshData = async () => {
         const params = {params:{date:dayjs(date).format("YYYY-MM-DD")}}
@@ -32,9 +32,9 @@ export default function CreateGroup() {
         setActivities(results.data)
     }
 
-    useEffect(() => {
-        refreshData().then()
-    }, [date])
+  useEffect(() => {
+    refreshData().then();
+  }, [date]);
 
     const addGroup = async (e) => {
         e.preventDefault()
