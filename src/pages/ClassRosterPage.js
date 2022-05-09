@@ -36,12 +36,15 @@ export default function ClassRosterPage() {
     const refreshData = async () => {
         const params = {params: {date: dayjs(date).format("YYYY-MM-DD")}}
         const result = await backend.get('/api/instructor/checkin/', params)
-        console.log(result.data)
         setRoster(result.data.sort(sortFirst));
     }
 
     useEffect(() => {
         refreshData().then()
+        if (process.env.REACT_APP_USE_POLLING === 'true') {
+            const timer = setInterval(refreshData, 3000)
+            return () => clearInterval(timer)
+        }
     }, [date]);
 
     const presentColor = (member) => {
