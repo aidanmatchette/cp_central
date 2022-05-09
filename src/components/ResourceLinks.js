@@ -9,7 +9,7 @@ function ResourceLinks(props) {
   const { landingRaw } = useContext(DayContext)
 
   const renderLessons = () => {
-    console.log(landingRaw?.lessons[0])
+    // console.log(landingRaw?.lessons[0])
   
     try {
        return landingRaw?.lessons[0]?.map((info, index) => {
