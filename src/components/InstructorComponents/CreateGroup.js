@@ -70,7 +70,7 @@ export default function CreateGroup() {
             </form>
         </Dialog>
         <List>
-            {activities?.map((a) => <ActivityGroupItem activity={a} refreshData={refreshData}/>)}
+            {activities?.map((a) => <ActivityGroupItem key={a.id} activity={a} refreshData={refreshData}/>)}
         </List>
     </>)
 }

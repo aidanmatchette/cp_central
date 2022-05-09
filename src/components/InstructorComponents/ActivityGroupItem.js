@@ -22,6 +22,19 @@ export default function ActivityGroupItem({activity, refreshData}) {
         await refreshData()
     }
 
+    const ActivityMember = ({member}) => <ListItem> {member.first_name} {member.last_name} </ListItem>
+
+    const ActivityGroup = ({aGroup}) => {
+        return (
+            <Col xs={4}>
+                <List className={'list-box'}>
+                    {aGroup.members.map((member) =>
+                        <ActivityMember key={member.id} member={member}/>)}
+                </List>
+            </Col>
+        )
+    }
+
     return (<>
         <ListItemButton onClick={() => setOpenEdit(true)}>
             <ListItemText>{activity.size}-{activity.name}</ListItemText>
@@ -29,18 +42,9 @@ export default function ActivityGroupItem({activity, refreshData}) {
         <Dialog open={openEdit} onClose={() => setOpenEdit(false)} fullWidth>
             <DialogContent>
                 <Row>
-                    {activity?.activity_groups?.map((aGroup) => {
-                        return (
-                            <Col xs={4}>
-                                <List className={'list-box'}>
-                                    {aGroup.members.map((member) =>
-                                        <ListItem>
-                                            {member.first_name} {member.last_name}
-                                        </ListItem>)}
-                                </List>
-                            </Col>
-                        )
-                    })}
+                    {activity?.activity_groups?.map((aGroup) =>
+                        <ActivityGroup key={aGroup.id} aGroup={aGroup}/>
+                    )}
                 </Row>
             </DialogContent>
             <DialogActions>

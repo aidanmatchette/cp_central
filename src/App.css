@@ -194,6 +194,21 @@
   border: 1px solid black;
   margin-top: 1rem!important;
 }
-
+.tall-content {
+  height: 90vh;
+  border-radius: 1rem;
+  overflow: auto;
+  padding: 1rem;
+}
+.side-content{
+  margin-left: 2rem;
+}
+.side-content > div > div {
+  border-radius: 2px;
+  border: 1px solid blue;
+    box-shadow: 4px 4px 4px grey;
+  margin-block: .5rem;
+  padding: 3px;
+}
 /*End John's Styling*/
 /***********************************************/
