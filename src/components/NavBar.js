@@ -59,108 +59,109 @@ function NavBar() {
     </ThemeProvider>
   ));
   return (
-    <ThemeProvider theme={theme}>
-      <AppBar color="transparent" position="static">
-        {/* <Container fullWidth> */}
-        <Toolbar
-          sx={{
-            display: "flex",
-            width: "80%",
-            justifyContent: "space-between",
-            margin: "auto",
-          }}
-        >
-          {user && (
-            <IconButton onClick={toggleSideBar}>
-              <MenuRoundedIcon />
-            </IconButton>
-          )}
-          <img
-            src="./LongCPCLogo.png"
-            width="175px"
-            alt="cp-logo"
-            onClick={() => navigate(homePage)}
-          />
+    !token ? null :
+      <ThemeProvider theme={theme}>
+        <AppBar color="transparent" position="static">
+          {/* <Container fullWidth> */}
+          <Toolbar
+            sx={{
+              display: "flex",
+              width: "80%",
+              justifyContent: "space-between",
+              margin: "auto",
+            }}
+          >
+            {user && (
+              <IconButton onClick={toggleSideBar}>
+                <MenuRoundedIcon />
+              </IconButton>
+            )}
+            <img
+              src="./LongCPCLogo.png"
+              width="175px"
+              alt="cp-logo"
+              onClick={() => navigate(homePage)}
+            />
 
-          <Box
-            sx={{
-              display: "flex",
-              marginLeft: 2,
-              flexGrow: 1,
-            }}
-          >
-            <form className="search-form" onSubmit={doSearch}>
-              <FormControl fullWidth sx={{ m: 1, flexGrow: 1 }}>
-                <InputLabel htmlFor="cp-search">Search</InputLabel>
-                <OutlinedInput
-                  size="small"
-                  fullWidth
-                  id="outlined-adornment-amount"
-                  name="keyword"
-                  // value={}
-                  // onChange={handleChange('amount')}
-                  startAdornment={
-                    <InputAdornment position="start">
-                      <SearchRoundedIcon />
-                    </InputAdornment>
-                  }
-                  label="Search"
-                />
-              </FormControl>
-            </form>
-          </Box>
-          <Box sx={{ flexGrow: 1, justifyContent: "center", display: "flex" }}>
-            <Box sx={{ display: "flex" }}>
-              <DatePicker
-                selected={date}
-                onChange={(newDate) => setDate(newDate)}
-                customInput={<DateButton />}
-              />
+            <Box
+              sx={{
+                display: "flex",
+                marginLeft: 2,
+                flexGrow: 1,
+              }}
+            >
+              <form className="search-form" onSubmit={doSearch}>
+                <FormControl fullWidth sx={{ m: 1, flexGrow: 1 }}>
+                  <InputLabel htmlFor="cp-search">Search</InputLabel>
+                  <OutlinedInput
+                    size="small"
+                    fullWidth
+                    id="outlined-adornment-amount"
+                    name="keyword"
+                    // value={}
+                    // onChange={handleChange('amount')}
+                    startAdornment={
+                      <InputAdornment position="start">
+                        <SearchRoundedIcon />
+                      </InputAdornment>
+                    }
+                    label="Search"
+                  />
+                </FormControl>
+              </form>
             </Box>
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "flex-end",
-              marginRight: "5px",
-            }}
-          >
-            {!token && (
-              <Button
-                onClick={() => navigate("/login")}
-                variant="contained"
-                size="large"
-              >
-                LOG IN
-              </Button>
-            )}
-          </Box>
-          <Box
-            sx={{
-              display: "flex",
-              justifyContent: "flex-end",
-              marginRight: "5px",
-            }}
-          >
-            {token && (
-              <Button
-                onClick={signout}
-                variant="contained"
-                color="secondary"
-                size="large"
-                sx={{ justifyContent: "flex-end" }}
-              >
-                Log Out
-              </Button>
-            )}
-          </Box>
-          <Drawer open={isSideBarOpen} anchor="left" onClose={toggleSideBar}>
-            {user?.is_staff ? <InstructorSideBar /> : <SideBar />}
-          </Drawer>
-        </Toolbar>
-        {/*</Container> */}
-      </AppBar>
-    </ThemeProvider>
+            <Box sx={{ flexGrow: 1, justifyContent: "center", display: "flex" }}>
+              <Box sx={{ display: "flex" }}>
+                <DatePicker
+                  selected={date}
+                  onChange={(newDate) => setDate(newDate)}
+                  customInput={<DateButton />}
+                />
+              </Box>
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "flex-end",
+                marginRight: "5px",
+              }}
+            >
+              {!token && (
+                <Button
+                  onClick={() => navigate("/login")}
+                  variant="contained"
+                  size="large"
+                >
+                  LOG IN
+                </Button>
+              )}
+            </Box>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "flex-end",
+                marginRight: "5px",
+              }}
+            >
+              {token && (
+                <Button
+                  onClick={signout}
+                  variant="contained"
+                  color="secondary"
+                  size="large"
+                  sx={{ justifyContent: "flex-end" }}
+                >
+                  Log Out
+                </Button>
+              )}
+            </Box>
+            <Drawer open={isSideBarOpen} anchor="left" onClose={toggleSideBar}>
+              {user?.is_staff ? <InstructorSideBar /> : <SideBar />}
+            </Drawer>
+          </Toolbar>
+          {/*</Container> */}
+        </AppBar>
+      </ThemeProvider>
   );
 }
 export default NavBar;
