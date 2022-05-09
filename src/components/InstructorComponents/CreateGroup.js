@@ -16,6 +16,8 @@ import {useAxios} from "../../utils/useAxios";
 import {DayContext} from "../../context/DayProvider";
 import ActivityGroupItem from "./ActivityGroupItem";
 import {Col, Row} from "react-bootstrap";
+import {ThemeProvider} from "@mui/material/styles";
+import theme from "../../utils/theme";
 
 export default function CreateGroup() {
     const [openAdd, setOpenAdd] = useState(false)
@@ -25,12 +27,14 @@ export default function CreateGroup() {
     const currentDate = dayjs().format("YYYY-MM-DD")
 
     const refreshData = async () => {
-        const results = await backend.get('/api/v1/activity/')
+        const params = {params:{date:dayjs(date).format("YYYY-MM-DD")}}
+        const results = await backend.get('/api/v1/activity/', params)
         setActivities(results.data)
     }
 
     useEffect(() => {
         refreshData().then()
+        console.log('refresh gr')
     }, [date])
 
     const addGroup = async (e) => {
@@ -45,36 +49,45 @@ export default function CreateGroup() {
         }
     }
 
-    return (<>
-        <Row className="justify-content-end">
-            <Col xs={12}><h4 className={'text-center'}>Groups</h4></Col>
-            <Col xs={12}><Button fullWidth className={'btn-action'} onClick={() => setOpenAdd(true)}>Add</Button></Col>
-        </Row>
+    return (
+        <ThemeProvider theme={theme}>
+            <Row className="justify-content-end">
+                <Col xs={12}><h4 className={'text-center'}>Groups</h4></Col>
+                <Col xs={12}>
+                    <Button fullWidth
+                            color="secondary"
+                            variant="contained"
+                            onClick={() => setOpenAdd(true)}>
+                        Add
+                    </Button>
+                </Col>
+            </Row>
 
-        <Dialog open={openAdd} onClose={() => setOpenAdd(!openAdd)}>
-            <form onSubmit={addGroup}>
-                <DialogContent>
-                    <Stack spacing={2}>
-                        <TextField name={'name'} defaultValue={`Pairs ${dayjs().format("MM-DD")}`}
-                                   label={"Activity Name"}/>
-                        <TextField name={'date'} defaultValue={currentDate} label={"Date"}/>
-                        <TextField select defaultValue={2} label={"Group Size"} name={'group_size'}>
-                            {[2, 3, 4, 5, 6].map((i) => <MenuItem key={i} value={i}>{i}</MenuItem>)}
-                        </TextField>
-                        <FormControlLabel control={<Checkbox name={'only_checked_in'} defaultChecked/>}
-                                          label={"Only checked in"}/>
-                        <FormControlLabel control={<Checkbox name={'include_staff'}/>}
-                                          label={"Include Staff"}/>
-                    </Stack>
-                </DialogContent>
-                <DialogActions>
-                    <Button type={"submit"}>Create</Button>
-                    <Button onClick={() => setOpenAdd(false)}>Cancel</Button>
-                </DialogActions>
-            </form>
-        </Dialog>
-        <List>
-            {activities?.map((a) => <ActivityGroupItem key={a.id} activity={a} refreshData={refreshData}/>)}
-        </List>
-    </>)
+            <Dialog open={openAdd} onClose={() => setOpenAdd(!openAdd)}>
+                <form onSubmit={addGroup}>
+                    <DialogContent>
+                        <Stack spacing={2}>
+                            <TextField name={'name'} defaultValue={`Pairs ${dayjs().format("MM-DD")}`}
+                                       label={"Activity Name"}/>
+                            <TextField name={'date'} defaultValue={currentDate} label={"Date"}/>
+                            <TextField select defaultValue={2} label={"Group Size"} name={'group_size'}>
+                                {[2, 3, 4, 5, 6].map((i) => <MenuItem key={i} value={i}>{i}</MenuItem>)}
+                            </TextField>
+                            <FormControlLabel control={<Checkbox name={'only_checked_in'} defaultChecked/>}
+                                              label={"Only checked in"}/>
+                            <FormControlLabel control={<Checkbox name={'include_staff'}/>}
+                                              label={"Include Staff"}/>
+                        </Stack>
+                    </DialogContent>
+                    <DialogActions>
+                        <Button type={"submit"}>Create</Button>
+                        <Button onClick={() => setOpenAdd(false)}>Cancel</Button>
+                    </DialogActions>
+                </form>
+            </Dialog>
+            <List>
+                {activities?.map((a) => <ActivityGroupItem key={a.id} activity={a} refreshData={refreshData}/>)}
+            </List>
+        </ThemeProvider>
+    )
 }
