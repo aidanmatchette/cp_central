@@ -16,6 +16,9 @@ import { useAxios } from "../../utils/useAxios";
 import { DayContext } from "../../context/DayProvider";
 import ActivityGroupItem from "./ActivityGroupItem";
 import { Col, Row } from "react-bootstrap";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "../../utils/theme.js";
+
 
 export default function CreateGroup() {
   const [openAdd, setOpenAdd] = useState(false);
@@ -55,15 +58,15 @@ export default function CreateGroup() {
           <h4 className={"text-center"}>Groups</h4>
         </Col>
         <Col xs={12}>
-          <Button
+          <ThemeProvider theme={theme}><Button
             variant="contained"
-            sx={{ backgroundColor: "#ff5500" }}
+            color="secondary" 
             fullWidth
             className={"btn-action"}
             onClick={() => setOpenAdd(true)}
           >
             Add
-          </Button>
+          </Button></ThemeProvider>
         </Col>
       </Row>
 
