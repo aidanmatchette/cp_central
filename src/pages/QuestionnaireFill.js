@@ -11,7 +11,7 @@ export default function QuestionnaireFill() {
     useEffect(() => {
         backend.post(`/api/v1/filled_questionnaire/start/`, {questionnaireID: questionnaireID})
             .then((res) => {
-                console.log("start", res.data)
+                // console.log("start", res.data)
                 setFillQuestion(res.data)
             })
     }, [questionnaireID])

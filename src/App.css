@@ -1,243 +1,117 @@
-/*.days-topics {*/
-/*  display: flex;*/
-/*  flex-grow: 1;*/
-/*  margin-left: 1rem;*/
-/*  height: 20rem;*/
-/*  text-align: center;*/
-/*  background-color: rgba(143, 171, 250, 0.6);*/
-/*  border-radius: 1rem;*/
-/*  margin-top: 1rem;*/
-/*  justify-content: center;*/
-/*}*/
-.search-form {
-  flex-grow: 1;
+:root {
+    --section: #8cb3da;
+    --sectionAlt: #f6d2bc;
+    --button: coral;
+    --buttonAlt: teal;
+    --shadow: 5px 5px 5px teal;
+    --shadowBig: 15px 15px 15px teal;
 }
-/*.topics-title {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  justify-content: space-evenly;*/
-/*}*/
-/*.my-groups {*/
-/*  display: flex;*/
-/*  flex-grow: 1;*/
-/*  margin-left: 1rem;*/
-/*  margin-right: 1rem;*/
-/*  height: 20rem;*/
-/*  text-align: center;*/
-/*  background-color: rgba(143, 171, 250, 0.6);*/
-/*  border-radius: 1rem;*/
-/*  margin-top: 1rem;*/
-/*  justify-content: center;*/
-/*}*/
-/*.smaller-flex-container {*/
-/*  display: flex;*/
-/*  justify-content: center;*/
-/*}*/
-/*.student-landing-container {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  justify-content: space-evenly;*/
-/*}*/
-/*.google-calander {*/
-/*  margin-top: 1rem;*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  justify-content: space-between;*/
-/*}*/
-.lecture {
-  padding: 2rem;
-}
-/*.links {*/
-/*  width: 25rem;*/
-/*  background-color: rgba(143, 171, 250, 0.6);*/
-/*  height: 9.5rem;*/
-/*  border-radius: 1rem;*/
-/*  margin-left: 1rem;*/
-/*  padding: 1rem;*/
-/*  text-align: center;*/
-/*  justify-content: center;*/
-/*}*/
-/*.lecture-readme {*/
-/*  min-height: 30rem;*/
-/*  max-height: 80rem;*/
-/*  overflow-y: auto;*/
-/*  background-color: rgba(17, 136, 136, 0.59);*/
-/*  border-radius: 1rem;*/
-/*  margin-top: 1rem;*/
-/*  padding: 0.5rem;*/
-/*  margin-right: 1rem;*/
-/*  margin-left: 1rem;*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  margin-bottom: 2rem;*/
-/*  -ms-overflow-style: none;*/
-/*  scrollbar-width: none;*/
-/*}*/
-/*.readme-title {*/
-/*  font-weight: 500;*/
-/*  text-align: center;*/
-/*  background-color: rgba(17, 136, 136, 0.8);*/
-/*  border-radius: 1rem;*/
-/*}*/
 
-/*.lecture-readme::-webkit-scrollbar {*/
-/*  display: none;*/
-/*}*/
-/*.todays-info {*/
-/*  display: flex;*/
-/*  flex-direction: column;*/
-/*  margin-left: 1rem;*/
-/*}*/
-/*.btn-custom-orange {*/
-/*  background-color: #ff500f;*/
-/*  color: white;*/
-/*}*/
-.link-list {
-  list-style: inside;
+h1 {
+    margin-top: 1rem !important;
 }
-/*#gridOne {*/
-/*  background-color: rgb(203, 227, 228);*/
-/*  !*margin-right: 30px;*!*/
-/*  font-family: "Courier New", monospace;*/
-/*  border-radius: 2rem;*/
-/*  !* padding-bottom: 30px; *!*/
-/*}*/
-/*.gridOne-content {*/
-/*  background-color: cadetblue;*/
-/*  !*margin: 15px;*!*/
-/*  !*margin-left: 5px;*!*/
-/*  border-radius: 2rem;*/
-/*  padding: 1rem;*/
-/*  margin: 1rem;*/
-/*  !*border-bottom-left-radius: 25px;*!*/
-/*  !*border-bottom-right-radius: 25px;*!*/
-/*  display: flex;*/
-/*  text-align: left;*/
-/*}*/
-/*#content-items {*/
-/*  margin-left: 10px;*/
-/*}*/
-/*#gridOne-input {*/
-/*  background-color: rgb(203, 227, 228);*/
-/*}*/
-/*#gridTwo {*/
-/*  background-color: rgb(243, 182, 160);*/
-/*  font-family: "Courier New", monospace;*/
-/*  border-radius: 5%;*/
-/*}*/
-/*#gridTwo-form,*/
-/*#metadata,*/
-/*#markdown {*/
-/*  background-color: coral;*/
-/*}*/
-/*#connect {*/
-/*  margin-top: 10px;*/
-/*}*/
-/*#user-links {*/
-/*  margin-bottom: 10px;*/
-/*}*/
-/*#metadata,*/
-/*#markdown {*/
-/*  margin-right: 15px;*/
-/*  border-radius: 2rem;*/
-/*  padding: 2rem;*/
-/*  margin-bottom: 2rem;*/
-/*}*/
-/*#gridTwo-content {*/
-/*  margin-left: 5px;*/
-/*}*/
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+.search-form {
+    flex-grow: 1;
+}
+
+.lecture {
+    padding: 2rem;
+}
+
+
+.link-list {
+    list-style: inside;
+}
+
+
 #social-links,
 .link-list {
-  color: rgb(32, 32, 32);
+    color: rgb(32, 32, 32);
 }
+
 #social-links:hover {
-  color: antiquewhite;
+    color: antiquewhite;
 }
-/*#markdown {*/
-/*  border-radius: 2rem;*/
-/*  padding: 2rem;*/
-/*  margin-bottom: 2rem;*/
-/*}*/
-/*.other-section {*/
-/*  overflow-y: auto;*/
-/*  background-color: rgba(255, 85, 0, 0.3);*/
-/*  -ms-overflow-style: none;*/
-/*  scrollbar-width: none;*/
-/*}*/
-/*.other-section::-webkit-scrollbar {*/
-/*  display: none;*/
-/*}*/
+
 
 /*Start John's Styling*/
 /***********************************************/
 .highlight-teal {
-  border-radius: 1rem !important;
-  box-shadow: 5px 5px 5px teal;
-  background-color: lightgrey;
-  margin-top: 1rem !important;
-  padding-inline: 1rem;
+    border-radius: 1rem !important;
+    box-shadow: var(--shadow);
+    background-color: lightgrey;
+    margin-top: 1rem !important;
+    padding-inline: 1rem;
 }
+
 .comment-top {
-  border-top: solid coral;
+    border-top: solid var(--button);
 }
+
 .comment-bottom {
-  border-top: solid coral;
+    border-top: solid var(--button);
 }
 
 .list-box {
-  border: 1px solid black;
-  margin-top: 1rem !important;
-}
-.tall-content {
-  height: 90vh;
-  border-radius: 1rem;
-  overflow: auto;
-  padding: 1rem;
-}
-.pageSection {
-  margin-left: 2rem;
-}
-.pageSection > div > div {
-  border-radius: 20px !important;
-  width: 90%;
-  border: 1px solid grey;
-  margin-block: 0.5rem;
-  padding: 0.5rem;
-}
-.pageSection.primary > div > div{
-  background-color: teal;
-}
-.pageSection.secondary > div > div {
-  background-color: coral;
-}
-.lesson {
-  background-color: #a8ccff;
-  border: 1px solid grey;
-  /*box-shadow: 6px 6px 6px grey;*/
-}
-.noScroll {
-  scrollbar-width: none;
-}
-.noScroll::-webkit-scrollbar {
-  display: none;
+    border: 1px solid black;
+    margin-top: 1rem !important;
 }
 
-/************ Search Results ***********************************/
-.search-results{
-  margin-inline: 20%;
-  margin-top: 2rem;
+.tall-content {
+    height: 90vh;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 1rem;
 }
+
+.pageSection {
+    margin-left: 2rem;
+}
+
+.pageSection > div > div {
+    border-radius: 20px !important;
+    width: 90%;
+    border: 1px solid grey;
+    margin-block: 0.5rem;
+    margin-inline: auto;
+    padding: 0.5rem;
+}
+
+.pageSection.primary > div > div {
+    background-color: var(--section);
+}
+
+.pageSection.secondary > div > div {
+    background-color: var(--sectionAlt);
+}
+
+.lesson {
+    background-color: var(--section);
+    border: 1px solid grey;
+}
+
+.noScroll {
+    scrollbar-width: none;
+}
+
+.noScroll::-webkit-scrollbar {
+    display: none;
+}
+
+.search-results {
+    margin-inline: 20%;
+    margin-top: 2rem;
+}
+
 .search-results h2 {
-  background-color: #c8d4f5;
-  text-align: center;
-  border-radius: 1rem;
-  border: 2px solid #8f8f8f;
+    background-color: var(--section);
+    text-align: center;
+    border-radius: 1rem;
+    border: 2px solid gray;
 }
-h1 {
-  margin-top: 1rem!important;
-}
-h1,h2,h3,h4,h5,h6{
-  text-align: center;
-}
-/*End John's Styling*/
-/***********************************************/
+
