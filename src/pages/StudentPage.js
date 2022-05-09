@@ -13,7 +13,7 @@ import ActivityGroupItem from "../components/InstructorComponents/ActivityGroupI
 
 function StudentPage() {
   const { landingRaw, date, setDirty } = useContext(DayContext);
-  console.log("landing raw =====", landingRaw);
+  // console.log("landing raw =====", landingRaw);
   const backend = useAxios();
 
   const [topic, setTopic] = useState(null);
@@ -54,7 +54,7 @@ function StudentPage() {
   return (
     <Container>
       <Row className={"mt-3"}>
-        <Col className={"tall-content lesson"}>
+        <Col className={"tall-content lesson noScroll"}>
           {lesson?.markdown ? (
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
               {landingRaw?.lessons[0].markdown}
