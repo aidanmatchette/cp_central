@@ -1,13 +1,14 @@
 import {useParams} from "react-router-dom";
 import {useContext, useEffect, useState} from "react";
 import {useAxios} from "../utils/useAxios";
-import {Button, Grid, MenuItem, Select, TextField} from "@mui/material";
+import {Button, Container, Grid, MenuItem, Select, TextField} from "@mui/material";
 import UserMetaData from "../components/BioPage/UserMetaData";
 import UserLinks from "../components/BioPage/UserLinks";
 import {AuthContext} from "../context/AuthProvider";
 import remarkGfm from "remark-gfm";
 import ReactMarkdown from "react-markdown";
 import BioImage from "../components/BioPage/BioImage";
+import {Col, Row} from "react-bootstrap";
 
 export default function BioPage() {
     const {userID} = useParams()
@@ -17,9 +18,10 @@ export default function BioPage() {
     const [isEdit, setIsEdit] = useState(false)
     const canEdit = (user?.id == userBio?.id) || user?.is_superuser
 
+    const id = userID ? userID : user.id
+
     const refreshData = async () => {
         // Get own bio page if not specified in params
-        const id = userID ? userID : user.id
         const results = await backend.get(`/api/v1/user/${id}/`)
         setUserBio(results.data)
     }
@@ -30,7 +32,7 @@ export default function BioPage() {
 
     const saveUser = async (e) => {
         e.preventDefault()
-        const result = backend.patch(`/api/v1/user/${userID}/`, new FormData(e.target))
+        const result = await backend.patch(`/api/v1/user/${id}/`, new FormData(e.target))
         console.log({result})
         setIsEdit(false)
         setUserBio(result.data)
@@ -46,14 +48,14 @@ export default function BioPage() {
             />
         }
         return (
-            <div>
+            <>
                 <h3><strong>User Information</strong></h3>
-                <div id="markdown">
-                    <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                        {userBio.markdown}
-                    </ReactMarkdown>
-                </div>
-            </div>
+
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
+                    {userBio.markdown}
+                </ReactMarkdown>
+
+            </>
         )
     }
 
@@ -70,29 +72,36 @@ export default function BioPage() {
     if (!userBio) return <>No bio data</>
 
     return (
-        <Grid container marginTop={4} spacing={1}>
-            <Grid item xs={1}/>
+        <form onSubmit={saveUser}>
+            <Row className={'mx-5 mt-4'}>
+                <Col className={'pageSection primary'}> <Row>
+                    <Col xs={12}>
+                        <EditToggle/>
+                        {/*too lazy to do a proper lookup on default group or change the serializer*/}
+                        <div>
+                            <h3><strong>{userBio?.groups[0]?.name} Cohort</strong></h3>
+                            <UserMetaData metadata={userBio.metadata} edit={isEdit}/>
+                        </div>
 
-            <Grid item xs={4} id="gridOne" textAlign={"center"}>
-                <h3 style={{textAlign: "center"}}><strong>{userBio.first_name} {userBio.last_name}</strong></h3>
-                <BioImage canEdit={canEdit} avatar={userBio.avatar} userID={userID}/>
-                <div className="gridOne-content">
-                    <div id="content-items">
-                        <h5><strong>Email:</strong></h5>
-                        <span>{userBio.email}</span>
-                        <h5 id="connect"><strong> Connect with me:</strong></h5>
-                        <UserLinks userID={userID} propLinks={userBio.links} canEdit={canEdit}/>
-                    </div>
-                </div>
-            </Grid>
+                    </Col>
 
-            <Grid item xs={6} sx={{marginLeft: "2rem"}} id="gridTwo">
-                <form onSubmit={saveUser}>
-                    <EditToggle/>
-                    {/*too lazy to do a proper lookup on default group or change the serializer*/}
-                    <div id="gridTwo-content">
-                        <h3><strong>{userBio?.groups[0]?.name} Cohort</strong></h3>
-                        <UserMetaData metadata={userBio.metadata} edit={isEdit}/>
+                    <Col xs={12}>
+                        <Markdown/>
+                    </Col>
+
+                </Row> </Col>
+                <Col className={'pageSection secondary'} xs={5}> <Row>
+
+                    <Col className={'text-center'} xs={12}>
+                        <h3>
+                            <strong>{userBio.first_name} {userBio.last_name}</strong>
+                        </h3>
+                        <BioImage canEdit={canEdit} avatar={userBio.avatar} userID={userID}/>
+                    </Col>
+
+                    <Col xs={12} className={'text-center'}>
+                        <h5><strong>{userBio.email}</strong></h5>
+
                         <Select name={"timezone"}
                                 defaultValue={userBio.timezone}
                                 label={"Time Zone"}
@@ -102,13 +111,16 @@ export default function BioPage() {
                             {allChoices.timeZones.map((tz, index) =>
                                 <MenuItem key={index} value={tz[0]}>{tz[0]} {tz[1]}</MenuItem>)}
                         </Select>
-                        <hr/>
-                        <Markdown/>
-                    </div>
-                </form>
-            </Grid>
+                    </Col>
 
-            <Grid item xs={1}/>
-        </Grid>
+                    <Col xs={12}>
+                        <h5><strong> Connect with me</strong></h5>
+                        <UserLinks userID={userID} propLinks={userBio.links} canEdit={canEdit}/>
+                    </Col>
+
+                </Row>
+                </Col>
+            </Row>
+        </form>
     )
 }
