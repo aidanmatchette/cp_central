@@ -194,21 +194,21 @@
   overflow: auto;
   padding: 1rem;
 }
-.side-content {
+.pageSection {
   margin-left: 2rem;
 }
-.side-content > div > div {
+.pageSection > div > div {
   border-radius: 20px !important;
   width: 90%;
-  /* background-color: #ffd5a4; */
-  /* background-color: rgba(106, 206, 193, 0.61); */
   border: 1px solid grey;
-  /* box-shadow: 1px 1px 1px grey; */
-  margin-block: 0.5rem;
-  padding: 3px;
-  /* box-shadow: 4px 4px 4px grey; */
   margin-block: 0.5rem;
   padding: 0.5rem;
+}
+.pageSection.primary > div > div{
+  background-color: teal;
+}
+.pageSection.secondary > div > div {
+  background-color: coral;
 }
 .lesson {
   background-color: #a8ccff;

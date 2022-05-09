@@ -18,7 +18,7 @@ export default function BioImage({canEdit, avatar, refreshData, userID}) {
     return (
         <>
             <img src={avatar} alt={"Avatar"} width={'100%'} style={{borderRadius: "30%", width: "300px"}}/>
-            <br/>
+
             {canEdit &&
                 <input accept={"image/*"}
                        type={"file"}

@@ -32,7 +32,7 @@ function InstructorPage() {
                         <p>No Markdown for this lesson :(</p>
                     }
                 </Col>
-                <Col xs={3} className={'tall-content side-content'}>
+                <Col xs={3} className={'tall-content pageSection'}>
                     <Row>
                         <Col xs={12}>
                             <h4>Topics</h4>
