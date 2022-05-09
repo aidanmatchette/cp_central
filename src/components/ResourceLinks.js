@@ -19,7 +19,6 @@ function ResourceLinks(props) {
          {/* <p>{info.description}</p> */}
          <ul >
            {info.lesson_links.map((link, index) => {
-            //  return <li key={index} className="topic-links"><a className="link-list" href={link.url}>{link.description}</a></li>
              return <li key={index}><a href={link.url} target="_blank">{link.description}</a></li>
            })}
          </ul>
