@@ -26,16 +26,16 @@ function InstructorPage() {
     return (
         <Container>
             <Row className={'mt-3'}>
-                <Col className={'tall-content lesson'}>
+                <Col className={'tall-content lesson noScroll'}>
                     {lesson?.markdown ?
                         <ReactMarkdown remarkPlugins={[remarkGfm]}>{landingRaw?.lessons[0].markdown}</ReactMarkdown> :
                         <p>No Markdown for this lesson :(</p>
                     }
                 </Col>
-                <Col xs={3} className={'tall-content side-content'}>
+                <Col xs={3} className={'tall-content pageSection noScroll'}>
                     <Row>
                         <Col xs={12}>
-                            <h4 className="text-center mt-1">Topics</h4>
+                            <h4>Topics</h4>
                             <ul>
                                 <li>{topic?.title}</li>
                             </ul>

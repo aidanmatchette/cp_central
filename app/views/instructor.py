@@ -1,32 +1,37 @@
 import datetime
-
+from django.db.models import Exists, OuterRef
 from django.http import JsonResponse
 from rest_framework.decorators import api_view, permission_classes
 from rest_framework.permissions import IsAuthenticated
 from app.models import User, CheckIn, Lesson
-from app.serializers import CheckinStatusSerializer, CheckinSerializer, LessonSerializer
+from app.serializers import CheckinStatusSerializer, CheckinSerializer, LessonSerializer, AttendanceSerializer
 from app.helpers import get_daily_readme_from_gh
 
 
 @api_view(['POST', 'GET'])
 @permission_classes([IsAuthenticated])
 def instructor_checkin(request):  # /api/v1/instructor/checkin/
-    date = request.data['date'] if 'date' in request.data.keys() else datetime.datetime.now().strftime("%Y-%m-%d")
-    # fdate = date
     group = request.user.default_group
-    prev = CheckIn.objects.filter(date=date, group=group).first()
+
     if request.method == 'POST':
+        date = request.data['date'] if 'date' in request.data.keys() else datetime.datetime.now().strftime("%Y-%m-%d")
+        prev = CheckIn.objects.filter(date=date, group=group).first()
         if prev:
             return JsonResponse({"status": "Record not created, already exists for date"}, status=200)
         new_checkin = CheckIn(date=date, group=group)
         new_checkin.save()
         return JsonResponse({"status": "Checkin created"}, status=200)
-    else:
-        checked_in = CheckIn.objects.filter(group=group, date=date)
-        if not checked_in.first():
-            return JsonResponse({"checked_in": []})
-        ids = CheckinSerializer(checked_in, many=True).data[0]['user']
-        return JsonResponse({"checked_in": ids})
+    else:  # GET
+        date = request.GET['date'] if 'date' in request.GET.keys() else datetime.datetime.now().strftime("%Y-%m-%d")
+        # checked_in = CheckIn.objects.get(group=group, date=date)
+        # return JsonResponse(CheckinSerializer(checked_in).data, safe=False)
+        # if not checked_in:
+        #     return JsonResponse({"checked_in": []})
+        # ids = CheckinSerializer(checked_in).data['user']
+        roster = User.objects.filter(default_group=group)
+        roster = roster.annotate(present=Exists(CheckIn.objects.filter(user=OuterRef('pk'), group=group, date=date)))
+
+        return JsonResponse(AttendanceSerializer(roster, many=True).data, safe=False)
         # cohort = User.objects.raw("""
         # SELECT A.*, B.date, C.checkin_id IS NOT NULL as is_checked_in
         # from app_user as A
@@ -37,6 +42,7 @@ def instructor_checkin(request):  # /api/v1/instructor/checkin/
         # group by A.username
         # """, [fdate, group.pk])
         # return JsonResponse(CheckinStatusSerializer(cohort, many=True).data, safe=False, status=200)
+
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])

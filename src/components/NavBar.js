@@ -91,7 +91,7 @@ function NavBar() {
               }}
             >
               <form className="search-form" onSubmit={doSearch}>
-                <FormControl fullWidth sx={{ m: 1, flexGrow: 1 }}>
+                <FormControl fullWidth >
                   <InputLabel htmlFor="cp-search">Search</InputLabel>
                   <OutlinedInput
                     size="small"
