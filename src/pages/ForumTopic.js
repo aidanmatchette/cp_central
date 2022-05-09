@@ -8,6 +8,7 @@ import {Button, TextField} from "@mui/material";
 export default function ForumTopic() {
     const {topicID} = useParams()
     const backend = useAxios()
+    const [dirty, setDirty] = useState(false)
     const [forum, setForum] = useState()
 
     const refreshTopic = async () => {
@@ -17,7 +18,7 @@ export default function ForumTopic() {
 
     useEffect(() => {
         refreshTopic().then()
-    }, [topicID])
+    }, [topicID, dirty])
 
     const addPost = async (e) => {
         e.preventDefault()
@@ -62,7 +63,7 @@ export default function ForumTopic() {
                     </form>
                 </Col>
                 <Col xs={8}>{forum?.forum_posts?.map((post) =>
-                    <ForumPost key={post.id} post={post}/>)}</Col>
+                    <ForumPost key={post.id} post={post} dirty={dirty} setDirty={setDirty}/>)}</Col>
                 <Col/>
             </Row>
 

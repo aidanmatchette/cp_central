@@ -1,5 +1,5 @@
 import {Col} from "react-bootstrap";
-import {Check, Remove} from "@mui/icons-material";
+import {Check, CheckBoxOutlineBlank, Remove} from "@mui/icons-material";
 import { IconButton } from "@mui/material";
 import { useAxios } from "../utils/useAxios";
 import { useContext } from "react";
@@ -29,9 +29,21 @@ export default function PostComment({data}) {
             </IconButton>
         )
     }
+
+    // const selectComment = () => {
+    //     backend.patch(`/api/v1/forum_comment/${id}`.then((res) => {
+
+    //     }))
+    // }
+    const renderCheckbox = () => {
+        if (canEdit) {
+            return <IconButton><CheckBoxOutlineBlank/></IconButton>
+        }
+        return null
+    }
         return (
             <>
-                <Col xs={1}>{data?.accepted_answer ? <Check/> : null}</Col>
+                <Col xs={1}>{data?.accepted_answer ? <Check/> : renderCheckbox() }</Col>
                 <Col xs={10}
                      className={"comment-top"}>{data?.originator?.first_name} {data?.originator?.last_name}</Col>
                 <Col xs={1}></Col>
