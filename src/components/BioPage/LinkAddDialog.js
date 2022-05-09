@@ -20,7 +20,7 @@ export default function LinkAddDialog({userID, refreshData}) {
         <Dialog open={showAdd} onClose={() => setShowAdd(false)} fullWidth>
             <form onSubmit={addLink}>
                 <DialogContent>
-                    <Input type={'hidden'} name={'user'} defaultValue={userID}/>
+                    <Input type={'hidden'} name={'user'}  defaultValue={userID}/>
                     <Select name={"link_type"}
                             defaultValue={0}
                             fullWidth

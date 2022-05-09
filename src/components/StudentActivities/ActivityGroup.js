@@ -30,9 +30,9 @@ function ActivityGroup(props) {
           {groups && groups.length
             ? groups.map((group) => {
               return (
-                <Col>
+                <Col key={group.id}>
                   <p><strong>{group.activity.name} / Group {group && group.group_number}</strong></p>
-                  {group.members.map((member) => <p>{member.first_name} {member.last_name}</p>)}
+                  {group.members.map((member, index) => <p key={index}>{member.first_name} {member.last_name}</p>)}
                 </Col>
               )
             })

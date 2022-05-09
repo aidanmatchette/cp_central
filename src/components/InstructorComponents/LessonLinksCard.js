@@ -1,4 +1,5 @@
 import { Card } from 'react-bootstrap'
+import {Stack} from "@mui/material";
 
 function LessonLinksCard(props) {
 
@@ -6,19 +7,19 @@ function LessonLinksCard(props) {
   let { links, cardStyle } = props
 
   return (
-    <Card className="shadow" border="primary" style={cardStyle}>
-      <h4 className="text-center mt-1">Links</h4>
-      <ul>
+    <>
+      <h4 className="text-center mt-1">Lesson Links</h4>
+      <Stack alignItems={'center'} marginTop={1} >
         {links
           ? links.map((link, index) => {
             return (
-              <li key={index}><a href={link.url}>{link.description ? link.description : 'No Description'}</a></li>
+              <a key={index} href={link.url}>{link.description ? link.description : 'No Description'}</a>
             )
           })
-          : <li>No links for this day</li>
+            : <span>No links for this day</span>
         }
-      </ul>
-    </Card>
+      </Stack>
+    </>
   )
 }
 

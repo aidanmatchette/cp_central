@@ -29,17 +29,17 @@ function RandomPersonGenerator() {
                 let arr = response.data.checked_in
                 // console.log("arr", arr)
                 let randIndex = Math.floor(Math.random() * arr.length)
-                console.log("randIndex", randIndex)
+                // console.log("randIndex", randIndex)
                 let randSelection =arr[randIndex];
 
 
                 let rUser = landingRaw.class_roster.find(e => e.id === randSelection)
-                console.log("rand select", randSelection, {rUser})
+                // console.log("rand select", randSelection, {rUser})
                 setRandUser(rUser);
                 setIsModalOpen(true);
             });
     };
-    console.log(randUser);
+    // console.log(randUser);
     return (
         <ThemeProvider theme={theme}>
             <Button

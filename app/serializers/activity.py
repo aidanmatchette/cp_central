@@ -20,7 +20,7 @@ class ActivityGroupSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
     members = SimpleUserSerializer(many=True, read_only=True)
-    activity = SimpleActivitySerializer()
+    activity = SimpleActivitySerializer(read_only=True)
 
     ''' overrode this method because I wasn't able to create a group via api call '''
 

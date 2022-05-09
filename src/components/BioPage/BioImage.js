@@ -1,8 +1,6 @@
 import {useAxios} from "../../utils/useAxios";
-import {useState} from "react";
 
-export default function BioImage({canEdit, propAvatar, refreshData, userID}) {
-    const [avatar, setAvatar] = useState(propAvatar)
+export default function BioImage({canEdit, avatar, refreshData, userID}) {
     const backend = useAxios()
 
     const imageChange = async (e) => {
@@ -13,8 +11,8 @@ export default function BioImage({canEdit, propAvatar, refreshData, userID}) {
                 "Content-Type": "multipart/form-data",
             }
         }
-        const result = await backend.patch(`/api/v1/user/${userID}/`, formData, headers)
-        setAvatar(result.data.avatar)
+        await backend.patch(`/api/v1/user/${userID}/`, formData, headers)
+        refreshData()
     }
 
     return (
