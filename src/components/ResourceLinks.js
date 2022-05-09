@@ -9,17 +9,17 @@ function ResourceLinks(props) {
   const { landingRaw } = useContext(DayContext)
 
   const renderLessons = () => {
-    console.log(landingRaw.lessons[0])
+    console.log(landingRaw?.lessons[0])
   
     try {
-       return landingRaw.lessons[0].map((info, index) => {
+       return landingRaw?.lessons[0]?.map((info, index) => {
       return (
        <div>
-         <h3> Topic: {info.title}</h3>
+         <h3> Topic: {info?.title}</h3>
          {/* <p>{info.description}</p> */}
          <ul >
-           {info.lesson_links.map((link, index) => {
-             return <li key={index}><a href={link.url} target="_blank">{link.description}</a></li>
+           {info?.lesson_links.map((link, index) => {
+             return <li key={index}><a href={link?.url} target="_blank">{link?.description}</a></li>
            })}
          </ul>
           <p>View more resources <Link to={"/lesson-links"}>here</Link></p> 
