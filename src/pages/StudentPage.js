@@ -7,23 +7,26 @@ import { useAxios } from "../utils/useAxios";
 import LessonLinksCard from "../components/InstructorComponents/LessonLinksCard";
 import CohortLinks from "../components/InstructorComponents/CohortLinks";
 import CreateGroup from "../components/InstructorComponents/CreateGroup";
-import { Alert } from "@mui/material";
+import { Alert, List, ListItem} from "@mui/material";
+import dayjs from "dayjs";
+import ActivityGroupItem from "../components/InstructorComponents/ActivityGroupItem";
 
 function StudentPage() {
-  const { landingRaw, setDirty } = useContext(DayContext);
+  const { landingRaw, date, setDirty } = useContext(DayContext);
   console.log("landing raw =====", landingRaw);
   const backend = useAxios();
 
   const [topic, setTopic] = useState(null);
+  const [groups, setGroups] = useState(null);
 
   let lesson = landingRaw ? landingRaw.lessons[0] : null;
   let topicID = lesson ? lesson.topic : null;
   let firstName = landingRaw ? landingRaw.my_info.first_name : null;
   let lastName = landingRaw ? landingRaw.my_info.last_name : null;
-  let groups = landingRaw ? landingRaw.my_info.groups : null;
 
   useEffect(() => {
     backend.get(`api/v1/topic/${topicID}`).then((res) => setTopic(res.data));
+    getGroups();
   }, [topicID]);
 
   const handleCheckin = () => {
@@ -33,7 +36,21 @@ function StudentPage() {
       setDirty(true);
     });
   };
+  const getGroups = async () => {
+    const params = {
+      // optional
+      params: {
+        date: dayjs(date).format("YYYY-MM-DD"), // optional: defaults to today
+        include_null_date: true, // optional: defaults to false
+      },
+    };
+    const results = await backend.get("/api/v1/activity_group/my_groups/");
+    console.log("results ===", results.data);
+    setGroups(results.data);
+  };
 
+  const ActivityMember = ({member}) => <ListItem> {member.first_name} {member.last_name} </ListItem>
+    
   return (
     <Container>
       <Row className={"mt-3"}>
@@ -68,10 +85,19 @@ function StudentPage() {
             </Col>
             <Col xs={12}>
               <h4 className="text-center mt-1">Your Groups</h4>
-              {groups?.length > 0 ? (
-                groups.map((group) => {
-                  return group.name;
-                })
+              {groups ? (
+                <List dense >
+                  {groups?.map((a) => (
+                    <> 
+                    <h6 className="text-center mt-1">{a.activity.name}</h6>
+                    <List dense className={"list-box"}>
+                      {a.members.map((member) => (
+                        <ActivityMember key={member.id} member={member} />
+                      ))}
+                    </List> 
+                    </>
+                  ))}
+                </List>
               ) : (
                 <Alert
                   sx={{
