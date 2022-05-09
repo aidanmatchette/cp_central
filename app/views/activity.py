@@ -47,3 +47,13 @@ class ActivityGroupViewSet(ModelViewSet):
     permission_classes = [IsAuthenticated]
     queryset = ActivityGroup.objects.all()
     serializer_class = ActivityGroupSerializer
+
+    @action(methods=['GET'], detail=False)
+    def my_groups(self, request, pk=None):  # noqa
+        date = request.GET['date'] if 'date' in request.GET else datetime.datetime.now().strftime("%Y-%m-%d")
+        include_null_date = request.GET['include_null_date'] if 'include_null_date' in request.GET else False
+        q_date = Q(activity__date=date)
+        if include_null_date:
+            q_date |= Q(activity__date__isnull=True)
+        activities = ActivityGroup.objects.filter(Q(members__in=[request.user]) & q_date)
+        return JsonResponse(ActivityGroupSerializer(activities, many=True).data, safe=False)
