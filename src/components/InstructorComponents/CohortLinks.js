@@ -29,7 +29,7 @@ export default function CohortLinks() {
 
     return (<>
         <h4 className={"text-center"}>Cohort Links</h4>
-        <Button className="btn-orange" onClick={() => setShow(true)} fullWidth>
+        <Button className="btn-action" onClick={() => setShow(true)} fullWidth>
             Edit
         </Button>
 

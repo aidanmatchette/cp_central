@@ -182,14 +182,14 @@
 .comment-bottom {
   border-top: solid coral;
 }
-.btn-orange {
+.btn-action {
   color: teal!important;
   /*background: linear-gradient(90deg, rgba(185,231,255,0.5) 0%, rgba(193,255,197,0.5) 100%);*/
   background: coral!important;
   box-shadow: 4px 4px 4px grey;
   border: 1px solid teal!important;
 }
-.btn-orange:hover{
+.btn-action:hover{
   background-color: #99dc83 !important;
   box-shadow: 11px 11px 11px grey;
   color: black!important;
@@ -219,6 +219,12 @@
 }
 .lesson {
   background-color: #a8ccff;
+  border: 1px solid grey;
+  /*box-shadow: 6px 6px 6px grey;*/
+  scrollbar-width: none;
+}
+.lesson::-webkit-scrollbar {
+  display: none;
 }
 /*End John's Styling*/
 /***********************************************/
