@@ -34,7 +34,7 @@ export default function CohortLinks() {
 
         <Stack>
             {links && Object.keys(links).map((description, i) =>
-                <Link key={i} href={links[description]}>{description}</Link>
+                <Link key={i} target="_blank" href={links[description]}>{description}</Link>
             )}
         </Stack>
         <Dialog open={show} onClose={() => setShow(false)} fullWidth>

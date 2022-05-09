@@ -20,7 +20,7 @@ export default function UserLinks({propLinks, userID, canEdit}) {
                 return (
                     <ListItem key={link.id}>
                         <LinkEditDialog {...{refreshData, link}} />
-                        <Link id="social-links" href={link.url}>
+                        <Link id="social-links" target="_blank" href={link.url}>
                             <strong>{link.name}</strong>
                         </Link>
                     </ListItem>
