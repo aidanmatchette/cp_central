@@ -55,7 +55,7 @@ export default function FeedbackItem({item}) {
     }
 
     return (
-        <Row className={'highlight-teal'}>
+        <Row >
             <Col xs={3}>
                 <Row>
                     <Col xs={12}><strong>{feedback.title}</strong></Col>
