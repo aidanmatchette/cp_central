@@ -24,18 +24,17 @@ export default function BioPage() {
         setUserBio(results.data)
     }
 
-    useEffect(() => {refreshData().then()}, [userID])
+    useEffect(() => {
+        refreshData().then()
+    }, [userID])
 
-    const saveUser = (e) => {
+    const saveUser = async (e) => {
         e.preventDefault()
-        backend.patch(`/api/v1/user/${userID}/`, new FormData(e.target))
-            .then((res) => {
-                console.log({res})
-                setIsEdit(false)
-                setUserBio(res.data)
-            })
+        const result = backend.patch(`/api/v1/user/${userID}/`, new FormData(e.target))
+        console.log({result})
+        setIsEdit(false)
+        setUserBio(result.data)
     }
-
 
     const Markdown = () => {
         if (isEdit) {
@@ -76,13 +75,13 @@ export default function BioPage() {
 
             <Grid item xs={4} id="gridOne" textAlign={"center"}>
                 <h3 style={{textAlign: "center"}}><strong>{userBio.first_name} {userBio.last_name}</strong></h3>
-                <BioImage canEdit={canEdit} propAvatar={userBio.avatar} userID={userID}/>
+                <BioImage canEdit={canEdit} avatar={userBio.avatar} userID={userID}/>
                 <div className="gridOne-content">
                     <div id="content-items">
                         <h5><strong>Email:</strong></h5>
                         <span>{userBio.email}</span>
                         <h5 id="connect"><strong> Connect with me:</strong></h5>
-                        <UserLinks userID={userID} propLinks={userBio.links} canEdit={canEdit} />
+                        <UserLinks userID={userID} propLinks={userBio.links} canEdit={canEdit}/>
                     </div>
                 </div>
             </Grid>
