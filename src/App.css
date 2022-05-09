@@ -182,5 +182,36 @@
 .comment-bottom {
   border-top: solid coral;
 }
+.btn-orange {
+  color: coral!important;
+  background: linear-gradient(90deg, rgba(185,231,255,0.5) 0%, rgba(193,255,197,0.5) 100%);
+  box-shadow: 4px 4px 4px grey;
+  border: 1px solid coral!important;
+}
+.btn-orange:hover{
+  background-color: coral!important;
+  box-shadow: 11px 11px 11px grey;
+  color: black!important;
+}
+.list-box {
+  border: 1px solid black;
+  margin-top: 1rem!important;
+}
+.tall-content {
+  height: 90vh;
+  border-radius: 1rem;
+  overflow: auto;
+  padding: 1rem;
+}
+.side-content{
+  margin-left: 2rem;
+}
+.side-content > div > div {
+  border-radius: 2px;
+  border: 1px solid blue;
+    box-shadow: 4px 4px 4px grey;
+  margin-block: .5rem;
+  padding: 3px;
+}
 /*End John's Styling*/
 /***********************************************/
