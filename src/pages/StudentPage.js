@@ -7,9 +7,12 @@ import { useAxios } from "../utils/useAxios";
 import LessonLinksCard from "../components/InstructorComponents/LessonLinksCard";
 import CohortLinks from "../components/InstructorComponents/CohortLinks";
 import CreateGroup from "../components/InstructorComponents/CreateGroup";
-import { Alert, List, ListItem} from "@mui/material";
+import { Alert, List, ListItem, Button, Box } from "@mui/material";
 import dayjs from "dayjs";
 import ActivityGroupItem from "../components/InstructorComponents/ActivityGroupItem";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "../utils/theme.js";
+
 
 function StudentPage() {
   const { landingRaw, date, setDirty } = useContext(DayContext);
@@ -49,10 +52,30 @@ function StudentPage() {
     setGroups(results.data);
   };
 
-  const ActivityMember = ({member}) => <ListItem> {member.first_name} {member.last_name} </ListItem>
-    
+  const ActivityMember = ({ member }) => (
+    <ListItem>
+      {" "}
+      {member.first_name} {member.last_name}{" "}
+    </ListItem>
+  );
+
   return (
     <Container>
+      {!landingRaw?.is_checked_in && (
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <ThemeProvider theme={theme}>
+          <Button
+            color="secondary"
+            variant="contained"
+            onClick={handleCheckin}
+            sx={{ width: "100%", mr: 2, mt: 2 }}
+          >
+            Daily Check-In
+          </Button> 
+        </ThemeProvider>
+       
+        </Box>
+      )}
       <Row className={"mt-3"}>
         <Col className={"tall-content lesson noScroll"}>
           {lesson?.markdown ? (
@@ -86,15 +109,15 @@ function StudentPage() {
             <Col xs={12}>
               <h4>Your Groups</h4>
               {groups ? (
-                <List dense >
+                <List dense>
                   {groups?.map((a) => (
-                    <> 
-                    <h6>{a.activity.name}</h6>
-                    <List dense className={"list-box"}>
-                      {a.members.map((member) => (
-                        <ActivityMember key={member.id} member={member} />
-                      ))}
-                    </List> 
+                    <>
+                      <h6>{a.activity.name}</h6>
+                      <List dense className={"list-box"}>
+                        {a.members.map((member) => (
+                          <ActivityMember key={member.id} member={member} />
+                        ))}
+                      </List>
                     </>
                   ))}
                 </List>
