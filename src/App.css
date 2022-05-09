@@ -146,10 +146,10 @@
 #gridTwo-content {
   margin-left: 5px;
 }
-#social-links {
+#social-links, .link-list{
   color: rgb(32, 32, 32);
 }
-#social-links:hover {
+#social-links:hover{
   color: antiquewhite;
 }
 #markdown {

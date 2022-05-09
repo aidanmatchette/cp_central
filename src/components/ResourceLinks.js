@@ -12,12 +12,12 @@ function ResourceLinks(props) {
     console.log(landingRaw.lessons[0])
   
     try {
-       return landingRaw.lessons.map((info, index) => {
+       return landingRaw.lessons[0].map((info, index) => {
       return (
        <div>
          <h3> Topic: {info.title}</h3>
          {/* <p>{info.description}</p> */}
-         <ul className="link-list">
+         <ul >
            {info.lesson_links.map((link, index) => {
              return <li key={index}><a href={link.url} target="_blank">{link.description}</a></li>
            })}
