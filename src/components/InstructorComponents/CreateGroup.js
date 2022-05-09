@@ -47,8 +47,8 @@ export default function CreateGroup() {
 
     return (<>
         <Row className="justify-content-end">
-            <Col xs={3}><Button className={'btn-orange'} onClick={() => setOpenAdd(true)}>Add</Button></Col>
-            <Col xs={7}><h4>Groups</h4></Col>
+            <Col xs={12}><h4 className={'text-center'}>Groups</h4></Col>
+            <Col xs={12}><Button fullWidth className={'btn-orange'} onClick={() => setOpenAdd(true)}>Add</Button></Col>
         </Row>
 
         <Dialog open={openAdd} onClose={() => setOpenAdd(!openAdd)}>

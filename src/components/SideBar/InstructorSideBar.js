@@ -37,9 +37,9 @@ function SideBar() {
 
   const backend = useAxios();
   const handleGenerateCheckin = () => {
-    console.log("generate check-in");
+    // console.log("generate check-in");
     backend.post("/api/instructor/checkin/").then((response) => {
-      console.log(response);
+      // console.log(response);
       setDirty(true);
       setSnackBarMessage(response.data.status)
       setSnackBarOpen(true)

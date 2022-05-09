@@ -183,15 +183,17 @@
   border-top: solid coral;
 }
 .btn-orange {
-  color: coral!important;
-  background: linear-gradient(90deg, rgba(185,231,255,0.5) 0%, rgba(193,255,197,0.5) 100%);
+  color: teal!important;
+  /*background: linear-gradient(90deg, rgba(185,231,255,0.5) 0%, rgba(193,255,197,0.5) 100%);*/
+  background: coral!important;
   box-shadow: 4px 4px 4px grey;
-  border: 1px solid coral!important;
+  border: 1px solid teal!important;
 }
 .btn-orange:hover{
-  background-color: coral!important;
+  background-color: #99dc83 !important;
   box-shadow: 11px 11px 11px grey;
   color: black!important;
+  font-weight: bolder;
 }
 .list-box {
   border: 1px solid black;
@@ -207,11 +209,16 @@
   margin-left: 2rem;
 }
 .side-content > div > div {
-  border-radius: 2px;
+  border-radius: 20px!important;
+  width: 90%;
+  background-color: #ffd5a4;
   border: 1px solid blue;
     box-shadow: 4px 4px 4px grey;
   margin-block: .5rem;
   padding: .5rem;
+}
+.lesson {
+  background-color: #a8ccff;
 }
 /*End John's Styling*/
 /***********************************************/

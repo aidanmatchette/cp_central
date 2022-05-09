@@ -28,11 +28,12 @@ export default function CohortLinks() {
     }
 
     return (<>
+        <h4 className={"text-center"}>Cohort Links</h4>
         <Button className="btn-orange" onClick={() => setShow(true)} fullWidth>
             Edit
         </Button>
 
-        <Stack>
+        <Stack alignItems={'center'} marginTop={1}>
             {links && Object.keys(links).map((description, i) =>
                 <Link key={i} href={links[description]}>{description}</Link>
             )}
