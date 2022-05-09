@@ -23,9 +23,7 @@ export default function ForumTopic() {
     const addPost = async (e) => {
         e.preventDefault()
         const result = await backend.post(`/api/v1/forum/${topicID}/add_post/`, new FormData(e.target))
-        // console.log({result})
-        refreshTopic().then()
-        window.location.reload()
+        refreshTopic()
     }
 
 
@@ -63,7 +61,7 @@ export default function ForumTopic() {
                     </form>
                 </Col>
                 <Col xs={8}>{forum?.forum_posts?.map((post) =>
-                    <ForumPost key={post.id} post={post} dirty={dirty} setDirty={setDirty}/>)}</Col>
+                    <ForumPost key={post.id} post={post} refreshTopic={refreshTopic}/>)}</Col>
                 <Col/>
             </Row>
 
