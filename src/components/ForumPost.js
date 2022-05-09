@@ -5,9 +5,8 @@ import {ExpandLess, ExpandMore, Edit, Clear, Save} from "@mui/icons-material";
 import PostComment from "./PostComment";
 import {useAxios} from "../utils/useAxios";
 import {AuthContext} from "../context/AuthProvider";
-import {DayProvider} from "../context/DayProvider";
 
-export default function ForumPost({post, dirty, setDirty}) {
+export default function ForumPost({post, refreshTopic}) {
     const {user} = useContext(AuthContext)
     const [expanded, setExpanded] = useState(false)
     const [forumPost, setForumPost] = useState(post)
@@ -20,21 +19,19 @@ export default function ForumPost({post, dirty, setDirty}) {
         let result = await backend.post(`/api/v1/forum_post/${forumPost.id}/add_comment/`, new FormData(e.target))
         setForumPost(result.data)
     }
-
-    const saveEditPost = (e) => {
+    const saveEditPost = async (e) => {
         e.preventDefault()
         console.log(e)
         backend.patch(`/api/v1/forum_post/${forumPost.id}/`, new FormData(e.target)).then((res) => {
-            console.log(res)
             setEditField(false)
-            window.location.reload()
+            setForumPost({...forumPost, body: res.data.body})
         })
     }
 
     const deletePost = () => {
         backend.delete(`/api/v1/forum_post/${forumPost.id}/`).then((res) => {
             console.log(res)
-            window.location.reload()
+            refreshTopic()
         })
     }
 
