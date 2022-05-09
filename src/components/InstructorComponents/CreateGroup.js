@@ -34,7 +34,6 @@ export default function CreateGroup() {
 
     useEffect(() => {
         refreshData().then()
-        console.log('refresh gr')
     }, [date])
 
     const addGroup = async (e) => {

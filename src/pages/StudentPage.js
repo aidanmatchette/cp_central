@@ -66,13 +66,13 @@ function StudentPage() {
         <Col xs={3} className={"tall-content side-content"}>
           <Row>
             <Col xs={12}>
-              <h4 className="text-center mt-1">Welcome</h4>
-              <h6 className="text-center mt-1">
+              <h4>Welcome</h4>
+              <h6>
                 {firstName} {lastName}
               </h6>
             </Col>
             <Col xs={12}>
-              <h4 className="text-center mt-1">Topics</h4>
+              <h4>Topics</h4>
               <ul>
                 <li>{topic?.title}</li>
               </ul>
@@ -84,12 +84,12 @@ function StudentPage() {
               />
             </Col>
             <Col xs={12}>
-              <h4 className="text-center mt-1">Your Groups</h4>
+              <h4>Your Groups</h4>
               {groups ? (
                 <List dense >
                   {groups?.map((a) => (
                     <> 
-                    <h6 className="text-center mt-1">{a.activity.name}</h6>
+                    <h6>{a.activity.name}</h6>
                     <List dense className={"list-box"}>
                       {a.members.map((member) => (
                         <ActivityMember key={member.id} member={member} />

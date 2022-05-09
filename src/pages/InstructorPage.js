@@ -35,7 +35,7 @@ function InstructorPage() {
                 <Col xs={3} className={'tall-content side-content'}>
                     <Row>
                         <Col xs={12}>
-                            <h4 className="text-center mt-1">Topics</h4>
+                            <h4>Topics</h4>
                             <ul>
                                 <li>{topic?.title}</li>
                             </ul>
