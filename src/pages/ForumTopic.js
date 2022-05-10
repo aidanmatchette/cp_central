@@ -6,6 +6,8 @@ import ForumPost from "../components/ForumPost";
 import {Button, TextField} from "@mui/material";
 import theme from "../utils/theme";
 import {ThemeProvider} from "@mui/material/styles";
+import {Typography} from "@mui/material";
+
 
 export default function ForumTopic() {
     const {topicID} = useParams()
@@ -29,9 +31,9 @@ export default function ForumTopic() {
 
 
     return (
-        <Row>
-            <Col xs={12}>
-                <h1>{forum?.name}</h1>
+        <Row className={"d-flex justify-content-center mt-2 title-row"}>
+            <Col xs={6} className='forum-topic-header ' >
+                <Typography variant="h2" sx={{fontWeight: 900}}>{forum?.name}</Typography>
             </Col>
 
             <Row>
