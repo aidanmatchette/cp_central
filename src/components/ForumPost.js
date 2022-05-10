@@ -11,7 +11,7 @@ export default function ForumPost({post, refreshTopic}) {
     const [expanded, setExpanded] = useState(false)
     const [forumPost, setForumPost] = useState(post)
     const backend = useAxios()
-    const canEdit = (user?.id == forumPost?.originator?.id) || user?.is_superuser
+    const canEdit = (user?.id === forumPost?.originator?.id) || user?.is_superuser
     const [editField, setEditField] = useState(false)
 
     const addComment = async (e) => {

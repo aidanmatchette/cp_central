@@ -1,12 +1,11 @@
-import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
-import { useAxios } from "../utils/useAxios";
-import { Col, Row } from "react-bootstrap";
+import {useParams} from "react-router-dom";
+import {useEffect, useState} from "react";
+import {useAxios} from "../utils/useAxios";
+import {Col, Row} from "react-bootstrap";
 import ForumPost from "../components/ForumPost";
-import { Button, TextField } from "@mui/material";
+import {Button, TextField, Typography} from "@mui/material";
 import theme from "../utils/theme";
-import { ThemeProvider } from "@mui/material/styles";
-import { Typography } from "@mui/material";
+import {ThemeProvider} from "@mui/material/styles";
 
 export default function ForumTopic() {
   const { topicID } = useParams();
@@ -47,6 +46,7 @@ export default function ForumTopic() {
             <img
               src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
               width="100%"
+              alt=""
               style={{ borderRadius: "1rem" }}
             />
             <TextField
