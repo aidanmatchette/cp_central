@@ -15,7 +15,7 @@ export default function UserLinks({propLinks, userID, canEdit}) {
     }
 
     return (
-        <List id="user-links">
+        <List id="user-links" dense>
             {links.map((link) => {
                 return (
                     <ListItem key={link.id}>

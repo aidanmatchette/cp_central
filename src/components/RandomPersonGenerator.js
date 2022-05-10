@@ -1,9 +1,9 @@
-import {AuthContext} from "../context/AuthProvider";
-import {useContext, useEffect, useState} from "react";
+import {useContext, useState} from "react";
 import {useAxios} from "../utils/useAxios";
-import {ThemeProvider, Box, Typography, Modal, Button} from "@mui/material";
+import {Box, Button, Modal, ThemeProvider, Typography} from "@mui/material";
 import theme from "../utils/theme";
 import {DayContext} from "../context/DayProvider";
+import dayjs from "dayjs";
 
 const style = {
     position: "absolute",
@@ -20,31 +20,22 @@ const style = {
 function RandomPersonGenerator() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const [randUser, setRandUser] = useState();
-    const {landingRaw} = useContext(DayContext)
-    const backend = useAxios({});
+    const {date} = useContext(DayContext);
+    const backend = useAxios();
 
-    const handleRandomPerson = () => {
-        backend.get("api/instructor/checkin/", {params: {date: landingRaw?.date}})
-            .then((response) => {
-                let arr = response.data.checked_in
-                // console.log("arr", arr)
-                let randIndex = Math.floor(Math.random() * arr.length)
-                // console.log("randIndex", randIndex)
-                let randSelection =arr[randIndex];
-
-
-                let rUser = landingRaw.class_roster.find(e => e.id === randSelection)
-                // console.log("rand select", randSelection, {rUser})
-                setRandUser(rUser);
-                setIsModalOpen(true);
-            });
+    const handleRandomPerson = async () => {
+        const response = await backend.get("api/instructor/checkin/", {params: {date: dayjs(date).format("YYYY-MM-DD")}})
+        let randIndex = Math.floor(Math.random() * response.data.length);
+        setRandUser(response.data[randIndex]);
+        setIsModalOpen(true);
     };
-    // console.log(randUser);
+
     return (
         <ThemeProvider theme={theme}>
             <Button
                 onClick={handleRandomPerson}
-                variant="contained"
+                variant="outlined"
+                color="secondary"
                 sx={{width: "80%", mt: 3}}
             >
                 Random Person

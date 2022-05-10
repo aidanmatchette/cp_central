@@ -7,13 +7,16 @@ import { useAxios } from "../utils/useAxios";
 import LessonLinksCard from "../components/InstructorComponents/LessonLinksCard";
 import CohortLinks from "../components/InstructorComponents/CohortLinks";
 import CreateGroup from "../components/InstructorComponents/CreateGroup";
-import { Alert, List, ListItem} from "@mui/material";
+import { Alert, List, ListItem, Button, Box } from "@mui/material";
 import dayjs from "dayjs";
 import ActivityGroupItem from "../components/InstructorComponents/ActivityGroupItem";
+import { ThemeProvider } from "@mui/material/styles";
+import theme from "../utils/theme.js";
+
 
 function StudentPage() {
   const { landingRaw, date, setDirty } = useContext(DayContext);
-  console.log("landing raw =====", landingRaw);
+  // console.log("landing raw =====", landingRaw);
   const backend = useAxios();
 
   const [topic, setTopic] = useState(null);
@@ -49,12 +52,32 @@ function StudentPage() {
     setGroups(results.data);
   };
 
-  const ActivityMember = ({member}) => <ListItem> {member.first_name} {member.last_name} </ListItem>
-    
+  const ActivityMember = ({ member }) => (
+    <ListItem>
+      {" "}
+      {member.first_name} {member.last_name}{" "}
+    </ListItem>
+  );
+
   return (
     <Container>
+      {!landingRaw?.is_checked_in && (
+        <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <ThemeProvider theme={theme}>
+          <Button
+            color="secondary"
+            variant="contained"
+            onClick={handleCheckin}
+            sx={{ width: "100%", mr: 2, mt: 2 }}
+          >
+            Daily Check-In
+          </Button> 
+        </ThemeProvider>
+       
+        </Box>
+      )}
       <Row className={"mt-3"}>
-        <Col className={"tall-content lesson"}>
+        <Col className={"tall-content lesson noScroll"}>
           {lesson?.markdown ? (
             <ReactMarkdown remarkPlugins={[remarkGfm]}>
               {landingRaw?.lessons[0].markdown}
@@ -63,16 +86,16 @@ function StudentPage() {
             <p>No Markdown for this lesson :(</p>
           )}
         </Col>
-        <Col xs={3} className={"tall-content side-content"}>
+        <Col xs={3} className={"tall-content pageSection noScroll secondary"}>
           <Row>
             <Col xs={12}>
-              <h4 className="text-center mt-1">Welcome</h4>
-              <h6 className="text-center mt-1">
+              <h4>Welcome</h4>
+              <h6>
                 {firstName} {lastName}
               </h6>
             </Col>
             <Col xs={12}>
-              <h4 className="text-center mt-1">Topics</h4>
+              <h4>Topics</h4>
               <ul>
                 <li>{topic?.title}</li>
               </ul>
@@ -84,17 +107,17 @@ function StudentPage() {
               />
             </Col>
             <Col xs={12}>
-              <h4 className="text-center mt-1">Your Groups</h4>
+              <h4>Your Groups</h4>
               {groups ? (
-                <List dense >
+                <List dense>
                   {groups?.map((a) => (
-                    <> 
-                    <h6 className="text-center mt-1">{a.activity.name}</h6>
-                    <List dense className={"list-box"}>
-                      {a.members.map((member) => (
-                        <ActivityMember key={member.id} member={member} />
-                      ))}
-                    </List> 
+                    <>
+                      <h6>{a.activity.name}</h6>
+                      <List dense className={"list-box"}>
+                        {a.members.map((member) => (
+                          <ActivityMember key={member.id} member={member} />
+                        ))}
+                      </List>
                     </>
                   ))}
                 </List>

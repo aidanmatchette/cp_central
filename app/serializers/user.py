@@ -35,7 +35,7 @@ class CheckinSerializer(serializers.ModelSerializer):
         model = CheckIn
         fields = "__all__"
     # group = GroupSerializer()
-    # user = UserSerializer(many=True)
+    user = UserSerializer(many=True, read_only=True)
 
 
 class CheckinStatusSerializer(serializers.ModelSerializer):
@@ -56,7 +56,10 @@ class RosterSerializer(serializers.ModelSerializer):
         fields = ["first_name", "last_name", "id", "is_staff", "is_superuser"]
 
 
-# class CheckInSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = CheckIn
-#         fields = "__all__"
+class AttendanceSerializer(serializers.ModelSerializer):
+    present = serializers.BooleanField()
+    links = UserLinkSerializer(many=True, read_only=True)
+
+    class Meta:
+        model = User
+        fields = "__all__"

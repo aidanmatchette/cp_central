@@ -1,240 +1,98 @@
-.days-topics {
-  display: flex;
-  flex-grow: 1;
-  margin-left: 1rem;
-  height: 20rem;
-  text-align: center;
-  background-color: rgba(143, 171, 250, 0.6);
-  border-radius: 1rem;
-  margin-top: 1rem;
-  justify-content: center;
-}
-.search-form {
-  flex-grow: 1;
-}
-.topics-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.my-groups {
-  display: flex;
-  flex-grow: 1;
-  margin-left: 1rem;
-  margin-right: 1rem;
-  height: 20rem;
-  text-align: center;
-  background-color: rgba(143, 171, 250, 0.6);
-  border-radius: 1rem;
-  margin-top: 1rem;
-  justify-content: center;
-}
-.smaller-flex-container {
-  display: flex;
-  justify-content: center;
-}
-.student-landing-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-}
-.google-calander {
-  margin-top: 1rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.lecture {
-  padding: 2rem;
-}
-.links {
-  width: 25rem;
-  background-color: rgba(143, 171, 250, 0.6);
-  height: 9.5rem;
-  border-radius: 1rem;
-  margin-left: 1rem;
-  padding: 1rem;
-  text-align: center;
-  justify-content: center;
-}
-.lecture-readme {
-  min-height: 30rem;
-  max-height: 80rem;
-  overflow-y: auto;
-  background-color: rgba(17, 136, 136, 0.59);
-  border-radius: 1rem;
-  margin-top: 1rem;
-  padding: 0.5rem;
-  margin-right: 1rem;
-  margin-left: 1rem;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 2rem;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.readme-title {
-  font-weight: 500;
-  text-align: center;
-  background-color: rgba(17, 136, 136, 0.8);
-  border-radius: 1rem;
+h1 {
+    margin-top: 1rem !important;
 }
 
-.lecture-readme::-webkit-scrollbar {
-  display: none;
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
 }
-.todays-info {
-  display: flex;
-  flex-direction: column;
-  margin-left: 1rem;
+
+.search-form {
+    flex-grow: 1;
 }
-.btn-custom-orange {
-  background-color: #ff500f;
-  color: white;
+
+.lecture {
+    padding: 2rem;
 }
+
+
 .link-list {
-  list-style: inside;
+    list-style: inside;
 }
-#gridOne {
-  background-color: rgb(203, 227, 228);
-  /*margin-right: 30px;*/
-  font-family: "Courier New", monospace;
-  border-radius: 2rem;
-  /* padding-bottom: 30px; */
-}
-.gridOne-content {
-  background-color: cadetblue;
-  /*margin: 15px;*/
-  /*margin-left: 5px;*/
-  border-radius: 2rem;
-  padding: 1rem;
-  margin: 1rem;
-  /*border-bottom-left-radius: 25px;*/
-  /*border-bottom-right-radius: 25px;*/
-  display: flex;
-  text-align: left;
-}
-#content-items {
-  margin-left: 10px;
-}
-#gridOne-input {
-  background-color: rgb(203, 227, 228);
-}
-#gridTwo {
-  background-color: rgb(243, 182, 160);
-  font-family: "Courier New", monospace;
-  border-radius: 5%;
-}
-#gridTwo-form,
-#metadata,
-#markdown {
-  background-color: coral;
-}
-#connect {
-  margin-top: 10px;
-}
-#user-links {
-  margin-bottom: 10px;
-}
-#metadata,
-#markdown {
-  margin-right: 15px;
-  border-radius: 2rem;
-  padding: 2rem;
-  margin-bottom: 2rem;
-}
-#gridTwo-content {
-  margin-left: 5px;
-}
+
 #social-links,
 .link-list {
-  color: rgb(32, 32, 32);
-}
-#social-links:hover {
-  color: antiquewhite;
-}
-#markdown {
-  border-radius: 2rem;
-  padding: 2rem;
-  margin-bottom: 2rem;
-}
-.other-section {
-  overflow-y: auto;
-  background-color: rgba(255, 85, 0, 0.3);
-  -ms-overflow-style: none;
-  scrollbar-width: none;
-}
-.other-section::-webkit-scrollbar {
-  display: none;
+    color: rgb(32, 32, 32);
 }
 
-/*Start John's Styling*/
-/***********************************************/
-.highlight-teal {
-  border-radius: 1rem !important;
-  box-shadow: 5px 5px 5px teal;
-  background-color: lightgrey;
-  margin-top: 1rem !important;
-  padding-inline: 1rem;
+#social-links:hover {
+    color: antiquewhite;
 }
+
+.inputForm {
+    border: var(--border);
+    border-radius: 1rem;
+    height: 30vh;
+}
+
 .comment-top {
-  border-top: solid coral;
-}
-.comment-bottom {
-  border-top: solid coral;
+    border-top: solid var(--buttonAlt);
 }
 
 .list-box {
-  border: 1px solid black;
-  margin-top: 1rem !important;
+    border: 1px solid black;
+    margin-top: 1rem !important;
 }
+
 .tall-content {
-  height: 90vh;
-  border-radius: 1rem;
-  overflow: auto;
-  padding: 1rem;
+    height: 90vh;
+    border-radius: 1rem;
+    overflow: auto;
+    padding: 1rem;
 }
-.side-content {
-  margin-left: 2rem;
+
+.pageSection {
+    margin-left: 2rem;
 }
-.side-content > div > div {
-  border-radius: 20px !important;
-  width: 90%;
-  /* background-color: #ffd5a4; */
-  /* background-color: rgba(106, 206, 193, 0.61); */
-  border: 1px solid grey;
-  /* box-shadow: 1px 1px 1px grey; */
-  margin-block: 0.5rem;
-  padding: 3px;
-  /* box-shadow: 4px 4px 4px grey; */
-  margin-block: 0.5rem;
-  padding: 0.5rem;
+
+.pageSection > div > div {
+    border-radius: 20px !important;
+    width: 90%;
+    border: 1px solid grey;
+    margin-block: 0.5rem;
+    margin-inline: auto;
+    padding: 0.5rem;
 }
+
+.pageSection.primary > div > div {
+    background-color: var(--section);
+}
+
+.pageSection.secondary > div > div {
+    background-color: var(--sectionAlt);
+}
+
 .lesson {
-  background-color: #a8ccff;
-  border: 1px solid grey;
-  /*box-shadow: 6px 6px 6px grey;*/
-  scrollbar-width: none;
+    background-color: var(--section);
+    border: 1px solid grey;
 }
-.lesson::-webkit-scrollbar {
-  display: none;
+
+.noScroll {
+    scrollbar-width: none;
 }
-/************ Search Results ***********************************/
-.search-results{
-  margin-inline: 20%;
-  margin-top: 2rem;
+
+.noScroll::-webkit-scrollbar {
+    display: none;
 }
+
+.search-results {
+    margin-inline: 20%;
+    margin-top: 2rem;
+}
+
 .search-results h2 {
-  background-color: #c8d4f5;
-  text-align: center;
-  border-radius: 1rem;
-  border: 2px solid #8f8f8f;
+    background-color: var(--section);
+    text-align: center;
+    border-radius: 1rem;
+    border: 2px solid gray;
 }
-h1 {
-  margin-top: 1rem!important;
-}
-h1,h2,h3,h4,h5{
-  text-align: center;
-}
-/*End John's Styling*/
-/***********************************************/
+

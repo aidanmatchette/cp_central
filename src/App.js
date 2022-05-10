@@ -1,3 +1,4 @@
+import "./theme1.css"
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import LoginPage from "./pages/LoginPage.js";

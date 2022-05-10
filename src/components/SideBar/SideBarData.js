@@ -2,9 +2,10 @@ import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import EventNoteRoundedIcon from "@mui/icons-material/EventNoteRounded";
 import PeopleAltRoundedIcon from "@mui/icons-material/PeopleAltRounded";
 import PendingActionsRoundedIcon from "@mui/icons-material/PendingActionsRounded";
-import QuestionAnswerRoundedIcon from "@mui/icons-material/QuestionAnswerRounded";
 import ThumbsUpDownIcon from "@mui/icons-material/ThumbsUpDown";
 import ForumIcon from "@mui/icons-material/Forum";
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import QuizIcon from '@mui/icons-material/Quiz';
 
 const listItems = [
   {
@@ -23,7 +24,7 @@ const listItems = [
     link: "/class-roster",
   },
   {
-    listIcon: <QuestionAnswerRoundedIcon />,
+    listIcon: <QuizIcon />,
     listText: "View Questionnaires",
     link: "/questionnaires",
   },
@@ -38,7 +39,7 @@ const listItems = [
     link: "/forum",
   },
   {
-    listIcon: <ForumIcon />,
+    listIcon: <AccountCircleIcon />,
     listText: "My Profile",
     link: "/biopage",
   },
@@ -65,7 +66,7 @@ const instructorListItems = [
     link: "/class-roster",
   },
   {
-    listIcon: <QuestionAnswerRoundedIcon />,
+    listIcon: <QuizIcon />,
     listText: "Edit Questionnaires",
     link: "/questionnaires",
   },
@@ -80,7 +81,7 @@ const instructorListItems = [
     link: "/forum",
   },
   {
-    listIcon: <ForumIcon />,
+    listIcon: <AccountCircleIcon />,
     listText: "My Profile",
     link: "/biopage",
   },
