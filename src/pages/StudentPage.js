@@ -70,13 +70,13 @@ function StudentPage() {
                         <p>No Markdown for this lesson :(</p>
                     )}
                 </Col>
-                <Col xs={3} className={"tall-content pageSection noScroll secondary"}>
+                <Col xs={3} className={"tall-content pageSection noScroll "}>
                     <Row>
                         <Col xs={12}>
                             <h4>Welcome</h4>
-                            <h6>
+                            <h4>
                                 {firstName} {lastName}
-                            </h6>
+                            </h4>
                         </Col>
                         <Col xs={12}>
                             <h4>Topics</h4>

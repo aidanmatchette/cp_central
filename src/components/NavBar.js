@@ -79,6 +79,7 @@ function NavBar() {
               width="100px"       // <----- logo size changes here
               alt="cp-logo"
               onClick={() => navigate(homePage)}
+              className="cp-logo"
             />
 
             <Box

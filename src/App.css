@@ -70,7 +70,8 @@ h6 {
   margin-block: 0.5rem;
   margin-inline: auto;
   padding: 0.5rem;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  box-shadow: var(--shadow);
+  /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
 }
 
 .pageSection.primary > div > div {
@@ -83,7 +84,9 @@ h6 {
 
 .lesson {
   background-color: var(--section);
-  border: 1px solid grey;
+  background-color: var(--sectionAlt);
+  box-shadow: var(--shadow);
+  /* border: 1px solid grey; */
 }
 
 .noScroll {
@@ -109,4 +112,7 @@ h6 {
   /* background-color: rgba(194, 194, 194, 0.5); */
   /* border-radius: 1rem; */
   font-family: "Nunito", Arial, Helvetica, sans-serif;
+}
+.cp-logo:hover {
+  cursor: pointer;
 }
