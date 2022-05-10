@@ -60,3 +60,6 @@ class CheckIn(models.Model):
     date = models.DateField()
     group = models.ForeignKey(Group, on_delete=models.CASCADE, related_name='checkins')
     user = models.ManyToManyField(User, related_name="checkins")
+
+    def __str__(self):
+        return f'{self.date} - {self.group.name}'

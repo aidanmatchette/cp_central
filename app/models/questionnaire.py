@@ -50,9 +50,15 @@ class FilledQuestionnaire(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="filled_questionnaires")
     is_complete = models.BooleanField(default=False)
 
+    def __str__(self):
+        return f'{self.questionnaire.name} - {self.user.first_name} {self.user.last_name}'
+
 
 class QuestionResponse(models.Model):
     filled_questionnaire = models.ForeignKey(FilledQuestionnaire, on_delete=models.CASCADE, related_name="question_responses")
     question = models.ForeignKey(Question, on_delete=models.CASCADE, related_name="question_responses")
     question_option = models.ForeignKey(QuestionOption, on_delete=models.CASCADE, related_name="question_responses", null=True, blank=True)
     response_text = models.TextField(null=True, blank=True)
+
+    def __str__(self):
+        return f'{self.filled_questionnaire.questionnaire.name} - {self.question.text}'
