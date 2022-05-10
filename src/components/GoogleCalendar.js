@@ -26,7 +26,7 @@ function GoogleCalendar(props) {
 
   return (
     <ThemeProvider theme={theme}>
-      <Button sx={{ width: "80%", mt: 3 }} color="secondary" variant="outlined" onClick={() => setVis(true)}><CalendarMonthIcon fontSize={"large"} /> Calendar</Button>
+      <Button sx={{ width: "80%", mt: 3 }} color="secondary" variant="outlined" onClick={() => setVis(true)}><CalendarMonthIcon fontSize={"large"} sx={{mr:1}}/> Calendar</Button>
       <Dialog open={vis} onClose={() => setVis(false)} fullWidth>
         <Container className="d-flex justify-content-center mt-3">
           {calendarID

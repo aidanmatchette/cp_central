@@ -1,14 +1,15 @@
-import {useNavigate, useParams} from "react-router-dom";
+import {useParams} from "react-router-dom";
 import {useEffect, useState} from "react";
 import {useAxios} from "../utils/useAxios";
 import {Col, Row} from "react-bootstrap";
 import ForumPost from "../components/ForumPost";
 import {Button, TextField} from "@mui/material";
+import theme from "../utils/theme";
+import {ThemeProvider} from "@mui/material/styles";
 
 export default function ForumTopic() {
     const {topicID} = useParams()
     const backend = useAxios()
-    const [dirty, setDirty] = useState(false)
     const [forum, setForum] = useState()
 
     const refreshTopic = async () => {
@@ -18,24 +19,23 @@ export default function ForumTopic() {
 
     useEffect(() => {
         refreshTopic().then()
-    }, [topicID, dirty])
+    }, [topicID])
 
     const addPost = async (e) => {
         e.preventDefault()
-        const result = await backend.post(`/api/v1/forum/${topicID}/add_post/`, new FormData(e.target))
-        refreshTopic()
+        await backend.post(`/api/v1/forum/${topicID}/add_post/`, new FormData(e.target))
+        refreshTopic().then()
     }
 
 
     return (
         <Row>
             <Col xs={12}>
-                <h1 style={{textAlign: "center", marginTop: "1rem"}}>{forum?.name}</h1>
+                <h1>{forum?.name}</h1>
             </Col>
 
             <Row>
-                <Col xs={1}/>
-                <Col xs={3}>
+                <Col xs={4} className={'inputForm ms-5'}>
                     <form onSubmit={addPost}>
                         <TextField
                             name="title"
@@ -44,7 +44,7 @@ export default function ForumTopic() {
                             fullWidth
                             defaultValue={""}
                             sx={{marginTop: "2rem"}}
-                            />
+                        />
                         <TextField
                             name="body"
                             label="Post Details"
@@ -54,17 +54,24 @@ export default function ForumTopic() {
                             defaultValue={""}
                             rows={6}
                             sx={{marginTop: "1rem"}}
-                            />
-                        <Button fullWidth type={"submit"}>
-                            Add Post
-                        </Button>
+                        />
+                        <ThemeProvider theme={theme}>
+                            <Button fullWidth
+                                    type={"submit"}
+                                    color="secondary"
+                                    variant="contained"
+                                    sx={{mt:2}}
+                            >
+                                Add Post
+                            </Button>
+                        </ThemeProvider>
                     </form>
                 </Col>
-                <Col xs={8}>{forum?.forum_posts?.map((post) =>
-                    <ForumPost key={post.id} post={post} refreshTopic={refreshTopic}/>)}</Col>
-                <Col/>
+                <Col xs={7} className={'mx-3 pageSection secondary'}>
+                    {forum?.forum_posts?.map((post) =>
+                        <ForumPost key={post.id} post={post} refreshTopic={refreshTopic}/>)}
+                </Col>
             </Row>
-
         </Row>
     )
 }

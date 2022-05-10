@@ -59,7 +59,7 @@ function GenerateFeedback() {
     <ThemeProvider theme={theme}>
       <Button variant="outlined" color="secondary" sx={{ width: "80%", mt: 3 }} onClick={() => setModalOpen(true)}>
         <RateReviewRoundedIcon
-          color="secondary"/>
+          color="secondary" sx={{mr:1}}/>
         Feedback   
       </Button>
       <Dialog open={modalOpen} onClose={handleClose}>
