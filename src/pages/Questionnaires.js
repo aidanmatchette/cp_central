@@ -62,10 +62,12 @@ export default function Questionnaires() {
     }
 
     return (
-        <Box sx={{marginInline: "20%", marginTop: "2rem"}}>
+        <Box sx={{marginInline: "20%", marginTop: "2rem"}} className="box-shadow">
             {user?.is_superuser && <CreateQuestionnaire/>}
-            <h2>Current Questionnaires</h2>
-            <List className="box-shadow">
+            <div className="questionnare-header image-styles">
+                <h2 className="questionnare-title">Current Questionnaires</h2>
+            </div>
+            <List >
                 {landingRaw?.questionnaires.map((q) => {
                     return (
                         <ListItem key={q.id}>
