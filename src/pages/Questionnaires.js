@@ -65,7 +65,7 @@ export default function Questionnaires() {
         <Box sx={{marginInline: "20%", marginTop: "2rem"}}>
             {user?.is_superuser && <CreateQuestionnaire/>}
             <h2>Current Questionnaires</h2>
-            <List>
+            <List className="box-shadow">
                 {landingRaw?.questionnaires.map((q) => {
                     return (
                         <ListItem key={q.id}>
