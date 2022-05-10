@@ -38,18 +38,18 @@ export default function ForumPost({post, refreshTopic}) {
     const renderBody = () => {
         if (editField) {
             return (
-                <form onSubmit={ saveEditPost }>
-                    <TextField 
+                <form onSubmit={saveEditPost}>
+                    <TextField
                         name="body"
                         multiline
                         defaultValue={forumPost?.body}
-                        style = {{width: 750}}
+                        style={{width: 750}}
                     />
                     <IconButton type="submit">
                         <Save/>
                     </IconButton>
                 </form>
-                )
+            )
         }
         return `${forumPost?.body}`
     }
@@ -66,35 +66,37 @@ export default function ForumPost({post, refreshTopic}) {
     }
 
     return (
-        <Row className={'highlight-teal'}>
-            
+        <Row>
+            <Col>
                 <Row>
                     <Col xs={3}>{forumPost?.originator?.first_name} {forumPost?.originator?.last_name}</Col>
                     <Col xs={7}><strong>{forumPost?.title}</strong></Col>
                     <Col xs={2}>
-                        {canEdit && editButtons() }
+                        {canEdit && editButtons()}
                     </Col>
-                    <Col className={'mt-3'} xs={12}>{ renderBody() }</Col>
+                    <Col className={'mt-3'} xs={12}>{renderBody()}</Col>
                 </Row>
-            <form onSubmit={addComment}>
+                    <form onSubmit={addComment}>
                 <Row>
-                    <Col xs={1}></Col>
-                    <Col xs={7}>
-                        <Input name={"body"} fullWidth defaultValue={""}/>
-                    </Col>
-                    <Col xs={2}>
-                        <Button type={"submit"}>Add Comment</Button>
-                    </Col>
-                    <Col xs={2}>
-                        <IconButton onClick={() => setExpanded(!expanded)}>
-                            {expanded ? <ExpandLess/> : <ExpandMore/>}
-                            {forumPost?.forum_comments.length}
-                        </IconButton>
-                    </Col>
-                    {expanded && forumPost?.forum_comments.map((comment) =>
-                        <PostComment key={comment.id} data={comment}/>)}
+                        <Col xs={8}>
+                            <Input name={"body"} fullWidth defaultValue={""}/>
+                        </Col>
+                        <Col xs={2}>
+                            <Button type={"submit"}>Add Comment</Button>
+                        </Col>
+                        <Col xs={2} className={"ms-auto"}>
+                            <IconButton onClick={() => setExpanded(!expanded)}>
+                                {expanded ? <ExpandLess/> : <ExpandMore/>}
+                                {forumPost?.forum_comments.length}
+                            </IconButton>
+                        </Col>
                 </Row>
-            </form>
+                        <Row>
+                        {expanded && forumPost?.forum_comments.map((comment) =>
+                            <PostComment key={comment.id} data={comment}/>)}
+                </Row>
+                    </form>
+            </Col>
         </Row>
     )
 }

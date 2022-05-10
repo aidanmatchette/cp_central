@@ -1,21 +1,8 @@
-import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
-import {
-  Collapse,
-  Divider,
-  ListItemButton,
-  ListItemIcon,
-  ListItemText,
-  List,
-  ListItem,
-  Button,
-  Box,
-  Typography,
-} from "@mui/material";
-import { styled, ThemeProvider } from "@mui/material/styles";
+import {useNavigate} from "react-router-dom";
+import {Box, Divider, List, ListItem, ListItemButton, ListItemIcon, ListItemText, Typography,} from "@mui/material";
+import {styled, ThemeProvider} from "@mui/material/styles";
 import theme from "../../utils/theme.js";
-import { listItems } from "./SideBarData.js";
-import RateReviewRoundedIcon from "@mui/icons-material/RateReviewRounded";
+import {listItems} from "./SideBarData.js";
 import GenerateFeedback from "../GenerateFeedback";
 import GoogleCalendar from "../GoogleCalendar";
 
@@ -24,17 +11,7 @@ console.log("list items -----", listItems);
 function SideBar() {
   const navigate = useNavigate();
 
-  const [questionOpen, setQuestionOpen] = useState(false);
-  const [githubOpen, setGithubOpen] = useState(false);
-  const [feedbackOpen, setFeedbackOpen] = useState(false);
 
-  const menuSideBarContainer = {
-    width: 250,
-    height: "100%",
-    // display: 'flex',
-    // flexDirection: 'column',
-    // justifyContent: 'center'
-  };
   const CentralSideBar = styled(List)({
     "& .MuiListItemButton-root": {
       paddingLeft: 24,
@@ -49,12 +26,12 @@ function SideBar() {
     },
   });
 
-  const openFeedback = () => {};
+
 
   return (
     <ThemeProvider theme={theme}>
       <Box sx={{ display: "flex" }}>
-        {/* <List style={menuSideBarContainer} sx={{justifyContent: 'center', alignItems: 'center'}}> */}
+
         <CentralSideBar component="nav" disablePadding>
           <ListItemButton
             component="a"
@@ -79,20 +56,11 @@ function SideBar() {
               onClick={() => navigate(listItem.link)}
               key={index}
             >
-              {/* <ListItemIcon > */}
-              {/*   {listItem.listIcon} */}
-              {/* </ListItemIcon> */}
               <ListItemIcon>{listItem.listIcon}</ListItemIcon>
               <ListItemText primary={listItem.listText} />
             </ListItem>
           ))}
-          <ListItem button onClick={openFeedback}>
-            <ListItemIcon>
-              <RateReviewRoundedIcon />
-            </ListItemIcon>
-            <ListItemText primary={"Feedback"} />
-          </ListItem>
-          {/* <List style={menuSideBarContainer}  sx={{justifyContent: 'space-between', alignItems: 'center'}}>  */}
+
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <GenerateFeedback />
           </Box>
@@ -100,8 +68,7 @@ function SideBar() {
             <GoogleCalendar />
           </Box>
           <Box sx={{ display: "flex", justifyContent: "center" }}></Box>
-          {/* </List> */}
-          {/* </List> */}
+
         </CentralSideBar>
       </Box>
     </ThemeProvider>
