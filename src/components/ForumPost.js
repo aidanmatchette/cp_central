@@ -69,8 +69,8 @@ export default function ForumPost({post, refreshTopic}) {
         <Row>
             <Col>
                 <Row>
-                    <Col xs={3}>{forumPost?.originator?.first_name} {forumPost?.originator?.last_name}</Col>
-                    <Col xs={7}><strong>{forumPost?.title}</strong></Col>
+                    <Col xs={3} className="forum-post-title"><strong>{forumPost?.originator?.first_name} {forumPost?.originator?.last_name}</strong></Col>
+                    <Col xs={7} className="forum-post-title"><strong>{forumPost?.title}</strong></Col>
                     <Col xs={2}>
                         {canEdit && editButtons()}
                     </Col>
