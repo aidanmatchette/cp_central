@@ -1,17 +1,7 @@
-import { useAxios } from "../utils/useAxios";
-import { useEffect, useState } from "react";
-import {
-  Container,
-  List,
-  ListItem,
-  ListItemButton,
-  ListItemText,
-  Box,
-  Typography,
-} from "@mui/material";
-import { useNavigate } from "react-router-dom";
-import { ThemeProvider } from "@mui/material/styles";
-import theme from "../utils/theme.js";
+import {useAxios} from "../utils/useAxios";
+import {useEffect, useState} from "react";
+import {Box, Container, List, ListItemButton, ListItemText, Typography,} from "@mui/material";
+import {useNavigate} from "react-router-dom";
 
 export default function Forum() {
   const backend = useAxios();
@@ -23,6 +13,7 @@ export default function Forum() {
       // console.log({res})
       setForums(res.data);
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   let codeImage =
     "https://images.unsplash.com/photo-1558403194-611308249627?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80";
