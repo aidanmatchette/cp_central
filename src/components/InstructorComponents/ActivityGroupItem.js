@@ -22,14 +22,13 @@ export default function ActivityGroupItem({activity, refreshData}) {
         await refreshData()
     }
 
-    const ActivityMember = ({member}) => <ListItem> {member.first_name} {member.last_name} </ListItem>
-
     const ActivityGroup = ({aGroup}) => {
         return (
             <Col xs={4}>
                 <List className={'list-box'}>
-                    {aGroup.members.map((member) =>
-                        <ActivityMember key={member.id} member={member}/>)}
+                    {aGroup.members.map((member, index) =>
+                        <ListItem key={index}> {member.first_name} {member.last_name} </ListItem>)
+                    }
                 </List>
             </Col>
         )

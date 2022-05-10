@@ -25,8 +25,14 @@ class Feedback(models.Model):
         OTHER = 4
     category = models.IntegerField(choices=FeedbackCategory.choices, default=FeedbackCategory.OTHER)
 
+    def __str__(self):
+        return f'{self.user.first_name} {self.user.last_name} - {self.title}'
+
 
 class Vote(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='votes')
     is_agreed = models.BooleanField(default=True)
     feedback = models.ForeignKey(Feedback, on_delete=models.CASCADE, related_name="votes")
+
+    def __str__(self):
+        return f'{self.user.first_name} {self.user.last_name} - {self.is_agreed}'
