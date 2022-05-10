@@ -6,7 +6,7 @@ import { useContext, useState } from "react";
 import { DayContext } from "../context/DayProvider";
 import {AuthContext} from "../context/AuthProvider";
 
-export default function PostComment({data}) {
+export default function PostComment({data, refreshTopic}) {
 
     const {user} = useContext(AuthContext)
     const backend = useAxios()
@@ -38,6 +38,7 @@ export default function PostComment({data}) {
             setSelect(true)
         })
     }
+
     const renderCheckbox = () => {
         if (canEdit) {
             return <IconButton onClick={() => selectComment()}><CheckBoxOutlineBlank/></IconButton>
