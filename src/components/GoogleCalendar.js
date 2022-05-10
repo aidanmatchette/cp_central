@@ -13,7 +13,7 @@ function GoogleCalendar(props) {
   const [vis, setVis] = useState(false)
   let { height, width } = props
 
-  let calendarID = landingRaw && landingRaw.cohort.calendar_key
+  let calendarID = landingRaw?.cohort?.calendar_key
 
   let calendarStyle = {
     border: "0",
