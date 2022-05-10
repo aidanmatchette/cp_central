@@ -1,34 +1,32 @@
-import { forwardRef, useContext } from "react";
-import { useNavigate } from "react-router-dom";
-import { AuthContext } from "../context/AuthProvider";
+import {forwardRef, useContext} from "react";
+import {useNavigate} from "react-router-dom";
+import {AuthContext} from "../context/AuthProvider";
 import {
-  AppBar,
-  Container,
-  Drawer,
-  IconButton,
-  InputAdornment,
-  OutlinedInput,
-  Toolbar,
-  Typography,
-  FormControl,
-  InputLabel,
-  Box,
-  Button,
+    AppBar,
+    Box,
+    Button,
+    Drawer,
+    FormControl,
+    IconButton,
+    InputAdornment,
+    InputLabel,
+    OutlinedInput,
+    Toolbar,
 } from "@mui/material";
-import { ThemeProvider } from "@mui/material/styles";
+import {ThemeProvider} from "@mui/material/styles";
 import theme from "../utils/theme.js";
 import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
 import SideBar from "./SideBar/SideBar.js";
 import InstructorSideBar from "./SideBar/InstructorSideBar.js";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import { DayContext } from "../context/DayProvider";
+import {DayContext} from "../context/DayProvider";
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 
 function NavBar() {
   const { signout, isSideBarOpen, setIsSideBarOpen, user, token } =
     useContext(AuthContext);
-  const { landingRaw, date, setDate } = useContext(DayContext);
+  const { date, setDate } = useContext(DayContext);
   const navigate = useNavigate();
 
   const toggleSideBar = () => {
