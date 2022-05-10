@@ -26,6 +26,7 @@ function DayProvider({children}) {
 
     useEffect(() => {
         getLandingData().then((e)=>setLandingRaw(e))
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [user, date, dirty])
 
     const contextData = {isSideBarOpen, setIsSideBarOpen, date, setDate, landingRaw, setDirty, dirty, getLandingData};

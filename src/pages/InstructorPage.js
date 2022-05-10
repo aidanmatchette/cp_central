@@ -22,6 +22,7 @@ function InstructorPage() {
             const timer = setInterval(refreshData, 5000)
             return () => clearInterval(timer)
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [date]);
 
     return (
