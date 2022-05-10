@@ -57,10 +57,14 @@ function GenerateFeedback() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Button variant="outlined" color="secondary" sx={{ width: "80%", mt: 3 }} onClick={() => setModalOpen(true)}>
-        <RateReviewRoundedIcon
-          color="secondary" sx={{mr:1}}/>
-        Feedback   
+      <Button
+        variant="outlined"
+        color="secondary"
+        sx={{ width: "80%", mt: 3 }}
+        onClick={() => setModalOpen(true)}
+      >
+        <RateReviewRoundedIcon color="secondary" sx={{ mr: 1 }} />
+        Feedback
       </Button>
       <Dialog open={modalOpen} onClose={handleClose}>
         <DialogTitle>Feedback</DialogTitle>
@@ -139,25 +143,26 @@ function GenerateFeedback() {
                 />
               </Grid>
             </Grid>
-            <Button
-              type="submit"
-              color="secondary"
-              variant="contained"
-              sx={{ mt: 3 }}
-            >
-              Submit
-            </Button>
+
+            <DialogActions>
+              <Button
+                color="secondary"
+                variant="contained"
+                sx={{ mt: 3 }}
+                onClick={handleClose}
+              >
+                Close
+              </Button>
+              <Button
+                type="submit"
+                color="primary"
+                variant="contained"
+                sx={{ mt: 3 }}
+              >
+                Submit
+              </Button>
+            </DialogActions>
           </Box>
-          <DialogActions>
-            <Button
-              color="primary"
-              variant="contained"
-              sx={{ mt: 3 }}
-              onClick={handleClose}
-            >
-              Close
-            </Button>
-          </DialogActions>
         </DialogContent>
       </Dialog>
     </ThemeProvider>
