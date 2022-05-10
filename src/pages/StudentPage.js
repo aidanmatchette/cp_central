@@ -62,7 +62,7 @@ function StudentPage() {
             )}
             <Row className={"mt-3"}>
                 <Col className={"tall-content lesson noScroll"}>
-                    {lesson?.markdown ? (
+                        {lesson?.markdown ? (
                         <ReactMarkdown remarkPlugins={[remarkGfm]}>
                             {landingRaw?.lessons[0].markdown}
                         </ReactMarkdown>

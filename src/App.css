@@ -37,10 +37,12 @@ h6 {
 .inputForm {
   border: var(--border);
   border-radius: 1rem;
-  height: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .comment-top {
@@ -112,7 +114,50 @@ h6 {
   /* background-color: rgba(194, 194, 194, 0.5); */
   /* border-radius: 1rem; */
   font-family: "Nunito", Arial, Helvetica, sans-serif;
+  /* color: seashell;
+  text-shadow: 2px 2px 4px #000000; */
 }
 .cp-logo:hover {
   cursor: pointer;
+}
+.homepage-img {
+  background-image: url("https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NzR8fGNvZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+  height:60%;
+  border-radius: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+.motto {
+  position: absolute;
+  bottom: 40%;
+  right: 0;
+  background-color: whitesmoke;
+  opacity: .8;
+  width: 100%;
+}
+.text-shadow {
+  color: seashell;
+  text-shadow: 2px 2px 4px #000000;
+  /* text-shadow: 2px 2px 6px rgba(87,87,87,0.87); */
+}
+
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.questionnare-header {
+  background-image: url("/public/questionnare.jpeg");
+  height:20rem;
+}
+
+.questionnare-title {
+  padding-top: 4rem;
+}
+
+.image-styles {
+  position: relative;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
