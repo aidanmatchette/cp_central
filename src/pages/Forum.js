@@ -67,7 +67,7 @@ export default function Forum() {
       >
         <Typography
           variant="h1"
-          sx={{ fontWeight: 700, color: "rgba(58, 58, 58, 0.95)" }}
+          sx={{ fontWeight: 700, color: "rgba(0, 0, 0, 0.85)" }}
           component="h1"
         >
           FORUMS
