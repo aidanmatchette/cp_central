@@ -1,15 +1,12 @@
 import {DayContext} from "../context/DayProvider";
-import {useState, useContext, useEffect} from "react";
+import {useContext, useEffect, useState} from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import {Col, Container, Row} from "react-bootstrap";
 import {useAxios} from "../utils/useAxios";
 import LessonLinksCard from "../components/InstructorComponents/LessonLinksCard";
 import CohortLinks from "../components/InstructorComponents/CohortLinks";
-import CreateGroup from "../components/InstructorComponents/CreateGroup";
-import {Alert, List, ListItem, Button, Box} from "@mui/material";
-import dayjs from "dayjs";
-import ActivityGroupItem from "../components/InstructorComponents/ActivityGroupItem";
+import {Alert, Box, Button, List, ListItem} from "@mui/material";
 import {ThemeProvider} from "@mui/material/styles";
 import theme from "../utils/theme.js";
 
