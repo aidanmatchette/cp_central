@@ -11,7 +11,7 @@ export default function ForumPost({post, refreshTopic}) {
     const [expanded, setExpanded] = useState(false)
     const [forumPost, setForumPost] = useState(post)
     const backend = useAxios()
-    const canEdit = (user?.id == forumPost?.originator?.id) || user?.is_superuser
+    const canEdit = (user?.id === forumPost?.originator?.id) || user?.is_superuser
     const [editField, setEditField] = useState(false)
 
     const addComment = async (e) => {
@@ -69,8 +69,8 @@ export default function ForumPost({post, refreshTopic}) {
         <Row>
             <Col>
                 <Row>
-                    <Col xs={3}>{forumPost?.originator?.first_name} {forumPost?.originator?.last_name}</Col>
-                    <Col xs={7}><strong>{forumPost?.title}</strong></Col>
+                    <Col xs={3} className="forum-post-title"><strong>{forumPost?.originator?.first_name} {forumPost?.originator?.last_name}</strong></Col>
+                    <Col xs={7} className="forum-post-title"><strong>{forumPost?.title}</strong></Col>
                     <Col xs={2}>
                         {canEdit && editButtons()}
                     </Col>

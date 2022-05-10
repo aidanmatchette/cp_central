@@ -1,19 +1,17 @@
 import {Col} from "react-bootstrap";
 import {Check, CheckBoxOutlineBlank, Remove} from "@mui/icons-material";
-import { IconButton } from "@mui/material";
-import { useAxios } from "../utils/useAxios";
-import { useContext, useState } from "react";
-import { DayContext } from "../context/DayProvider";
+import {IconButton} from "@mui/material";
+import {useAxios} from "../utils/useAxios";
+import {useContext, useState} from "react";
 import {AuthContext} from "../context/AuthProvider";
 
 export default function PostComment({data, refreshTopic}) {
 
     const {user} = useContext(AuthContext)
     const backend = useAxios()
-    const { setDirty } = useContext(DayContext)
     const [select, setSelect] = useState(false)
     const [comment, setComment] = useState(true)
-    const canEdit = (user?.id == data?.originator?.id) || user?.is_superuser
+    const canEdit = (user?.id === data?.originator?.id) || user?.is_superuser
 
     console.log(data)
 

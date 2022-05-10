@@ -150,22 +150,22 @@
       "last_login": null,
       "is_superuser": false,
       "username": "quebec_student_1@email.com",
-      "first_name": "Q One",
-      "last_name": "Student",
+      "first_name": "Grace",
+      "last_name": "Hopper",
       "email": "quebec_student_1@email.com",
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-05-01T14:04:11Z",
       "avatar": "default.png",
       "metadata": {
-        "mentor": "",
-        "resume_coach": "",
-        "group_team": "",
+        "mentor": "Bill Gates",
+        "resume_coach": "George Carlin",
+        "group_team": "Bagel crews",
         "interviewer": "",
         "interview_date": ""
       },
       "default_group": 1,
-      "markdown": "",
+      "markdown": "I was a US Navy rear admiral and a computer scientist. I was one of the first programmers of the Harvard Mark I computer.\r\n\r\nI invented the first compiler for a computer programming language. I popularized the methodology of machine-independent programming language, which led to the development of COBOL. She is also credited for popularizing the term debugging for fixing machine glitches.\r\n\r\nI was the first woman in the world who got her name in Distinguished Fellow of the British Computer Society, Honorary Doctor of Science from Marquette University, and National Medal of Technology (1991).",
       "timezone": "CST",
       "groups": [
         1
@@ -181,22 +181,22 @@
       "last_login": null,
       "is_superuser": false,
       "username": "quebec_student_2@email.com",
-      "first_name": "Q Two",
-      "last_name": "Student",
+      "first_name": "John",
+      "last_name": "Kemeny",
       "email": "quebec_student_2@email.com",
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-05-01T14:04:25Z",
       "avatar": "default.png",
       "metadata": {
-        "mentor": "",
-        "resume_coach": "",
-        "group_team": "",
+        "mentor": "Bill Gates",
+        "resume_coach": "George Carlin",
+        "group_team": "Bagel crews",
         "interviewer": "",
         "interview_date": ""
       },
       "default_group": 1,
-      "markdown": "",
+      "markdown": "I am a computer scientist, mathematician, and educator best known for developing BASIC programming language with Thomas Kurtz.\r\n\r\nI pioneered the use of computers for ordinary people. He invented BASIC (BeginnerΓÇÖs All-purpose Symbolic Instruction Code) programming language in 1964, after experiments with the LGP-30. He also developed DTSS (Dartmouth Time-Sharing System), which is one of the worldΓÇÖs first timesharing systems.\r\n\r\nI received the Computer Pioneer Award in 1985.",
       "timezone": "CST",
       "groups": [
         1
@@ -212,20 +212,22 @@
       "last_login": null,
       "is_superuser": false,
       "username": "quebec_student_3@email.com",
-      "first_name": "Q Three",
-      "last_name": "Student",
+      "first_name": "Thomas",
+      "last_name": "Kurtz",
       "email": "quebec_student_3@email.com",
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-05-01T14:04:48Z",
       "avatar": "breakpoint.png",
       "metadata": {
-        "favorite_food2": "don",
-        "boo": "two",
-        "see": "thdree"
+        "mentor": "Bill Gates",
+        "resume_coach": "George Carlin",
+        "group_team": "Bagel crews",
+        "interviewer": "",
+        "interview_date": ""
       },
       "default_group": 1,
-      "markdown": "# I am student 3\r\n\r\n## Hello.",
+      "markdown": "Who is he: Thomas Kurtz is a computer scientist and a retired Dartmouth professor who implemented the concept of Timesharing.\r\n\r\nWhat he has done: He developed the BASIC programming language to allow non-experts users to interact with the computer. He and John Kemeny co-founded the company called True BASIC, Inc to market True BASIC, which is an updated version of the language. This programming language became widespread on microcomputers, which allowed small developers and business owners to develop custom software on computers, all on their own.\r\n\r\n\r\nMajor Achievements: Kurtz was honored with AFIPS Pioneer Award and IEEE Computer Science Pioneer Award.",
       "timezone": "CST",
       "groups": [
         1
@@ -241,22 +243,22 @@
       "last_login": null,
       "is_superuser": false,
       "username": "quebec_student_4@email.com",
-      "first_name": "Q Four",
-      "last_name": "Student",
+      "first_name": "John",
+      "last_name": "McCarthy",
       "email": "quebec_student_4@email.com",
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-05-01T14:05:14Z",
       "avatar": "default.png",
       "metadata": {
-        "mentor": "",
-        "resume_coach": "",
-        "group_team": "",
+        "mentor": "Bill Gates",
+        "resume_coach": "George Carlin",
+        "group_team": "Bagel crews",
         "interviewer": "",
         "interview_date": ""
       },
       "default_group": 1,
-      "markdown": "",
+      "markdown": "Who is he: John McCarthy was a cognitive scientist and computer scientist, who coined the term Artificial Intelligence.\r\n\r\nWhat he has done: John developed the Lisp programming language family, popularized timesharing, and worked on the design of the ALGOL programming language. He invented the Garbage Collection method to solve the problem of Lisp, which later became the programming language of choice for AI applications.\r\n\r\nMajor Achievements: He was honored with the Turing Award, Kyoto Prize, National Medal of Science, Computer Pioneer Award, and IJCAI Award for Research Excellence.",
       "timezone": "CST",
       "groups": [
         1
@@ -272,22 +274,22 @@
       "last_login": null,
       "is_superuser": false,
       "username": "quebec_student_5@email.com",
-      "first_name": "Q Five",
-      "last_name": "Student",
+      "first_name": "Alan",
+      "last_name": "Kay",
       "email": "quebec_student_5@email.com",
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-05-01T14:05:26Z",
       "avatar": "default.png",
       "metadata": {
-        "mentor": "",
-        "resume_coach": "",
-        "group_team": "",
+        "mentor": "Bill Gates",
+        "resume_coach": "George Carlin",
+        "group_team": "Bagel crews",
         "interviewer": "",
         "interview_date": ""
       },
       "default_group": 1,
-      "markdown": "",
+      "markdown": "Who is he: Alan Curtis Kay is a computer scientist who has been elected a Fellow of the National Academy of Engineering, the American Academy of Arts and Sciences and the Royal Society of Arts.\r\n\r\nWhat he has done: Alan is best known for his early pioneering work on object-oriented programming and windowing Graphical User Interface (GUI) design. Brian is also the coiner of phase: The best way to predict the future is to invent it.\r\n\r\nMajor Achievements: Alan received ACM Turing Award for his work on object-oriented programming, UPE Abacus Award, and UdK 01-Award  for pioneering the GUI.",
       "timezone": "CST",
       "groups": [
         1
@@ -303,22 +305,22 @@
       "last_login": null,
       "is_superuser": false,
       "username": "quebec_student_6@email.com",
-      "first_name": "Q Six",
-      "last_name": "Student",
+      "first_name": "Niklaus",
+      "last_name": "Wirth",
       "email": "quebec_student_6@email.com",
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-05-01T14:05:37Z",
       "avatar": "default.png",
       "metadata": {
-        "mentor": "",
-        "resume_coach": "",
-        "group_team": "",
+        "mentor": "Bill Gates",
+        "resume_coach": "George Carlin",
+        "group_team": "Bagel crews",
         "interviewer": "",
         "interview_date": ""
       },
       "default_group": 1,
-      "markdown": "",
+      "markdown": "Who is he: Alan Curtis Kay is a computer scientist who has been elected a Fellow of the National Academy of Engineering, the American Academy of Arts and Sciences and the Royal Society of Arts.\r\n\r\nWhat he has done: Alan is best known for his early pioneering work on object-oriented programming and windowing Graphical User Interface (GUI) design. Brian is also the coiner of phase: The best way to predict the future is to invent it.\r\n\r\nMajor Achievements: Alan received ACM Turing Award for his work on object-oriented programming, UPE Abacus Award, and UdK 01-Award  for pioneering the GUI.",
       "timezone": "CST",
       "groups": [
         1
@@ -334,16 +336,22 @@
       "last_login": null,
       "is_superuser": false,
       "username": "quebec_ta_1@email.com",
-      "first_name": "Q TA 1",
-      "last_name": "TA 1",
+      "first_name": "James",
+      "last_name": "Gosling",
       "email": "quebec_ta_1@email.com",
       "is_staff": true,
       "is_active": true,
       "date_joined": "2022-05-01T14:05:56Z",
       "avatar": "default.png",
-      "metadata": null,
+      "metadata": {
+        "mentor": "Bill Gates",
+        "resume_coach": "George Carlin",
+        "group_team": "Bagel crews",
+        "interviewer": "",
+        "interview_date": ""
+      },
       "default_group": 1,
-      "markdown": "",
+      "markdown": "Who is he: James Gosling is a Canadian computer scientist, known as the father of the Java programming language.\r\n\r\nWhat he has done: James developed a multi-processor version of Unix, several compilers, and mail systems before joining Sun Microsystems. He invented the Java programming language and implemented JavaΓÇÖs original compiler and virtual machine in 1994. He also made contributions to several other software systems, including Gosling Emacs and NeWS.\r\n\r\nMajor Achievements: Gosling was awarded The Economist Innovation Award,  IEEE John von Neumann Medal, and he was made an Officer of the Order of Canada in 2007.",
       "timezone": "CST",
       "groups": [
         1
@@ -359,16 +367,22 @@
       "last_login": null,
       "is_superuser": false,
       "username": "quebec_ta_2@email.com",
-      "first_name": "Q TA 2",
-      "last_name": "TA 2",
+      "first_name": "Guido",
+      "last_name": "Van Rossum",
       "email": "quebec_ta_2@email.com",
       "is_staff": true,
       "is_active": true,
       "date_joined": "2022-05-01T14:06:09Z",
       "avatar": "default.png",
-      "metadata": null,
+      "metadata": {
+        "mentor": "Bill Gates",
+        "resume_coach": "George Carlin",
+        "group_team": "Bagel crews",
+        "interviewer": "",
+        "interview_date": ""
+      },
       "default_group": 1,
-      "markdown": "",
+      "markdown": "Who is he: Guido van Rossum is a computer programmer, known as the author of the Python programming language.\r\n\r\nWhat he has done: In the early days, he wrote a glob() routine to BSD Unix and worked on ABC programming language. He developed Python while working for Google and continues to oversee the Python development process, making essential decisions where necessary.\r\n\r\nAchievements: Rossum received an NLUUG Award, the 2001 Award for the Advancement of Free Software for his work on Python.",
       "timezone": "CST",
       "groups": [
         1
@@ -384,22 +398,22 @@
       "last_login": null,
       "is_superuser": false,
       "username": "papa_student_1@email.com",
-      "first_name": "P One",
-      "last_name": "Student",
+      "first_name": "Donald",
+      "last_name": "Knuth",
       "email": "papa_student_1@email.com",
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-05-01T14:11:04Z",
       "avatar": "default.png",
       "metadata": {
-        "mentor": "",
-        "resume_coach": "",
-        "group_team": "",
+        "mentor": "Bill Gates",
+        "resume_coach": "George Carlin",
+        "group_team": "Bagel crews",
         "interviewer": "",
         "interview_date": ""
       },
       "default_group": 2,
-      "markdown": "",
+      "markdown": "Who is he: Donald Knuth is a mathematician, computer scientist, and author of The Art of Computer Programming. He has been called the father of the analysis of algorithms.\r\n\r\n\r\nWhat he has done: Donald Knuth worked on the development of analysis of the computational complexity of algorithms and their formal mathematical techniques. He popularized the term asymptotic notation. He created the TeX computer typesetting system, WEB, and CWEB computer programming systems to encourage literate programming.\r\n\r\nAchievements: Turing Award, Grace Murray Hopper Award, National Medal of Science, Faraday Medal, Kyoto Prize, and John von Neumann Medal.",
       "timezone": "CST",
       "groups": [
         2
@@ -415,22 +429,22 @@
       "last_login": null,
       "is_superuser": false,
       "username": "papa_student_2@email.com",
-      "first_name": "P Two",
-      "last_name": "Student",
+      "first_name": "John",
+      "last_name": "Carmack",
       "email": "papa_student_2@email.com",
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-05-01T14:11:16Z",
       "avatar": "default.png",
       "metadata": {
-        "mentor": "",
-        "resume_coach": "",
-        "group_team": "",
+        "mentor": "Bill Gates",
+        "resume_coach": "George Carlin",
+        "group_team": "Bagel crews",
         "interviewer": "",
         "interview_date": ""
       },
       "default_group": 2,
-      "markdown": "",
+      "markdown": "Who is he: John Carmack is a game developer and co-founder and former technical director of Id Software.\r\n\r\n\r\nWhat he has done: He was the lead programmer of the Id video games Doom, Rage, Commander Keen, and their sequels. He is best known for his innovations in 3d graphics, especially for Reverse algorithm for shadow volumes. Carmack popularized the use of several techniques in computer graphics such as adaptive tile refresh, binary space partitioning, raycasting, surface caching, and MegaTexture technology.\r\n\r\nAchievements: He was honored by the National Academy of Television Arts & Sciences (twice), the Technology & Engineering Emmy Awards, and Game Developers Conference Lifetime Achievement award for his pioneering work.",
       "timezone": "CST",
       "groups": [
         2
@@ -446,22 +460,22 @@
       "last_login": null,
       "is_superuser": false,
       "username": "papa_ta_1@email.com",
-      "first_name": "P TA 1",
-      "last_name": "P TA 1",
+      "first_name": "David",
+      "last_name": "Patterson",
       "email": "papa_ta_1@email.com",
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-05-01T14:11:33Z",
       "avatar": "default.png",
       "metadata": {
-        "mentor": "",
-        "resume_coach": "",
-        "group_team": "",
+        "mentor": "Bill Gates",
+        "resume_coach": "George Carlin",
+        "group_team": "Bagel crews",
         "interviewer": "",
         "interview_date": ""
       },
       "default_group": 2,
-      "markdown": "",
+      "markdown": "Who is he: David Patterson is a computer scientist and professor at the University of California, Berkeley.\r\n\r\n\r\nWhat he has done: Patterson is known for his contribution to the RISC processor (Reduced Instruction Set Computer) design, and his research on RAID (Redundant Arrays of Independent Disks) and NOW (Network of Workstations).\r\n\r\nAchievements: He received the EckertΓÇôMauchly Award, Karl Karlstrom, Outstanding Educator, and ACM Distinguished Service Award.",
       "timezone": "CST",
       "groups": [
         2
@@ -691,16 +705,16 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2022-05-06T13:27:47Z",
-      "avatar": "Markos.jfif",
+      "avatar": "Markos_I26WRsX.jfif",
       "metadata": {
-        "mentor": "",
-        "resume_coach": "",
+        "mentor": "me",
+        "resume_coach": "3",
         "group_team": "",
         "interviewer": "",
         "interview_date": ""
       },
       "default_group": 1,
-      "markdown": "# Go Navy\r\n\r\nAfter 5 years of experience in problem solving and process improvement in the Navy, I'm making the career transition to become a Software Developer. I╬ô├ç├ûm currently enrolled in a coding bootcamp, with a concentration in: Javascript, Python, HTML, CSS, Django, React, Postgres, SQL and building RESTful APIs. Looking to develop and improve products with clients and teams alike.",
+      "markdown": "# Go Navy!!\r\n\r\nAfter 5 years of experience in problem solving and process improvement in the Navy, I'm making the career transition to become a Software Developer. I╬ô├ç├ûm currently enrolled in a coding bootcamp, with a concentration in: Javascript, Python, HTML, CSS, Django, React, Postgres, SQL and building RESTful APIs. Looking to develop and improve products with clients and teams alike.",
       "timezone": "CST",
       "groups": [
         1
@@ -1059,10 +1073,71 @@
     }
   },
   {
-    "model": "app.checkin",
-    "pk": 9,
+    "model": "app.userlink",
+    "pk": 32,
     "fields": {
-      "date": "2022-05-06",
+      "user": 27,
+      "name": "My Lidddnked Indsadf",
+      "is_public": false,
+      "url": "http://learngitbranching.js.org/",
+      "link_type": 1
+    }
+  },
+  {
+    "model": "app.userlink",
+    "pk": 35,
+    "fields": {
+      "user": 27,
+      "name": "asdfsdf8",
+      "is_public": false,
+      "url": "http://www.pythontutor.com/visualize.html#mode=edit",
+      "link_type": 2
+    }
+  },
+  {
+    "model": "app.checkin",
+    "pk": 19,
+    "fields": {
+      "date": "2022-05-02",
+      "group": 1,
+      "user": [
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        12,
+        13,
+        26,
+        27,
+        28
+      ]
+    }
+  },
+  {
+    "model": "app.checkin",
+    "pk": 20,
+    "fields": {
+      "date": "2022-05-03",
+      "group": 1,
+      "user": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        25,
+        26,
+        28
+      ]
+    }
+  },
+  {
+    "model": "app.checkin",
+    "pk": 21,
+    "fields": {
+      "date": "2022-05-04",
       "group": 1,
       "user": [
         6,
@@ -1071,7 +1146,180 @@
         9,
         10,
         11,
+        25,
+        26,
         27
+      ]
+    }
+  },
+  {
+    "model": "app.checkin",
+    "pk": 22,
+    "fields": {
+      "date": "2022-05-05",
+      "group": 1,
+      "user": [
+        2,
+        6,
+        8,
+        9,
+        10,
+        11,
+        25,
+        26,
+        27
+      ]
+    }
+  },
+  {
+    "model": "app.checkin",
+    "pk": 23,
+    "fields": {
+      "date": "2022-05-06",
+      "group": 1,
+      "user": [
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        25,
+        26,
+        27,
+        28
+      ]
+    }
+  },
+  {
+    "model": "app.checkin",
+    "pk": 24,
+    "fields": {
+      "date": "2022-05-07",
+      "group": 1,
+      "user": [
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        25,
+        27
+      ]
+    }
+  },
+  {
+    "model": "app.checkin",
+    "pk": 25,
+    "fields": {
+      "date": "2022-05-08",
+      "group": 1,
+      "user": [
+        2,
+        6,
+        7,
+        9,
+        10,
+        26,
+        28
+      ]
+    }
+  },
+  {
+    "model": "app.checkin",
+    "pk": 26,
+    "fields": {
+      "date": "2022-05-09",
+      "group": 1,
+      "user": [
+        2,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        25,
+        26,
+        27,
+        28
+      ]
+    }
+  },
+  {
+    "model": "app.checkin",
+    "pk": 27,
+    "fields": {
+      "date": "2022-05-10",
+      "group": 1,
+      "user": [
+        2,
+        6,
+        7,
+        8,
+        9,
+        11,
+        25,
+        26,
+        28
+      ]
+    }
+  },
+  {
+    "model": "app.checkin",
+    "pk": 28,
+    "fields": {
+      "date": "2022-05-11",
+      "group": 1,
+      "user": [
+        2,
+        6,
+        8,
+        9,
+        10,
+        25,
+        26,
+        27,
+        28
+      ]
+    }
+  },
+  {
+    "model": "app.checkin",
+    "pk": 29,
+    "fields": {
+      "date": "2022-05-12",
+      "group": 1,
+      "user": [
+        2,
+        6,
+        7,
+        9,
+        10,
+        11,
+        25,
+        26,
+        27
+      ]
+    }
+  },
+  {
+    "model": "app.checkin",
+    "pk": 30,
+    "fields": {
+      "date": "2022-05-13",
+      "group": 1,
+      "user": [
+        2,
+        6,
+        9,
+        11,
+        25,
+        26,
+        27,
+        28
       ]
     }
   },
@@ -1632,6 +1880,15 @@
     }
   },
   {
+    "model": "app.filledquestionnaire",
+    "pk": 11,
+    "fields": {
+      "questionnaire": 11,
+      "user": 28,
+      "is_complete": false
+    }
+  },
+  {
     "model": "app.questionresponse",
     "pk": 13,
     "fields": {
@@ -1844,7 +2101,7 @@
       "date": "2022-05-02",
       "start_time": "2022-05-02T09:00:00Z",
       "stop_time": "2022-05-02T12:00:00Z",
-      "markdown": "# Monday, January 31, 2022\r\n\r\n## Topics Covered / Goals\r\n- Get your local machine set up to start the course\r\n- Exploring your IDE (VSCode)\r\n- Be able to navigate your computer using the command line\r\n- Create and manage git repositories using the command line\r\n\r\n## Lesson\r\n\r\n### Computer Setup (Mac, Linux, & Windows)\r\nBefore we get started, just know that this will be chaos. Your goal is to get a working environment, not to understand everything that happens. Please follow along closely!\r\n- [Slack](https://slack.com/downloads) - for all communication purposes\r\n- [Zoom](https://zoom.us/support/download)\r\n- Sign up for [Operation Code](https://operationcode.org/join)\r\n\r\n### Mac Setup\r\n- Make sure you have an Apple ID\r\n- Download XCode from the Mac App Store\r\n- Ensure that you're running the most recent operating system. You can check your version by going to \"System Preferences\" and clicking on \"Software Update\"\r\n- [Complete Installfest (MacOS)](../page-resources/installfest.md)\r\n\r\n### Ubuntu Linux Setup\r\n- [Complete Installfest (Ubuntu Linux)](../page-resources/installfest_ubuntu.md)\r\n\r\n### Windows Setup\r\n- Ensure that you're running the most recent operating system (Windows 10 and 11 are both fine). You can update to the latest Windows version by selecting `Start > Settings > **Windows Update **> Check for updates.`\r\n- Download and install [WSL](https://docs.microsoft.com/en-us/windows/wsl/install) by running `wsl --install` as an Administrator from Powershell\r\n- [Complete Installfest (Windows)](../page-resources/installfest_windows.md)\r\n\r\n### CLI Intro\r\n\r\nReview the following BASH commands:\r\n- pwd\r\n- ls, ls -a\r\n- cd, ., .., ~, / (different places to cd to)\r\n- mkdir (make ~/projects for all codeplatoon assignments)\r\n- touch\r\n- cp, cp -r\r\n- mv\r\n- rm, rm -r, rm -rf\r\n- rmdir\r\n- sudo\r\n- clear, cmd+k\r\n- less (useful by itself, also used by git diff)\r\n- vim (just learn how to quit. used by git commit)\r\n\r\n### Git Intro\r\n\r\n- `ls -a` (nothing here)\r\n- `git status` (not a repo)\r\n- `git init` \r\n- `ls -a` (see .git folder)\r\n- `git status`\r\n- `touch work.txt`\r\n- `git add .`\r\n- `git commit -m 'i did work'` (use -m to add the message inline, or you'll find yourself in vim)\r\n- `git log` (uses `less` to show the commit history)\r\n- `git remote add origin https://github.com/username/reponame` (the name is arbitrary, but origin is VERY conventional)\r\n- `git remote rm origin` (in case you messed up)\r\n- `git remote -v` (maybe you messed up, but aren't sure)\r\n- `git push origin master`\r\n- `git pull origin master`\r\n- `git clone https://github.com/username/reponame` (now you can start today's exercises)\r\n\r\n## Visual Studio Code\r\n\r\nThere are many IDEs (integrated development environments) out there that developers can use. For our class, we're going to be using Visual Studio Code, a free IDE created by Microsoft. VSCode is highly extensible and able to support many different coding languages. \r\n\r\nIt is important to use a consistent environment when collaborating so we are going to recommend a few settings and extensions that everyone should set up with VSCode. These are the recommended settings we all should be using. To set these, go to the main menu Code -> Preferences -> Settings (or Mac: Command + Shift + P > \"Settings\"), and apply these settings in the JSON file:\r\n\r\n```\r\n{\r\n  \"editor.fontSize\": 14,\r\n  \"editor.multiCursorModifier\": \"ctrlCmd\",\r\n  \"editor.renderLineHighlight\": \"gutter\",\r\n  \"editor.tabSize\": 2,\r\n  \"editor.wordWrap\": \"on\",\r\n  \"explorer.confirmDelete\": false,\r\n  \"explorer.confirmDragAndDrop\": false,\r\n  \"files.autoSave\": \"onFocusChange\",\r\n  \"window.zoomLevel\": 0,\r\n  \"workbench.colorTheme\": \"Visual Studio Dark\",\r\n  \"workbench.iconTheme\": \"vscode-icons\",\r\n  \"workbench.startupEditor\": \"newUntitledFile\",\r\n  \"[python]\": {\r\n    \"editor.insertSpaces\": true,\r\n    \"editor.tabSize\": 4\r\n  },\r\n\r\n}\r\n```\r\n\r\nAnd here are some useful extensions:\r\n  - Beautify\r\n  - VSCode Icons\r\n  - Bracket Pair Colorizer\r\n  - Path IntelliSense\r\n  - Live Server\r\n  - Python\r\n  - Live Share\r\n  - Live Share Audio\r\n  \r\n \r\n\r\n\r\n## Assignments\r\n- [99 Bottles](https://github.com/quebecplatoon/algo-99-bottles) in JS\r\n- [Deaf Grandma](https://github.com/quebecplatoon/algo-deaf-grandma) in JS\r\n- [Terminal Commands In Depth](https://github.com/quebecplatoon/misc-command-line) ...nothing to submit here but necessary reading"
+      "markdown": "# Monday, January 31, 2022\n\n## Topics Covered / Goals\n- Get your local machine set up to start the course\n- Exploring your IDE (VSCode)\n- Be able to navigate your computer using the command line\n- Create and manage git repositories using the command line\n\n## Lesson\n\n### Computer Setup (Mac, Linux, & Windows)\nBefore we get started, just know that this will be chaos. Your goal is to get a working environment, not to understand everything that happens. Please follow along closely!\n- [Slack](https://slack.com/downloads) - for all communication purposes\n- [Zoom](https://zoom.us/support/download)\n- Sign up for [Operation Code](https://operationcode.org/join)\n\n### Mac Setup\n- Make sure you have an Apple ID\n- Download XCode from the Mac App Store\n- Ensure that you're running the most recent operating system. You can check your version by going to \"System Preferences\" and clicking on \"Software Update\"\n- [Complete Installfest (MacOS)](../page-resources/installfest.md)\n\n### Ubuntu Linux Setup\n- [Complete Installfest (Ubuntu Linux)](../page-resources/installfest_ubuntu.md)\n\n### Windows Setup\n- Ensure that you're running the most recent operating system (Windows 10 and 11 are both fine). You can update to the latest Windows version by selecting `Start > Settings > **Windows Update **> Check for updates.`\n- Download and install [WSL](https://docs.microsoft.com/en-us/windows/wsl/install) by running `wsl --install` as an Administrator from Powershell\n- [Complete Installfest (Windows)](../page-resources/installfest_windows.md)\n\n### CLI Intro\n\nReview the following BASH commands:\n- pwd\n- ls, ls -a\n- cd, ., .., ~, / (different places to cd to)\n- mkdir (make ~/projects for all codeplatoon assignments)\n- touch\n- cp, cp -r\n- mv\n- rm, rm -r, rm -rf\n- rmdir\n- sudo\n- clear, cmd+k\n- less (useful by itself, also used by git diff)\n- vim (just learn how to quit. used by git commit)\n\n### Git Intro\n\n- `ls -a` (nothing here)\n- `git status` (not a repo)\n- `git init` \n- `ls -a` (see .git folder)\n- `git status`\n- `touch work.txt`\n- `git add .`\n- `git commit -m 'i did work'` (use -m to add the message inline, or you'll find yourself in vim)\n- `git log` (uses `less` to show the commit history)\n- `git remote add origin https://github.com/username/reponame` (the name is arbitrary, but origin is VERY conventional)\n- `git remote rm origin` (in case you messed up)\n- `git remote -v` (maybe you messed up, but aren't sure)\n- `git push origin master`\n- `git pull origin master`\n- `git clone https://github.com/username/reponame` (now you can start today's exercises)\n\n## Visual Studio Code\n\nThere are many IDEs (integrated development environments) out there that developers can use. For our class, we're going to be using Visual Studio Code, a free IDE created by Microsoft. VSCode is highly extensible and able to support many different coding languages. \n\nIt is important to use a consistent environment when collaborating so we are going to recommend a few settings and extensions that everyone should set up with VSCode. These are the recommended settings we all should be using. To set these, go to the main menu Code -> Preferences -> Settings (or Mac: Command + Shift + P > \"Settings\"), and apply these settings in the JSON file:\n\n```\n{\n  \"editor.fontSize\": 14,\n  \"editor.multiCursorModifier\": \"ctrlCmd\",\n  \"editor.renderLineHighlight\": \"gutter\",\n  \"editor.tabSize\": 2,\n  \"editor.wordWrap\": \"on\",\n  \"explorer.confirmDelete\": false,\n  \"explorer.confirmDragAndDrop\": false,\n  \"files.autoSave\": \"onFocusChange\",\n  \"window.zoomLevel\": 0,\n  \"workbench.colorTheme\": \"Visual Studio Dark\",\n  \"workbench.iconTheme\": \"vscode-icons\",\n  \"workbench.startupEditor\": \"newUntitledFile\",\n  \"[python]\": {\n    \"editor.insertSpaces\": true,\n    \"editor.tabSize\": 4\n  },\n\n}\n```\n\nAnd here are some useful extensions:\n  - Beautify\n  - VSCode Icons\n  - Bracket Pair Colorizer\n  - Path IntelliSense\n  - Live Server\n  - Python\n  - Live Share\n  - Live Share Audio\n  \n \n\n\n## Assignments\n- [99 Bottles](https://github.com/quebecplatoon/algo-99-bottles) in JS\n- [Deaf Grandma](https://github.com/quebecplatoon/algo-deaf-grandma) in JS\n- [Terminal Commands In Depth](https://github.com/quebecplatoon/misc-command-line) ...nothing to submit here but necessary reading\n\n"
     }
   },
   {
@@ -1964,7 +2221,7 @@
       "date": "2022-05-10",
       "start_time": "2022-05-10T09:00:00Z",
       "stop_time": "2022-05-10T12:00:00Z",
-      "markdown": "# Thursday, February 10, 2022\r\n\r\n## Topics Covered / Goals\r\n- Understand when and why to use inheritance in your code\r\n- Understand the relationship between child classes and parent classes\r\n- Inherit classes successfully\r\n- Understand the use of `super` in OOP and when to use it\r\n- Understand different types of multiple inheritance:\r\n    - one parent with multiple children\r\n    - one child with multiple parents\r\n\r\n## Lesson\r\n\r\n### Inheritance in Python\r\n> Inheritance is a relationship between two classes, a parent class and a child class (or a superclass and a subclass). Specifically, inheritance helps us model relationships where one class is a subtype of another class. For example, 'a dog is an animal. All dogs are animals, but not all animals are dogs.'\r\n\r\n\r\n```python\r\nclass Dog:\r\n    def __init__(self, name):\r\n        self.name = name\r\n\r\n    def eat(self, food):\r\n        print(f\"{self.name} eats a {food}.\")\r\n    \r\n    def bark(self):\r\n        print(\"BARK BARK!\")\r\n\r\nspot = Dog('Spot')\r\nspot.eat()\r\n```\r\n\r\n> In the example above, we say that every dog has an attribute called `name`. Every dog also has the ability to `eat` and `bark`.\r\n\r\n```python\r\nclass Cat:\r\n    def __init__(self, name):\r\n        self.name = name\r\n\r\n    def eat(self, food):\r\n        print(f\"{self.name} eats a {food}.\")\r\n    \r\n    def meow(self):\r\n        print(\"meow meow!\")\r\n\r\ngarfield = Cat('Spot')\r\ngarfield.eat()\r\n```\r\n> In the example above, we say that every cat has an attribute called `name`. Every cat also has the ability to `eat` and `meow`. This `Cat` class is pretty similar to our previous `Dog`. This isn't just a coincidence, like how a table and a horse both have four legs. Cats and dogs are both able to eat because they are both types of animals. Using inheritance, we can rewrite the above classes to avoid repeating code.\r\n\r\n```python\r\nclass Animal:\r\n    def __init__(self,name):\r\n        self.name = name\r\n    def eat(self, food):\r\n        print(f\"{self.name} eats a {food}.\")\r\n    def speak(self):\r\n        print(\"I'm an animal!\")\r\n\r\nclass Dog(Animal):\r\n    def speak(self):\r\n        print(\"BARK BARK!\")\r\n\r\n\r\nclass Cat(Animal):\r\n    def speak(self):\r\n        print(\"meow meow!\")\r\n\r\nlucky = Cat('lucky')\r\n# the name attribute and eat method aren't defined on the Cat class, but this works because Cat inherits them from Animal\r\nlucky.eat('chicken nugget') \r\n\r\n```\r\n> Notice how we passed the `Animal` class to the `Cat` and `Dog` classes. This indicates that `Animal` is a parent class of both `Cat` and `Dog`. As such, `Cat` and `Dog` have access to all of the methods from animal, even `__init__`. This might seem a little unintuitive because the child class is always 'bigger' than the parent. The child class has access to everything in the parent class(`__init__`, `eat`), and then also has its own method `speak`, which overrides `speak` from the parent class.\r\n\r\n> Sometimes, we'll want to define a child class that doesn't use the exact same methods as its parent, but we don't want to override it entirely, like we just did with `speak`. We can use the `super()` method to access an instance of the parent class, call any of its methods from the child class, and then add more custom logic afterwards. This is commonly used to repeat the `__init__` method from the parent class, and then add an extra property at the end. For example, a difference between dogs and cats is that a dog can be a registered service animal, whereas a cat cannot.\r\n\r\n```python\r\nclass Animal:\r\n    def __init__(self,name):\r\n        self.name = name\r\n    def eat(self, food):\r\n        print(f\"{self.name} eats a {food}.\")\r\n    def speak(self):\r\n        print(\"I'm an animal!\")\r\n\r\nclass Dog(Animal):\r\n    def __init__(self, name, is_service_animal):\r\n        # use the logic from the parent Animal class without duplicating code\r\n        parent_instance = super()\r\n        parent_instance.__init__(name)\r\n\r\n        # add some Dog-specific setup\r\n        self.is_service_animal = is_service_animal\r\n\r\n    def speak(self):\r\n        print(\"BARK BARK!\")\r\n\r\n\r\nclass Cat(Animal):\r\n    def speak(self):\r\n        print(\"meow meow!\")\r\n\r\nsparky = Dog('sparky', True)\r\n```\r\n> The example above demontrates a common use for inheritance, where you have multiple child classes that share code from a common parent class. Inheritance can also work the other way, where one child class inherits from multiple parent classes. \r\n\r\n```python\r\nimport math\r\n\r\nclass Person:\r\n    def __init__(self, name, job):\r\n        self.name = name\r\n        self.job = job\r\n    def work(self):\r\n        print(f\"{self.name} is working hard as a {self.job}.\")\r\n    \r\nclass Computer:\r\n    def __init__(self, number_of_cores):\r\n        self.number_of_cores = number_of_cores\r\n\r\n    def compute(self):\r\n        print(round(math.pi, self.number_of_cores))\r\n\r\ntoaster = Computer(1)\r\ntoaster.compute()\r\n\r\ncompy386 = Computer(4)\r\ncompy386.compute()\r\n\r\nclass Cyborg(Person, Computer):\r\n    def __init__(self, name, job, number_of_cores):\r\n        Person.__init__(self, name, job)\r\n        Computer.__init__(self, number_of_cores)\r\n\r\n    def work(self):\r\n        for n in range(self.number_of_cores):\r\n            Person.work(self)\r\n\r\nterminator = Cyborg('Arnold', 'terminator', 8)\r\nterminator.work()\r\n```\r\n\r\n### Inheritance in Javascript\r\n> Inheritance in javascript is pretty similar to how it works in Python. Let's recreate one of our previous examples, just so you can see the syntax.\r\n\r\n```javascript\r\nclass Animal {\r\n    constructor(name){\r\n        this.name = name\r\n    }\r\n    eat(food){\r\n        console.log(`${this.name} eats a ${food}.`)\r\n    }\r\n    speak(){\r\n        console.log(\"I am an animal!\")\r\n    }\r\n}\r\n\r\nclass Dog extends Animal {\r\n    constructor(name, is_service_animal){\r\n        super(name)\r\n        this.is_service_animal = is_service_animal\r\n    }\r\n    speak(){\r\n        if ( this.is_service_animal ) {\r\n            console.log(`My name is ${this.name}, and I'm here to help!`)\r\n        }\r\n    }\r\n}\r\n\r\nconst fido = new Dog('fido', true)\r\nfido.eat('beef')\r\nfido.speak()\r\n```\r\n\r\n**When to use inheritance**\r\nUse inheritance to write less code. If you are writing an object oriented program with many classes, check if there are many similarities between your classes that have caused you to write redundant code. If you have two classes that are related (e.g. Animal, Dog), but they don't actually share any redundant code, you don't need inheritance. Verify that those similarities are due to inherent is-a relationships that are unlikely to change. For example, a table and a dog both have four legs, but this is not due to an inherent relationship, and as your program becomes more complex, there will be more differences between tables and dogs, and it will make less sense for them to inherit from a common ancestor (4-legged). If you have multiple classes that share code with each other, where one is inherently a type of the other, or both of them are inherently types of a third thing, consider using inheritance in your program so that you can write less code. \r\n\r\n## External Resources\r\n- [Python super() method](https://realpython.com/python-super/)\r\n- [Method Resolution Order(MRO)](https://www.educative.io/edpresso/what-is-mro-in-python)\r\n\r\n## Assignments\r\n- [School Interface I](https://github.com/quebecplatoon/oop-school-interface-i)\r\n- [Word Guess CSV](https://github.com/quebecplatoon/algo-word-guess)\r\n- [Boggle I](https://github.com/quebecplatoon/oop-boggle-i)\r\n- Stretch challenge: [Boggle II](https://github.com/quebecplatoon/oop-boggle-ii)"
+      "markdown": "# Thursday, February 10, 2022!\n\n## Topics Covered / Goals\n- Understand when and why to use inheritance in your code\n- Understand the relationship between child classes and parent classes\n- Inherit classes successfully\n- Understand the use of `super` in OOP and when to use it\n- Understand different types of multiple inheritance:\n    - one parent with multiple children\n    - one child with multiple parents\n\n## Lesson\n\n### Inheritance in Python\n> Inheritance is a relationship between two classes, a parent class and a child class (or a superclass and a subclass). Specifically, inheritance helps us model relationships where one class is a subtype of another class. For example, 'a dog is an animal. All dogs are animals, but not all animals are dogs.'\n\n\n```python\nclass Dog:\n    def __init__(self, name):\n        self.name = name\n\n    def eat(self, food):\n        print(f\"{self.name} eats a {food}.\")\n    \n    def bark(self):\n        print(\"BARK BARK!\")\n\nspot = Dog('Spot')\nspot.eat()\n```\n\n> In the example above, we say that every dog has an attribute called `name`. Every dog also has the ability to `eat` and `bark`.\n\n```python\nclass Cat:\n    def __init__(self, name):\n        self.name = name\n\n    def eat(self, food):\n        print(f\"{self.name} eats a {food}.\")\n    \n    def meow(self):\n        print(\"meow meow!\")\n\ngarfield = Cat('Spot')\ngarfield.eat()\n```\n> In the example above, we say that every cat has an attribute called `name`. Every cat also has the ability to `eat` and `meow`. This `Cat` class is pretty similar to our previous `Dog`. This isn't just a coincidence, like how a table and a horse both have four legs. Cats and dogs are both able to eat because they are both types of animals. Using inheritance, we can rewrite the above classes to avoid repeating code.\n\n```python\nclass Animal:\n    def __init__(self,name):\n        self.name = name\n    def eat(self, food):\n        print(f\"{self.name} eats a {food}.\")\n    def speak(self):\n        print(\"I'm an animal!\")\n\nclass Dog(Animal):\n    def speak(self):\n        print(\"BARK BARK!\")\n\n\nclass Cat(Animal):\n    def speak(self):\n        print(\"meow meow!\")\n\nlucky = Cat('lucky')\n# the name attribute and eat method aren't defined on the Cat class, but this works because Cat inherits them from Animal\nlucky.eat('chicken nugget') \n\n```\n> Notice how we passed the `Animal` class to the `Cat` and `Dog` classes. This indicates that `Animal` is a parent class of both `Cat` and `Dog`. As such, `Cat` and `Dog` have access to all of the methods from animal, even `__init__`. This might seem a little unintuitive because the child class is always 'bigger' than the parent. The child class has access to everything in the parent class(`__init__`, `eat`), and then also has its own method `speak`, which overrides `speak` from the parent class.\n\n> Sometimes, we'll want to define a child class that doesn't use the exact same methods as its parent, but we don't want to override it entirely, like we just did with `speak`. We can use the `super()` method to access an instance of the parent class, call any of its methods from the child class, and then add more custom logic afterwards. This is commonly used to repeat the `__init__` method from the parent class, and then add an extra property at the end. For example, a difference between dogs and cats is that a dog can be a registered service animal, whereas a cat cannot.\n\n```python\nclass Animal:\n    def __init__(self,name):\n        self.name = name\n    def eat(self, food):\n        print(f\"{self.name} eats a {food}.\")\n    def speak(self):\n        print(\"I'm an animal!\")\n\nclass Dog(Animal):\n    def __init__(self, name, is_service_animal):\n        # use the logic from the parent Animal class without duplicating code\n        parent_instance = super()\n        parent_instance.__init__(name)\n\n        # add some Dog-specific setup\n        self.is_service_animal = is_service_animal\n\n    def speak(self):\n        print(\"BARK BARK!\")\n\n\nclass Cat(Animal):\n    def speak(self):\n        print(\"meow meow!\")\n\nsparky = Dog('sparky', True)\n```\n> The example above demontrates a common use for inheritance, where you have multiple child classes that share code from a common parent class. Inheritance can also work the other way, where one child class inherits from multiple parent classes. \n\n```python\nimport math\n\nclass Person:\n    def __init__(self, name, job):\n        self.name = name\n        self.job = job\n    def work(self):\n        print(f\"{self.name} is working hard as a {self.job}.\")\n    \nclass Computer:\n    def __init__(self, number_of_cores):\n        self.number_of_cores = number_of_cores\n\n    def compute(self):\n        print(round(math.pi, self.number_of_cores))\n\ntoaster = Computer(1)\ntoaster.compute()\n\ncompy386 = Computer(4)\ncompy386.compute()\n\nclass Cyborg(Person, Computer):\n    def __init__(self, name, job, number_of_cores):\n        Person.__init__(self, name, job)\n        Computer.__init__(self, number_of_cores)\n\n    def work(self):\n        for n in range(self.number_of_cores):\n            Person.work(self)\n\nterminator = Cyborg('Arnold', 'terminator', 8)\nterminator.work()\n```\n\n### Inheritance in Javascript\n> Inheritance in javascript is pretty similar to how it works in Python. Let's recreate one of our previous examples, just so you can see the syntax.\n\n```javascript\nclass Animal {\n    constructor(name){\n        this.name = name\n    }\n    eat(food){\n        console.log(`${this.name} eats a ${food}.`)\n    }\n    speak(){\n        console.log(\"I am an animal!\")\n    }\n}\n\nclass Dog extends Animal {\n    constructor(name, is_service_animal){\n        super(name)\n        this.is_service_animal = is_service_animal\n    }\n    speak(){\n        if ( this.is_service_animal ) {\n            console.log(`My name is ${this.name}, and I'm here to help!`)\n        }\n    }\n}\n\nconst fido = new Dog('fido', true)\nfido.eat('beef')\nfido.speak()\n```\n\n**When to use inheritance**\nUse inheritance to write less code. If you are writing an object oriented program with many classes, check if there are many similarities between your classes that have caused you to write redundant code. If you have two classes that are related (e.g. Animal, Dog), but they don't actually share any redundant code, you don't need inheritance. Verify that those similarities are due to inherent is-a relationships that are unlikely to change. For example, a table and a dog both have four legs, but this is not due to an inherent relationship, and as your program becomes more complex, there will be more differences between tables and dogs, and it will make less sense for them to inherit from a common ancestor (4-legged). If you have multiple classes that share code with each other, where one is inherently a type of the other, or both of them are inherently types of a third thing, consider using inheritance in your program so that you can write less code. \n\n## External Resources\n- [Python super() method](https://realpython.com/python-super/)\n- [Method Resolution Order(MRO)](https://www.educative.io/edpresso/what-is-mro-in-python)\n\n## Assignments\n- [School Interface I](https://github.com/quebecplatoon/oop-school-interface-i)\n- [Word Guess CSV](https://github.com/quebecplatoon/algo-word-guess)\n- [Boggle I](https://github.com/quebecplatoon/oop-boggle-i)\n- Stretch challenge: [Boggle II](https://github.com/quebecplatoon/oop-boggle-ii)\n\n\n"
     }
   },
   {
@@ -2055,7 +2312,7 @@
     "fields": {
       "lesson": 7,
       "url": "https://github.com/quebecplatoon/misc-command-line",
-      "description": "Terminal Commands In Depth ...nothing to submit here but necessary reading",
+      "description": "Terminal Commands In Depth",
       "originator": null,
       "link_type": 0
     }
@@ -2143,7 +2400,7 @@
     "fields": {
       "lesson": 8,
       "url": "https://github.com/quebecplatoon/curriculum/blob/master/page-resources/javascript_control_flow.pdf",
-      "description": "JS Fundamentals - control flow, if/else, loops, etc",
+      "description": "control flow, if/else, loops, etc",
       "originator": null,
       "link_type": 0
     }
@@ -2341,7 +2598,7 @@
     "fields": {
       "lesson": 11,
       "url": "https://github.com/quebecplatoon/algo-character-count",
-      "description": "Character Count in JS/Python",
+      "description": "Character Count",
       "originator": null,
       "link_type": 1
     }
@@ -2352,7 +2609,7 @@
     "fields": {
       "lesson": 11,
       "url": "https://github.com/quebecplatoon/algo-palindromes",
-      "description": "Palindromes in JS/Python",
+      "description": "Palindromes",
       "originator": null,
       "link_type": 1
     }
@@ -2363,7 +2620,7 @@
     "fields": {
       "lesson": 11,
       "url": "https://github.com/quebecplatoon/algo-calculate-mode",
-      "description": "Calculate Mode in JS/Python",
+      "description": "Calculate Mode",
       "originator": null,
       "link_type": 1
     }
@@ -2374,7 +2631,7 @@
     "fields": {
       "lesson": 11,
       "url": "https://github.com/quebecplatoon/algo-pad-array",
-      "description": "Pad an Array in JS/Python",
+      "description": "Pad an Array",
       "originator": null,
       "link_type": 1
     }
@@ -2385,7 +2642,7 @@
     "fields": {
       "lesson": 11,
       "url": "https://github.com/quebecplatoon/algo-balanced-parentheses",
-      "description": "Balanced Parentheses in JS/Python",
+      "description": "Balanced Parentheses",
       "originator": null,
       "link_type": 1
     }
@@ -2407,7 +2664,7 @@
     "fields": {
       "lesson": 12,
       "url": "https://github.com/quebecplatoon/oop-contact-list",
-      "description": "Contact List in Python",
+      "description": "Contact List",
       "originator": null,
       "link_type": 1
     }
@@ -2616,7 +2873,7 @@
     "fields": {
       "lesson": 17,
       "url": "http://www.pythontutor.com/visualize.html#mode=edit",
-      "description": "Python Tutor\r\nThis tool breaks down code step by step, allowing you to see the Call Stack in real-time.",
+      "description": "Python Tutor",
       "originator": null,
       "link_type": 0
     }
@@ -2660,7 +2917,7 @@
     "fields": {
       "lesson": 18,
       "url": "https://pythex.org/",
-      "description": "Pythex Test your Python regex with this online tool.",
+      "description": "Test your Python regex",
       "originator": null,
       "link_type": 0
     }
@@ -2704,7 +2961,7 @@
     "fields": {
       "lesson": 18,
       "url": "https://github.com/quebecplatoon/algo-validate-phone",
-      "description": "Phone Numbers in Python Regular Expressions",
+      "description": "Phone Numbers regex",
       "originator": null,
       "link_type": 1
     }
@@ -3308,12 +3565,70 @@
     }
   },
   {
+    "model": "app.activity",
+    "pk": 59,
+    "fields": {
+      "group": 1,
+      "name": "Pairs 05-02",
+      "date": "2022-05-02",
+      "size": 2
+    }
+  },
+  {
+    "model": "app.activitygroup",
+    "pk": 225,
+    "fields": {
+      "activity": 59,
+      "group_number": null,
+      "members": [
+        6,
+        10
+      ]
+    }
+  },
+  {
+    "model": "app.activitygroup",
+    "pk": 226,
+    "fields": {
+      "activity": 59,
+      "group_number": null,
+      "members": [
+        7,
+        28
+      ]
+    }
+  },
+  {
+    "model": "app.activitygroup",
+    "pk": 227,
+    "fields": {
+      "activity": 59,
+      "group_number": null,
+      "members": [
+        8,
+        9
+      ]
+    }
+  },
+  {
+    "model": "app.activitygroup",
+    "pk": 228,
+    "fields": {
+      "activity": 59,
+      "group_number": null,
+      "members": [
+        26,
+        27
+      ]
+    }
+  },
+  {
     "model": "app.cohort",
     "pk": 1,
     "fields": {
       "github_key": "5554565dd",
       "metadata": {
-        "course_roadmap": "https://somelink.com",
+        "course_roadmap": "https://somelink.com/y",
         "youtube": "https://www.youtube.com/channel/UCASZ7zW_Egu0T4KG3YEdGfw/playlists",
         "calendar": "https://docs.google.com/spreadsheets/d/1lOA3uPlX6tU0QvSAZmdCxPBvCpLcfm0H-0DSCMhjn5s/edit?usp=sharing",
         "student_handbook": "https://docs.google.com/document/d/1KgNFbDhihSJv6OGYjFDhESaDJ6ljOyVoRQse7oQH1I0/edit?usp=sharing",
@@ -4682,6 +4997,919 @@
       "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTczMTQwNSwiaWF0IjoxNjUxOTU1NDA1LCJqdGkiOiIyNmYwNGY5OTA5NzU0YmVhODY3MmM3MzcxODRiNjljMSIsInVzZXJfaWQiOjI4fQ.7oLvrQNwizU1bj_c6idxuVytLjH0M9n1EGqvGJwPYYg",
       "created_at": "2022-05-07T20:30:05.060Z",
       "expires_at": "2022-08-05T20:30:05Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 102,
+    "fields": {
+      "user": 28,
+      "jti": "8b20d43d40a341038e03e0d866b53e7c",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTc0MjExOCwiaWF0IjoxNjUxOTY2MTE4LCJqdGkiOiI4YjIwZDQzZDQwYTM0MTAzOGUwM2UwZDg2NmI1M2U3YyIsInVzZXJfaWQiOjI4fQ.1QIpdQRV55pPSpB-uAz_QPKGPaBg0cyBhBcNPEvC528",
+      "created_at": "2022-05-07T23:28:38.865Z",
+      "expires_at": "2022-08-05T23:28:38Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 103,
+    "fields": {
+      "user": 2,
+      "jti": "3a7a13aad90f4e278baac3d5abe1e568",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTc5MzE0NiwiaWF0IjoxNjUyMDE3MTQ2LCJqdGkiOiIzYTdhMTNhYWQ5MGY0ZTI3OGJhYWMzZDVhYmUxZTU2OCIsInVzZXJfaWQiOjJ9.wrFsRbMDY4nSLI94dwwRa-VL4-C2C2FmrYr_XxOYQ2E",
+      "created_at": "2022-05-08T13:39:06.228Z",
+      "expires_at": "2022-08-06T13:39:06Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 104,
+    "fields": {
+      "user": 28,
+      "jti": "28b8fa4f1ca545299dd9aa1dd943f0ee",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTc5ODk3NCwiaWF0IjoxNjUyMDIyOTc0LCJqdGkiOiIyOGI4ZmE0ZjFjYTU0NTI5OWRkOWFhMWRkOTQzZjBlZSIsInVzZXJfaWQiOjI4fQ.pXVDmgB0XQCYdQe6Zcorv-Ef22-21P94Qc58Y96sQCQ",
+      "created_at": "2022-05-08T15:16:14.605Z",
+      "expires_at": "2022-08-06T15:16:14Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 105,
+    "fields": {
+      "user": 2,
+      "jti": "72418e0bcbc44a8d82bc17efa9cc162e",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTc5OTIwOSwiaWF0IjoxNjUyMDIzMjA5LCJqdGkiOiI3MjQxOGUwYmNiYzQ0YThkODJiYzE3ZWZhOWNjMTYyZSIsInVzZXJfaWQiOjJ9.csXeUkZVPBmfYqlsCQZ3XM-l1bu0dQYa0WMpcMssGwg",
+      "created_at": "2022-05-08T15:20:09.592Z",
+      "expires_at": "2022-08-06T15:20:09Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 106,
+    "fields": {
+      "user": 2,
+      "jti": "b11d8d162d804eada79a79ddc53eff92",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTgwMDU2MCwiaWF0IjoxNjUyMDI0NTYwLCJqdGkiOiJiMTFkOGQxNjJkODA0ZWFkYTc5YTc5ZGRjNTNlZmY5MiIsInVzZXJfaWQiOjJ9.niyBgQDbL3q6qox0L9CIUNgteQDso5jBPvnaxZd2KgY",
+      "created_at": "2022-05-08T15:42:40.716Z",
+      "expires_at": "2022-08-06T15:42:40Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 107,
+    "fields": {
+      "user": 28,
+      "jti": "b17685b927d04abcaf9163212aefe6d4",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTgwMDU4NywiaWF0IjoxNjUyMDI0NTg3LCJqdGkiOiJiMTc2ODViOTI3ZDA0YWJjYWY5MTYzMjEyYWVmZTZkNCIsInVzZXJfaWQiOjI4fQ.sxyaGDftUdRDMyaGNPE65IkhRarZUCfb5HysFYSyChQ",
+      "created_at": "2022-05-08T15:43:07.242Z",
+      "expires_at": "2022-08-06T15:43:07Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 108,
+    "fields": {
+      "user": 25,
+      "jti": "395cfbae1d074514b9e38b5267196422",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTgwMDU5MSwiaWF0IjoxNjUyMDI0NTkxLCJqdGkiOiIzOTVjZmJhZTFkMDc0NTE0YjllMzhiNTI2NzE5NjQyMiIsInVzZXJfaWQiOjI1fQ.tdjP6mybsER8O5E_YbE0bAcdgOs3TLX3USt60tN4O3A",
+      "created_at": "2022-05-08T15:43:11.303Z",
+      "expires_at": "2022-08-06T15:43:11Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 109,
+    "fields": {
+      "user": 26,
+      "jti": "6bb1adb6f0e147639612effee12f7af4",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTgwMDU5NSwiaWF0IjoxNjUyMDI0NTk1LCJqdGkiOiI2YmIxYWRiNmYwZTE0NzYzOTYxMmVmZmVlMTJmN2FmNCIsInVzZXJfaWQiOjI2fQ.shcLr85qE83jqRZsBwjmLAUnubydU5Po4WBRoORWETE",
+      "created_at": "2022-05-08T15:43:15.784Z",
+      "expires_at": "2022-08-06T15:43:15Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 110,
+    "fields": {
+      "user": 28,
+      "jti": "e15d7d1b418b4c08a8864ae380db6c9c",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTgwMDYwMSwiaWF0IjoxNjUyMDI0NjAxLCJqdGkiOiJlMTVkN2QxYjQxOGI0YzA4YTg4NjRhZTM4MGRiNmM5YyIsInVzZXJfaWQiOjI4fQ.DcWIgaSY6EDtlygc-L67ic_dbfN1ur7IZLoO2GHQ5P0",
+      "created_at": "2022-05-08T15:43:21.610Z",
+      "expires_at": "2022-08-06T15:43:21Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 111,
+    "fields": {
+      "user": 25,
+      "jti": "d0578cb0dc02476596d6557adbec46dd",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTgwMDYwOCwiaWF0IjoxNjUyMDI0NjA4LCJqdGkiOiJkMDU3OGNiMGRjMDI0NzY1OTZkNjU1N2FkYmVjNDZkZCIsInVzZXJfaWQiOjI1fQ.qKnUmHFqhYhOvt1VTyqmd0yK0m_ffz93pBe-4mhj8SY",
+      "created_at": "2022-05-08T15:43:28.228Z",
+      "expires_at": "2022-08-06T15:43:28Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 112,
+    "fields": {
+      "user": 2,
+      "jti": "9be01a256fcf4eb89a4ddaacaa971120",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTgxOTIwMCwiaWF0IjoxNjUyMDQzMjAwLCJqdGkiOiI5YmUwMWEyNTZmY2Y0ZWI4OWE0ZGRhYWNhYTk3MTEyMCIsInVzZXJfaWQiOjJ9.41qgO0zxFMPZ8vf6RWYu54TlqgvtTraPM1PPFrwU2XM",
+      "created_at": "2022-05-08T20:53:20.522Z",
+      "expires_at": "2022-08-06T20:53:20Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 113,
+    "fields": {
+      "user": 2,
+      "jti": "b91702b4ef084fdea1cbe3a02c677c25",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg3NjMwNiwiaWF0IjoxNjUyMTAwMzA2LCJqdGkiOiJiOTE3MDJiNGVmMDg0ZmRlYTFjYmUzYTAyYzY3N2MyNSIsInVzZXJfaWQiOjJ9.N0cP9hYXZ7YpG27rwxXvxWBWZioUm7mmnsZAylJZ6Bs",
+      "created_at": "2022-05-09T12:45:06.558Z",
+      "expires_at": "2022-08-07T12:45:06Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 114,
+    "fields": {
+      "user": 2,
+      "jti": "6b4e667d4d624c0e9b3d56baf24a53f7",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg3NjYzOCwiaWF0IjoxNjUyMTAwNjM4LCJqdGkiOiI2YjRlNjY3ZDRkNjI0YzBlOWIzZDU2YmFmMjRhNTNmNyIsInVzZXJfaWQiOjJ9.PEixS8qkRyj3fQqDA3xmY5k_WvZv3CLOlkCjhSelgFA",
+      "created_at": "2022-05-09T12:50:38.838Z",
+      "expires_at": "2022-08-07T12:50:38Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 115,
+    "fields": {
+      "user": 2,
+      "jti": "1f67c695c8a840ae9e40382d580c1394",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg3NjcwOCwiaWF0IjoxNjUyMTAwNzA4LCJqdGkiOiIxZjY3YzY5NWM4YTg0MGFlOWU0MDM4MmQ1ODBjMTM5NCIsInVzZXJfaWQiOjJ9.0eno7-Pj9bKdaTVclL4a4xWW6U1jlHbB-dabwAIC4LY",
+      "created_at": "2022-05-09T12:51:48.881Z",
+      "expires_at": "2022-08-07T12:51:48Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 116,
+    "fields": {
+      "user": 28,
+      "jti": "8cf1c49726e04d8f92f40dca3bd7e17f",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg3ODA5NywiaWF0IjoxNjUyMTAyMDk3LCJqdGkiOiI4Y2YxYzQ5NzI2ZTA0ZDhmOTJmNDBkY2EzYmQ3ZTE3ZiIsInVzZXJfaWQiOjI4fQ._qR3i3C_GPmOFAJSsHBq2ckS01-t5nw2lJ7Fx_il1s0",
+      "created_at": "2022-05-09T13:14:57.270Z",
+      "expires_at": "2022-08-07T13:14:57Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 117,
+    "fields": {
+      "user": 2,
+      "jti": "cf093ab30f28449c83b372e6c49dcd85",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg3ODYyMiwiaWF0IjoxNjUyMTAyNjIyLCJqdGkiOiJjZjA5M2FiMzBmMjg0NDljODNiMzcyZTZjNDlkY2Q4NSIsInVzZXJfaWQiOjJ9.p-NR5mE3MhaaVX24DPRFRC3HYsQGkb0JC0LF1b6heBo",
+      "created_at": "2022-05-09T13:23:42.653Z",
+      "expires_at": "2022-08-07T13:23:42Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 118,
+    "fields": {
+      "user": 3,
+      "jti": "89934bbb0b294fa6a484e0016ea7f3ab",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg3OTg0NywiaWF0IjoxNjUyMTAzODQ3LCJqdGkiOiI4OTkzNGJiYjBiMjk0ZmE2YTQ4NGUwMDE2ZWE3ZjNhYiIsInVzZXJfaWQiOjN9.owNnSZw7WuybCO8IBqpI1wxKMIVeYVnV8-B41n39Uss",
+      "created_at": "2022-05-09T13:44:07.068Z",
+      "expires_at": "2022-08-07T13:44:07Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 119,
+    "fields": {
+      "user": 2,
+      "jti": "c4d46d7c31834e4199f0c57c5a398380",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg3OTg1NCwiaWF0IjoxNjUyMTAzODU0LCJqdGkiOiJjNGQ0NmQ3YzMxODM0ZTQxOTlmMGM1N2M1YTM5ODM4MCIsInVzZXJfaWQiOjJ9.1EUf3ymiEOMNUFyXe-s7HAA1N_3s3aOocMLDoHbvh3k",
+      "created_at": "2022-05-09T13:44:14.990Z",
+      "expires_at": "2022-08-07T13:44:14Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 120,
+    "fields": {
+      "user": 2,
+      "jti": "3b25b4751dce4037bcd2f05b36113172",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg3OTkxOSwiaWF0IjoxNjUyMTAzOTE5LCJqdGkiOiIzYjI1YjQ3NTFkY2U0MDM3YmNkMmYwNWIzNjExMzE3MiIsInVzZXJfaWQiOjJ9.E2NPPn-thdbDZczZnRnPfh2JYj5zDCyZ-GcqlfxfuuM",
+      "created_at": "2022-05-09T13:45:19.750Z",
+      "expires_at": "2022-08-07T13:45:19Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 121,
+    "fields": {
+      "user": 28,
+      "jti": "60189f56458d427db04795e6fc8d2fae",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg4MDEzMywiaWF0IjoxNjUyMTA0MTMzLCJqdGkiOiI2MDE4OWY1NjQ1OGQ0MjdkYjA0Nzk1ZTZmYzhkMmZhZSIsInVzZXJfaWQiOjI4fQ.stYv1nsan22nAFB_KiIyI_hcOCgYBVZqYn1mEVFuBSg",
+      "created_at": "2022-05-09T13:48:53.391Z",
+      "expires_at": "2022-08-07T13:48:53Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 122,
+    "fields": {
+      "user": 2,
+      "jti": "0a84be9ea36342318341ec2b25571a5d",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg4MDQxNywiaWF0IjoxNjUyMTA0NDE3LCJqdGkiOiIwYTg0YmU5ZWEzNjM0MjMxODM0MWVjMmIyNTU3MWE1ZCIsInVzZXJfaWQiOjJ9.zjpZbmyKCnmvBHIg3TV_JLnuSLgPwBzwuhG3gGsTKO0",
+      "created_at": "2022-05-09T13:53:37.275Z",
+      "expires_at": "2022-08-07T13:53:37Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 123,
+    "fields": {
+      "user": 28,
+      "jti": "5ed27442db8a47019420f07f5183036d",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg4MjE5NCwiaWF0IjoxNjUyMTA2MTk0LCJqdGkiOiI1ZWQyNzQ0MmRiOGE0NzAxOTQyMGYwN2Y1MTgzMDM2ZCIsInVzZXJfaWQiOjI4fQ.Qw0qaAPQpP0z3jNvYVQPJy_29pxoLHy_XPGMEL8qcUg",
+      "created_at": "2022-05-09T14:23:14.230Z",
+      "expires_at": "2022-08-07T14:23:14Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 124,
+    "fields": {
+      "user": 2,
+      "jti": "9a1f2b8013ec4958b62ce944e973f9eb",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg4MjIzNiwiaWF0IjoxNjUyMTA2MjM2LCJqdGkiOiI5YTFmMmI4MDEzZWM0OTU4YjYyY2U5NDRlOTczZjllYiIsInVzZXJfaWQiOjJ9.9W35g3Etltsm23U50dsIbMvPbS7dzqgmVUnWoEsWrck",
+      "created_at": "2022-05-09T14:23:56.049Z",
+      "expires_at": "2022-08-07T14:23:56Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 125,
+    "fields": {
+      "user": 25,
+      "jti": "3826495c4a6548c896b0d42da8fca9d4",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg4MzU0NywiaWF0IjoxNjUyMTA3NTQ3LCJqdGkiOiIzODI2NDk1YzRhNjU0OGM4OTZiMGQ0MmRhOGZjYTlkNCIsInVzZXJfaWQiOjI1fQ.6KzYU5lEbOkoSlnsBQfdgdk2h0OCyiG2sZTcZPE9hPg",
+      "created_at": "2022-05-09T14:45:47.664Z",
+      "expires_at": "2022-08-07T14:45:47Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 126,
+    "fields": {
+      "user": 6,
+      "jti": "ef55eb3dac40474ea67cd0d1dd9d1111",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg4NDE3MywiaWF0IjoxNjUyMTA4MTczLCJqdGkiOiJlZjU1ZWIzZGFjNDA0NzRlYTY3Y2QwZDFkZDlkMTExMSIsInVzZXJfaWQiOjZ9.-5yYVfIcHXYSdoHyCeRfBlg_h7Q4iTJw8DDjojcSJzU",
+      "created_at": "2022-05-09T14:56:13.943Z",
+      "expires_at": "2022-08-07T14:56:13Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 127,
+    "fields": {
+      "user": 2,
+      "jti": "99d2705c578f41abb22503c3f749e895",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg4NDE5NiwiaWF0IjoxNjUyMTA4MTk2LCJqdGkiOiI5OWQyNzA1YzU3OGY0MWFiYjIyNTAzYzNmNzQ5ZTg5NSIsInVzZXJfaWQiOjJ9.M5Ukk0pjWfSvUgMdmZB8djMzBqoBJrV5lltt99oARiw",
+      "created_at": "2022-05-09T14:56:36.100Z",
+      "expires_at": "2022-08-07T14:56:36Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 128,
+    "fields": {
+      "user": 6,
+      "jti": "4b6279db5a864bbfbe8c7b49ff8acab9",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg4NDIwMywiaWF0IjoxNjUyMTA4MjAzLCJqdGkiOiI0YjYyNzlkYjVhODY0YmJmYmU4YzdiNDlmZjhhY2FiOSIsInVzZXJfaWQiOjZ9.lJz6DRX1JwCQFgXqhS0lS94uLQ9yTVQsbqj3IJfty7Y",
+      "created_at": "2022-05-09T14:56:43.866Z",
+      "expires_at": "2022-08-07T14:56:43Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 129,
+    "fields": {
+      "user": 28,
+      "jti": "639eca6f226a43989b2b399b99f1ffae",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg4NDM0MywiaWF0IjoxNjUyMTA4MzQzLCJqdGkiOiI2MzllY2E2ZjIyNmE0Mzk4OWIyYjM5OWI5OWYxZmZhZSIsInVzZXJfaWQiOjI4fQ.GBmAzkg-IPgUAd-33zBHdjGXDXkAh730Ae4LsWdu0_w",
+      "created_at": "2022-05-09T14:59:03.811Z",
+      "expires_at": "2022-08-07T14:59:03Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 130,
+    "fields": {
+      "user": 28,
+      "jti": "3874bd2bca984380ae825e3ec439b522",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg5MDA2OSwiaWF0IjoxNjUyMTE0MDY5LCJqdGkiOiIzODc0YmQyYmNhOTg0MzgwYWU4MjVlM2VjNDM5YjUyMiIsInVzZXJfaWQiOjI4fQ.IUiPyhFr1GAtiRQx1JCLjAazY8TKuvjmCJwfF4AbQZ4",
+      "created_at": "2022-05-09T16:34:29.284Z",
+      "expires_at": "2022-08-07T16:34:29Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 131,
+    "fields": {
+      "user": 25,
+      "jti": "ec9a38407f66483ebff9eb20b8b4cf2f",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg5MDA4NiwiaWF0IjoxNjUyMTE0MDg2LCJqdGkiOiJlYzlhMzg0MDdmNjY0ODNlYmZmOWViMjBiOGI0Y2YyZiIsInVzZXJfaWQiOjI1fQ.2VTe9Z1F6_b-U0chtXQxPuLo8-8rClF2hbG2noR_p9k",
+      "created_at": "2022-05-09T16:34:46.899Z",
+      "expires_at": "2022-08-07T16:34:46Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 132,
+    "fields": {
+      "user": 28,
+      "jti": "d15e01403fe44f9b806520abda915293",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg5MDI0NSwiaWF0IjoxNjUyMTE0MjQ1LCJqdGkiOiJkMTVlMDE0MDNmZTQ0ZjliODA2NTIwYWJkYTkxNTI5MyIsInVzZXJfaWQiOjI4fQ.E9P6Hgb9g2oLdiksnJy9dUvtkGKJUZuYG3gWYUWAwDA",
+      "created_at": "2022-05-09T16:37:25.590Z",
+      "expires_at": "2022-08-07T16:37:25Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 133,
+    "fields": {
+      "user": 28,
+      "jti": "bb57e02cc8f140dbb9108075a9d94154",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg5MDMxMCwiaWF0IjoxNjUyMTE0MzEwLCJqdGkiOiJiYjU3ZTAyY2M4ZjE0MGRiYjkxMDgwNzVhOWQ5NDE1NCIsInVzZXJfaWQiOjI4fQ.X_poT-MHFqW3YoBb4hLwXDMKtECKLvAQmfb0lU8On4U",
+      "created_at": "2022-05-09T16:38:30.354Z",
+      "expires_at": "2022-08-07T16:38:30Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 134,
+    "fields": {
+      "user": 2,
+      "jti": "f40c1f7388bc451db7574c74f7e74c96",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg5MDc3MSwiaWF0IjoxNjUyMTE0NzcxLCJqdGkiOiJmNDBjMWY3Mzg4YmM0NTFkYjc1NzRjNzRmN2U3NGM5NiIsInVzZXJfaWQiOjJ9.iUf-5TAMQUV2UlkB01t1oROIyAe2WkBFMz7SNVSE9po",
+      "created_at": "2022-05-09T16:46:11.956Z",
+      "expires_at": "2022-08-07T16:46:11Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 135,
+    "fields": {
+      "user": 28,
+      "jti": "ea43bfb048614c76aba5902ab13e42ef",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg5MTI2NywiaWF0IjoxNjUyMTE1MjY3LCJqdGkiOiJlYTQzYmZiMDQ4NjE0Yzc2YWJhNTkwMmFiMTNlNDJlZiIsInVzZXJfaWQiOjI4fQ.EZulygZ24hXI8gR-Xls-sakyoQ_LemsWhVSV7iYqr9Y",
+      "created_at": "2022-05-09T16:54:27.882Z",
+      "expires_at": "2022-08-07T16:54:27Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 136,
+    "fields": {
+      "user": 2,
+      "jti": "ee5a497d36bc40389acebacdbabdad76",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg5MTI3OSwiaWF0IjoxNjUyMTE1Mjc5LCJqdGkiOiJlZTVhNDk3ZDM2YmM0MDM4OWFjZWJhY2RiYWJkYWQ3NiIsInVzZXJfaWQiOjJ9.Hr-AMcbV5_xVUnIT0f6kvFIGUISFQX-UkZSYpbJJWDw",
+      "created_at": "2022-05-09T16:54:39.687Z",
+      "expires_at": "2022-08-07T16:54:39Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 137,
+    "fields": {
+      "user": 6,
+      "jti": "daa1bdef38ad4aae9384d0c6c9b6f0d5",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg5MTMxOSwiaWF0IjoxNjUyMTE1MzE5LCJqdGkiOiJkYWExYmRlZjM4YWQ0YWFlOTM4NGQwYzZjOWI2ZjBkNSIsInVzZXJfaWQiOjZ9.TYWWUNulpW3vVevzZGWSo7vynpzRcI5YrB4eFS5h3-0",
+      "created_at": "2022-05-09T16:55:19.255Z",
+      "expires_at": "2022-08-07T16:55:19Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 138,
+    "fields": {
+      "user": 2,
+      "jti": "2f1ad8c350a64fb090d81760308f9c7e",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg5MTM2MCwiaWF0IjoxNjUyMTE1MzYwLCJqdGkiOiIyZjFhZDhjMzUwYTY0ZmIwOTBkODE3NjAzMDhmOWM3ZSIsInVzZXJfaWQiOjJ9.7Wj2L7jskLBYSoDEfmJBWHvL6-yW9kB2sOHshoTOm_s",
+      "created_at": "2022-05-09T16:56:00.519Z",
+      "expires_at": "2022-08-07T16:56:00Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 139,
+    "fields": {
+      "user": 28,
+      "jti": "b526560fb84f46e78f301c3ddb248ee5",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg5MTQwNSwiaWF0IjoxNjUyMTE1NDA1LCJqdGkiOiJiNTI2NTYwZmI4NGY0NmU3OGYzMDFjM2RkYjI0OGVlNSIsInVzZXJfaWQiOjI4fQ.0ZlGIsUjekYaUUJtg2BRhusQZzB8n-cBbDLDQ5vTjiw",
+      "created_at": "2022-05-09T16:56:45.483Z",
+      "expires_at": "2022-08-07T16:56:45Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 140,
+    "fields": {
+      "user": 2,
+      "jti": "7aeaf5f80cce49148bd9360f333249fa",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg5MTQ5MywiaWF0IjoxNjUyMTE1NDkzLCJqdGkiOiI3YWVhZjVmODBjY2U0OTE0OGJkOTM2MGYzMzMyNDlmYSIsInVzZXJfaWQiOjJ9.jT8fFVFb4Kn8iSlfF8VL0XrhPVDTmYJPIEew-CPonQg",
+      "created_at": "2022-05-09T16:58:13.816Z",
+      "expires_at": "2022-08-07T16:58:13Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 141,
+    "fields": {
+      "user": 2,
+      "jti": "e7f812107c0e4c21a3e9de1a01ef3e66",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg5Nzg3MSwiaWF0IjoxNjUyMTIxODcxLCJqdGkiOiJlN2Y4MTIxMDdjMGU0YzIxYTNlOWRlMWEwMWVmM2U2NiIsInVzZXJfaWQiOjJ9.5h8F1qKAUEhWc8snb0Go0ubH8WPuAsXm2zK32Fepx9s",
+      "created_at": "2022-05-09T18:44:31.833Z",
+      "expires_at": "2022-08-07T18:44:31Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 142,
+    "fields": {
+      "user": 28,
+      "jti": "bffbb604f83d4457a9993d49a69966ab",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg5OTg0NCwiaWF0IjoxNjUyMTIzODQ0LCJqdGkiOiJiZmZiYjYwNGY4M2Q0NDU3YTk5OTNkNDlhNjk5NjZhYiIsInVzZXJfaWQiOjI4fQ.DCsnQHFt3o3ntCZx7yjZm4dCSE6va1vCdezw58_BdFQ",
+      "created_at": "2022-05-09T19:17:24.412Z",
+      "expires_at": "2022-08-07T19:17:24Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 143,
+    "fields": {
+      "user": 28,
+      "jti": "04bc247999c74e5a8efa8cc038757294",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTg5OTk3MCwiaWF0IjoxNjUyMTIzOTcwLCJqdGkiOiIwNGJjMjQ3OTk5Yzc0ZTVhOGVmYThjYzAzODc1NzI5NCIsInVzZXJfaWQiOjI4fQ.qC9to7640vBljvPU-RpNmeDzuPmpuVN8xlKGsRcEjm0",
+      "created_at": "2022-05-09T19:19:30.184Z",
+      "expires_at": "2022-08-07T19:19:30Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 144,
+    "fields": {
+      "user": 2,
+      "jti": "ae7eafe86d5e4284a4dba17749043c79",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTkwMDIwNSwiaWF0IjoxNjUyMTI0MjA1LCJqdGkiOiJhZTdlYWZlODZkNWU0Mjg0YTRkYmExNzc0OTA0M2M3OSIsInVzZXJfaWQiOjJ9.bFMRUOBc-s2Q_MGkUzFedE3BGKFifrvlMDjACrVAVpY",
+      "created_at": "2022-05-09T19:23:25.205Z",
+      "expires_at": "2022-08-07T19:23:25Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 145,
+    "fields": {
+      "user": 25,
+      "jti": "f05d19b2e8154b43a8e6d9b72fb8f209",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTkwMTA3OCwiaWF0IjoxNjUyMTI1MDc4LCJqdGkiOiJmMDVkMTliMmU4MTU0YjQzYThlNmQ5YjcyZmI4ZjIwOSIsInVzZXJfaWQiOjI1fQ.5KXfd2FuVPmR5UpNpHKoVq19PxoqlZ2XzZluL8rirF4",
+      "created_at": "2022-05-09T19:37:58.686Z",
+      "expires_at": "2022-08-07T19:37:58Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 146,
+    "fields": {
+      "user": 2,
+      "jti": "4b7e7d35221c4c8a898e76e87410770e",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTkwMTA5MiwiaWF0IjoxNjUyMTI1MDkyLCJqdGkiOiI0YjdlN2QzNTIyMWM0YzhhODk4ZTc2ZTg3NDEwNzcwZSIsInVzZXJfaWQiOjJ9.1g70oJhF42jXc2a8UdMCcqDsOa2zmMHcz91zquAC314",
+      "created_at": "2022-05-09T19:38:12.580Z",
+      "expires_at": "2022-08-07T19:38:12Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 147,
+    "fields": {
+      "user": 2,
+      "jti": "be58c975f96e43788b62cda266a6549a",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTkwMTQwMiwiaWF0IjoxNjUyMTI1NDAyLCJqdGkiOiJiZTU4Yzk3NWY5NmU0Mzc4OGI2MmNkYTI2NmE2NTQ5YSIsInVzZXJfaWQiOjJ9.h3EcWWKja5SfPz6MI3j5CxvJyOwJrjjR3xM7p5aaRSc",
+      "created_at": "2022-05-09T19:43:22.502Z",
+      "expires_at": "2022-08-07T19:43:22Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 148,
+    "fields": {
+      "user": 28,
+      "jti": "c65b3dd2ed854318888dfab224a6ba9f",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTkwMTQxOCwiaWF0IjoxNjUyMTI1NDE4LCJqdGkiOiJjNjViM2RkMmVkODU0MzE4ODg4ZGZhYjIyNGE2YmE5ZiIsInVzZXJfaWQiOjI4fQ.OAjb1BDR5UiLSUvq_DjUPfV8rd2XhUrLM7enlbPdfdg",
+      "created_at": "2022-05-09T19:43:38.232Z",
+      "expires_at": "2022-08-07T19:43:38Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 149,
+    "fields": {
+      "user": 2,
+      "jti": "cdce2ca8318d468996d7070824022f7b",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTkwNTQwMywiaWF0IjoxNjUyMTI5NDAzLCJqdGkiOiJjZGNlMmNhODMxOGQ0Njg5OTZkNzA3MDgyNDAyMmY3YiIsInVzZXJfaWQiOjJ9.zyMEIh4Rug5lCjb8JZRgrONUPk2LRI1p7jZYvi3Mctk",
+      "created_at": "2022-05-09T20:50:03.629Z",
+      "expires_at": "2022-08-07T20:50:03Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 150,
+    "fields": {
+      "user": 28,
+      "jti": "263c15b89ac2458295f9e9ef714726ff",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTkwNTQyMywiaWF0IjoxNjUyMTI5NDIzLCJqdGkiOiIyNjNjMTViODlhYzI0NTgyOTVmOWU5ZWY3MTQ3MjZmZiIsInVzZXJfaWQiOjI4fQ.fruYJ_WxUyNNsUf9FUZvLbsE5ukB5wwKjOCoDE8gwV0",
+      "created_at": "2022-05-09T20:50:23.220Z",
+      "expires_at": "2022-08-07T20:50:23Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 151,
+    "fields": {
+      "user": 25,
+      "jti": "77625d866e5b4b449240729b75ad6a1d",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTkwNTQzMiwiaWF0IjoxNjUyMTI5NDMyLCJqdGkiOiI3NzYyNWQ4NjZlNWI0YjQ0OTI0MDcyOWI3NWFkNmExZCIsInVzZXJfaWQiOjI1fQ.3N7EcMmS-Eh8qV1EwzynPoa6AxiBi9OY1sTbOXOHLzg",
+      "created_at": "2022-05-09T20:50:32.127Z",
+      "expires_at": "2022-08-07T20:50:32Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 152,
+    "fields": {
+      "user": 28,
+      "jti": "e46685c839394fd19055a4f40992e71e",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTkwNjkxNiwiaWF0IjoxNjUyMTMwOTE2LCJqdGkiOiJlNDY2ODVjODM5Mzk0ZmQxOTA1NWE0ZjQwOTkyZTcxZSIsInVzZXJfaWQiOjI4fQ.rd1ekYi6XzXNdd6dtOZ14LtZDyi4lXKmVdc5nMb1_LA",
+      "created_at": "2022-05-09T21:15:16.881Z",
+      "expires_at": "2022-08-07T21:15:16Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 153,
+    "fields": {
+      "user": 27,
+      "jti": "fbaa0976f59b4f6ba2311fd5528a7ed0",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTkwNzU3NiwiaWF0IjoxNjUyMTMxNTc2LCJqdGkiOiJmYmFhMDk3NmY1OWI0ZjZiYTIzMTFmZDU1MjhhN2VkMCIsInVzZXJfaWQiOjI3fQ.7IfOroxlStyG66p1spVKyGj_EI4Tc2gnhgcbwYEy11o",
+      "created_at": "2022-05-09T21:26:16.206Z",
+      "expires_at": "2022-08-07T21:26:16Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 154,
+    "fields": {
+      "user": 28,
+      "jti": "e460e4c6284d4300997c2598227dd8a8",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTkwODA3MiwiaWF0IjoxNjUyMTMyMDcyLCJqdGkiOiJlNDYwZTRjNjI4NGQ0MzAwOTk3YzI1OTgyMjdkZDhhOCIsInVzZXJfaWQiOjI4fQ.9ASrk5LUd9i7McUTEheKS8Vhd49e90qTNcSF87vUs6k",
+      "created_at": "2022-05-09T21:34:32.252Z",
+      "expires_at": "2022-08-07T21:34:32Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 155,
+    "fields": {
+      "user": 2,
+      "jti": "58ccbdf12c424b798397b868c84eeaf0",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTkwODA5MiwiaWF0IjoxNjUyMTMyMDkyLCJqdGkiOiI1OGNjYmRmMTJjNDI0Yjc5ODM5N2I4NjhjODRlZWFmMCIsInVzZXJfaWQiOjJ9.wssQAysYceFEXezbAAbS_P4bLmiHgYfVHxpmkzpdRYU",
+      "created_at": "2022-05-09T21:34:52.878Z",
+      "expires_at": "2022-08-07T21:34:52Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 156,
+    "fields": {
+      "user": 28,
+      "jti": "95c0bc5e8cc045d3a9ff370cae53cf39",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTkwODkzNywiaWF0IjoxNjUyMTMyOTM3LCJqdGkiOiI5NWMwYmM1ZThjYzA0NWQzYTlmZjM3MGNhZTUzY2YzOSIsInVzZXJfaWQiOjI4fQ.WmiiYPByz9UfnhKzpy1ojSJqPYMiPdDzR1bTWUMBXB4",
+      "created_at": "2022-05-09T21:48:57.189Z",
+      "expires_at": "2022-08-07T21:48:57Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 157,
+    "fields": {
+      "user": 2,
+      "jti": "7f8cee27994c44529d33e6d736072fa4",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTkwODk2OSwiaWF0IjoxNjUyMTMyOTY5LCJqdGkiOiI3ZjhjZWUyNzk5NGM0NDUyOWQzM2U2ZDczNjA3MmZhNCIsInVzZXJfaWQiOjJ9.-GCVIKhs2WxV4GxTizVtmVl8yLfaBFIyOWzJElmTbrQ",
+      "created_at": "2022-05-09T21:49:29.097Z",
+      "expires_at": "2022-08-07T21:49:29Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 158,
+    "fields": {
+      "user": 2,
+      "jti": "ebd1705c149144b3988200dae4c7fca6",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTkwOTEyNywiaWF0IjoxNjUyMTMzMTI3LCJqdGkiOiJlYmQxNzA1YzE0OTE0NGIzOTg4MjAwZGFlNGM3ZmNhNiIsInVzZXJfaWQiOjJ9.5_J5dgJ-X1oVEvjuAGdzcL8r8iifqOR5-MN1q3yznGA",
+      "created_at": "2022-05-09T21:52:07.283Z",
+      "expires_at": "2022-08-07T21:52:07Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 159,
+    "fields": {
+      "user": 28,
+      "jti": "4490bac7602b47de84f9862a27fa4d76",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTkxMDU5OSwiaWF0IjoxNjUyMTM0NTk5LCJqdGkiOiI0NDkwYmFjNzYwMmI0N2RlODRmOTg2MmEyN2ZhNGQ3NiIsInVzZXJfaWQiOjI4fQ.36_S2_tEBLHV1mR8M3yUSZXdrFNei3APW8NFp02L3sY",
+      "created_at": "2022-05-09T22:16:39.414Z",
+      "expires_at": "2022-08-07T22:16:39Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 160,
+    "fields": {
+      "user": 28,
+      "jti": "92f9b677df9146998c522a102842d919",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk2MDg4MiwiaWF0IjoxNjUyMTg0ODgyLCJqdGkiOiI5MmY5YjY3N2RmOTE0Njk5OGM1MjJhMTAyODQyZDkxOSIsInVzZXJfaWQiOjI4fQ.wxtdLNXvgb3pM2tbr8NeuKnKIk4_L7z8ZucDXmpYfUg",
+      "created_at": "2022-05-10T12:14:42.309Z",
+      "expires_at": "2022-08-08T12:14:42Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 161,
+    "fields": {
+      "user": 28,
+      "jti": "359ba3f8fd1f4b30ba950fe018599e7a",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk2MzExMSwiaWF0IjoxNjUyMTg3MTExLCJqdGkiOiIzNTliYTNmOGZkMWY0YjMwYmE5NTBmZTAxODU5OWU3YSIsInVzZXJfaWQiOjI4fQ.ObPUpCuY0-EEyui4B5a6PsqqNzu56-vIJ_s-ShcU4m8",
+      "created_at": "2022-05-10T12:51:51.689Z",
+      "expires_at": "2022-08-08T12:51:51Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 162,
+    "fields": {
+      "user": 2,
+      "jti": "d83860b76f2443528675df9c4a5000fb",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk2MzU1OCwiaWF0IjoxNjUyMTg3NTU4LCJqdGkiOiJkODM4NjBiNzZmMjQ0MzUyODY3NWRmOWM0YTUwMDBmYiIsInVzZXJfaWQiOjJ9.9pd3rGvR6hz0B5kput0eCiaar4pCvvh9jYVCi0vuWN8",
+      "created_at": "2022-05-10T12:59:18.157Z",
+      "expires_at": "2022-08-08T12:59:18Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 163,
+    "fields": {
+      "user": 2,
+      "jti": "4567c8f99a124be5a8a0104bd9f60418",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk2MzY2NiwiaWF0IjoxNjUyMTg3NjY2LCJqdGkiOiI0NTY3YzhmOTlhMTI0YmU1YThhMDEwNGJkOWY2MDQxOCIsInVzZXJfaWQiOjJ9.vDtUXot9iRUxZkq71fa_Wpy2BlrQO8xbB7oWRcpGlYI",
+      "created_at": "2022-05-10T13:01:06.235Z",
+      "expires_at": "2022-08-08T13:01:06Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 164,
+    "fields": {
+      "user": 2,
+      "jti": "bf2a4bd828eb478c9874af261c0f02f1",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk2MzcwMCwiaWF0IjoxNjUyMTg3NzAwLCJqdGkiOiJiZjJhNGJkODI4ZWI0NzhjOTg3NGFmMjYxYzBmMDJmMSIsInVzZXJfaWQiOjJ9.l0kBOBRgtg4xfbADYVD4_dBygELr7RNm5-HGDZ6utvM",
+      "created_at": "2022-05-10T13:01:40.140Z",
+      "expires_at": "2022-08-08T13:01:40Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 165,
+    "fields": {
+      "user": 28,
+      "jti": "8142271e87ef476c8e8fbe34e0f6b640",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk2NDI4NywiaWF0IjoxNjUyMTg4Mjg3LCJqdGkiOiI4MTQyMjcxZTg3ZWY0NzZjOGU4ZmJlMzRlMGY2YjY0MCIsInVzZXJfaWQiOjI4fQ.W9kY17wu8a3SGJurbTrO-pSurq-ZdxBFKaXUEieBbCI",
+      "created_at": "2022-05-10T13:11:27.481Z",
+      "expires_at": "2022-08-08T13:11:27Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 166,
+    "fields": {
+      "user": 2,
+      "jti": "ac450f9bd05e423fb9d6bfdc66bdc98e",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk2NzExNiwiaWF0IjoxNjUyMTkxMTE2LCJqdGkiOiJhYzQ1MGY5YmQwNWU0MjNmYjlkNmJmZGM2NmJkYzk4ZSIsInVzZXJfaWQiOjJ9.qded_0VV70gbZhPfnivHMoHCkSkkXVXsGU5LDDYrzgw",
+      "created_at": "2022-05-10T13:58:36.741Z",
+      "expires_at": "2022-08-08T13:58:36Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 167,
+    "fields": {
+      "user": 28,
+      "jti": "63a340d4b57e4b30a222050360044f4f",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk2NzEyNiwiaWF0IjoxNjUyMTkxMTI2LCJqdGkiOiI2M2EzNDBkNGI1N2U0YjMwYTIyMjA1MDM2MDA0NGY0ZiIsInVzZXJfaWQiOjI4fQ.I2AnOW72yQlozVNYOa4GNQ3i_d3tYkc8TCc99bpeCCM",
+      "created_at": "2022-05-10T13:58:46.475Z",
+      "expires_at": "2022-08-08T13:58:46Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 168,
+    "fields": {
+      "user": 2,
+      "jti": "91c082b4b9394cb2beed13c5bad49d50",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk2NzE1NSwiaWF0IjoxNjUyMTkxMTU1LCJqdGkiOiI5MWMwODJiNGI5Mzk0Y2IyYmVlZDEzYzViYWQ0OWQ1MCIsInVzZXJfaWQiOjJ9.wU91HFb4FNnlrPIU8wJeZRhSzJ47xy-doI5sdKRkHvU",
+      "created_at": "2022-05-10T13:59:15.009Z",
+      "expires_at": "2022-08-08T13:59:15Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 169,
+    "fields": {
+      "user": 28,
+      "jti": "eb1ecb89cc574d85be0e78e4313f7234",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk2NzgwNiwiaWF0IjoxNjUyMTkxODA2LCJqdGkiOiJlYjFlY2I4OWNjNTc0ZDg1YmUwZTc4ZTQzMTNmNzIzNCIsInVzZXJfaWQiOjI4fQ.vi1KFZg1vQfrSY23z-uddfTrU6tYe1giwmJTyQlmhS8",
+      "created_at": "2022-05-10T14:10:06.834Z",
+      "expires_at": "2022-08-08T14:10:06Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 170,
+    "fields": {
+      "user": 25,
+      "jti": "96f366ac7d3048918feeae408107348c",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk2NzkxMSwiaWF0IjoxNjUyMTkxOTExLCJqdGkiOiI5NmYzNjZhYzdkMzA0ODkxOGZlZWFlNDA4MTA3MzQ4YyIsInVzZXJfaWQiOjI1fQ.Y6J3i2fJMKw3thVo66ltYhBu-qWaD8A1FkvnsTtMydk",
+      "created_at": "2022-05-10T14:11:51.861Z",
+      "expires_at": "2022-08-08T14:11:51Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 171,
+    "fields": {
+      "user": 2,
+      "jti": "4daa3b6728b043d5b66a4f5097a4a7fe",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk2ODkxOSwiaWF0IjoxNjUyMTkyOTE5LCJqdGkiOiI0ZGFhM2I2NzI4YjA0M2Q1YjY2YTRmNTA5N2E0YTdmZSIsInVzZXJfaWQiOjJ9.yaU4rf6W8-Rp7dyqCl61M_gfBrRo9gLYPY8nT9jcres",
+      "created_at": "2022-05-10T14:28:39.654Z",
+      "expires_at": "2022-08-08T14:28:39Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 172,
+    "fields": {
+      "user": 28,
+      "jti": "e0fc97e4db85433299c323aed28df3a9",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk2OTU2OSwiaWF0IjoxNjUyMTkzNTY5LCJqdGkiOiJlMGZjOTdlNGRiODU0MzMyOTljMzIzYWVkMjhkZjNhOSIsInVzZXJfaWQiOjI4fQ.SNeyznW8O4wZgjZ9v7KGcS6-L3_oIfDcM537fHCSlMo",
+      "created_at": "2022-05-10T14:39:29.111Z",
+      "expires_at": "2022-08-08T14:39:29Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 173,
+    "fields": {
+      "user": 2,
+      "jti": "66c6573a91dd4a548740237244e7e11e",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk2OTgxNiwiaWF0IjoxNjUyMTkzODE2LCJqdGkiOiI2NmM2NTczYTkxZGQ0YTU0ODc0MDIzNzI0NGU3ZTExZSIsInVzZXJfaWQiOjJ9.HjRtsSI7zoBzOqUTPen5x45Bpfudbyy64K4HR6zRmik",
+      "created_at": "2022-05-10T14:43:36.116Z",
+      "expires_at": "2022-08-08T14:43:36Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 174,
+    "fields": {
+      "user": 26,
+      "jti": "4459d29123424dbd82484f649a6f1957",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk2OTgzNCwiaWF0IjoxNjUyMTkzODM0LCJqdGkiOiI0NDU5ZDI5MTIzNDI0ZGJkODI0ODRmNjQ5YTZmMTk1NyIsInVzZXJfaWQiOjI2fQ.xNEXBdYKFcBbgkJeTvvAgEtqW8jGJxBkHqMA530sJBY",
+      "created_at": "2022-05-10T14:43:54.110Z",
+      "expires_at": "2022-08-08T14:43:54Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 175,
+    "fields": {
+      "user": 2,
+      "jti": "06fe98ef2aee433494ce79c6d2ef0cfe",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk3MDM0MywiaWF0IjoxNjUyMTk0MzQzLCJqdGkiOiIwNmZlOThlZjJhZWU0MzM0OTRjZTc5YzZkMmVmMGNmZSIsInVzZXJfaWQiOjJ9.5tdZlQk2BTf83klBF9uAYS9AaMz1rh8P2DZd7hl1cAM",
+      "created_at": "2022-05-10T14:52:23.354Z",
+      "expires_at": "2022-08-08T14:52:23Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 176,
+    "fields": {
+      "user": 27,
+      "jti": "0b74ddf1ed7e4645b266729712cebd28",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk3MDY5MywiaWF0IjoxNjUyMTk0NjkzLCJqdGkiOiIwYjc0ZGRmMWVkN2U0NjQ1YjI2NjcyOTcxMmNlYmQyOCIsInVzZXJfaWQiOjI3fQ.ifDaYIPvzRweCYOkejuHDuQeMdyqqdX1X6ATZqUH3hA",
+      "created_at": "2022-05-10T14:58:13.419Z",
+      "expires_at": "2022-08-08T14:58:13Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 177,
+    "fields": {
+      "user": 26,
+      "jti": "3e7b86799aeb48d1bf949e1f732f8027",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk3MDgzMiwiaWF0IjoxNjUyMTk0ODMyLCJqdGkiOiIzZTdiODY3OTlhZWI0OGQxYmY5NDllMWY3MzJmODAyNyIsInVzZXJfaWQiOjI2fQ.WrM9kiTQg07Q-JbqpDMs9_NQzbFWnx3JGIRaJ8fVOxY",
+      "created_at": "2022-05-10T15:00:32.934Z",
+      "expires_at": "2022-08-08T15:00:32Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 178,
+    "fields": {
+      "user": 10,
+      "jti": "deb1e5d8345549b297586a4066d26c69",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk3MDkzNSwiaWF0IjoxNjUyMTk0OTM1LCJqdGkiOiJkZWIxZTVkODM0NTU0OWIyOTc1ODZhNDA2NmQyNmM2OSIsInVzZXJfaWQiOjEwfQ.ohWbcWeoNjvbQnfkyRsH-Yh2tN8ZbjJ3erwLFHZ_KZM",
+      "created_at": "2022-05-10T15:02:15.415Z",
+      "expires_at": "2022-08-08T15:02:15Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 179,
+    "fields": {
+      "user": 2,
+      "jti": "1a7681af7127485a8c5cb85bc280c0a9",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk3MTE1NywiaWF0IjoxNjUyMTk1MTU3LCJqdGkiOiIxYTc2ODFhZjcxMjc0ODVhOGM1Y2I4NWJjMjgwYzBhOSIsInVzZXJfaWQiOjJ9.c1g9xSPxBeu6WjinRVVIAgKS59sRRZoT1kGaEygvN9Y",
+      "created_at": "2022-05-10T15:05:57.396Z",
+      "expires_at": "2022-08-08T15:05:57Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 180,
+    "fields": {
+      "user": 28,
+      "jti": "dbb1fd81776a43abb03d7f6490719fc7",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk3MzQ2NCwiaWF0IjoxNjUyMTk3NDY0LCJqdGkiOiJkYmIxZmQ4MTc3NmE0M2FiYjAzZDdmNjQ5MDcxOWZjNyIsInVzZXJfaWQiOjI4fQ.IcXLZmn4XXztRDLo1McF8adheHQcxznyptwOSuwnMqs",
+      "created_at": "2022-05-10T15:44:24.875Z",
+      "expires_at": "2022-08-08T15:44:24Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 181,
+    "fields": {
+      "user": 9,
+      "jti": "7b5078108f804065bcb921de9e32e074",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk3MzQ3MywiaWF0IjoxNjUyMTk3NDczLCJqdGkiOiI3YjUwNzgxMDhmODA0MDY1YmNiOTIxZGU5ZTMyZTA3NCIsInVzZXJfaWQiOjl9.PojrAT2jpEF1XQPbVKYK1zTH1Ao6qaxUwTPwuq4rWk0",
+      "created_at": "2022-05-10T15:44:33.727Z",
+      "expires_at": "2022-08-08T15:44:33Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 182,
+    "fields": {
+      "user": 2,
+      "jti": "d96409d317aa4571961a9fe0ba1d7a9f",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk4MDUxMiwiaWF0IjoxNjUyMjA0NTEyLCJqdGkiOiJkOTY0MDlkMzE3YWE0NTcxOTYxYTlmZTBiYTFkN2E5ZiIsInVzZXJfaWQiOjJ9.PVDWLmZoC95Cc2c2Q7kL1beNz3OTw9xxdDiKcepoh3k",
+      "created_at": "2022-05-10T17:41:52.138Z",
+      "expires_at": "2022-08-08T17:41:52Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 183,
+    "fields": {
+      "user": 2,
+      "jti": "2e1755d3054947fbbd1fa1d945d3a909",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk4MDg0MSwiaWF0IjoxNjUyMjA0ODQxLCJqdGkiOiIyZTE3NTVkMzA1NDk0N2ZiYmQxZmExZDk0NWQzYTkwOSIsInVzZXJfaWQiOjJ9.Gp3uYS-PKH6rl8K-avZxvft2gXwf2OnmwbAZd-er8O8",
+      "created_at": "2022-05-10T17:47:21.554Z",
+      "expires_at": "2022-08-08T17:47:21Z"
+    }
+  },
+  {
+    "model": "token_blacklist.outstandingtoken",
+    "pk": 184,
+    "fields": {
+      "user": 2,
+      "jti": "88f14fd1946e4ad6874dafc640398d77",
+      "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1OTk4Mjk2MCwiaWF0IjoxNjUyMjA2OTYwLCJqdGkiOiI4OGYxNGZkMTk0NmU0YWQ2ODc0ZGFmYzY0MDM5OGQ3NyIsInVzZXJfaWQiOjJ9.vx5B2uHs41LVIdd6cBp1IOmu-VaLboS1CvXdA-1KsmU",
+      "created_at": "2022-05-10T18:22:40.582Z",
+      "expires_at": "2022-08-08T18:22:40Z"
     }
   }
 ]

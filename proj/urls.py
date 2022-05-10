@@ -15,6 +15,4 @@ urlpatterns = [
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-# will only serve react app if not in debug mode
-if not (os.getenv('DEBUG') == "true"):
-    urlpatterns += [path('', TemplateView.as_view(template_name='index.html'))]
+urlpatterns += [path('', TemplateView.as_view(template_name='index.html'))]

@@ -1,10 +1,10 @@
 :root {
-    --section: #8cb3da;
-    --sectionAlt: #f6d2bc;
-    --button: coral;
-    --buttonAlt: teal;
-    --shadow: 5px 5px 5px teal;
-    --shadowBig: 15px 15px 15px teal;
-    --border: 1px solid grey;
-    --borderAlt: 1px solid blue;
+  --section: #8cb3da;
+  --sectionAlt: rgba(22, 105, 122, 0.2);
+  --button: coral;
+  --buttonAlt: teal;
+  --shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --shadowBig: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  --border: 1px solid grey;
+  /* --borderAlt: 1px solid blue; */
 }
