@@ -8,11 +8,18 @@ class LessonLinkSerializer(serializers.ModelSerializer):
         fields = "__all__"
 
 
+class TopicSerializerBase2(serializers.ModelSerializer):
+    class Meta:
+        model = Topic
+        fields = "__all__"
+
+
 class LessonSerializer(serializers.ModelSerializer):
     class Meta:
         model = Lesson
         fields = "__all__"
     lesson_links = LessonLinkSerializer(many=True)
+    topic = TopicSerializerBase2(read_only=True)
 
 
 class TopicSerializerBase(serializers.ModelSerializer):

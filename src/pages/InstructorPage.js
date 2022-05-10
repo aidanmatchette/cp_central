@@ -3,25 +3,27 @@ import {DayContext} from "../context/DayProvider";
 import {Col, Container, Row} from 'react-bootstrap'
 import ReactMarkdown from 'react-markdown'
 import remarkGfm from 'remark-gfm'
-import {useAxios} from "../utils/useAxios";
 import LessonLinksCard from "../components/InstructorComponents/LessonLinksCard";
 import CohortLinks from "../components/InstructorComponents/CohortLinks";
 import CreateGroup from "../components/InstructorComponents/CreateGroup";
 
 function InstructorPage() {
-
-    const backend = useAxios()
-    const {landingRaw} = useContext(DayContext)
-    const [topic, setTopic] = useState(null);
+    const {date, getLandingData} = useContext(DayContext);
+    const [landingRaw, setLandingRaw] = useState()
 
     let lesson = landingRaw ? landingRaw.lessons[0] : null
-    let topicID = lesson ? lesson.topic : null
+        const refreshData = async () => {
+        setLandingRaw(await getLandingData())
+    }
 
     useEffect(() => {
-        backend.get(`api/v1/topic/${topicID}`)
-            .then(res => setTopic(res.data))
-    }, [topicID])
-
+        refreshData().then()
+        if (process.env.REACT_APP_USE_POLLING === 'true') {
+            const timer = setInterval(refreshData, 5000)
+            return () => clearInterval(timer)
+        }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [date]);
 
     return (
         <Container>
@@ -37,7 +39,7 @@ function InstructorPage() {
                         <Col xs={12}>
                             <h4>Topics</h4>
                             <ul>
-                                <li>{topic?.title}</li>
+                                {landingRaw?.lessons.map((lesson) => <li key={lesson.id}>{lesson.topic?.title}</li>)}
                             </ul>
                         </Col>
                         <Col xs={12}>

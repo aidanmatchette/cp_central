@@ -1,19 +1,17 @@
-import { useContext, useState } from "react"
-import { DayContext } from "../context/DayProvider"
-import { Container, Spinner } from 'react-bootstrap'
-import { Button, Dialog, DialogActions } from "@mui/material";
+import {useContext, useState} from "react"
+import {DayContext} from "../context/DayProvider"
+import {Container, Spinner} from 'react-bootstrap'
+import {Button, Dialog, DialogActions} from "@mui/material";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
-import { ThemeProvider } from "@mui/material/styles";
+import {ThemeProvider} from "@mui/material/styles";
 import theme from "../utils/theme.js";
 
 
-function GoogleCalendar(props) {
-
+function GoogleCalendar() {
   let { landingRaw } = useContext(DayContext)
   const [vis, setVis] = useState(false)
-  let { height, width } = props
 
-  let calendarID = landingRaw && landingRaw.cohort.calendar_key
+  let calendarID = landingRaw?.cohort?.calendar_key
 
   let calendarStyle = {
     border: "0",
@@ -31,6 +29,7 @@ function GoogleCalendar(props) {
         <Container className="d-flex justify-content-center mt-3">
           {calendarID
             ? <iframe src={`https://calendar.google.com/calendar/embed?src=${calendarID}&ctz=America%2FChicago`}
+                      title={"calendar"}
               style={calendarStyle}></iframe>
             :
             <div className='d-inline-block d-flex justify-content-center align-items-center'

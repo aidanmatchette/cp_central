@@ -1,24 +1,21 @@
-import { useState } from "react";
+import {useState} from "react";
 import {
-  CssBaseline,
-  Typography,
+  Box,
+  Button,
   Dialog,
   DialogActions,
-  DialogTitle,
   DialogContent,
-  Grid,
-  Select,
-  TextField,
+  DialogTitle,
   FormControl,
+  Grid,
   InputLabel,
   MenuItem,
-  Button,
-  Box,
-  Container,
+  Select,
+  TextField,
 } from "@mui/material";
-import { ThemeProvider } from "@mui/material/styles";
+import {ThemeProvider} from "@mui/material/styles";
 import theme from "../utils/theme.js";
-import { useAxios } from "../utils/useAxios";
+import {useAxios} from "../utils/useAxios";
 import RateReviewRoundedIcon from "@mui/icons-material/RateReviewRounded";
 
 function GenerateFeedback() {
