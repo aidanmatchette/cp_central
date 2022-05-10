@@ -1,0 +1,10 @@
+:root {
+    --section: #8cb3da;
+    --sectionAlt: #f6d2bc;
+    --button: coral;
+    --buttonAlt: teal;
+    --shadow: 5px 5px 5px teal;
+    --shadowBig: 15px 15px 15px teal;
+    --border: 1px solid grey;
+    --borderAlt: 1px solid blue;
+}
