@@ -39,13 +39,14 @@ export default function ForumTopic() {
             <Row>
                 <Col xs={4} className={'inputForm ms-5'}>
                     <form onSubmit={addPost}>
+                        <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" width="100%" style={{borderRadius:"1rem"}}/>
                         <TextField
                             name="title"
                             label="Title"
                             type="text"
                             fullWidth
                             defaultValue={""}
-                            sx={{marginTop: "2rem"}}
+                            sx={{marginTop: "1rem"}}
                         />
                         <TextField
                             name="body"
