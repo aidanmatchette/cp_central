@@ -42,7 +42,7 @@ function AuthProvider({ children }) {
 
     const refresh = async () => {
         const refreshData = await appRefresh()
-        console.log({ refreshData })
+        // console.log({ refreshData })
         setUser(refreshData.user)
         setToken(refreshData.token)
         setAllChoices(refreshData.choices)

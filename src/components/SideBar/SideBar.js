@@ -6,7 +6,7 @@ import {listItems} from "./SideBarData.js";
 import GenerateFeedback from "../GenerateFeedback";
 import GoogleCalendar from "../GoogleCalendar";
 
-console.log("list items -----", listItems);
+// console.log("list items -----", listItems);
 
 function SideBar() {
   const navigate = useNavigate();
