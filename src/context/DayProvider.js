@@ -21,7 +21,6 @@ function DayProvider({children}) {
         }
         const rawLanding = await backend.get('api/student/landing/', rawParams)
         return await rawLanding.data
-        // console.log({rawLanding})
     }
 
     useEffect(() => {
@@ -31,7 +30,6 @@ function DayProvider({children}) {
 
     const contextData = {isSideBarOpen, setIsSideBarOpen, date, setDate, landingRaw, setDirty, dirty, getLandingData};
 
-    // only render after initial load (persist token through page refresh)
     return <DayContext.Provider value={contextData}>{children}</DayContext.Provider>;
 }
 

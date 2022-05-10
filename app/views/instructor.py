@@ -23,31 +23,16 @@ def instructor_checkin(request):  # /api/v1/instructor/checkin/
         return JsonResponse({"status": "Checkin created"}, status=200)
     else:  # GET
         date = request.GET['date'] if 'date' in request.GET.keys() else datetime.datetime.now().strftime("%Y-%m-%d")
-        # checked_in = CheckIn.objects.get(group=group, date=date)
-        # return JsonResponse(CheckinSerializer(checked_in).data, safe=False)
-        # if not checked_in:
-        #     return JsonResponse({"checked_in": []})
-        # ids = CheckinSerializer(checked_in).data['user']
         roster = User.objects.filter(default_group=group)
         roster = roster.annotate(present=Exists(CheckIn.objects.filter(user=OuterRef('pk'), group=group, date=date)))
 
         return JsonResponse(AttendanceSerializer(roster, many=True).data, safe=False)
-        # cohort = User.objects.raw("""
-        # SELECT A.*, B.date, C.checkin_id IS NOT NULL as is_checked_in
-        # from app_user as A
-        # left outer join app_checkin as B
-        # left join app_checkin_user as C
-        # on C.user_id = A.id
-        # where B.date = %s and A.default_group_id = %s
-        # group by A.username
-        # """, [fdate, group.pk])
-        # return JsonResponse(CheckinStatusSerializer(cohort, many=True).data, safe=False, status=200)
 
 
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def refresh_lesson(request):
-    #id, search by date(future functionality)
+    # id, search by date(future functionality)
     try:
         lesson = Lesson.objects.get(id=request.data["id"])
         new_markdown = get_daily_readme_from_gh(lesson.lesson_file_path)
