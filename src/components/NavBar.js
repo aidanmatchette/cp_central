@@ -77,8 +77,8 @@ function NavBar() {
               </IconButton>
             )}
             <img
-              src="./LongCPCLogo.png"
-              width="175px"
+              src="./Picture1.png"
+              width="100px"       // <----- logo size changes here
               alt="cp-logo"
               onClick={() => navigate(homePage)}
             />
