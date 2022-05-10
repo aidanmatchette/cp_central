@@ -92,7 +92,7 @@ export default function ForumPost({post, refreshTopic}) {
                         </IconButton>
                     </Col>
                     {expanded && forumPost?.forum_comments.map((comment) =>
-                        <PostComment key={comment.id} data={comment}/>)}
+                        <PostComment key={comment.id} data={comment} refreshTopic={refreshTopic}/>)}
                 </Row>
             </form>
         </Row>
