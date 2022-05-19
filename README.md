@@ -1,7 +1,7 @@
 # Group Project - Code Platoon Central 
 
-## Check out Code Platoon Demo
-
+## Check out Code Platoon Central Demo
+> - [Code Platoon Central](https://youtu.be/dU39A7oSW9g)
 
 
 ## Setup
