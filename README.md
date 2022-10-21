@@ -3,6 +3,8 @@
 ## Check out Code Platoon Central Demo
 > - [Code Platoon Central](https://youtu.be/dU39A7oSW9g)
 
+## Why?
+> As any people know, coding bootcamps are tough.  One way that my group thought of to make it just a little easier, was to centralize all of the info, curriculum, feedback and forums into a central app.  Our ultimate goal was to pack as many resources from our coding bootcamp experience as we could into one location. Some of the notable features that we are replacing or integrating into our app are Slack, Github, Google Forms and Google Calendar
 
 ## Setup
 
